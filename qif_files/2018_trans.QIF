@@ -1,0 +1,127 @@
+!Type:Bank 
+D12/25'18
+U-1,500.00
+T-1,500.00
+N2996
+PSoledad Cortes
+MFeliz Navidad
+LGifts Given
+^
+D12/27'18
+U1,164.00
+T1,164.00
+CX
+NDEP
+PAirbnb
+MJulie Dunbar, 12/26-1/1/19
+LRents Received:CH:1
+^
+D12/27'18
+U-325.00
+T-325.00
+CX
+N2997
+PJames Stevick
+MOffice Organization
+LWal:Mgmt Fees
+^
+D12/28'18
+U-171.61
+T-171.61
+CX
+NBillpay
+PSpectrum
+MCable bill
+LMH:Utilities:TV Cable
+^
+D12/28'18
+U-34.24
+T-34.24
+CX
+NBillpay
+PConsolidated Communications
+MFormerly known as FairPoint Comm
+LMH:Utilities
+^
+D12/28'18
+U-607.31
+T-607.31
+CX
+NBillpay
+PClaremont Hotel & Spa
+MFamily Club
+LPSNL:Family:Recreation
+^
+D12/28'18
+U-100.00
+T-100.00
+CX
+N2998
+PNestor Chavez
+MMoving furniture
+LWal:Cleaning & Maintenance
+^
+D12/31'18
+U0.19
+T0.19
+CX
+NDEP
+PBank Of America
+MInterest Income
+LInterest Inc:BofA
+^
+D1/ 1'19
+U-420.61
+T-420.61
+NBillpay
+PSpang Fuel Bill
+MHeating oil
+LMH:Utilities
+^
+D1/ 2'19
+U-190.00
+T-190.00
+N2999
+PBerkeley Property Owner's Association
+MDues
+LWal:Mgmt Fees
+^
+D1/ 4'19
+U-435.79
+T-435.79
+NBillpay
+PEBMUD
+MWater
+LVSV:Utilities:Water
+^
+D1/ 8'19
+U-50.00
+T-50.00
+NBillpay
+PEhrlich Pest Control
+MMonthly maintenance for Mice
+LMH:Cleaning & Maintenance
+^
+D1/ 9'19
+U-1,955.52
+T-1,955.52
+NBillpay
+PAAA
+MAAA Insurance for Toyota and Mercedes
+LAuto & Transport:Auto Insurance
+^
+D1/10'19
+U-8,285.28
+T-8,285.28
+NBillpay
+PChase
+L[United Credit 8959 to 4728]
+^
+D2/25'19
+U-3,837.75
+T-3,837.75
+NBillpay
+PTown Of Kennebunkport
+M2018-19 Taxes, Payment 2 of 2
+LMH:Property Taxes
+^

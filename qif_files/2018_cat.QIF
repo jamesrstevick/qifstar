@@ -1,0 +1,1837 @@
+!Type:Tag
+N?
+^
+NCC
+^
+NFlight to Delray
+^
+NHelp with Emily Apt. Lawsuit
+^
+NMarket adjustment
+^
+NMgmt Fees
+^
+NMirror, pots and pans, dinnerware
+^
+Nmirrow, clock,dinnerware.,pots and pans
+^
+NMoney to settle #3
+^
+NMoney to settle 4
+^
+NReplace door hinges and adjust
+^
+NReplace hinge and adjust
+^
+!Type:Cat
+N?
+I
+^
+NConsulting Income (Business)
+DConsulting Income for your business.
+T
+R293
+I
+^
+NDividend Income
+DDividend Income
+T
+R286
+I
+^
+NDividend Income:ABB
+T
+R286
+I
+^
+NDividend Income:F
+T
+R286
+I
+^
+NDividend Income:GM
+I
+^
+NDividend Income:INTC
+T
+R286
+I
+^
+NDividend Income:SWVXX
+T
+R286
+I
+^
+NDividend Income:Toyota
+I
+^
+NInterest Inc
+DInterest Income
+T
+R287
+I
+^
+NInterest Inc:BofA
+T
+R287
+I
+^
+NInterest Inc:Carriage House
+T
+R287
+I
+^
+NInterest Inc:Schwab Checking
+T
+R287
+I
+^
+NInterest Inc:Schwab One
+T
+R287
+I
+^
+NNet Salary
+DYour net paycheck after taxes and deductions.
+I
+^
+NNet Salary Spouse
+DSpouse's net paycheck after taxes and deductions.
+I
+^
+NOther Inc
+DOther Income
+T
+R257
+I
+^
+NOther Income (Business)
+DOther Business Income
+T
+R303
+I
+^
+NReimbursements
+I
+^
+NRents Received
+DRents Received
+T
+R326
+I
+^
+NRents Received:CC
+T
+R326
+I
+^
+NRents Received:CC:2
+T
+R326
+I
+^
+NRents Received:CC:3
+T
+R326
+I
+^
+NRents Received:CC:4
+T
+R326
+I
+^
+NRents Received:CC:5
+T
+R326
+I
+^
+NRents Received:CC:6
+T
+R326
+I
+^
+NRents Received:CC:7
+T
+R326
+I
+^
+NRents Received:CH
+T
+R326
+I
+^
+NRents Received:CH:1
+T
+R326
+I
+^
+NRents Received:CH:2
+T
+R326
+I
+^
+NRents Received:CH:3
+T
+R326
+I
+^
+NRents Received:CH:A
+T
+R326
+I
+^
+NRents Received:CH:B
+T
+R326
+I
+^
+NRents Received:CH:Security Deposits
+T
+R326
+I
+^
+NRents Received:MC
+T
+R326
+I
+^
+NRents Received:MC:2
+T
+R326
+I
+^
+NRents Received:MC:3
+T
+R326
+I
+^
+NRents Received:MC:5
+T
+R326
+I
+^
+NRents Received:MC:7
+T
+R326
+I
+^
+NRents Received:MC:8
+T
+R326
+I
+^
+NRents Received:MC:9
+T
+R326
+I
+^
+NRents Received:MH
+T
+R326
+I
+^
+NRents Received:VSV
+T
+R326
+I
+^
+NRents Received:VSV:1
+T
+R326
+I
+^
+NRents Received:VSV:10
+T
+R326
+I
+^
+NRents Received:VSV:2
+T
+R326
+I
+^
+NRents Received:VSV:3
+T
+R326
+I
+^
+NRents Received:VSV:4
+T
+R326
+I
+^
+NRents Received:VSV:5
+T
+R326
+I
+^
+NRents Received:VSV:6
+T
+R326
+I
+^
+NRents Received:VSV:7
+T
+R326
+I
+^
+NRents Received:VSV:8
+T
+R326
+I
+^
+NRents Received:VSV:9
+T
+R326
+I
+^
+NRents Received:VSV:Security Deposit
+T
+R326
+I
+^
+NRents Received:Walnut
+T
+R326
+I
+^
+NRents Received:Walnut:1
+T
+R326
+I
+^
+NRents Received:Walnut:2
+T
+R326
+I
+^
+NRents Received:Walnut:4
+T
+R326
+I
+^
+NRents Received:Walnut:5
+T
+R326
+I
+^
+NRents Received:Walnut:6
+T
+R326
+I
+^
+NRents Received:Walnut:7
+T
+R326
+I
+^
+NRents Received:Walnut:8
+T
+R326
+I
+^
+NRents Received:Walnut:9-Cottage
+T
+R326
+I
+^
+NRents Received:Walnut:K&S
+T
+R326
+I
+^
+NRents Received:Walnut:Security Deposit
+T
+R326
+I
+^
+NReturn Of Capital
+I
+^
+NRoyalties Received
+DRoyalties Received
+T
+R327
+I
+^
+NSalary From BEAR, Inc.
+I
+^
+NSales (Business)
+DGross Sales for your business
+T
+R293
+I
+^
+NSocial Security
+I
+^
+NTax Returns
+I
+^
+N_DivInc
+DDividend
+T
+R286
+I
+^
+N_DivIncTaxFree
+DTax-Free Dividend
+T
+R487
+I
+^
+N_EmpStkOptInc
+DEmployee Stock Option Inc
+T
+R460
+I
+^
+N_EmpStkOptIncSpouse
+DEmployee Stock Option Inc for Spouse
+T
+R506
+I
+^
+N_ESPP Self Income
+DESPP Self Income
+T
+R460
+I
+^
+N_ESPP Spouse Income
+DESPP Spouse Income
+T
+R506
+I
+^
+N_IntInc
+DInvestment Interest Income
+T
+R287
+I
+^
+N_IntIncTaxFree
+DTax-Free Inv Interest Inc
+T
+R489
+I
+^
+N_LT CapGnDst
+DLong Term Cap Gain Dist
+T
+R488
+I
+^
+N_MT CapGnDst
+DMid Term Cap Gain Dist
+T
+R488
+I
+^
+N_QualDivInc
+DQualified Dividend
+T
+R683
+I
+^
+N_RlzdGain
+DRealized Gain/Loss
+T
+I
+^
+N_ST CapGnDst
+DShort Term Cap Gain Dist
+T
+R286
+I
+^
+N_UnrlzdGain
+DUnrealized Gain/Loss
+I
+^
+NAdvertising (Business)
+DAdvertising expensses for your business
+T
+R304
+E
+^
+NAdvertising (Rental)
+DAdvertising for Rental Property
+T
+R328
+E
+^
+NAuto & Transport
+DAuto & Transport
+E
+^
+NAuto & Transport:Auto Insurance
+DAuto Insurance
+E
+^
+NAuto & Transport:Auto Payment
+DAuto Payment
+E
+^
+NAuto & Transport:Car Wash
+DCar Wash
+E
+^
+NAuto & Transport:Gas & Fuel
+DGas & Fuel
+E
+^
+NAuto & Transport:Mercedes
+E
+^
+NAuto & Transport:Mercedes:Cleaning & Maintenance
+E
+^
+NAuto & Transport:Mercedes:Registration Fees
+E
+^
+NAuto & Transport:Mercedes:Smog Test
+E
+^
+NAuto & Transport:Parking
+DParking
+E
+^
+NAuto & Transport:Public Transportation
+DPublic Transportation
+E
+^
+NAuto & Transport:Registration
+DRegistration for your automobile. Portions may be tax-deductible
+T
+R535
+E
+^
+NAuto & Transport:Service & Parts
+DService & Parts
+E
+^
+NAuto & Transport:Sienna
+E
+^
+NAuto & Transport:Sienna:Registration
+E
+^
+NAuto & Transport:Tolls
+DTolls for highways, bridges, and tunnels.
+E
+^
+NAuto & Transport:Vespa
+E
+^
+NAuto & Transport:Vespa:Insurance
+E
+^
+NAuto & Transport:Volt
+E
+^
+NAuto and Travel (Rental)
+DAuto and Travel expenses for Rental Property
+T
+R329
+E
+^
+NBear Expenses
+E
+^
+NBills & Utilities
+DBills & Utilities
+E
+^
+NBills & Utilities:Credit Card Payment
+DCredit Card Payment
+E
+^
+NBills & Utilities:Home Phone
+DHome Phone
+E
+^
+NBills & Utilities:Internet
+DInternet
+E
+^
+NBills & Utilities:Mobile Phone
+DMobile Phone
+E
+^
+NBills & Utilities:Television
+DTelevision
+E
+^
+NBills & Utilities:Utilities
+DUtilities such as Gas, Electricity, Water, Sewer, and Waste Disp
+E
+^
+NBook Exp
+E
+^
+NBook Exp:Consulting
+E
+^
+NBook Exp:Travel
+E
+^
+NBook Exp:Travel:Japan
+E
+^
+NCar & Truck (Business)
+DCar & Truck expenses for your business.
+T
+R306
+E
+^
+NCash & ATM
+DCash & ATM
+E
+^
+NCC
+E
+^
+NCC:2
+E
+^
+NCC:2:Appliances
+E
+^
+NCC:2:Association Dues
+E
+^
+NCC:2:Cleaning & Maintenance
+E
+^
+NCC:2:Commissions
+E
+^
+NCC:2:Permits
+E
+^
+NCC:2:Property Tax
+DProperty Tax
+E
+^
+NCC:2:Repairs
+E
+^
+NCC:2:Supplies
+E
+^
+NCC:2:Tourist Tax
+E
+^
+NCC:2:Utilities
+E
+^
+NCC:3
+E
+^
+NCC:3:Association Dues
+E
+^
+NCC:3:Cleaning & Maintenance
+E
+^
+NCC:3:Commissions
+E
+^
+NCC:3:Legal
+E
+^
+NCC:3:Permits
+E
+^
+NCC:3:Property Tax
+DProperty Tax
+E
+^
+NCC:3:Supplies
+E
+^
+NCC:3:Utilities
+E
+^
+NCC:4
+E
+^
+NCC:4:Advertising
+E
+^
+NCC:4:Association Dues
+E
+^
+NCC:4:Cleaning & Maintenance
+E
+^
+NCC:4:Commissions
+E
+^
+NCC:4:Legal
+E
+^
+NCC:4:Permits
+E
+^
+NCC:4:Property Tax
+DProperty Tax
+E
+^
+NCC:4:Repairs
+E
+^
+NCC:4:Supplies
+E
+^
+NCC:4:Tourist Tax
+E
+^
+NCC:4:Utilities
+E
+^
+NCC:5
+E
+^
+NCC:5:Association Dues
+E
+^
+NCC:5:Commissions
+E
+^
+NCC:5:Permits
+E
+^
+NCC:5:Property Tax
+DProperty Tax
+E
+^
+NCC:5:Repairs
+E
+^
+NCC:5:Supplies
+E
+^
+NCC:5:Travel
+E
+^
+NCC:5:Travel:Andorra Ski Trip
+E
+^
+NCC:6
+E
+^
+NCC:6:Association Dues
+E
+^
+NCC:6:Cleaning & Maintenance
+E
+^
+NCC:6:Commissions
+E
+^
+NCC:6:Furnishings
+E
+^
+NCC:6:Legal & Professional Fees
+E
+^
+NCC:6:Property Tax
+DProperty Tax
+E
+^
+NCC:6:Repairs
+E
+^
+NCC:6:Supplies
+E
+^
+NCC:6:Tourist Tax
+E
+^
+NCC:6:Travel
+E
+^
+NCC:6:Utilities
+E
+^
+NCC:7
+E
+^
+NCC:7:Advertising
+E
+^
+NCC:7:Appliances
+E
+^
+NCC:7:Association Dues
+E
+^
+NCC:7:Cleaning & Maintenance
+E
+^
+NCC:7:Commissions
+E
+^
+NCC:7:Furnishings
+E
+^
+NCC:7:Plumbing
+E
+^
+NCC:7:Property Tax
+DProperty Tax
+E
+^
+NCC:7:Repairs
+E
+^
+NCC:7:Supplies
+E
+^
+NCC:7:Tourist Tax
+E
+^
+NCC:7:Travel
+E
+^
+NCC:7:Utilities
+E
+^
+NCC:Advertising
+E
+^
+NCC:Bank Fees
+E
+^
+NCC:Cleaning & Maintenance
+E
+^
+NCC:Commissions
+E
+^
+NCC:Insurance
+E
+^
+NCC:Landscaping
+E
+^
+NCC:Legal
+E
+^
+NCC:Licenses & Permits
+E
+^
+NCC:Management Fees
+E
+^
+NCC:Management Fees:Resident Amenities
+E
+^
+NCC:Mgmt Fees
+E
+^
+NCC:Mgmt Fees:Software
+E
+^
+NCC:Petty Cash
+E
+^
+NCC:Postage
+E
+^
+NCC:Resident Amenities
+E
+^
+NCC:Supplies
+E
+^
+NCC:Travel
+E
+^
+NCC:Working Meals
+E
+^
+NCH
+E
+^
+NCH:Appliances
+T
+R326
+E
+^
+NCH:Capital Contribution
+E
+^
+NCH:Cleaning & Maintenance
+E
+^
+NCH:Distribution
+E
+^
+NCH:Distribution:Liz
+E
+^
+NCH:Furnishings
+T
+R326
+E
+^
+NCH:Insurance
+E
+^
+NCH:Landscaping
+E
+^
+NCH:Licenses & Permits
+E
+^
+NCH:Mgmt Fees
+E
+^
+NCH:Mgmt Fees:Software
+E
+^
+NCH:Mortgage
+E
+^
+NCH:Mortgage:Interest
+E
+^
+NCH:Mortgage:Principal
+E
+^
+NCH:Property Taxes
+E
+^
+NCH:Repairs
+E
+^
+NCH:Repairs:1
+E
+^
+NCH:Repairs:3
+E
+^
+NCH:Supplies
+E
+^
+NCH:Supplies:2
+E
+^
+NCH:Utilities
+E
+^
+NCH:Utilities:Cable
+E
+^
+NCH:Utilities:Cable:1
+E
+^
+NCH:Utilities:Cable:2
+E
+^
+NCH:Utilities:Cable:3
+E
+^
+NCH:Utilities:Cable:B
+E
+^
+NCH:Utilities:Garbage
+E
+^
+NCH:Utilities:Water
+E
+^
+NCleaning and Maintenance (Rental)
+DCleaning and Maintenance of Rental Property
+T
+R330
+E
+^
+NCommissions (Rental)
+DCommissions on Rental Property
+T
+R331
+E
+^
+NDeposit to Savings
+DA deposit or transfer to your savings account.
+E
+^
+NDonations & Charity
+DCharitable Donations - Cash
+E
+^
+NEducation
+DEducation
+E
+^
+NEducation:Books & Supplies
+DBooks & Supplies
+E
+^
+NEducation:Student Loan
+DStudent Loan
+E
+^
+NEducation:Tuition
+DTuition
+E
+^
+NEntertainment
+DEntertainment
+E
+^
+NEntertainment:Amusement
+DAmusement
+E
+^
+NEntertainment:Arts
+DArts
+E
+^
+NEntertainment:Dancing
+E
+^
+NEntertainment:Movies & DVDs
+DMovies & DVDs
+E
+^
+NEntertainment:Music
+DMusic
+E
+^
+NEntertainment:Newspaper & Magazines
+DNewspaper & Magazines
+E
+^
+NFees & Charges
+DFees & Charges
+E
+^
+NFees & Charges:ATM Fee
+DATM Fee
+E
+^
+NFees & Charges:Bank Fee
+DBank Fee
+E
+^
+NFees & Charges:Late Fee
+DLate Fee
+E
+^
+NFees & Charges:Service Fee
+DService Fee
+E
+^
+NFees & Charges:Trade Commissions
+DTrade Commissions
+E
+^
+NFinancial
+DFinancial
+E
+^
+NFinancial:Financial Advisor
+DFinancial Advisor
+T
+R282
+E
+^
+NFinancial:Life Insurance
+DLife Insurance
+E
+^
+NFood & Dining
+DFood & Dining
+E
+^
+NFood & Dining:Alcohol & Bars
+DAlcohol & Bars
+E
+^
+NFood & Dining:Coffee Shops
+DCoffee Shops
+E
+^
+NFood & Dining:Fast Food
+DFast Food
+E
+^
+NFood & Dining:Groceries
+DGroceries
+E
+^
+NFood & Dining:Mail Order
+E
+^
+NFood & Dining:Restaurants
+DRestaurants
+E
+^
+NGifts Given
+E
+^
+NHealth & Fitness
+DHealth & Fitness
+E
+^
+NHealth & Fitness:Dentist
+DDentist
+T
+R484
+E
+^
+NHealth & Fitness:Doctor
+DDoctor
+T
+R484
+E
+^
+NHealth & Fitness:Eyecare
+DEyecare
+T
+R484
+E
+^
+NHealth & Fitness:Gym
+DGym
+E
+^
+NHealth & Fitness:Health Insurance
+DHealth Insurance
+E
+^
+NHealth & Fitness:Pharmacy
+DPharmacy
+E
+^
+NHealth & Fitness:Sports
+DSports
+E
+^
+NHOA Dues (Rental)
+DHomeowners Association Dues for Rental Property
+T
+R341
+E
+^
+NHome
+DHome
+E
+^
+NHome:Furnishings
+DFurnishings
+E
+^
+NHome:HOA Dues
+DHomeowner's Association Dues
+E
+^
+NHome:Home Improvement
+DHome Improvement
+E
+^
+NHome:Home Insurance
+DHome Insurance
+E
+^
+NHome:Home Services
+DHome Services
+E
+^
+NHome:Home Supplies
+DHome Supplies
+E
+^
+NHome:Lawn & Garden
+DLawn & Garden
+E
+^
+NHome:Mortgage
+DMortgage
+E
+^
+NHome:Mortgage:Interest
+E
+^
+NHome:Mortgage:Mortgage Fees
+DMortgage Fees
+E
+^
+NHome:Mortgage:PMI
+DPrivate Mortgage Insurance
+E
+^
+NHome:Mortgage:Principal
+E
+^
+NHome:Mortgage:Property Tax
+DMortgage Property Tax
+E
+^
+NHome:Property Taxes
+E
+^
+NHome:Rent
+DRent
+E
+^
+NHome:Repairs
+E
+^
+NHome:Utilities
+E
+^
+NInsurance (Business)
+DBusiness insurance (not health)
+T
+R310
+E
+^
+NInterest Exp
+DFinance charges, like loan or credit card interest.
+E
+^
+NInvestment Changes
+E
+^
+NIRA Contribution
+DIRA Contribution
+T
+R262
+E
+^
+NLegal & Professional Fees (Rental)
+DLegal & Professional Fees on Rental Property
+T
+R333
+E
+^
+NLoan Payment
+DLoan Payment
+E
+^
+NLoan Payment:Interest
+DLoan Interest
+T
+E
+^
+NLoan Payment:Principal
+DLoan Principal
+E
+^
+NManagement Fees (Rental)
+DManagement Fees on Rental Property
+T
+R502
+E
+^
+NMango Cove Loan Payment
+E
+^
+NMC
+E
+^
+NMC:Advertising
+E
+^
+NMC:Appliances
+E
+^
+NMC:Appliances:7
+E
+^
+NMC:Bank Fees & Charges
+E
+^
+NMC:Cln & Maintenance
+E
+^
+NMC:Electric
+E
+^
+NMC:Furnishings
+E
+^
+NMC:Furnishings:3
+E
+^
+NMC:Furnishings:5
+E
+^
+NMC:Furnishings:7
+E
+^
+NMC:Garbage
+E
+^
+NMC:Insurance
+E
+^
+NMC:Landscaping
+E
+^
+NMC:Licenses & Permits
+E
+^
+NMC:Loan
+E
+^
+NMC:Loan:Interest
+E
+^
+NMC:Management
+E
+^
+NMC:Mgmt Fees
+E
+^
+NMC:Mgmt Fees:Software
+E
+^
+NMC:Repairs
+E
+^
+NMC:Supplies
+E
+^
+NMC:Supplies:5
+E
+^
+NMC:Travel
+E
+^
+NMC:Utilities
+E
+^
+NMC:Utilities:Electric
+E
+^
+NMC:Utilities:Gas
+E
+^
+NMC:Utilities:Internet
+E
+^
+NMC:Utilities:Water
+E
+^
+NMC:Working Meals
+E
+^
+NMeals & Entertainment (Business)
+DMeals & Entertainment expenses for your business.
+T
+R294
+E
+^
+NMH
+E
+^
+NMH:Cleaning & Maintenance
+E
+^
+NMH:Commissions
+E
+^
+NMH:Furnishings
+E
+^
+NMH:Insurance
+E
+^
+NMH:Landscaping
+E
+^
+NMH:Mgmt Fees
+E
+^
+NMH:Mgmt Fees:Software
+E
+^
+NMH:Property Taxes
+E
+^
+NMH:Repairs
+E
+^
+NMH:Resident Amenities
+E
+^
+NMH:Supplies
+E
+^
+NMH:Travel
+E
+^
+NMH:Utilities
+E
+^
+NMH:Utilities:Heating
+E
+^
+NMH:Utilities:TV Cable
+E
+^
+NMH:Utilities:Water
+E
+^
+NMH:Working Meals
+E
+^
+NMisc.
+DMiscellaneous Expenses
+E
+^
+NMisc. Expense (Business)
+DMisc. Business Expense
+T
+R302
+E
+^
+NMortgage Interest Expense (Rental)
+DMortgage Interest Expense on Rental Property
+T
+R334
+E
+^
+NNot Sure
+DExpenses I am not sure about.
+E
+^
+NNot Sure, Biz
+DSchedule C Expense for your business, but Tax Line unknown
+T
+R1000
+E
+^
+NNot Sure, Rental
+DSchedule E Expense, but Tax Line unknown
+T
+R1001
+E
+^
+NOffice Expenses (Business)
+DOffice Expenses for your business.
+T
+R313
+E
+^
+NOther Expenses (Rental)
+DOther Expenses on Rental Property
+T
+R341
+E
+^
+NOther Interest Expense (Rental)
+DOther Interest Expense on Rental Property
+T
+R335
+E
+^
+NPersonal Care
+DPersonal Care
+E
+^
+NPersonal Care:Hair
+DHair
+E
+^
+NPersonal Care:Laundry
+DLaundry
+E
+^
+NPersonal Care:Spa & Massage
+DSpa & Massage
+E
+^
+NPets
+DPets
+E
+^
+NPets:Pet Food & Supplies
+DPet Food & Supplies
+E
+^
+NPets:Pet Grooming
+DPet Grooming
+E
+^
+NPets:Vet
+DVet
+E
+^
+NPoint 8 Pines
+E
+^
+NPoint 8 Pines:HOA
+E
+^
+NPoint 8 Pines:Property Tax
+DProperty Tax
+E
+^
+NPostage and Delivery (Business)
+DPostage and Delivery expense for your business
+T
+R302
+E
+^
+NPrinting and Reproduction (Business)
+DPrinting and Reproduction expense for your business
+T
+R302
+E
+^
+NProf and Legal Fees
+DProfessional and Legal Fees for your business.
+T
+R298
+E
+^
+NPSNL
+E
+^
+NPSNL:Family
+E
+^
+NPSNL:Family:Clothing
+E
+^
+NPSNL:Family:Dining Out & Entertainment
+E
+^
+NPSNL:Family:Gifts Given
+E
+^
+NPSNL:Family:Groceries
+E
+^
+NPSNL:Family:Health Care
+E
+^
+NPSNL:Family:Hobbies
+E
+^
+NPSNL:Family:Recreation
+E
+^
+NPSNL:Family:Recreation:Biking
+E
+^
+NPSNL:Family:Recreation:Sailing
+E
+^
+NPSNL:Family:Recreation:Skiing
+E
+^
+NPSNL:Family:Subscriptions
+E
+^
+NPSNL:Family:Vacation
+E
+^
+NPSNL:Family:Vacation:Andorra
+E
+^
+NPSNL:Glen
+E
+^
+NPSNL:Glen:Clothing
+E
+^
+NPSNL:Glen:Health Care
+E
+^
+NPSNL:Glen:Travel
+E
+^
+NPSNL:Glen:Vacation
+E
+^
+NPSNL:John
+E
+^
+NPSNL:John:Health Care
+E
+^
+NPSNL:John:Hosting & Entertainment
+E
+^
+NPSNL:John:Travel
+E
+^
+NPSNL:Liz
+E
+^
+NPSNL:Liz:Beauty
+E
+^
+NPSNL:Liz:Clothing
+E
+^
+NPSNL:Liz:Dining Out & Entertainment
+E
+^
+NPSNL:Liz:Health Care
+E
+^
+NPSNL:Liz:Hobbies
+E
+^
+NPSNL:Liz:Subscriptions
+E
+^
+NPSNL:Liz:Travel
+E
+^
+NPSNL:Politics
+E
+^
+NPSNL:Vacation
+E
+^
+NPSNL:Vacation:Welk
+E
+^
+NVSV
+E
+^
+NVSV:Cleaning & Maintenance
+E
+^
+NVSV:Furnishings
+E
+^
+NVSV:Insurance
+E
+^
+NVSV:Landscaping
+E
+^
+NVSV:Licenses & Permits
+E
+^
+NVSV:Mgmt Fees
+E
+^
+NVSV:Mgmt Fees:Software
+E
+^
+NVSV:Property Taxes
+E
+^
+NVSV:Repairs
+E
+^
+NVSV:Resident Amenities
+E
+^
+NVSV:Supplies
+E
+^
+NVSV:Utilities
+E
+^
+NVSV:Utilities:Garbage
+E
+^
+NVSV:Utilities:Gas&Electricity
+E
+^
+NVSV:Utilities:Internet&Cable
+E
+^
+NVSV:Utilities:Water
+E
+^
+NVSV:Working Meals
+E
+^
+NWal
+E
+^
+NWal:Advertising
+E
+^
+NWal:Appliances
+T
+R326
+E
+^
+NWal:Appliances:10
+E
+^
+NWal:Auto Expenses
+E
+^
+NWal:Bank Fees
+E
+^
+NWal:Capital Contribution
+E
+^
+NWal:Cleaning & Maintenance
+E
+^
+NWal:Cleaning & Maintenance:7
+E
+^
+NWal:Computer Supplies
+E
+^
+NWal:Data Entry
+E
+^
+NWal:Furnishings
+E
+^
+NWal:Furnishings:1
+E
+^
+NWal:Furnishings:7
+E
+^
+NWal:Furnishings:8
+E
+^
+NWal:Insurance
+E
+^
+NWal:Landscaping
+E
+^
+NWal:Legal
+E
+^
+NWal:Licenses & Permits
+E
+^
+NWal:Mgmt Fees
+E
+^
+NWal:Mgmt Fees:Resident Amenities
+E
+^
+NWal:Mgmt Fees:Resident Amenities:10
+E
+^
+NWal:Mgmt Fees:Resident Amenities:2
+E
+^
+NWal:Mgmt Fees:Software
+E
+^
+NWal:Office Help
+E
+^
+NWal:Painting
+E
+^
+NWal:Payroll
+E
+^
+NWal:Payroll:Fees
+E
+^
+NWal:Payroll:Salary
+E
+^
+NWal:Payroll:Taxes
+E
+^
+NWal:Pest Control
+E
+^
+NWal:Property Taxes
+E
+^
+NWal:Property Taxes:Garbage
+E
+^
+NWal:Repairs
+E
+^
+NWal:Repairs:5
+E
+^
+NWal:Resident Amenities
+E
+^
+NWal:Security Deposit Interest
+E
+^
+NWal:Supplies
+E
+^
+NWal:Supplies:3
+E
+^
+NWal:Supplies:5
+E
+^
+NWal:Utilities
+E
+^
+NWal:Utilities:Cable
+E
+^
+NWal:Utilities:Cable:1
+E
+^
+NWal:Utilities:Cable:10
+E
+^
+NWal:Utilities:Cable:2
+E
+^
+NWal:Utilities:Cable:4
+E
+^
+NWal:Utilities:Cable:5
+E
+^
+NWal:Utilities:Cable:6
+E
+^
+NWal:Utilities:Cable:7
+E
+^
+NWal:Utilities:Cable:8
+E
+^
+NWal:Working Meals
+E
+^
+NWatauga Woods
+E
+^
+NWatauga Woods:HOA Fees
+E
+^
+NWatauga Woods:Property Taxes
+E
+^
+N_Accrued Int
+DAccrued Interest
+T
+R287
+E
+^
+N_Accrued Int TaxFree
+DTax-Free Accrued Interest
+T
+R489
+E
+^
+N_IntExp
+DInvestment Interest Expenses
+T
+R426
+E
+^

@@ -1,0 +1,11293 @@
+!Type:Tag
+N?
+^
+NCC
+^
+NFlight to Delray
+^
+NHelp with Emily Apt. Lawsuit
+^
+NMarket adjustment
+^
+NMgmt Fees
+^
+NMirror, pots and pans, dinnerware
+^
+Nmirrow, clock,dinnerware.,pots and pans
+^
+NMoney to settle #3
+^
+NMoney to settle 4
+^
+NReplace door hinges and adjust
+^
+NReplace hinge and adjust
+^
+!Type:Cat
+N?
+I
+^
+NConsulting Income (Business)
+DConsulting Income for your business.
+T
+R293
+I
+^
+NDividend Income
+DDividend Income
+T
+R286
+I
+^
+NDividend Income:ABB
+T
+R286
+I
+^
+NDividend Income:F
+T
+R286
+I
+^
+NDividend Income:GM
+I
+^
+NDividend Income:INTC
+T
+R286
+I
+^
+NDividend Income:SWVXX
+T
+R286
+I
+^
+NDividend Income:Toyota
+I
+^
+NInterest Inc
+DInterest Income
+T
+R287
+I
+^
+NInterest Inc:BofA
+T
+R287
+I
+^
+NInterest Inc:Carriage House
+T
+R287
+I
+^
+NInterest Inc:Schwab Checking
+T
+R287
+I
+^
+NInterest Inc:Schwab One
+T
+R287
+I
+^
+NNet Salary
+DYour net paycheck after taxes and deductions.
+I
+^
+NNet Salary Spouse
+DSpouse's net paycheck after taxes and deductions.
+I
+^
+NOther Inc
+DOther Income
+T
+R257
+I
+^
+NOther Income (Business)
+DOther Business Income
+T
+R303
+I
+^
+NReimbursements
+I
+^
+NRents Received
+DRents Received
+T
+R326
+I
+^
+NRents Received:CC
+T
+R326
+I
+^
+NRents Received:CC:2
+T
+R326
+I
+^
+NRents Received:CC:3
+T
+R326
+I
+^
+NRents Received:CC:4
+T
+R326
+I
+^
+NRents Received:CC:5
+T
+R326
+I
+^
+NRents Received:CC:6
+T
+R326
+I
+^
+NRents Received:CC:7
+T
+R326
+I
+^
+NRents Received:CH
+T
+R326
+I
+^
+NRents Received:CH:1
+T
+R326
+I
+^
+NRents Received:CH:2
+T
+R326
+I
+^
+NRents Received:CH:3
+T
+R326
+I
+^
+NRents Received:CH:A
+T
+R326
+I
+^
+NRents Received:CH:B
+T
+R326
+I
+^
+NRents Received:CH:Security Deposits
+T
+R326
+I
+^
+NRents Received:MC
+T
+R326
+I
+^
+NRents Received:MC:2
+T
+R326
+I
+^
+NRents Received:MC:3
+T
+R326
+I
+^
+NRents Received:MC:5
+T
+R326
+I
+^
+NRents Received:MC:7
+T
+R326
+I
+^
+NRents Received:MC:8
+T
+R326
+I
+^
+NRents Received:MC:9
+T
+R326
+I
+^
+NRents Received:MH
+T
+R326
+I
+^
+NRents Received:VSV
+T
+R326
+I
+^
+NRents Received:VSV:1
+T
+R326
+I
+^
+NRents Received:VSV:10
+T
+R326
+I
+^
+NRents Received:VSV:2
+T
+R326
+I
+^
+NRents Received:VSV:3
+T
+R326
+I
+^
+NRents Received:VSV:4
+T
+R326
+I
+^
+NRents Received:VSV:5
+T
+R326
+I
+^
+NRents Received:VSV:6
+T
+R326
+I
+^
+NRents Received:VSV:7
+T
+R326
+I
+^
+NRents Received:VSV:8
+T
+R326
+I
+^
+NRents Received:VSV:9
+T
+R326
+I
+^
+NRents Received:VSV:Security Deposit
+T
+R326
+I
+^
+NRents Received:Walnut
+T
+R326
+I
+^
+NRents Received:Walnut:1
+T
+R326
+I
+^
+NRents Received:Walnut:2
+T
+R326
+I
+^
+NRents Received:Walnut:4
+T
+R326
+I
+^
+NRents Received:Walnut:5
+T
+R326
+I
+^
+NRents Received:Walnut:6
+T
+R326
+I
+^
+NRents Received:Walnut:7
+T
+R326
+I
+^
+NRents Received:Walnut:8
+T
+R326
+I
+^
+NRents Received:Walnut:9-Cottage
+T
+R326
+I
+^
+NRents Received:Walnut:K&S
+T
+R326
+I
+^
+NRents Received:Walnut:Security Deposit
+T
+R326
+I
+^
+NReturn Of Capital
+I
+^
+NRoyalties Received
+DRoyalties Received
+T
+R327
+I
+^
+NSalary From BEAR, Inc.
+I
+^
+NSales (Business)
+DGross Sales for your business
+T
+R293
+I
+^
+NSocial Security
+I
+^
+NTax Returns
+I
+^
+N_DivInc
+DDividend
+T
+R286
+I
+^
+N_DivIncTaxFree
+DTax-Free Dividend
+T
+R487
+I
+^
+N_EmpStkOptInc
+DEmployee Stock Option Inc
+T
+R460
+I
+^
+N_EmpStkOptIncSpouse
+DEmployee Stock Option Inc for Spouse
+T
+R506
+I
+^
+N_ESPP Self Income
+DESPP Self Income
+T
+R460
+I
+^
+N_ESPP Spouse Income
+DESPP Spouse Income
+T
+R506
+I
+^
+N_IntInc
+DInvestment Interest Income
+T
+R287
+I
+^
+N_IntIncTaxFree
+DTax-Free Inv Interest Inc
+T
+R489
+I
+^
+N_LT CapGnDst
+DLong Term Cap Gain Dist
+T
+R488
+I
+^
+N_MT CapGnDst
+DMid Term Cap Gain Dist
+T
+R488
+I
+^
+N_QualDivInc
+DQualified Dividend
+T
+R683
+I
+^
+N_RlzdGain
+DRealized Gain/Loss
+T
+I
+^
+N_ST CapGnDst
+DShort Term Cap Gain Dist
+T
+R286
+I
+^
+N_UnrlzdGain
+DUnrealized Gain/Loss
+I
+^
+NAdvertising (Business)
+DAdvertising expensses for your business
+T
+R304
+E
+^
+NAdvertising (Rental)
+DAdvertising for Rental Property
+T
+R328
+E
+^
+NAuto & Transport
+DAuto & Transport
+E
+^
+NAuto & Transport:Auto Insurance
+DAuto Insurance
+E
+^
+NAuto & Transport:Auto Payment
+DAuto Payment
+E
+^
+NAuto & Transport:Car Wash
+DCar Wash
+E
+^
+NAuto & Transport:Gas & Fuel
+DGas & Fuel
+E
+^
+NAuto & Transport:Mercedes
+E
+^
+NAuto & Transport:Mercedes:Cleaning & Maintenance
+E
+^
+NAuto & Transport:Mercedes:Registration Fees
+E
+^
+NAuto & Transport:Mercedes:Smog Test
+E
+^
+NAuto & Transport:Parking
+DParking
+E
+^
+NAuto & Transport:Public Transportation
+DPublic Transportation
+E
+^
+NAuto & Transport:Registration
+DRegistration for your automobile. Portions may be tax-deductible
+T
+R535
+E
+^
+NAuto & Transport:Service & Parts
+DService & Parts
+E
+^
+NAuto & Transport:Sienna
+E
+^
+NAuto & Transport:Sienna:Registration
+E
+^
+NAuto & Transport:Tolls
+DTolls for highways, bridges, and tunnels.
+E
+^
+NAuto & Transport:Vespa
+E
+^
+NAuto & Transport:Vespa:Insurance
+E
+^
+NAuto & Transport:Volt
+E
+^
+NAuto and Travel (Rental)
+DAuto and Travel expenses for Rental Property
+T
+R329
+E
+^
+NBear Expenses
+E
+^
+NBills & Utilities
+DBills & Utilities
+E
+^
+NBills & Utilities:Credit Card Payment
+DCredit Card Payment
+E
+^
+NBills & Utilities:Home Phone
+DHome Phone
+E
+^
+NBills & Utilities:Internet
+DInternet
+E
+^
+NBills & Utilities:Mobile Phone
+DMobile Phone
+E
+^
+NBills & Utilities:Television
+DTelevision
+E
+^
+NBills & Utilities:Utilities
+DUtilities such as Gas, Electricity, Water, Sewer, and Waste Disp
+E
+^
+NBook Exp
+E
+^
+NBook Exp:Consulting
+E
+^
+NBook Exp:Travel
+E
+^
+NBook Exp:Travel:Japan
+E
+^
+NCar & Truck (Business)
+DCar & Truck expenses for your business.
+T
+R306
+E
+^
+NCash & ATM
+DCash & ATM
+E
+^
+NCC
+E
+^
+NCC:2
+E
+^
+NCC:2:Appliances
+E
+^
+NCC:2:Association Dues
+E
+^
+NCC:2:Cleaning & Maintenance
+E
+^
+NCC:2:Commissions
+E
+^
+NCC:2:Permits
+E
+^
+NCC:2:Property Tax
+DProperty Tax
+E
+^
+NCC:2:Repairs
+E
+^
+NCC:2:Supplies
+E
+^
+NCC:2:Tourist Tax
+E
+^
+NCC:2:Utilities
+E
+^
+NCC:3
+E
+^
+NCC:3:Association Dues
+E
+^
+NCC:3:Cleaning & Maintenance
+E
+^
+NCC:3:Commissions
+E
+^
+NCC:3:Legal
+E
+^
+NCC:3:Permits
+E
+^
+NCC:3:Property Tax
+DProperty Tax
+E
+^
+NCC:3:Supplies
+E
+^
+NCC:3:Utilities
+E
+^
+NCC:4
+E
+^
+NCC:4:Advertising
+E
+^
+NCC:4:Association Dues
+E
+^
+NCC:4:Cleaning & Maintenance
+E
+^
+NCC:4:Commissions
+E
+^
+NCC:4:Legal
+E
+^
+NCC:4:Permits
+E
+^
+NCC:4:Property Tax
+DProperty Tax
+E
+^
+NCC:4:Repairs
+E
+^
+NCC:4:Supplies
+E
+^
+NCC:4:Tourist Tax
+E
+^
+NCC:4:Utilities
+E
+^
+NCC:5
+E
+^
+NCC:5:Association Dues
+E
+^
+NCC:5:Commissions
+E
+^
+NCC:5:Permits
+E
+^
+NCC:5:Property Tax
+DProperty Tax
+E
+^
+NCC:5:Repairs
+E
+^
+NCC:5:Supplies
+E
+^
+NCC:5:Travel
+E
+^
+NCC:5:Travel:Andorra Ski Trip
+E
+^
+NCC:6
+E
+^
+NCC:6:Association Dues
+E
+^
+NCC:6:Cleaning & Maintenance
+E
+^
+NCC:6:Commissions
+E
+^
+NCC:6:Furnishings
+E
+^
+NCC:6:Legal & Professional Fees
+E
+^
+NCC:6:Property Tax
+DProperty Tax
+E
+^
+NCC:6:Repairs
+E
+^
+NCC:6:Supplies
+E
+^
+NCC:6:Tourist Tax
+E
+^
+NCC:6:Travel
+E
+^
+NCC:6:Utilities
+E
+^
+NCC:7
+E
+^
+NCC:7:Advertising
+E
+^
+NCC:7:Appliances
+E
+^
+NCC:7:Association Dues
+E
+^
+NCC:7:Cleaning & Maintenance
+E
+^
+NCC:7:Commissions
+E
+^
+NCC:7:Furnishings
+E
+^
+NCC:7:Plumbing
+E
+^
+NCC:7:Property Tax
+DProperty Tax
+E
+^
+NCC:7:Repairs
+E
+^
+NCC:7:Supplies
+E
+^
+NCC:7:Tourist Tax
+E
+^
+NCC:7:Travel
+E
+^
+NCC:7:Utilities
+E
+^
+NCC:Advertising
+E
+^
+NCC:Bank Fees
+E
+^
+NCC:Cleaning & Maintenance
+E
+^
+NCC:Commissions
+E
+^
+NCC:Insurance
+E
+^
+NCC:Landscaping
+E
+^
+NCC:Legal
+E
+^
+NCC:Licenses & Permits
+E
+^
+NCC:Management Fees
+E
+^
+NCC:Management Fees:Resident Amenities
+E
+^
+NCC:Mgmt Fees
+E
+^
+NCC:Mgmt Fees:Software
+E
+^
+NCC:Petty Cash
+E
+^
+NCC:Postage
+E
+^
+NCC:Resident Amenities
+E
+^
+NCC:Supplies
+E
+^
+NCC:Travel
+E
+^
+NCC:Working Meals
+E
+^
+NCH
+E
+^
+NCH:Appliances
+T
+R326
+E
+^
+NCH:Capital Contribution
+E
+^
+NCH:Cleaning & Maintenance
+E
+^
+NCH:Distribution
+E
+^
+NCH:Distribution:Liz
+E
+^
+NCH:Furnishings
+T
+R326
+E
+^
+NCH:Insurance
+E
+^
+NCH:Landscaping
+E
+^
+NCH:Licenses & Permits
+E
+^
+NCH:Mgmt Fees
+E
+^
+NCH:Mgmt Fees:Software
+E
+^
+NCH:Mortgage
+E
+^
+NCH:Mortgage:Interest
+E
+^
+NCH:Mortgage:Principal
+E
+^
+NCH:Property Taxes
+E
+^
+NCH:Repairs
+E
+^
+NCH:Repairs:1
+E
+^
+NCH:Repairs:3
+E
+^
+NCH:Supplies
+E
+^
+NCH:Supplies:2
+E
+^
+NCH:Utilities
+E
+^
+NCH:Utilities:Cable
+E
+^
+NCH:Utilities:Cable:1
+E
+^
+NCH:Utilities:Cable:2
+E
+^
+NCH:Utilities:Cable:3
+E
+^
+NCH:Utilities:Cable:B
+E
+^
+NCH:Utilities:Garbage
+E
+^
+NCH:Utilities:Water
+E
+^
+NCleaning and Maintenance (Rental)
+DCleaning and Maintenance of Rental Property
+T
+R330
+E
+^
+NCommissions (Rental)
+DCommissions on Rental Property
+T
+R331
+E
+^
+NDeposit to Savings
+DA deposit or transfer to your savings account.
+E
+^
+NDonations & Charity
+DCharitable Donations - Cash
+E
+^
+NEducation
+DEducation
+E
+^
+NEducation:Books & Supplies
+DBooks & Supplies
+E
+^
+NEducation:Student Loan
+DStudent Loan
+E
+^
+NEducation:Tuition
+DTuition
+E
+^
+NEntertainment
+DEntertainment
+E
+^
+NEntertainment:Amusement
+DAmusement
+E
+^
+NEntertainment:Arts
+DArts
+E
+^
+NEntertainment:Dancing
+E
+^
+NEntertainment:Movies & DVDs
+DMovies & DVDs
+E
+^
+NEntertainment:Music
+DMusic
+E
+^
+NEntertainment:Newspaper & Magazines
+DNewspaper & Magazines
+E
+^
+NFees & Charges
+DFees & Charges
+E
+^
+NFees & Charges:ATM Fee
+DATM Fee
+E
+^
+NFees & Charges:Bank Fee
+DBank Fee
+E
+^
+NFees & Charges:Late Fee
+DLate Fee
+E
+^
+NFees & Charges:Service Fee
+DService Fee
+E
+^
+NFees & Charges:Trade Commissions
+DTrade Commissions
+E
+^
+NFinancial
+DFinancial
+E
+^
+NFinancial:Financial Advisor
+DFinancial Advisor
+T
+R282
+E
+^
+NFinancial:Life Insurance
+DLife Insurance
+E
+^
+NFood & Dining
+DFood & Dining
+E
+^
+NFood & Dining:Alcohol & Bars
+DAlcohol & Bars
+E
+^
+NFood & Dining:Coffee Shops
+DCoffee Shops
+E
+^
+NFood & Dining:Fast Food
+DFast Food
+E
+^
+NFood & Dining:Groceries
+DGroceries
+E
+^
+NFood & Dining:Mail Order
+E
+^
+NFood & Dining:Restaurants
+DRestaurants
+E
+^
+NGifts Given
+E
+^
+NHealth & Fitness
+DHealth & Fitness
+E
+^
+NHealth & Fitness:Dentist
+DDentist
+T
+R484
+E
+^
+NHealth & Fitness:Doctor
+DDoctor
+T
+R484
+E
+^
+NHealth & Fitness:Eyecare
+DEyecare
+T
+R484
+E
+^
+NHealth & Fitness:Gym
+DGym
+E
+^
+NHealth & Fitness:Health Insurance
+DHealth Insurance
+E
+^
+NHealth & Fitness:Pharmacy
+DPharmacy
+E
+^
+NHealth & Fitness:Sports
+DSports
+E
+^
+NHOA Dues (Rental)
+DHomeowners Association Dues for Rental Property
+T
+R341
+E
+^
+NHome
+DHome
+E
+^
+NHome:Furnishings
+DFurnishings
+E
+^
+NHome:HOA Dues
+DHomeowner's Association Dues
+E
+^
+NHome:Home Improvement
+DHome Improvement
+E
+^
+NHome:Home Insurance
+DHome Insurance
+E
+^
+NHome:Home Services
+DHome Services
+E
+^
+NHome:Home Supplies
+DHome Supplies
+E
+^
+NHome:Lawn & Garden
+DLawn & Garden
+E
+^
+NHome:Mortgage
+DMortgage
+E
+^
+NHome:Mortgage:Interest
+E
+^
+NHome:Mortgage:Mortgage Fees
+DMortgage Fees
+E
+^
+NHome:Mortgage:PMI
+DPrivate Mortgage Insurance
+E
+^
+NHome:Mortgage:Principal
+E
+^
+NHome:Mortgage:Property Tax
+DMortgage Property Tax
+E
+^
+NHome:Property Taxes
+E
+^
+NHome:Rent
+DRent
+E
+^
+NHome:Repairs
+E
+^
+NHome:Utilities
+E
+^
+NInsurance (Business)
+DBusiness insurance (not health)
+T
+R310
+E
+^
+NInterest Exp
+DFinance charges, like loan or credit card interest.
+E
+^
+NInvestment Changes
+E
+^
+NIRA Contribution
+DIRA Contribution
+T
+R262
+E
+^
+NLegal & Professional Fees (Rental)
+DLegal & Professional Fees on Rental Property
+T
+R333
+E
+^
+NLoan Payment
+DLoan Payment
+E
+^
+NLoan Payment:Interest
+DLoan Interest
+T
+E
+^
+NLoan Payment:Principal
+DLoan Principal
+E
+^
+NManagement Fees (Rental)
+DManagement Fees on Rental Property
+T
+R502
+E
+^
+NMango Cove Loan Payment
+E
+^
+NMC
+E
+^
+NMC:Advertising
+E
+^
+NMC:Appliances
+E
+^
+NMC:Appliances:7
+E
+^
+NMC:Bank Fees & Charges
+E
+^
+NMC:Cln & Maintenance
+E
+^
+NMC:Electric
+E
+^
+NMC:Furnishings
+E
+^
+NMC:Furnishings:3
+E
+^
+NMC:Furnishings:5
+E
+^
+NMC:Furnishings:7
+E
+^
+NMC:Garbage
+E
+^
+NMC:Insurance
+E
+^
+NMC:Landscaping
+E
+^
+NMC:Licenses & Permits
+E
+^
+NMC:Loan
+E
+^
+NMC:Loan:Interest
+E
+^
+NMC:Management
+E
+^
+NMC:Mgmt Fees
+E
+^
+NMC:Mgmt Fees:Software
+E
+^
+NMC:Repairs
+E
+^
+NMC:Supplies
+E
+^
+NMC:Supplies:5
+E
+^
+NMC:Travel
+E
+^
+NMC:Utilities
+E
+^
+NMC:Utilities:Electric
+E
+^
+NMC:Utilities:Gas
+E
+^
+NMC:Utilities:Internet
+E
+^
+NMC:Utilities:Water
+E
+^
+NMC:Working Meals
+E
+^
+NMeals & Entertainment (Business)
+DMeals & Entertainment expenses for your business.
+T
+R294
+E
+^
+NMH
+E
+^
+NMH:Cleaning & Maintenance
+E
+^
+NMH:Commissions
+E
+^
+NMH:Furnishings
+E
+^
+NMH:Insurance
+E
+^
+NMH:Landscaping
+E
+^
+NMH:Mgmt Fees
+E
+^
+NMH:Mgmt Fees:Software
+E
+^
+NMH:Property Taxes
+E
+^
+NMH:Repairs
+E
+^
+NMH:Resident Amenities
+E
+^
+NMH:Supplies
+E
+^
+NMH:Travel
+E
+^
+NMH:Utilities
+E
+^
+NMH:Utilities:Heating
+E
+^
+NMH:Utilities:TV Cable
+E
+^
+NMH:Utilities:Water
+E
+^
+NMH:Working Meals
+E
+^
+NMisc.
+DMiscellaneous Expenses
+E
+^
+NMisc. Expense (Business)
+DMisc. Business Expense
+T
+R302
+E
+^
+NMortgage Interest Expense (Rental)
+DMortgage Interest Expense on Rental Property
+T
+R334
+E
+^
+NNot Sure
+DExpenses I am not sure about.
+E
+^
+NNot Sure, Biz
+DSchedule C Expense for your business, but Tax Line unknown
+T
+R1000
+E
+^
+NNot Sure, Rental
+DSchedule E Expense, but Tax Line unknown
+T
+R1001
+E
+^
+NOffice Expenses (Business)
+DOffice Expenses for your business.
+T
+R313
+E
+^
+NOther Expenses (Rental)
+DOther Expenses on Rental Property
+T
+R341
+E
+^
+NOther Interest Expense (Rental)
+DOther Interest Expense on Rental Property
+T
+R335
+E
+^
+NPersonal Care
+DPersonal Care
+E
+^
+NPersonal Care:Hair
+DHair
+E
+^
+NPersonal Care:Laundry
+DLaundry
+E
+^
+NPersonal Care:Spa & Massage
+DSpa & Massage
+E
+^
+NPets
+DPets
+E
+^
+NPets:Pet Food & Supplies
+DPet Food & Supplies
+E
+^
+NPets:Pet Grooming
+DPet Grooming
+E
+^
+NPets:Vet
+DVet
+E
+^
+NPoint 8 Pines
+E
+^
+NPoint 8 Pines:HOA
+E
+^
+NPoint 8 Pines:Property Tax
+DProperty Tax
+E
+^
+NPostage and Delivery (Business)
+DPostage and Delivery expense for your business
+T
+R302
+E
+^
+NPrinting and Reproduction (Business)
+DPrinting and Reproduction expense for your business
+T
+R302
+E
+^
+NProf and Legal Fees
+DProfessional and Legal Fees for your business.
+T
+R298
+E
+^
+NPSNL
+E
+^
+NPSNL:Family
+E
+^
+NPSNL:Family:Clothing
+E
+^
+NPSNL:Family:Dining Out & Entertainment
+E
+^
+NPSNL:Family:Gifts Given
+E
+^
+NPSNL:Family:Groceries
+E
+^
+NPSNL:Family:Health Care
+E
+^
+NPSNL:Family:Hobbies
+E
+^
+NPSNL:Family:Recreation
+E
+^
+NPSNL:Family:Recreation:Biking
+E
+^
+NPSNL:Family:Recreation:Sailing
+E
+^
+NPSNL:Family:Recreation:Skiing
+E
+^
+NPSNL:Family:Subscriptions
+E
+^
+NPSNL:Family:Vacation
+E
+^
+NPSNL:Family:Vacation:Andorra
+E
+^
+NPSNL:Glen
+E
+^
+NPSNL:Glen:Clothing
+E
+^
+NPSNL:Glen:Health Care
+E
+^
+NPSNL:Glen:Travel
+E
+^
+NPSNL:Glen:Vacation
+E
+^
+NPSNL:John
+E
+^
+NPSNL:John:Health Care
+E
+^
+NPSNL:John:Hosting & Entertainment
+E
+^
+NPSNL:John:Travel
+E
+^
+NPSNL:Liz
+E
+^
+NPSNL:Liz:Beauty
+E
+^
+NPSNL:Liz:Clothing
+E
+^
+NPSNL:Liz:Dining Out & Entertainment
+E
+^
+NPSNL:Liz:Health Care
+E
+^
+NPSNL:Liz:Hobbies
+E
+^
+NPSNL:Liz:Subscriptions
+E
+^
+NPSNL:Liz:Travel
+E
+^
+NPSNL:Politics
+E
+^
+NPSNL:Vacation
+E
+^
+NPSNL:Vacation:Welk
+E
+^
+NVSV
+E
+^
+NVSV:Cleaning & Maintenance
+E
+^
+NVSV:Furnishings
+E
+^
+NVSV:Insurance
+E
+^
+NVSV:Landscaping
+E
+^
+NVSV:Licenses & Permits
+E
+^
+NVSV:Mgmt Fees
+E
+^
+NVSV:Mgmt Fees:Software
+E
+^
+NVSV:Property Taxes
+E
+^
+NVSV:Repairs
+E
+^
+NVSV:Resident Amenities
+E
+^
+NVSV:Supplies
+E
+^
+NVSV:Utilities
+E
+^
+NVSV:Utilities:Garbage
+E
+^
+NVSV:Utilities:Gas&Electricity
+E
+^
+NVSV:Utilities:Internet&Cable
+E
+^
+NVSV:Utilities:Water
+E
+^
+NVSV:Working Meals
+E
+^
+NWal
+E
+^
+NWal:Advertising
+E
+^
+NWal:Appliances
+T
+R326
+E
+^
+NWal:Appliances:10
+E
+^
+NWal:Auto Expenses
+E
+^
+NWal:Bank Fees
+E
+^
+NWal:Capital Contribution
+E
+^
+NWal:Cleaning & Maintenance
+E
+^
+NWal:Cleaning & Maintenance:7
+E
+^
+NWal:Computer Supplies
+E
+^
+NWal:Data Entry
+E
+^
+NWal:Furnishings
+E
+^
+NWal:Furnishings:1
+E
+^
+NWal:Furnishings:7
+E
+^
+NWal:Furnishings:8
+E
+^
+NWal:Insurance
+E
+^
+NWal:Landscaping
+E
+^
+NWal:Legal
+E
+^
+NWal:Licenses & Permits
+E
+^
+NWal:Mgmt Fees
+E
+^
+NWal:Mgmt Fees:Resident Amenities
+E
+^
+NWal:Mgmt Fees:Resident Amenities:10
+E
+^
+NWal:Mgmt Fees:Resident Amenities:2
+E
+^
+NWal:Mgmt Fees:Software
+E
+^
+NWal:Office Help
+E
+^
+NWal:Painting
+E
+^
+NWal:Payroll
+E
+^
+NWal:Payroll:Fees
+E
+^
+NWal:Payroll:Salary
+E
+^
+NWal:Payroll:Taxes
+E
+^
+NWal:Pest Control
+E
+^
+NWal:Property Taxes
+E
+^
+NWal:Property Taxes:Garbage
+E
+^
+NWal:Repairs
+E
+^
+NWal:Repairs:5
+E
+^
+NWal:Resident Amenities
+E
+^
+NWal:Security Deposit Interest
+E
+^
+NWal:Supplies
+E
+^
+NWal:Supplies:3
+E
+^
+NWal:Supplies:5
+E
+^
+NWal:Utilities
+E
+^
+NWal:Utilities:Cable
+E
+^
+NWal:Utilities:Cable:1
+E
+^
+NWal:Utilities:Cable:10
+E
+^
+NWal:Utilities:Cable:2
+E
+^
+NWal:Utilities:Cable:4
+E
+^
+NWal:Utilities:Cable:5
+E
+^
+NWal:Utilities:Cable:6
+E
+^
+NWal:Utilities:Cable:7
+E
+^
+NWal:Utilities:Cable:8
+E
+^
+NWal:Working Meals
+E
+^
+NWatauga Woods
+E
+^
+NWatauga Woods:HOA Fees
+E
+^
+NWatauga Woods:Property Taxes
+E
+^
+N_Accrued Int
+DAccrued Interest
+T
+R287
+E
+^
+N_Accrued Int TaxFree
+DTax-Free Accrued Interest
+T
+R489
+E
+^
+N_IntExp
+DInvestment Interest Expenses
+T
+R426
+E
+^
+!Option:AutoSwitch
+!Account
+NBofA Rewds Savings x6862
+TBank
+^
+NCarriage House Chking Dbt 3065
+TBank
+DCarriage House
+^
+NCoral Cove Chkng XX6008-Dbt 8751
+TBank
+^
+NGlen IRA-Schwab
+TBank
+^
+NLiz IRA-Schwab
+TBank
+^
+NMain BofA Chking 0149-Dbt 0855
+TBank
+^
+NMango Cove Chking XX4464-Dbt 5654
+TBank
+^
+NSchwab Chking-Dbt 8566
+TBank
+^
+NSchwab One 7845-9593
+TBank
+^
+NAlaska Mileage Plan - 0724
+TCCard
+L0.00
+^
+NBank of America Travel Rewards Visa Sign
+TCCard
+L15,000.00
+^
+NCarriage House Credit BofA 7413
+TCCard
+L0.00
+^
+NCoral Cove Credit XX7518 or 5029
+TCCard
+L16,000.00
+^
+NCredit Card
+TCCard
+L0.00
+^
+NUnited Credit 8959 to 4728
+TCCard
+L44,000.00
+^
+NCarriage House
+TOth A
+^
+NGilman Street BEAR Property
+TOth A
+^
+NHome 1636 Walnut
+TOth A
+^
+NMango Cove
+TOth A
+^
+NCH Mortgage
+TOth L
+^
+NCH Security Deposits
+To2u+‡
+^
+NGilman Street BEAR Property Loan
+TOth L
+^
+NHome Mortage
+TOth L
+^
+NMortgage XX0154
+TOth L
+^
+NQuicken 1636 Walnut
+TOth L
+^
+NSec Dep MC
+To2u+‡
+^
+NSec Deposits
+To2u+‡
+^
+NVSV Security Deposits
+To2u+‡
+^
+NWal Security Deposits
+To2u+‡
+^
+!Clear:AutoSwitch
+!Type:InvItem
+!Type:Security
+NDow Jones Industrials
+SDJI
+TMarket Index
+^
+!Type:Security
+NNASDAQ Composite
+SCOMPX
+TMarket Index
+^
+!Type:Security
+NRussell 2000
+SIUX
+TMarket Index
+^
+!Type:Security
+NS&P 500 Index
+SINX
+TMarket Index
+^
+!Account
+NMain BofA Chking 0149-Dbt 0855
+TBank
+^
+!Type:Bank 
+D12/25'18
+U-1,500.00
+T-1,500.00
+N2996
+PSoledad Cortes
+MFeliz Navidad
+LGifts Given
+^
+D12/27'18
+U1,164.00
+T1,164.00
+CX
+NDEP
+PAirbnb
+MJulie Dunbar, 12/26-1/1/19
+LRents Received:CH:1
+^
+D12/27'18
+U-325.00
+T-325.00
+CX
+N2997
+PJames Stevick
+MOffice Organization
+LWal:Mgmt Fees
+^
+D12/28'18
+U-171.61
+T-171.61
+CX
+NBillpay
+PSpectrum
+MCable bill
+LMH:Utilities:TV Cable
+^
+D12/28'18
+U-34.24
+T-34.24
+CX
+NBillpay
+PConsolidated Communications
+MFormerly known as FairPoint Comm
+LMH:Utilities
+^
+D12/28'18
+U-607.31
+T-607.31
+CX
+NBillpay
+PClaremont Hotel & Spa
+MFamily Club
+LPSNL:Family:Recreation
+^
+D12/28'18
+U-100.00
+T-100.00
+CX
+N2998
+PNestor Chavez
+MMoving furniture
+LWal:Cleaning & Maintenance
+^
+D12/31'18
+U0.19
+T0.19
+CX
+NDEP
+PBank Of America
+MInterest Income
+LInterest Inc:BofA
+^
+D1/ 1'19
+U-420.61
+T-420.61
+NBillpay
+PSpang Fuel Bill
+MHeating oil
+LMH:Utilities
+^
+D1/ 2'19
+U-190.00
+T-190.00
+N2999
+PBerkeley Property Owner's Association
+MDues
+LWal:Mgmt Fees
+^
+D1/ 4'19
+U-435.79
+T-435.79
+NBillpay
+PEBMUD
+MWater
+LVSV:Utilities:Water
+^
+D1/ 8'19
+U-50.00
+T-50.00
+NBillpay
+PEhrlich Pest Control
+MMonthly maintenance for Mice
+LMH:Cleaning & Maintenance
+^
+D1/ 9'19
+U-1,955.52
+T-1,955.52
+NBillpay
+PAAA
+MAAA Insurance for Toyota and Mercedes
+LAuto & Transport:Auto Insurance
+^
+D1/10'19
+U-8,285.28
+T-8,285.28
+NBillpay
+PChase
+L[United Credit 8959 to 4728]
+^
+D2/25'19
+U-3,837.75
+T-3,837.75
+NBillpay
+PTown Of Kennebunkport
+M2018-19 Taxes, Payment 2 of 2
+LMH:Property Taxes
+^
+!Type:Memorized
+KD
+U984.00
+T984.00
+P????
+MJanuary 2018 Rent
+LRents Received
+^
+KP
+U-260.74
+T-260.74
+P????
+MKennebunkport
+LMH:Supplies
+^
+KP
+U-43.76
+T-43.76
+P????
+M?
+L?
+^
+KP
+U-113.97
+T-113.97
+P4 Seasons Swimwear
+MSwimwear for Liz
+LPSNL:Liz:Clothing
+^
+KP
+U-40.44
+T-40.44
+P40.44
+MElectric
+LCC:2:Utilities
+^
+KD
+P5.46
+^
+KP
+U-60.23
+T-60.23
+PA Priori
+MSilk Scarf. J. Boughton Thx for bed consultation
+LCC:7:Furnishings
+^
+KP
+U-1,955.52
+T-1,955.52
+PAAA
+MAAA Insurance for Toyota and Mercedes
+LAuto & Transport:Auto Insurance
+^
+KD
+U40.30
+T40.30
+PABB
+MDividend
+LDividend Income:ABB
+^
+KP
+U-1.38
+T-1.38
+PABB
+MPass Thru Fee
+LInterest Exp
+^
+KP
+U-15.00
+T-15.00
+PAccount Maintenance Fee
+LFees & Charges:Bank Fee
+^
+KP
+U-143.10
+T-143.10
+PAce Hardware
+LHome:Home Improvement
+^
+KP
+U-10.88
+T-10.88
+PAce Hardware
+MTape and Under Surveillance Signs
+LWal:Supplies
+^
+KP
+U-3.57
+T-3.57
+PAce Hardware
+MDrain snakes
+LVSV:Cleaning & Maintenance
+^
+KP
+U-93.92
+T-93.92
+PAce Hardware
+MToilet seat, vacuum bags, contact paper, light bulbs
+LMH:Supplies
+^
+KP
+U-29.07
+T-29.07
+PAce Hardware Delray
+MClippers, sponges, burners
+LMC:Furnishings
+^
+KP
+U-11.00
+T-11.00
+PAce Parking
+MParking in Walnut Creek for Walnut Supplies
+LWal:Supplies
+^
+KP
+U-6.38
+T-6.38
+PAcme Bread Company
+MRolls
+LFood & Dining:Groceries
+^
+KP
+U-114.64
+T-114.64
+PADT Security
+MMonthly security fee for 1722 W
+LWal:Repairs
+^
+KP
+U-1,148.40
+T-1,148.40
+PADT Security MYADT.com 800-238-2727 FL
+MWalnut security cameras
+LWal:Repairs
+^
+KP
+U-438.70
+T-438.70
+PAdvantage Car
+MRental Car in Florida
+LCC:Travel
+^
+KP
+U-1,212.95
+T-1,212.95
+PAI1A Sprinkler System
+MSprinkler system
+LMC:Landscaping
+^
+KP
+U-58.23
+T-58.23
+PAiport
+LFood & Dining:Restaurants
+^
+KD
+U3,317.40
+T3,317.40
+PAir B n B Payment
+MDmitre
+LRents Received:Walnut:2
+^
+KD
+U1,998.20
+T1,998.20
+PAir B n B Payment
+M?
+L?
+^
+KD
+U1,998.20
+T1,998.20
+PAir B n B Payment
+MChloe Mal
+LRents Received:Walnut:5
+^
+KD
+U1,871.13
+T1,871.13
+PAir BnB
+L?
+^
+KD
+U287.91
+T287.91
+PAirbnb
+MYong Bin, July/Aug Rent
+LRents Received:CH:B
+^
+KD
+U2,247.59
+T2,247.59
+PAirbnb
+MBen Newhouse, 9/14-9/30/18
+LRents Received:CH:3
+^
+KD
+U0.01
+T0.01
+PAirbnb
+MTesting account
+LWal:Bank Fees
+^
+KD
+U1,164.00
+T1,164.00
+PAirbnb
+MJulie Dunbar, 12/26-1/1/19
+LRents Received:CH:1
+^
+KD
+U1,851.20
+T1,851.20
+PAirbnb
+MKen Galardi, 12/20/18-1/10/19
+LRents Received:MC:5
+^
+KP
+U-1,085.99
+T-1,085.99
+PAJ Madison Corp
+MOven and Frig
+LMC:Furnishings
+^
+KP
+U-546.36
+T-546.36
+PAlamo Rent
+MFT LAUDERDALE FL
+^
+KP
+U-2.00
+T-2.00
+PAlamo Rent
+MToll charge while in Maine
+LMH:Travel
+^
+KP
+U-62.20
+T-62.20
+PAlaska Air
+MSAN to SFO
+L?
+^
+KP
+U-25.00
+T-25.00
+PAlaska Air
+MSAN to SFO, checked bag
+LPSNL:Family:Vacation
+^
+KP
+U-350.00
+T-350.00
+PAlbert Nahman Plumbing
+LHome:Home Improvement
+^
+KD
+U1,400.00
+T1,400.00
+PAlena Spadoni
+MMango Cove 8, One month December 2018
+LRents Received:MC:8
+^
+KP
+U-110.00
+T-110.00
+PAlex Nichols
+MPlanting 1722 Sidwalk Plants
+LWal:Landscaping
+^
+KP
+U-100.00
+T-100.00
+PAlex Nichols
+MNew TV for W7
+^
+KP
+U-100.00
+T-100.00
+PAlex Nichols
+MNew TV for W7
+LWal:Furnishings:7
+^
+KP
+U-13.83
+T-13.83
+PAlhambra Bill
+LBills & Utilities
+^
+KP
+U-15.63
+T-15.63
+PAlhambra Bill
+MWater
+LWal:Mgmt Fees
+^
+KP
+U-17.04
+T-17.04
+PAlhambra Bill
+MWater
+LWal:Utilities
+^
+KP
+U-457.86
+T-457.86
+PAll About Wicker
+MBedside table and lamp
+LCC:6:Furnishings
+^
+KP
+U-765.05
+T-765.05
+PAll About Wicker
+MTwo beds, bedside table,
+LMC:Furnishings
+^
+KP
+U-30.00
+T-30.00
+PAllegro Dancers
+MDance lesson, Glen and Liz
+LEntertainment:Dancing
+^
+KP
+U-30.00
+T-30.00
+PAllegro Dancers
+MDance lesson, Glen and Liz
+LPSNL:Family:Hobbies
+^
+KP
+U-38.00
+T-38.00
+PAlzheimer's Association
+MDonation
+LDonations & Charity
+^
+KD
+U300.00
+T300.00
+PAmadeu Delshams
+MSec Dep for October stay, via MSRI
+LRents Received:Walnut:Security Deposit
+^
+KP
+U-122.24
+T-122.24
+PAmazon
+MQueen steel boxspring for MC 5
+LMC:Furnishings
+^
+KP
+U-105.74
+T-105.74
+PAmazon
+MTwo wifi routers for MC 3 + 5
+LMC:Furnishings:3
+SMC:Furnishings:3
+$-52.87
+SMC:Furnishings:5
+$-52.87
+^
+KP
+U-122.24
+T-122.24
+PAmazon
+MQueen steel boxspring for MC 5
+LMC:Furnishings:5
+^
+KP
+U-139.99
+T-139.99
+PAmazon
+MRunner for noise reduction
+LCH:Supplies
+^
+KP
+U-205.00
+T-205.00
+PAmazon
+M?
+L?
+^
+KP
+U-205.00
+T-205.00
+PAmazon
+MBike Rack
+LMC:Supplies
+^
+KP
+U-232.44
+T-232.44
+PAmazon
+MOutdoor equipment enclosure
+LMC:Utilities:Internet
+^
+KP
+U-40.84
+T-40.84
+PAmazon
+MA Christmas Carol Book
+LPSNL:Family:Hobbies
+^
+KP
+U-74.89
+T-74.89
+PAmazon
+MIndoor outdoor rug
+LCC:6:Furnishings
+^
+KP
+U-98.05
+T-98.05
+PAmazon
+M5 copies of Squirley and Maud
+LBook Exp
+^
+KP
+U-32.99
+T-32.99
+PAmazon
+MCharles Dickens, A Christmas Carol
+LPSNL:Family:Gifts Given
+^
+KP
+U-7.99
+T-7.99
+PAmazon  Music
+MMusic
+LEntertainment:Music
+^
+KP
+U-7.98
+T-7.98
+PAmazon and Google
+MStorage for computer
+LWal:Supplies
+^
+KD
+U15.98
+T15.98
+PAmazon Music
+MRefund for not using
+LEntertainment:Music
+^
+KP
+U-149.00
+T-149.00
+PAmazon.com
+^
+KP
+U-149.00
+T-149.00
+PAmazon.com
+MCat Six Internet Cable
+LMC:Utilities:Internet
+^
+KP
+U-139.20
+T-139.20
+PAmerican Airlines
+MJohn flying from SFO to FLL through LAX
+LMC:Travel
+^
+KP
+U-1,700.00
+T-1,700.00
+PAmerican Dream Homeworks
+MButchers block in the kitchen
+LVSV:Repairs
+^
+KP
+U-92.76
+T-92.76
+PAmerican Modern Insurance
+MAnnual Insurance for Vespa
+LAuto & Transport:Vespa:Insurance
+^
+KP
+U-92.76
+T-92.76
+PAmModern Insurance
+MVespa Insurance Premium
+LAuto & Transport:Vespa:Insurance
+^
+KD
+PAmtrak
+M?????
+^
+KP
+U-23.00
+T-23.00
+PAmtrak
+M?????
+LPSNL:Liz:Travel
+^
+KP
+U-23.00
+T-23.00
+PAmtrak
+MGlen work travel
+LPSNL:Glen
+^
+KP
+U-23.00
+T-23.00
+PAmtrak
+MGlen work travel
+LBear Expenses
+^
+KP
+U-200.00
+T-200.00
+PANA
+Mleaning Walnut 8
+LWal:Cleaning & Maintenance
+^
+KP
+U-600.00
+T-600.00
+PAna Cleaner
+MJune August September 2018 Cleanings
+LCH:Cleaning & Maintenance
+^
+KP
+U-100.00
+T-100.00
+PAna Cleaning For June 2018 Cash
+MCleaning
+LWal:Cleaning & Maintenance
+^
+KP
+U-307.42
+T-307.42
+PANA Crowne Plaza In Fukuoka
+MHotel for two nights
+LBook Exp:Travel:Japan
+^
+KD
+U300.00
+T300.00
+PAndrew Madigan
+MSec Dep for VSV 6
+LRents Received:VSV:Security Deposit
+^
+KD
+U161.30
+T161.30
+PAndrew Madigan
+MAug 2018 Rent
+LRents Received:VSV:6
+^
+KD
+U1,850.00
+T1,850.00
+PAngelina Rodriquez
+MAngelina
+LRents Received:MC:2
+SRents Received:MC:2
+EAngelina November rent
+$1,100.00
+S[Sec Dep MC]
+ESecurity deposit for Nov 2018
+$750.00
+^
+KP
+U-300.00
+T-300.00
+PAngelisse Carol
+MWalnut Paint Color Selection Help
+LWal:Painting
+^
+KD
+U1,416.00
+T1,416.00
+PAnn Madigan
+MSon, Jack, is renting V6 for the summer
+LRents Received:VSV:6
+^
+KP
+U-95.00
+T-95.00
+PAnnual Mmbrshp Fee
+LFees & Charges
+^
+KP
+U-95.00
+T-95.00
+PAnnual United Memebership Fee
+MMembership fees
+LWal:Mgmt Fees
+^
+KP
+U-7.99
+T-7.99
+PAple Itunes
+MEntertainment
+LEntertainment:Music
+^
+KP
+U-7.99
+T-7.99
+PAple Itunes
+Micloud storage
+LWal:Data Entry
+^
+KP
+U-0.99
+T-0.99
+PApple Itunes
+MMusic
+LEntertainment:Music
+^
+KP
+U-9.99
+T-9.99
+PApple Itunes
+MStorage space
+LWal:Computer Supplies
+^
+KP
+U-5.97
+T-5.97
+PApple Itunes
+MGenius Scan Monthly Subscription
+LWal:Mgmt Fees:Software
+^
+KP
+U-512.08
+T-512.08
+PAppliance King
+MCooktop For CC 2
+LCC:2:Appliances
+^
+KP
+U-85.61
+T-85.61
+PAquitaine
+LFood & Dining:Restaurants
+^
+KP
+U-622.05
+T-622.05
+PArt Hotel In Andorra La Vella
+MAndorra hotel ski rentals
+LPSNL:Family:Vacation:Andorra
+^
+KP
+U-28.69
+T-28.69
+PArtist & Craftsman
+MXXXX
+LWal:Painting
+^
+KP
+U-28.69
+T-28.69
+PArtist & Craftsman
+MPoster paper for office calendar
+LWal:Supplies
+^
+KD
+U300.00
+T300.00
+PArtur Filipe
+MVSV Villa 9 Sec Deposit
+L[VSV Security Deposits]
+^
+KD
+U1,500.00
+T1,500.00
+PArtur Filipe Pat
+L?
+^
+KD
+U339.00
+T339.00
+PArtur Filipe Pat
+MArtur Filipe Pat
+LRents Received:VSV:9
+^
+KP
+U-196.98
+T-196.98
+PAshby Lumber
+M?????
+LWal:Supplies
+^
+KP
+U-196.98
+T-196.98
+PAshby Lumber
+MWood for Kitchen Shelves at Walnut
+LWal:Repairs
+^
+KD
+U6.14
+T6.14
+PATM Fee Rebate
+MReturn of ATM fees collected
+LWal:Bank Fees
+^
+KD
+U9.86
+T9.86
+PATM Fee Rebates
+MRebate
+LFees & Charges:Bank Fee
+^
+KP
+U-374.78
+T-374.78
+PATM Withdrawal
+MCash for Barcelona fun
+LPSNL:Family:Vacation:Andorra
+^
+KP
+U-200.00
+T-200.00
+PATM Withdrawal
+MReturned Akira's deposit minus cleaning
+LRents Received:Walnut:Security Deposit
+^
+KP
+U-200.00
+T-200.00
+PATM Withdrawal
+MReturned Akira's deposit minus cleaning
+LRents Received:Walnut:5
+^
+KP
+U-200.00
+T-200.00
+PATM Withdrawal
+MWalnut # 5 Returned Akira's deposit minus cleaning
+L[Sec Deposits]
+^
+KP
+U-96.28
+T-96.28
+PAuberge Du Soleil Restaurant
+MRutherford CA Restaurant
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-96.28
+T-96.28
+PAuberge Du Soleil Restaurant
+MLiz and Michael melaugh discussing Berkeley permitting strategy
+LWal:Working Meals
+^
+KD
+U250.00
+T250.00
+PAustin Shelton
+MDeposit, did not move in, #7.
+L[Sec Dep MC]
+^
+KP
+U-9.99
+T-9.99
+PAuthor Learning Center
+MSubscription to author resources
+LPSNL:Liz:Subscriptions
+^
+KP
+U-112.13
+T-112.13
+PAuthorhouse
+MPublishing Fees
+LPSNL:Family:Hobbies
+^
+KP
+U-1,679.00
+T-1,679.00
+PAuthorhouse
+MPublishing Support
+LBook Exp:Consulting
+^
+KP
+U-0.01
+T-0.01
+PAvis Rent-A-Car
+MMisc charge
+LCC:Travel
+^
+KP
+U-109.42
+T-109.42
+PB Of A Credit Card Payment
+M?
+L?
+^
+KP
+U-29.75
+T-29.75
+PBack Forty Texas BBQ
+MRestaurant in Pleasant Hill
+LPSNL:Liz:Dining Out & Entertainment
+^
+KD
+U800.00
+T800.00
+PBank Adjustment
+MOverpayment by bank
+LMH:Cleaning & Maintenance
+^
+KD
+PBank Adjustment
+MB of A Bank adjustment, put into the rents
+LOther Income (Business)
+^
+KD
+U21,914.78
+T21,914.78
+PBank Credit From Brokerage
+M?
+L?
+^
+KD
+U21,914.78
+T21,914.78
+PBank Credit To Brokerage
+M?
+L?
+^
+KD
+U2.65
+T2.65
+PBank Interest
+MSchwab interest
+LInterest Inc:Schwab One
+^
+KD
+U1,050.00
+T1,050.00
+PBank Of America
+MChantalle, November rent for Unit 3
+LRents Received:MC:3
+^
+KD
+U1,850.00
+T1,850.00
+PBank Of America
+MAngelina
+L?
+^
+KP
+U-109.42
+T-109.42
+PBank Of America
+MCredit Card Bill Payoff
+L[Carriage House Credit BofA 7413]
+^
+KP
+U-541.70
+T-541.70
+PBank Of America
+MCredit Card Payment
+L[Coral Cove Credit XX7518 or 5029]
+^
+KD
+U541.70
+T541.70
+PBank Of America
+MCredit Card Payment
+L[Coral Cove Chkng XX6008-Dbt 8751]
+^
+KD
+U0.19
+T0.19
+PBank Of America
+MInterest Income
+LInterest Inc:BofA
+^
+KP
+U-227.55
+T-227.55
+PBank Of America Chase Card Fees
+MTo be Reimbursed
+LWal:Bank Fees
+^
+KD
+U0.04
+T0.04
+PBank Of Amreica
+MInterest
+LInterest Inc
+^
+KD
+U266.51
+T266.51
+PBank Of Amreica
+MCredit Card Cash Rewards
+LMisc.
+^
+KD
+U266.51
+T266.51
+PBank Of Amreica
+MCredit Card Cash Rewards
+LOther Income (Business)
+^
+KP
+U-107.52
+T-107.52
+PBank Of Amreica
+MCredit Card Statement
+L[Carriage House Credit BofA 7413]
+^
+KP
+U-1,365.25
+T-1,365.25
+PBank Transfer To Brokerage
+M?
+L?
+^
+KP
+U-40.81
+T-40.81
+PBar Riba
+MAndorra Family Vacation, Drinks
+LPSNL:Family:Vacation
+^
+KP
+U-9.20
+T-9.20
+PBart
+LAuto & Transport:Public Transportation
+^
+KP
+U-20.00
+T-20.00
+PBart
+LPSNL:Liz:Travel
+^
+KP
+U-28.85
+T-28.85
+PBartavelle Coffee
+MGifts for Tenants
+LWal:Mgmt Fees:Resident Amenities
+^
+KP
+U-16.02
+T-16.02
+PBartavelle Coffee
+MMet Glen for coffee
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-84.95
+T-84.95
+PBauers Auto Repair
+MSmog test for Mercedes
+LAuto & Transport:Mercedes:Registration Fees
+^
+KP
+U-84.95
+T-84.95
+PBauers Auto Repair
+MSmog test for Mercedes
+LAuto & Transport:Mercedes:Smog Test
+^
+KP
+U-72.50
+T-72.50
+PBay Area Book Festival
+MLiz going to Downtown Berkeley Book Fair
+LBook Exp:Consulting
+^
+KP
+U-43.00
+T-43.00
+PBayporter Express
+MRide for Liz from SFO to Home on way back from FL
+LCC:Travel
+^
+KP
+U-80.27
+T-80.27
+PBayside Restaurant
+MLiz treating Arthur Golden for lunch
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-25.00
+T-25.00
+PBeach Property Owners Assn
+MBPOA annual dues
+LCC:Management Fees
+^
+KD
+U283.49
+T283.49
+PBear Reimbursement
+MBear, Inc items on personal credit card
+LReimbursements
+^
+KD
+U3,200.00
+T3,200.00
+PBearkeley Engineering
+MFor Guan Chen, October rent 2018 late, Bebe away
+LRents Received:CH:3
+^
+KD
+U3,200.00
+T3,200.00
+PBearkeley Engineering
+MFor Guan Chen, October rent 2018 late, Bebe away, in, out, in
+LRents Received:CH:3
+SRents Received:CH:3
+ERent deposited
+$32.00
+SRents Received:CH:3
+ERent in , out, and back in
+$3,168.00
+^
+KP
+U-32.96
+T-32.96
+PBeer Trade Co
+MLunch in Delray with john & Liz discussing Landscaping
+LCC:Working Meals
+^
+KP
+U-47.89
+T-47.89
+PBeer Trade Co
+MLunch with Neha
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-36.26
+T-36.26
+PBentleys Saloon
+MLunch
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-17.45
+T-17.45
+PBerkeley ACE Hardware
+MSilicon for sealing cracks, clear caulk
+LCH:Repairs:1
+^
+KP
+U-19.64
+T-19.64
+PBerkeley ACE Hardware
+M????
+LWal:Supplies
+^
+KP
+U-7.28
+T-7.28
+PBerkeley Bagel
+MBreakfast
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-179.89
+T-179.89
+PBerkeley Bowl
+MGroceries
+LPSNL:Family:Groceries
+^
+KD
+U500.00
+T500.00
+PBerkeley Engineering
+MDeposit for Guan Chen
+LRents Received:CH:Security Deposits
+^
+KP
+U-3,168.00
+T-3,168.00
+PBerkeley Engineering
+MDeposit from $3200 to $32, November rent
+LRents Received:CH:3
+^
+KD
+U3,168.00
+T3,168.00
+PBerkeley Engineering
+MNovember rent adjusted by bank for Guan Chen
+LRents Received:CC:3
+^
+KD
+U13,242.73
+T13,242.73
+PBerkeley Engineering And Research
+LInvestment Changes
+^
+KD
+U14,817.73
+T14,817.73
+PBerkeley Engineering And Research
+MSalary for Glen
+LSalary From BEAR, Inc.
+^
+KP
+U-260.01
+T-260.01
+PBerkeley Horticulture
+MFlowers and soil for 1722 W
+LWal:Landscaping
+^
+KP
+U-16.67
+T-16.67
+PBerkeley Horticulture
+MBouganvilla
+LVSV:Landscaping
+^
+KP
+U-47.19
+T-47.19
+PBerkeley Horticulture
+MNew planter for outside CH 3
+LCH:Landscaping
+^
+KP
+U-25.13
+T-25.13
+PBerkeley Lighting Company
+MNew light bulb for custom lamps
+LWal:Repairs
+^
+KP
+U-190.00
+T-190.00
+PBerkeley Property Owner's Association
+MDues
+LWal:Mgmt Fees
+^
+KP
+U-500.00
+T-500.00
+PBerkeley Rep
+MDeposit returns
+LRents Received:Walnut:Security Deposit
+^
+KP
+U-258.75
+T-258.75
+PBerkeley Tennis Club Inc
+LHealth & Fitness:Gym
+^
+KP
+U-267.74
+T-267.74
+PBerkeley Tennis Club Inc
+MClub
+LPSNL:Family:Recreation
+^
+KP
+U-40.95
+T-40.95
+PBerkeley Touchless
+MCarwash
+LAuto & Transport:Mercedes:Cleaning & Maintenance
+^
+KP
+U-66.08
+T-66.08
+PBerkeley Touchless
+MCarwash
+LAuto & Transport:Sienna
+^
+KP
+U-235.39
+T-235.39
+PBest Buy
+MLarge Television
+LMC:Furnishings
+^
+KP
+U-84.79
+T-84.79
+PBest Buy
+MTV Wall Mount
+LMC:Furnishings:5
+^
+KP
+U-559.83
+T-559.83
+PBest Buy
+MPrinter and TV Monitor
+LWal:Supplies
+^
+KP
+U-235.39
+T-235.39
+PBest Buy
+MLarge Television, 40 inch
+LMC:Furnishings:7
+^
+KP
+U-37.90
+T-37.90
+PBest Equipment Co
+MFire Equipment Test Annual
+LWal:Licenses & Permits
+^
+KP
+U-72.54
+T-72.54
+PBest Equipment Co
+MFire Equipment Test Annual
+LVSV:Licenses & Permits
+^
+KP
+U-49.48
+T-49.48
+PBeverages & More
+LFood & Dining:Alcohol & Bars
+^
+KP
+U-49.48
+T-49.48
+PBeverages & More
+MPersonal drinks for neighborhood party
+LPSNL:Family:Groceries
+^
+KP
+U-50.99
+T-50.99
+PBeverages & More
+MWine for Tenants
+LWal:Mgmt Fees
+^
+KP
+U-6.70
+T-6.70
+PBig Springs Lodge
+MLunch on the Slopes, Skiing Trip to Northstar Welk
+LPSNL:Family:Vacation
+^
+KD
+U948.90
+T948.90
+PBill Schulman
+M11/17-11/24/18
+LRents Received:CC:7
+^
+KP
+U-140.48
+T-140.48
+PBiscuits And Company
+MThank you breakfast with Rices
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-10,182.27
+T-10,182.27
+PBkank Transfer To Brokerage
+M?
+L?
+^
+KD
+U6,237.09
+T6,237.09
+PBkofamerica ATM
+LOther Inc
+^
+KD
+U1,550.00
+T1,550.00
+PBkofamerica Mobile
+LOther Inc
+^
+KP
+U-9.00
+T-9.00
+PBlue Bottle C
+LFood & Dining:Coffee Shops
+^
+KP
+U-17.91
+T-17.91
+PBlue Bottle Cafe
+MCoffee with John & James, discussing exterior staircase at VSV
+LVSV:Working Meals
+^
+KP
+U-10.00
+T-10.00
+PBlue Bottle Coffee
+MCoffee out
+LPSNL:Liz:Dining Out & Entertainment
+^
+KP
+U-120.44
+T-120.44
+PBoathouse Restaurant
+MDining out with Charles, Sue, J and J, G and L
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-45.28
+T-45.28
+PBodega Albert, Andorra La Vella
+MWith Ossiel in hotel
+LPSNL:Family:Vacation:Andorra
+^
+KP
+U-138.63
+T-138.63
+PBoheme Bistro
+MFamily Meal
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-17.09
+T-17.09
+PBongo Burger
+MLiz, James, John discussing Maine management
+LMH:Working Meals
+^
+KP
+U-66.71
+T-66.71
+PBoston Bch Rest
+LFood & Dining:Restaurants
+^
+KP
+U-53.61
+T-53.61
+PBostons On The Beach
+MScott Lymburner discussion of rents
+LMC:Advertising
+^
+KP
+U-53.61
+T-53.61
+PBostons On The Beach
+MScott Lymburner discussion of rents
+LMC:Management
+^
+KP
+U-100.09
+T-100.09
+PBot Riba Soldeu
+MSnacks on way to Andorra
+LPSNL:Family:Vacation:Andorra
+^
+KP
+U-20.00
+T-20.00
+PBoulangerie
+MBreakfast, while talking to Quicken Loans
+LMC:Working Meals
+^
+KD
+U3,900.00
+T3,900.00
+PBoys In Lower Duplex
+MRent fro the boys, picked up when cle
+LRents Received:CH:A
+^
+KP
+U-11.22
+T-11.22
+PBradbury Brothers
+MGroceries
+LMH:Travel
+^
+KP
+U-222.47
+T-222.47
+PBrandsMart
+MSmart TV - 40" for MC 5
+LMC:Furnishings:5
+^
+KP
+U-222.47
+T-222.47
+PBrandsMart
+MFriedrich A/C for MC 7 + warranty
+LMC:Appliances:7
+^
+KP
+U-28.47
+T-28.47
+PBrazil Cafe Bistro
+LFood & Dining:Restaurants
+^
+KP
+U-17.00
+T-17.00
+PBrazil Cafe Bistro
+MLunch betweeen clearing out garage for John
+LVSV:Working Meals
+^
+KP
+U-31.92
+T-31.92
+PBreakwater Inn
+MWorking lunch
+LMH:Working Meals
+^
+KP
+U-350,000.00
+T-350,000.00
+PBreeze Escrow & Title
+MMango Cove Purchase, Partial Wire
+LMH:Utilities
+^
+KP
+U-350,000.00
+T-350,000.00
+PBreeze Escrow & Title
+MMango Cove Purchase, Partial Wire
+L[Mango Cove]
+^
+KP
+U-14.76
+T-14.76
+PBSankaku In San Francisco
+MMatcha tea cakes
+LFood & Dining:Groceries
+^
+KP
+U-65.93
+T-65.93
+PBudget Rent a Car (Expedia)
+MCC Management Rental Car
+LCC:Travel
+^
+KP
+U-76.48
+T-76.48
+PBuilder's Booksource
+MBooks for Glen
+LPSNL:Family:Hobbies
+^
+KP
+U-76.48
+T-76.48
+PBuilder's Booksource
+MCottage Legalization Research
+LWal:Licenses & Permits
+^
+KP
+U-7.69
+T-7.69
+PBurger King
+MWorking lunch
+LMH:Working Meals
+^
+KP
+U-15.39
+T-15.39
+PBurger King
+MWorking lunch, shopping for lights and fans
+LCC:Working Meals
+^
+KP
+U-23.52
+T-23.52
+PBurgerFi
+MDelray Beach - Dinner discussing Board Meeting
+LCC:Working Meals
+^
+KP
+U-23.00
+T-23.00
+PC & J Bus Lines
+MBus to Boston Airport
+LMH:Travel
+^
+KP
+U-93.18
+T-93.18
+PCafe Luna Rosa
+MWorking lunch with Scott in Delray
+LCC:Management Fees
+^
+KP
+U-34.50
+T-34.50
+PCafe Luna Rosa
+MWorking breakfast with Patrice Bryan, tenant of CC 6
+LCC:Working Meals
+^
+KP
+U-77.20
+T-77.20
+PCaffe Martier Market
+LFood & Dining:Groceries
+^
+KD
+U700.00
+T700.00
+PCal Shakespeare
+MEmilio Delgado Extension
+LPSNL:John:Travel
+^
+KP
+U-85.00
+T-85.00
+PCalifornia Appliances
+MRepair of CH 1 Stove Burners
+LCH:Repairs
+^
+KD
+U5,000.00
+T5,000.00
+PCalifornia Shakespeare Theater
+MGuests in Apt 1 & 4
+LRents Received:Walnut:1
+SRents Received:Walnut:1
+$2,500.00
+SRents Received:Walnut:4
+$2,500.00
+^
+KD
+U700.00
+T700.00
+PCalifornia Shakespeare Theater
+MExtra week from 7/2-7/9/18 for Guests in W4
+LRents Received:Walnut:4
+^
+KP
+U-300.00
+T-300.00
+PCalifornia Shakespeare Theater
+MDeposit returns for W1 and W4
+LRents Received:Walnut:Security Deposit
+^
+KP
+U-7.05
+T-7.05
+PCapital 1 Cafe
+MDelray Beach Cafe
+LPSNL:Family:Dining Out & Entertainment
+^
+KD
+U2.80
+T2.80
+PCarrabbas
+MDiscount applied
+LCC:Working Meals
+^
+KP
+U-18,711.27
+T-18,711.27
+PCarriage House
+MFeb, March, April 2018 Distribution
+LCH:Distribution
+^
+KD
+U18,711.27
+T18,711.27
+PCarriage House
+MFeb March April Distribution taken from CH and placed into Main
+LWal:Capital Contribution
+^
+KD
+U583.34
+T583.34
+PCarriage House
+MBack patio reimbursement
+L[Carriage House Chking Dbt 3065]
+^
+KP
+U-583.34
+T-583.34
+PCarriage House
+MBack patio reimbursement
+^
+KD
+U583.34
+T583.34
+PCarriage House
+MBack patio reimbursement to Liz
+LReimbursements
+^
+KD
+U18,711.27
+T18,711.27
+PCarriage House Distributions
+MAug, Sept, October 2018
+LCH:Distribution
+^
+KD
+U18,711.27
+T18,711.27
+PCarriage House Distributions
+MAug, Sept, October 2018
+LCH:Distribution:Liz
+^
+KP
+U-401.00
+T-401.00
+PCarter's
+^
+KP
+U-500.00
+T-500.00
+PCash
+MCash withdrawal
+LPSNL:Family:Groceries
+^
+KP
+U-200.00
+T-200.00
+PCash
+MCash withdrawal
+LGifts Given
+^
+KP
+U-140.00
+T-140.00
+PCash Withdrawal
+MATM Withdrawal
+LCash & ATM
+^
+KP
+U-1,115.00
+T-1,115.00
+PCatherine Roha
+MZAB Prep and Meeting
+LWal:Licenses & Permits
+^
+KP
+U-2,583.65
+T-2,583.65
+PCaxton Rhodes
+MBerth boat fees
+LPSNL:Family:Recreation:Sailing
+^
+KP
+U-10.00
+T-10.00
+PCeltic Inheritance
+MJewelry
+LPSNL:Liz:Clothing
+^
+KP
+U-91.76
+T-91.76
+PCentral Maine Power
+LBills & Utilities:Utilities
+^
+KP
+U-87.89
+T-87.89
+PCentral Maine Power
+MElectricity
+LMH:Utilities
+^
+KP
+U-1,264.14
+T-1,264.14
+PCentury Theaters
+LEntertainment:Movies & DVDs
+^
+KP
+U-31,325.00
+T-31,325.00
+PCertapro Painters
+M1722 Walnut Street Building Outside Painting
+LWal:Repairs
+^
+KP
+U-75.63
+T-75.63
+PCesar
+MDining out
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-57.50
+T-57.50
+PCesar
+MPaella for Amadeu and Aopt 5
+LWal:Mgmt Fees:Resident Amenities
+^
+KP
+U-386.83
+T-386.83
+PChange In Value Of Investments
+MChanges in investment value
+LInvestment Changes
+^
+KP
+U-600.00
+T-600.00
+PCharles Scherer
+MHelp with Xmas Trip
+LGifts Given
+^
+KD
+U690,939.22
+T690,939.22
+PCharles Schwab
+MMortage Money for Mango Cove
+LInterest Inc:Schwab Checking
+^
+KP
+U-11,955.63
+T-11,955.63
+PChase
+LBills & Utilities:Credit Card Payment
+^
+KP
+U-11,955.63
+T-11,955.63
+PChase
+MAlready covered in 2011 Quicken tracking
+LMisc.
+^
+KD
+U124.42
+T124.42
+PChase
+MInterest Charge Reversal
+LFees & Charges:Bank Fee
+^
+KP
+U-8,285.28
+T-8,285.28
+PChase
+L[United Credit 8959 to 4728]
+^
+KD
+U43.76
+T43.76
+PChase
+MRefund
+L[Main BofA Chking 0149-Dbt 0855]
+^
+KD
+U7,168.32
+T7,168.32
+PChase Credit Card Payment
+MUnited Visa
+L[Main BofA Chking 0149-Dbt 0855]
+^
+KP
+U-6,521.16
+T-6,521.16
+PChase Credit Card Payment
+MUnited Visa
+L[United Credit 8959 to 4728]
+^
+KP
+U-5,521.01
+T-5,521.01
+PChase United Visa Card 4728
+MCard payment
+L[United Credit 8959 to 4728]
+^
+KD
+U5,521.01
+T5,521.01
+PChase United Visa Card 4728
+MCard payment
+L[Main BofA Chking 0149-Dbt 0855]
+^
+KP
+U-12.13
+T-12.13
+PChe Restaurant
+MDelray Beach Restaurant
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-3,168.00
+T-3,168.00
+PCheck Correction
+MDeposit from $3200 to $32
+LRents Received:CH:3
+^
+KP
+U-26.00
+T-26.00
+PCheck Order
+MOrdering checks
+LCC:Supplies
+^
+KP
+U-26.00
+T-26.00
+PCheck Order
+MOrdering checks
+LMC:Supplies
+^
+KP
+U-26.00
+T-26.00
+PChecks O
+MChecks Ordered
+LMC:Supplies
+^
+KP
+U-26.00
+T-26.00
+PChecks Order
+MChecks Ordered
+LMC:Supplies
+^
+KP
+U-31.62
+T-31.62
+PChevron
+MGas Station for Rental Car
+LCC:Travel
+^
+KP
+U-149.08
+T-149.08
+PChez Panisse
+MWalnut management meeting with family
+LWal:Working Meals
+^
+KP
+U-223.52
+T-223.52
+PChez Panisse
+MLate Night Steak Dinner with Family
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-35.00
+T-35.00
+PChic Salon
+MBlow dry
+LPSNL:Liz:Beauty
+^
+KD
+U975.00
+T975.00
+PChin Shen Ong
+MDecember 2018 Rent
+LRents Received:VSV:4
+^
+KP
+U-150.00
+T-150.00
+PChinh Le
+MGarden and Landscaping
+LCH:Landscaping
+^
+KP
+U-360.00
+T-360.00
+PChinh Le Bill
+LBills & Utilities
+^
+KP
+U-460.00
+T-460.00
+PChinh Le Bill
+MAdditional landscaping work in rear garden
+LWal:Landscaping
+^
+KP
+U-380.00
+T-380.00
+PChinh Le Bill
+MLandscaping
+LWal:Landscaping
+SWal:Landscaping
+$-260.00
+SVSV:Landscaping
+$-120.00
+^
+KP
+U-12.56
+T-12.56
+PChipotle
+MGlen dropping off supplies to Villas
+LVSV:Working Meals
+^
+KP
+U-11.20
+T-11.20
+PChipotle
+MJames working in office
+LWal:Working Meals
+^
+KP
+U-11.20
+T-11.20
+PChipotle
+MLiz and Glen to a movie
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-7,500.00
+T-7,500.00
+PChris Electric
+MElectric work and repair
+LMC:Electric
+^
+KP
+U-918.23
+T-918.23
+PChuo-ku, Kumamoto
+MMyrtle the Sea Turtle Interpreter, Toda Yumiko
+LBook Exp:Travel:Japan
+^
+KP
+U-9.55
+T-9.55
+PCibo Of Sausalito
+MCoffee for Glen + Liz
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-9.55
+T-9.55
+PCibo Of Sausolito
+MCoffee for Glen + Liz
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-43.00
+T-43.00
+PCinemark Theatres
+MDinner before movie with John and Liz
+LPSNL:Family:Dining Out & Entertainment
+^
+KD
+U33.00
+T33.00
+PCisco Systems - CSCO
+MDividend Received
+LDividend Income
+^
+KP
+U-38.99
+T-38.99
+PCitgo
+MGas for rental car
+LMH:Travel
+^
+KP
+U-1,454.03
+T-1,454.03
+PCity Furniture
+MQueen sofa bed, Queen bedframe, headboard
+LMC:Furnishings
+^
+KP
+U-1,454.03
+T-1,454.03
+PCity Furniture
+MQueen sofa bed, Queen bedframe, headboard
+LMC:Furnishings:5
+^
+KP
+U-29.00
+T-29.00
+PCity Of Berkeley
+MTrip to Dump, throwing out old Futon Frame
+LWal:Furnishings:8
+^
+KP
+U-13,340.00
+T-13,340.00
+PCity Of Berkeley
+MCity of Berkeley City Legalization fees for cottage
+LWal:Licenses & Permits
+^
+KP
+U-251.88
+T-251.88
+PCity Of Berkeley
+MQuarterly Trash Bill
+LCH:Utilities
+^
+KP
+U-30.24
+T-30.24
+PCity Of Berkeley
+MTrip to Dump, throwing out old furniture
+LWal:Furnishings
+^
+KP
+U-3.50
+T-3.50
+PCity Of Berkeley
+MParking fee
+LWal:Mgmt Fees
+^
+KP
+U-372.44
+T-372.44
+PCity Of Berkeley
+MGarbage 9/30 - 12/31/18
+LWal:Property Taxes:Garbage
+^
+KP
+U-372.44
+T-372.44
+PCity Of Berkeley
+MGarbage 9/30 - 12/31/18
+LVSV:Utilities:Garbage
+^
+KP
+U-251.88
+T-251.88
+PCity Of Berkeley
+MQuarterly Trash Bill
+LCH:Utilities:Garbage
+^
+KP
+U-130.00
+T-130.00
+PCity Of Berkeley RHSP
+MRental Housing safety program, Inspections, city fees
+LVSV:Licenses & Permits
+^
+KP
+U-2,500.00
+T-2,500.00
+PCity Of Berkeley ZAP Appeal To City
+MAppeal for Cornell Cottage
+LWal:Licenses & Permits
+^
+KP
+U-306.18
+T-306.18
+PCity Of Delray Beach
+MTotal Sprinkler water, $256.44 and 49.74
+LMC:Utilities:Water
+^
+KP
+U-75.00
+T-75.00
+PCity Of Delray Beach
+MLandlord Permit for Apt 3
+LCC:3:Permits
+^
+KP
+U-75.00
+T-75.00
+PCity Of Delray Beach
+MLandlord Permit for Apt 2
+LCC:2:Permits
+^
+KP
+U-75.00
+T-75.00
+PCity Of Delray Beach
+MLandlord Permit for Apt 4
+LCC:4:Permits
+^
+KP
+U-242.82
+T-242.82
+PCity Of Delray Beach
+MWater sewer
+LMC:Utilities
+^
+KP
+U-47.50
+T-47.50
+PCKs Lockshop
+MNew Key Organizers for Coral Cove
+LCC:7:Supplies
+^
+KP
+U-52.97
+T-52.97
+PCKs Lockshop
+MNew Key Organizers for Mango Cove
+LMC:Supplies
+^
+KP
+U-596.92
+T-596.92
+PCKs Lockshop
+MChanging locks in all units
+LMC:Repairs
+^
+KD
+U482.35
+T482.35
+PClaire Marcus
+M2/1-3/2/2019, Square Payment, Initial Deposit
+LRents Received:CC:3
+^
+KP
+U-105.18
+T-105.18
+PClaremont Hotel & Spa
+MFamily Dinner
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-607.31
+T-607.31
+PClaremont Hotel & Spa
+MFamily Club
+LPSNL:Family:Recreation
+^
+KP
+U-535.00
+T-535.00
+PClaremont Resort
+MOctober 2018
+LPSNL:Family:Recreation
+^
+KP
+U-543.74
+T-543.74
+PClaremont Resort Bill
+^
+KP
+U-589.44
+T-589.44
+PClaremont Resort Bill
+MRecreation club
+LPSNL:Family:Recreation
+^
+KP
+U-179.00
+T-179.00
+PClearme.com
+MTravel Security Clearance Annual Payment
+LCC:Travel
+^
+KP
+U-100.00
+T-100.00
+PClerk Of Palm Beach County
+MDeed and Case for CC 3 & 4
+LCC:Legal
+^
+KP
+U-1,905.50
+T-1,905.50
+PClint Oster
+MLandscaping Setup, trees planted
+LMC:Landscaping
+^
+KP
+U-675.00
+T-675.00
+PClint Oster General Landscaping
+MMulch
+LMC:Landscaping
+^
+KP
+U-5.08
+T-5.08
+PCoffee Beanery
+LFood & Dining:Restaurants
+^
+KP
+U-8.50
+T-8.50
+PCoffee Roasters Of Kennebunkport
+MMorning coffee for Liz and Glen
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-87.00
+T-87.00
+PColony Hotel
+MLunches, added by phone call with Dave Woods
+LPSNL:Family:Vacation
+^
+KP
+U-910.00
+T-910.00
+PColony Jamaica Help[
+MCleaning Maine House after our visit
+LMH:Cleaning & Maintenance
+^
+KP
+U-137.44
+T-137.44
+PComcast
+MCable and internet
+LCC:2:Utilities
+^
+KP
+U-152.90
+T-152.90
+PComcast
+MInternet & Cable
+LVSV:Utilities
+^
+KP
+U-126.83
+T-126.83
+PComcast
+MCable and internet
+LCC:4:Utilities
+^
+KP
+U-209.85
+T-209.85
+PComcast
+MCable and internet
+LCC:7:Utilities
+^
+KP
+U-931.45
+T-931.45
+PComcast
+MCable + Internet, 3 mos
+LHome:Utilities
+SHome:Utilities
+$-465.73
+SWal:Utilities
+$-465.72
+^
+KP
+U-74.76
+T-74.76
+PComcast
+MCoral Cove #6
+LCC:6:Utilities
+^
+KP
+U-138.09
+T-138.09
+PComcast
+MCable and internet
+LCC:3:Utilities
+^
+KP
+U-216.28
+T-216.28
+PComcast Business
+M1722 Walnut Street Internet
+LBills & Utilities:Television
+^
+KP
+U-158.47
+T-158.47
+PComcast Business
+M1722 Walnut Street Internet
+LWal:Utilities
+^
+KP
+U-158.47
+T-158.47
+PComcast Business
+M1716 Rose Street Internet
+LCH:Utilities
+^
+KP
+U-343.19
+T-343.19
+PComcast Business
+MCable and Internet
+LMC:Utilities:Internet
+^
+KP
+U-580.81
+T-580.81
+PComcast California
+L?
+^
+KP
+U-580.81
+T-580.81
+PComcast California
+MHome Internet for 2 months
+LWal:Utilities
+SWal:Utilities
+$-290.41
+SVSV:Utilities
+$-290.40
+^
+KP
+U-154.03
+T-154.03
+PComcast Xfinity
+MCC 6 Oct 6 - Nov 7 Cable and Internet
+LCC:6:Utilities
+^
+KP
+U-158.47
+T-158.47
+PComcast Xfinity
+MCable
+LVSV:Utilities:Internet&Cable
+^
+KP
+U-169.06
+T-169.06
+PComcsast
+MCoral Cove #6
+LCC:6:Utilities
+^
+KD
+U68.58
+T68.58
+PComenity - Virgin America Visa
+MCredit Card Bill (Prorated Annual Fee Credit)
+L[Alaska Mileage Plan - 0724]
+^
+KD
+U68.58
+T68.58
+PComenity Capital Bank
+MBalance remaining on Virgin America Credit Card
+LMisc.
+^
+KP
+U-1,091.41
+T-1,091.41
+PComfort Zone
+MSofabed for Wal8
+LWal:Furnishings:8
+^
+KP
+U-11.87
+T-11.87
+PConfiserie Sprungli
+MCoffee between flights on way to Barcelona
+LPSNL:Family:Vacation:Andorra
+^
+KP
+U-34.24
+T-34.24
+PConsolidated Communications
+MFormerly known as FairPoint Comm
+LMH:Utilities
+^
+KD
+U10.78
+T10.78
+PContent Distribution
+M?
+L?
+^
+KP
+U-436.51
+T-436.51
+PCooper & Hawkins
+MHeating Component Cleaning for 1722 W Boiler
+LWal:Cleaning & Maintenance
+^
+KP
+U-248.01
+T-248.01
+PCopy Central Bancroft
+M26" by 36" Sign for Cottage Legalization, copy pics
+LWal:Licenses & Permits
+^
+KP
+U-151.42
+T-151.42
+PCopy Central Shattuck
+MCoral Cover Mgmt Flyers
+LCC:Advertising
+^
+KP
+U-6.23
+T-6.23
+PCopy Central Shattuck
+MPlan Print Outs for Cottage Legalization App Resubmittal
+LWal:Licenses & Permits
+^
+KP
+U-5,563.00
+T-5,563.00
+PCoral Cove Condo Association
+MAssociation Fees
+LCC:2:Association Dues
+SCC:2:Association Dues
+EQ2 2018
+$-681.00
+SCC:3:Association Dues
+EQ2 2018
+$-713.00
+SCC:4:Association Dues
+EQ2 2018
+$-713.00
+SCC:5:Association Dues
+EQ2 2018
+$-906.00
+SCC:6:Association Dues
+EQ2 2018
+$-1,100.00
+SCC:7:Association Dues
+EQ2 2018
+$-1,450.00
+^
+KD
+U1,680.00
+T1,680.00
+PCoral Cove Sign
+MReimbursement for paying for sign
+LReimbursements
+^
+KP
+U-209.72
+T-209.72
+PCorrico Delray Beach
+MBathing Shorts for Preston and John
+LPSNL:Family:Gifts Given
+^
+KP
+U-160.06
+T-160.06
+PCostco
+MSwiffer, tissues, cleaning solutions
+LVSV:Supplies
+^
+KP
+U-422.54
+T-422.54
+PCostco
+MToilet paper, Paper towels, cook ware, cleaning supplies
+LVSV:Supplies
+SVSV:Supplies
+$-309.30
+SPSNL:Family:Groceries
+$-113.24
+^
+KP
+U-42.84
+T-42.84
+PCostco
+MJacket, fruit
+LPSNL:Liz:Clothing
+^
+KP
+U-42.84
+T-42.84
+PCostco
+MFruit, nuts, groceries
+LFood & Dining:Groceries
+^
+KP
+U-39.31
+T-39.31
+PCostco
+M????
+LWal:Supplies
+^
+KD
+U4,948.00
+T4,948.00
+PCounter
+LOther Inc
+^
+KD
+U3,400.00
+T3,400.00
+PCourtney Barry
+MMango Cove Unit 7
+LRents Received:MC:7
+SRents Received:MC:7
+EDecember rent
+$1,450.00
+SRents Received:MC:7
+ELast months rent
+$1,450.00
+S[Sec Dep MC]
+ESecurity Deposit
+$500.00
+^
+KP
+U-43.12
+T-43.12
+PCowgirl Creamery
+MTokunaga Unagi Restaurant
+LWal:Advertising
+^
+KP
+U-200.00
+T-200.00
+PCox For Governor
+MDonation
+LPSNL:Politics
+^
+KP
+U-870.75
+T-870.75
+PCRD
+M?
+L?
+^
+KP
+U-870.75
+T-870.75
+PCRD ?
+M?
+L?
+^
+KP
+U-1,068.41
+T-1,068.41
+PCredit Card Payment
+LBills & Utilities:Credit Card Payment
+^
+KP
+U-239.80
+T-239.80
+PCredit Card Payment
+MCoral Cove Supplies
+LCC:Supplies
+^
+KD
+U40.00
+T40.00
+PCrown Crafts Inc CRWS
+MDividend Received
+LDividend Income
+^
+KP
+U-3.96
+T-3.96
+PCrown Wine
+MFor waters for general contractor and landscaper
+LMC:Working Meals
+^
+KP
+U-47.41
+T-47.41
+PCrunch
+MJames Work Out
+LPSNL:Family:Recreation
+^
+KD
+U23.74
+T23.74
+PCRZ Adjustment
+LMisc.
+^
+KD
+U1,525.00
+T1,525.00
+PCurrency Cloud Des
+LOther Inc
+^
+KD
+U725.00
+T725.00
+PCurtis Morales
+M5/1-5/7/18 Rent
+LRents Received:Walnut:4
+^
+KP
+U-39.03
+T-39.03
+PCut 432
+MStaying with J. Boughton
+LCC:Management Fees
+^
+KP
+U-39.03
+T-39.03
+PCut 432
+MDinner with Jestena, advertising and rentals
+LCC:Working Meals
+^
+KP
+U-35.48
+T-35.48
+PCvs
+LHealth & Fitness:Pharmacy
+^
+KP
+U-37.91
+T-37.91
+PCVS
+MLetter envelopes + Stamps
+LWal:Supplies
+^
+KP
+U-58.03
+T-58.03
+PCVS
+MHormone Drug, mouthwash, dental floss
+LPSNL:Liz:Health Care
+^
+KP
+U-19.52
+T-19.52
+PCVS
+MCards
+LPSNL:Family:Gifts Given
+^
+KP
+U-30.00
+T-30.00
+PCVS Pharmacy
+MEnvelopes, stationery, broom
+LWal:Supplies
+^
+KP
+U-25.00
+T-25.00
+PDan Chins Auto Service
+MOil Change
+LAuto & Transport:Sienna
+^
+KP
+U-1,902.79
+T-1,902.79
+PDan Chins Auto Service
+MBreaks, maintenance
+LWal:Auto Expenses
+^
+KD
+U500.00
+T500.00
+PDaniel Heller
+MCH 2 Deposit
+^
+KD
+U500.00
+T500.00
+PDaniel Heller
+MCH 2 Deposit
+LRents Received:CH:Security Deposits
+^
+KD
+U4,115.00
+T4,115.00
+PDaniel Heller
+MAugust 19 - September 27, 2018 Rent
+LRents Received:MH
+^
+KD
+U1,475.00
+T1,475.00
+PDaniel Saxton
+MNovember 2018 Rent
+LRents Received:VSV:3
+^
+KP
+U-68.60
+T-68.60
+PDannah Kennebunkport
+MNecklace
+LPSNL:Family:Clothing
+^
+KP
+U-41.15
+T-41.15
+PDannah Kennebunkport
+MCologne spray and emery boards for Findlays
+LGifts Given
+^
+KP
+U-68.60
+T-68.60
+PDannah Kennebunkport
+MFlowers
+LMH:Landscaping
+^
+KP
+U-192.58
+T-192.58
+PDan's Fan City
+MTwo kitchen fans
+LMC:Furnishings
+^
+KP
+U-436.19
+T-436.19
+PDan's Fan City
+MFans for Mango Cove
+LMC:Repairs
+^
+KP
+U-154.06
+T-154.06
+PDan's Fan City
+MFans for Mango Cove
+L?
+^
+KP
+U-131.44
+T-131.44
+PDB Utility Billing
+MMango Cove Water Account Opening
+LMC:Utilities:Water
+^
+KP
+U-46.90
+T-46.90
+PDelray Ace
+MBroom, trash bags, scissors, lightbulbs
+LCC:7:Supplies
+^
+KP
+U-11.75
+T-11.75
+PDelray Ace
+MLight bulbs
+LCC:7:Repairs
+^
+KP
+U-12.81
+T-12.81
+PDelray Ace
+MKeys for laundry room
+LCC:2:Supplies
+^
+KP
+U-47.82
+T-47.82
+PDelray Ace
+MBleach, windex, oven pans
+LCC:Supplies
+^
+KP
+U-11.11
+T-11.11
+PDelray Ace
+MSpray paint for parking markers and duster
+LMC:Supplies
+^
+KP
+U-11.11
+T-11.11
+PDelray Ace Hardware
+^
+KP
+U-400.00
+T-400.00
+PDelray Beach Chamber Of Commerce
+MAnnual Membership
+LCC:Advertising
+^
+KP
+U-132.68
+T-132.68
+PDelray Intercoastal Cruise
+MDelray Cruise
+LPSNL:Family:Recreation
+^
+KD
+U3,600.00
+T3,600.00
+PDeposit
+M?
+LOther Inc
+^
+KP
+U-120.42
+T-120.42
+PDesigual
+MShirts for John and Glen
+LPSNL:Glen:Clothing
+^
+KD
+U3,100.00
+T3,100.00
+PDillon
+MNovember rent
+LRents Received:CH:2
+^
+KP
+U-194.00
+T-194.00
+PDMV Renewal
+MDMV Renewal for Toyota Van
+LAuto & Transport:Sienna:Registration
+^
+KP
+U-136.00
+T-136.00
+PDMV Renewal
+MDMV Renewal for Vespa
+LAuto & Transport:Vespa
+^
+KP
+U-288.00
+T-288.00
+PDMV Renewal
+MDMV Renewal for Volt
+LAuto & Transport:Volt
+^
+KP
+U-85.40
+T-85.40
+PDock Square Clothiers
+MStriped shirt
+LPSNL:Liz:Clothing
+^
+KP
+U-2.22
+T-2.22
+PDogpatch Bakehouse
+MCoffee for Liz
+LPSNL:Liz:Dining Out & Entertainment
+^
+KP
+U-22.47
+T-22.47
+PDollar Tree
+MGlasses, plateware, mugs, drain snake, bowls
+LMC:Furnishings
+^
+KP
+U-119.69
+T-119.69
+PDona Tomas
+MFamily breakfast
+LPSNL:Family:Dining Out & Entertainment
+^
+KD
+U2,547.22
+T2,547.22
+PDonna Carfona
+M3/10-3/24/18
+LRents Received:CC:7
+^
+KD
+U2,547.22
+T2,547.22
+PDonna Carfona
+M3/10-3/24/18
+LRents Received:CC:7
+SRents Received:CC:7
+$2,274.30
+SCC:7:Tourist Tax
+$272.92
+^
+KP
+U-61.51
+T-61.51
+PDoratsuguirebun
+MFood while traveling to Japan
+LPSNL:Liz:Travel
+^
+KP
+U-100.00
+T-100.00
+PDr. John Westine
+MHealth check up for Liz
+LPSNL:Liz:Health Care
+^
+KP
+U-89.99
+T-89.99
+PDRI AVG Technology
+MComputer protecttion, two years
+LWal:Supplies
+^
+KP
+U-64.98
+T-64.98
+PDRI AVG Technology
+MComputer protecttion, two years
+LWal:Computer Supplies
+^
+KD
+U3,100.00
+T3,100.00
+PDylan Drouby
+MAugust 2018 Rent
+LRents Received:Walnut:2
+SRents Received:Walnut:2
+$3,000.00
+SWal:Resident Amenities
+EParking Rent to go to Sara Kap
+$100.00
+^
+KD
+U3,100.00
+T3,100.00
+PDylan Drouby
+MSept 2018 Rent Last month in Wal 2
+LRents Received:Walnut:2
+^
+KD
+U3,100.00
+T3,100.00
+PDylan Drouby
+MNovember rent
+LRents Received:CH:2
+^
+KP
+U-21.82
+T-21.82
+PEarthly Nutrition
+MVitamins - Mannose
+LPSNL:Liz:Health Care
+^
+KP
+U-410.87
+T-410.87
+PEast Bay Municipal
+LBills & Utilities:Utilities
+^
+KP
+U-14.90
+T-14.90
+PEast Bay Times
+MCancelled,
+LEntertainment:Newspaper & Magazines
+^
+KP
+U-78.21
+T-78.21
+PEbay, Ningbo
+MSmoke Alarms
+LMC:Supplies
+^
+KP
+U-413.94
+T-413.94
+PEBMUD
+MWater
+LHome:Utilities
+^
+KP
+U-809.95
+T-809.95
+PEBMUD
+MWater
+LCH:Utilities
+^
+KP
+U-809.95
+T-809.95
+PEBMUD
+MWater
+LCH:Utilities:Water
+^
+KP
+U-435.79
+T-435.79
+PEBMUD
+MWater
+LVSV:Utilities:Water
+^
+KP
+U-536.26
+T-536.26
+PEhret
+MVine Street Villas hot water heater repair
+LVSV:Repairs
+^
+KP
+U-340.84
+T-340.84
+PEhrett Plumbing
+MClearing Drain at CH A plus Greasing Fluid
+LCH:Repairs
+^
+KP
+U-50.00
+T-50.00
+PEhrlich Pest Control
+MMonthly maintenance for Mice
+LMH:Cleaning & Maintenance
+^
+KP
+U-8.46
+T-8.46
+PEl Corte Ingles
+MChocolate bar
+LPSNL:Family:Vacation:Andorra
+^
+KD
+U200.00
+T200.00
+PElizabeth & Kenneth Pimentel
+M????
+LMisc.
+^
+KD
+U85,000.00
+T85,000.00
+PElizabeth Scherer
+MTransfering funds for Purchase of 301 NE 6th Ave
+L[Coral Cove Chkng XX6008-Dbt 8751]
+^
+KD
+U153,310.00
+T153,310.00
+PElizabeth Scherer
+MTransfering funds for Purchase of 301 NE 6th Ave
+L[Mango Cove]
+^
+KD
+U25,000.00
+T25,000.00
+PElizabeth Scherer
+MTransfering funds for 301 NE 6th Ave slush fund
+L[Main BofA Chking 0149-Dbt 0855]
+^
+KP
+U-325.63
+T-325.63
+PElizabeth Scherer
+MReimbursement for curtains and chairs CH
+LReimbursements
+^
+KD
+U40,000.00
+T40,000.00
+PElizabeth Scherer
+MCapital Contribution from Liz and Glen, low balance
+L[Mango Cove Chking XX4464-Dbt 5654]
+^
+KD
+U12,474.00
+T12,474.00
+PElizabeth Scherer
+MNovember and December 2018 Carriage House Distribution
+LCH:Distribution
+^
+KP
+U-52.33
+T-52.33
+PElmwood Stationers
+MNew stationary for Office
+LWal:Supplies
+^
+KP
+U-3.90
+T-3.90
+PEmilia
+MCoffee
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-100.00
+T-100.00
+PEmily Ripple
+MLost clothing and happy new year
+LGifts Given
+^
+KP
+U-800.00
+T-800.00
+PEmily Ripple
+MEmily having trouble with rent payments
+LGifts Given
+^
+KP
+U-20,000.00
+T-20,000.00
+PEmily Ripple
+MGift for termination of lawsuit
+LCC:Legal
+^
+KP
+U-100.00
+T-100.00
+PEncore Loan Recurring
+MReservation for Palm SPrings, Partial Payment
+LPSNL:Family:Vacation
+^
+KP
+U-95.00
+T-95.00
+PEnliven Massage
+MWith Heather
+LPSNL:Family:Health Care
+^
+KP
+U-8.00
+T-8.00
+PEnvato Market
+MWebsite theme template for Openrents.com
+LWal:Mgmt Fees
+^
+KD
+U2,981.70
+T2,981.70
+PEric Vasserot
+MMSRI Tenants for one month
+LRents Received:Walnut:7
+^
+KP
+U-442.84
+T-442.84
+PErlich
+MPest COntrol Services
+LMH:Repairs
+^
+KP
+U-135,000.00
+T-135,000.00
+PEscow Account Mango Cove
+MWired funds to Escrow, from Liz and Glen
+L[Mango Cove]
+^
+KP
+U-198.51
+T-198.51
+PEsports Adserea La Molina
+MLovely lunch with the Adseras
+LPSNL:Family:Vacation:Andorra
+^
+KP
+U-20.91
+T-20.91
+PEspresso Roma
+MCoffee for new tenant at Villas, Hunter
+LVSV:Resident Amenities
+^
+KP
+U-6.99
+T-6.99
+PEt
+LFood & Dining:Groceries
+^
+KD
+U275.00
+T275.00
+PEva Miranda
+MMSRI Guest, 10/16-11/15/18
+LRents Received:Walnut:Security Deposit
+^
+KD
+U3,200.00
+T3,200.00
+PEva Miranda
+MMSRI Guest, 10/29-11/30/18
+LRents Received:Walnut:1
+^
+KP
+U-76.17
+T-76.17
+PExpedia
+^
+KP
+U-8.30
+T-8.30
+PExpedia
+MExtra Rental Car Fee during Mediation with Emily Ripple
+LCC:3:Legal
+SCC:3:Legal
+$-4.15
+SCC:4:Legal
+$-4.15
+^
+KP
+U-163.37
+T-163.37
+PExpedia
+MRental Car from Avis
+LCC:Travel
+^
+KD
+U372.40
+T372.40
+PExpedia
+MCancellation refund
+LMH:Travel
+^
+KP
+U-20.00
+T-20.00
+PExternal Transfer Fee Next Day
+MFee for Loan
+LWal:Bank Fees
+^
+KP
+U-31.64
+T-31.64
+PExxon
+MGas
+LAuto & Transport:Gas & Fuel
+^
+KP
+U-34.16
+T-34.16
+PFairpoint
+MPhone bill for October
+LMH:Utilities
+^
+KP
+U-11.97
+T-11.97
+PFargas
+MMisc purchase
+LPSNL:Family:Vacation:Andorra
+^
+KP
+U-15.11
+T-15.11
+PFarm Burger
+MLunch for Glen
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-1,351.69
+T-1,351.69
+PFarmers Insurance
+M1636 Walnut Street
+LHome:Home Insurance
+^
+KP
+U-50.70
+T-50.70
+PFat Apples
+MPies for Neighbors at 1722 Walnut
+LWal:Mgmt Fees:Resident Amenities
+^
+KP
+U-50.70
+T-50.70
+PFat Apples
+MPies for Neighbors at CH
+LCH:Mgmt Fees
+^
+KP
+U-50.70
+T-50.70
+PFatapples
+LFood & Dining:Restaurants
+^
+KP
+U-48.00
+T-48.00
+PFatapples
+MApples Pies for Carriage House Neighbors
+LCH:Mgmt Fees
+^
+KP
+U-13.85
+T-13.85
+PFatapples
+MDinner for Glen
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-7.64
+T-7.64
+PFedex
+MReturning check scanner, paying for Box
+LWal:Supplies
+^
+KP
+U-11.54
+T-11.54
+PFedex
+MPrinting of Book
+LBook Exp:Consulting
+^
+KP
+U-11.54
+T-11.54
+PFedex
+MPrinting of Book
+LBook Exp
+^
+KP
+U-227.55
+T-227.55
+PFees From Chase Card
+MTo be Reimbursed
+^
+KP
+U-227.55
+T-227.55
+PFees From Chase Card
+MTo be Reimbursed
+LWal:Bank Fees
+^
+KP
+U-13.98
+T-13.98
+PFertile Grounds
+MMorning Coffee
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-184.63
+T-184.63
+PFI Furniture
+MNew Table and chairs for Wal1 Kitchen
+LWal:Furnishings:1
+^
+KP
+U-20.06
+T-20.06
+PFieldworks
+MGlen and Liz lunch
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-51.00
+T-51.00
+PFish
+M????
+LPSNL:Family:Groceries
+^
+KP
+U-51.00
+T-51.00
+PFish
+MRestaurant by boat
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-125.00
+T-125.00
+PFlorida Department Of State
+MFiling an LLC for Mango Cove
+LMC:Licenses & Permits
+^
+KP
+U-33.47
+T-33.47
+PFlorida Power & Light
+MElectric
+L?
+^
+KP
+U-66.77
+T-66.77
+PFlorida Power & Light
+MElectric
+LCC:2:Utilities
+^
+KP
+U-38.78
+T-38.78
+PFlorida Power & Light
+MElectric
+LCC:4:Utilities
+^
+KP
+U-33.47
+T-33.47
+PFlorida Power & Light
+MElectric
+LCC:3:Utilities
+^
+KP
+U-33.47
+T-33.47
+PFlorida Power & Light
+MElectric
+LCC:6:Utilities
+^
+KP
+U-12.83
+T-12.83
+PFlorida Public Utilities
+LBills & Utilities:Utilities
+^
+KP
+U-58.70
+T-58.70
+PFlorida Public Utilities
+MGas bill 10/18 - 11/12
+LMC:Utilities:Gas
+^
+KP
+U-19.31
+T-19.31
+PFlorida Public Utilities
+MGas
+LCC:6:Utilities
+^
+KP
+U-17.35
+T-17.35
+PFlorida Public Utilities
+LCC:7:Utilities
+^
+KD
+U395.60
+T395.60
+PFord Motor Company
+MDividend
+LDividend Income:F
+^
+KP
+U-29.82
+T-29.82
+PFort Lauderdale Airport
+MFood for flight back to SFO, working on the deck
+LCC:7:Travel
+^
+KP
+U-137.30
+T-137.30
+PFoundation Hotel
+^
+KP
+U-19.75
+T-19.75
+PFournee Bakery
+MSazmia and  Samia in W7
+LWal:Mgmt Fees:Resident Amenities
+^
+KP
+U-12.75
+T-12.75
+PFournee Bakery
+MWorking breakfast
+LWal:Data Entry
+^
+KP
+U-4.50
+T-4.50
+PFournee Bakery
+MCroissants
+LPSNL:Family:Dining Out & Entertainment
+^
+KD
+U17,087.00
+T17,087.00
+PFranchise Tax Board
+MCA State Tax Returns
+LTax Returns
+^
+KP
+U-250.00
+T-250.00
+PFrank Gagnon
+MUpholstry cleaning of arm chairs
+LMH:Repairs
+^
+KD
+U3,600.00
+T3,600.00
+PFred And Julia Revels
+M1st rent, First, last and dep $1200/mo 11/18
+LRents Received:MC
+SRents Received:MC
+ERevels,
+$2,400.00
+S[Sec Dep MC]
+$1,200.00
+^
+KP
+U-135.00
+T-135.00
+PFrench Corner Cafe
+MTablecloth for Walnut
+LWal:Supplies
+^
+KP
+U-40.37
+T-40.37
+PFrench Corner Cafe
+MBook consulting session with Holly
+LBook Exp:Consulting
+^
+KP
+U-61.19
+T-61.19
+PFrench Corner Cafe
+MVacation Meals in Palm Springs
+LPSNL:Family:Vacation
+^
+KP
+U-39.00
+T-39.00
+PFreshly.Com
+LFood & Dining:Groceries
+^
+KP
+U-39.00
+T-39.00
+PFreshly.Com
+MGroceries
+LPSNL:Family:Groceries
+^
+KP
+U-50.00
+T-50.00
+PFriends Of Scott Walker
+MDonations
+LPSNL:Politics
+^
+KP
+U-2,979.29
+T-2,979.29
+PFrizzante Fine Jewelers
+MNecklace
+LPSNL:Liz:Clothing
+^
+KP
+U-22,476.82
+T-22,476.82
+PFrom Main BofA To Mango Cove
+MPart of $690939.22 loan $47476.82, gave 25K to open acct
+L[Mango Cove Chking XX4464-Dbt 5654]
+^
+KD
+U22,476.82
+T22,476.82
+PFrom Main BofA To Mango Cove
+MPart of $690939.22 loan $47476.82, gave 25K to open acct
+L[Main BofA Chking 0149-Dbt 0855]
+^
+KP
+U-78.53
+T-78.53
+PGallery Arita In Saga
+MLunch with Dans, museums,
+LBook Exp:Travel:Japan
+^
+KP
+U-900.22
+T-900.22
+PGalvin Appliances
+MDishwasher replacement
+LCH:Repairs:1
+^
+KP
+U-900.22
+T-900.22
+PGalvin Appliances
+MDishwasher replacement
+LCH:Repairs:3
+^
+KP
+U-400.00
+T-400.00
+PGame Day Media
+MAlma Mater High School Yearbook Advertisement for CC
+LCC:Advertising
+^
+KP
+U-185.00
+T-185.00
+PGarrett Pillsbury Plumbing & Heating
+MAnnual Plumbing Monitoring Fee
+LMH:Cleaning & Maintenance
+^
+KP
+U-75.00
+T-75.00
+PGary Sizemore
+MBirthday present
+LGifts Given
+^
+KP
+U-23.65
+T-23.65
+PGaucamole 61
+MWorking lunch, Soledad and John working with Jackie at VSV
+LVSV:Working Meals
+^
+KP
+U-77.01
+T-77.01
+PGAUMENKITZEL BERKELEY
+MGerman Food in Berkeley
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-32.00
+T-32.00
+PGDC Kitchen
+MWorking lunch, Mack and John discussing exterior cracks at W
+LWal:Working Meals
+^
+KD
+U66.50
+T66.50
+PGeneral Motors Dividend
+MDividend
+LDividend Income:GM
+^
+KD
+U101.84
+T101.84
+PGlaxo Smith Kline
+MDividend minus 1.00 adr pass thru fee
+LDividend Income
+^
+KD
+U46,963.70
+T46,963.70
+PGlen R. Stevick
+MPay check bonus for 2017
+LSalary From BEAR, Inc.
+^
+KP
+U-1.99
+T-1.99
+C*
+PGoogle Storage
+MMonthly subscription to Google Drive Storage
+LWal:Mgmt Fees:Software
+A
+A
+A
+A
+A
+A
+%
+SWal:Mgmt Fees:Software
+$-0.40
+SCH:Mgmt Fees:Software
+$-0.40
+SVSV:Mgmt Fees:Software
+$-0.40
+SCC:Mgmt Fees:Software
+$-0.40
+SMH:Mgmt Fees:Software
+$-0.39
+^
+KP
+U-1.99
+T-1.99
+PGoogle Storage
+LBills & Utilities:Internet
+^
+KP
+U-1.99
+T-1.99
+PGoogle Storage
+MMonthly subscription to Google Drive Storage
+LWal:Supplies
+^
+KP
+U-44.23
+T-44.23
+PGordo Taqueria
+MWorking lunch for Nestor cleaning storage area
+LWal:Cleaning & Maintenance
+^
+KP
+U-75.00
+T-75.00
+PGraciela Cruz
+MCleaning services
+LVSV:Cleaning & Maintenance
+^
+KP
+U-78.03
+T-78.03
+PGran IPH
+MT-shirts as gifts
+LGifts Given
+^
+KP
+U-28.70
+T-28.70
+PGrande
+MLunch
+LBook Exp:Travel:Japan
+^
+KP
+U-27.71
+T-27.71
+PGranger's Grille
+MLinda Oxford, S. Westbrook, Council changes
+LCC:Management Fees
+^
+KP
+U-44.12
+T-44.12
+PGranger's Grille
+M????
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-2.73
+T-2.73
+PGranite Expo
+LHome:Home Improvement
+^
+KP
+U-86.20
+T-86.20
+PGreat China Restaurant
+MDiscussing Lisa with Family
+LWal:Working Meals
+^
+KP
+U-400.00
+T-400.00
+PGreater Fl
+M561-278-0424 FL
+LFood & Dining:Restaurants
+^
+KP
+U-21.38
+T-21.38
+PGregoire
+MMay 2018 Bill
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-445.72
+T-445.72
+PGregoire
+MMeals May through Oct 2018
+LFood & Dining:Restaurants
+^
+KP
+U-97.56
+T-97.56
+PGroupon
+^
+KD
+U0.72
+T0.72
+PGroupon
+MAdditional Fee
+LWal:Furnishings
+^
+KP
+U-53.48
+T-53.48
+PGroupon
+M?
+L?
+^
+KP
+U-22.46
+T-22.46
+PGroupon
+MQueen Duvet cover
+LMC:Furnishings
+^
+KP
+U-64.18
+T-64.18
+PGrouponh
+^
+KP
+U-22.94
+T-22.94
+PGuacamole 61
+MWorking Lunch for John, Meeting with Roofing Contractors
+LWal:Working Meals
+^
+KP
+U-15.51
+T-15.51
+PGuerilla Cafe
+MMamie Lai
+LPSNL:Liz:Dining Out & Entertainment
+^
+KP
+U-26.12
+T-26.12
+PGulf Oil
+MGas for rental car in Maine
+LMH:Travel
+^
+KP
+U-12.00
+T-12.00
+PGulfstream Goo
+MGasoline
+LMC:Travel
+^
+KP
+U-10.17
+T-10.17
+PGulfstream Goo
+M?
+L?
+^
+KP
+U-1,812.72
+T-1,812.72
+PGusto
+LFood & Dining:Restaurants
+^
+KP
+U-45.00
+T-45.00
+C*
+PGusto
+MJohn's Salary - Sept 2018 - Processing Expense
+LWal:Payroll:Fees
+A
+A
+A
+A
+A
+A
+^
+KP
+U-4,209.39
+T-4,209.39
+PGusto
+MJohn's Salary - December 2018
+LWal:Payroll:Salary
+^
+KP
+U-2,070.19
+T-2,070.19
+PGusto
+MJohn's Salary - December 2018
+LWal:Payroll:Taxes
+^
+KP
+U-83.44
+T-83.44
+PH B Provisions
+LFood & Dining:Groceries
+^
+KP
+U-12.64
+T-12.64
+PH B Provisions
+MGroceries
+LMH:Travel
+^
+KP
+U-94.95
+T-94.95
+PHabitat For Humanity
+MFundraiser donation in Kennebunkport
+LDonations & Charity
+^
+KP
+U-101.52
+T-101.52
+PHakata Marui
+MTravel, brushes
+LBook Exp:Travel:Japan
+^
+KP
+U-12.10
+T-12.10
+PHakata Marui
+MGroceries
+LMH:Travel
+^
+KP
+U-241.67
+T-241.67
+PHands
+LFood & Dining:Coffee Shops
+^
+KP
+U-11.72
+T-11.72
+PHands
+MThree carbon copies book
+LCC:Supplies
+^
+KP
+U-22.94
+T-22.94
+PHands
+MHanging supplies
+LMC:Supplies
+^
+KP
+U-107.38
+T-107.38
+PHannaford
+MGroceries
+LMH:Travel
+^
+KP
+U-200.90
+T-200.90
+PHarry & David
+MPears as a gift
+LGifts Given
+^
+KD
+U2,600.00
+T2,600.00
+PHarsh Gupta
+MDec 2018 Rent
+LRents Received:Walnut:4
+^
+KP
+U-56.08
+T-56.08
+PHarvest Seasonal Grill
+MChamber of Commerce meeting
+LCC:Advertising
+^
+KP
+U-1,440.97
+T-1,440.97
+PHavertys Furniture
+MNew fold out couch for CC 6
+LCC:6:Furnishings
+^
+KP
+U-200.08
+T-200.08
+PHaystacks
+Mwhite blouse
+LPSNL:Liz:Clothing
+^
+KD
+U599.46
+T599.46
+PHeidi Dieugenio
+MAirbnb, 4/27-5/1/18
+LRents Received:CC:2
+^
+KD
+U2,380.00
+T2,380.00
+PHelen Liu
+MAugust 2018 Rent
+LRents Received:CH:B
+^
+KP
+U-12,846.69
+T-12,846.69
+PHenry C Levy, Tax Assesor
+M2017-2018 Taxes, Payment 2 + Late Penalty of 10%
+LCH:Property Taxes
+^
+KP
+U-4,932.47
+T-4,932.47
+PHenry C Levy, Tax Assesor
+M1636 Walnut Street
+LHome:Property Taxes
+^
+KP
+U-6,324.51
+T-6,324.51
+PHenry C Levy, Tax Assesor
+M1722 Walnut Property Taxes for 2017-2018
+LWal:Property Taxes
+^
+KP
+U-8,097.84
+T-8,097.84
+PHenry C Levy, Tax Assesor
+MVillas Taxes 2017-2018
+LVSV:Property Taxes
+^
+KP
+U-910.88
+T-910.88
+PHigashi Ku
+MTo pay for Toda Sensei and Yumiko Illustrator
+LBook Exp:Travel:Japan
+^
+KP
+U-38.20
+T-38.20
+PHolistic Hound
+MCat food and Collars
+LPets:Pet Food & Supplies
+^
+KP
+U-1,094.44
+T-1,094.44
+PHome Depot
+MNew Oven for CH 1
+LCH:Appliances
+^
+KP
+U-282.65
+T-282.65
+PHome Depot
+MFaucet for kitchen in #5
+LMC:Repairs
+^
+KP
+U-282.65
+T-282.65
+PHome Depot
+MFaucet for kitchen in #5, shower head, plants
+LMC:Supplies:5
+^
+KD
+U833.74
+T833.74
+PHome Depot
+MLights, fans, vanities, plants, Toilet paper
+LMC:Supplies
+^
+KP
+U-92.58
+T-92.58
+PHome Depot
+M?
+L?
+^
+KP
+U-833.74
+T-833.74
+PHome Depot Credit Card Payment
+MLights, fans, vanities, plants, Toilet paper
+LMC:Supplies
+^
+KP
+U-178.63
+T-178.63
+PHome Goods
+M?
+L?
+^
+KP
+U-499.00
+T-499.00
+PHomeaway
+MListing Renewal for CC6
+LMC:Advertising
+^
+KD
+U404.74
+T404.74
+PHomeaway Des Remittance
+LOther Inc
+^
+KD
+U404.74
+T404.74
+PHomeaway Des Remittance
+MDenise Betka
+LRents Received:CC:3
+^
+KD
+U870.58
+T870.58
+PHomeaway Des Remittance
+L?
+^
+KP
+U-379.05
+T-379.05
+PHomeaway Us Tx
+M877-202-4291 TX
+LAuto & Transport:Auto Payment
+^
+KP
+U-103.75
+T-103.75
+PHomegoods
+MFurnishings for Coral Cove 7
+LCC:7:Furnishings
+^
+KP
+U-40.62
+T-40.62
+PHomegoods
+MCups, floral decor, cups
+LCC:6:Supplies
+^
+KP
+U-180.68
+T-180.68
+PHomegoods
+MWall art, towels, bath rugs, glassware
+LMC:Supplies
+^
+KP
+U-149.78
+T-149.78
+PHomegoods
+MStools
+LMC:Furnishings
+^
+KP
+U-61.99
+T-61.99
+PHoneybaked Ham Oakland
+MHoney baked ham
+LPSNL:Family:Groceries
+^
+KP
+U-6.20
+T-6.20
+PHotel Avenida Palace
+MHotel in Barcelona, waiting in lobby, water
+LCC:5:Travel:Andorra Ski Trip
+^
+KP
+U-6.20
+T-6.20
+PHotel Avenida Palace
+MHotel in Barcelona, waiting in lobby, water
+LPSNL:Family:Vacation:Andorra
+^
+KP
+U-6.20
+T-6.20
+PHotel Avenida Palacio Barcelona
+MWater
+^
+KP
+U-6.20
+T-6.20
+PHotel Avenida Palacio Barcelona
+MWater
+LPSNL:Family:Vacation:Andorra
+^
+KP
+U-105.00
+T-105.00
+PHotel Tonight
+^
+KP
+U-61.35
+T-61.35
+PHouston
+MWorking meal with john & Liz discussing prop mgmt personel
+LCC:Working Meals
+^
+KP
+U-4.37
+T-4.37
+PHP Instant Ink
+MInk Cartridge Refill
+LWal:Mgmt Fees
+SWal:Mgmt Fees
+$-0.73
+SVSV:Mgmt Fees
+$-0.73
+SCC:Mgmt Fees
+$-0.73
+SMH:Mgmt Fees
+$-0.73
+SMC:Mgmt Fees
+$-0.73
+SCH:Mgmt Fees
+$-0.72
+^
+KD
+U69.65
+T69.65
+PHP, Inc. HPQ
+MDividends
+LDividend Income
+^
+KP
+U-10.68
+T-10.68
+PHuber Drugs
+MLaundry Soap
+LCC:Supplies
+^
+KP
+U-19.24
+T-19.24
+PHuber Drugs
+MPersonal Care
+LPSNL:Liz:Health Care
+^
+KP
+U-148.97
+T-148.97
+PHudson's Bay Co
+^
+KD
+U300.00
+T300.00
+PHunter Noble
+MSec Dep for VSV 2
+LRents Received:VSV:Security Deposit
+^
+KD
+U1,400.00
+T1,400.00
+PHunter Noble
+MNovember rent for VSV 2
+LRents Received:VSV:2
+^
+KP
+U-63.46
+T-63.46
+PHurricane Restaurant
+LFood & Dining:Restaurants
+^
+KP
+U-3.00
+T-3.00
+PHyatt
+^
+KP
+U-200.00
+T-200.00
+PHyatt
+MGlen, work travel
+LBear Expenses
+^
+KP
+U-130.00
+T-130.00
+PI Got a Guy
+LMC:Repairs
+^
+KP
+U-59.00
+T-59.00
+PIAH Berkeley
+MNew Battery for iPhone for Sole
+LWal:Mgmt Fees
+^
+KP
+U-231.00
+T-231.00
+PIi Interval Int
+^
+KP
+U-359.59
+T-359.59
+PIkea
+LHome:Furnishings
+^
+KP
+U-67.71
+T-67.71
+PIkea
+MArtwork for hallways
+LVSV:Furnishings
+^
+KP
+U-258.83
+T-258.83
+PIkea
+MNew dining room chairs for CH 3
+LCH:Furnishings
+^
+KP
+U-566.46
+T-566.46
+PIkea
+MLamp, hamper, iron board, lights, plants, china
+LMC:Furnishings
+^
+KP
+U-60.36
+T-60.36
+PIl Girasole
+MDelray Beach Restaurant
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-37.00
+T-37.00
+PImage Beauty Salon
+MHaircut Glen
+LPSNL:Glen:Health Care
+^
+KP
+U-40.00
+T-40.00
+PImage Beauty Salon
+MHaircut for Liz
+LPSNL:Liz:Beauty
+^
+KP
+U-28.80
+T-28.80
+PIn N Out
+MLunch on Palm Springs Vacation
+LPSNL:Family:Vacation
+^
+KP
+U-51.72
+T-51.72
+PIn The Upper Crust
+MPalm Dessert meal
+LPSNL:Family:Vacation
+^
+KP
+U-137.50
+T-137.50
+PInnovative Laundry Systems
+MLaundry Repair - Jammed Quarter Cartridge
+LCH:Repairs
+^
+KP
+U-424.26
+T-424.26
+PInstasign
+MBrochures 1000x in Delray
+LCC:Advertising
+^
+KP
+U-83.46
+T-83.46
+PInstasign
+MAdvertising sign + posts for front lawn
+LMC:Advertising
+^
+KD
+U37.50
+T37.50
+PIntel Corporation
+MDividend
+LDividend Income:INTC
+^
+KD
+U0.11
+T0.11
+PInterest Adjustment
+MBank int
+LMisc.
+^
+KD
+U4.38
+T4.38
+PInterest Earned
+MBank of America Checking
+LInterest Inc
+^
+KD
+U2.78
+T2.78
+PInterest Earned
+MBank of America Checking
+LInterest Inc:Schwab Checking
+^
+KD
+U0.88
+T0.88
+PInterest Earned
+MB of A checking account
+LInterest Inc:BofA
+^
+KD
+U0.23
+T0.23
+PInterest Earned
+MBank of America Checking
+LInterest Inc:Carriage House
+^
+KD
+U0.21
+T0.21
+PInterest Income For Carriage House
+MInterest
+LInterest Inc:Carriage House
+^
+KD
+U20.77
+T20.77
+PInterest Paid
+MInterest
+LInterest Inc:Schwab One
+^
+KD
+U2.02
+T2.02
+PInterest Paid
+MInterest
+LInterest Inc:Schwab Checking
+^
+KD
+U0.05
+T0.05
+PInterest Rate Reversal
+MInterest charge
+LInterest Exp
+^
+KP
+U-199.00
+T-199.00
+PInterval International
+MPushing out the vacation date for Palm Springs
+LPSNL:Vacation:Welk
+^
+KP
+U-99.00
+T-99.00
+PInterval International
+MExtension
+LPSNL:Family:Vacation
+^
+KP
+U-69.00
+T-69.00
+PIppudo
+LFood & Dining:Restaurants
+^
+KP
+U-75.37
+T-75.37
+PIppudo
+MLunch with W5 Tenant, Akira
+LWal:Mgmt Fees
+^
+KP
+U-69.00
+T-69.00
+PIppudo
+MDiscussing Akira Rent Increase
+LWal:Mgmt Fees:Resident Amenities
+^
+KP
+U-41.00
+T-41.00
+PIppudo
+MDiscussing Lisa Lawsuit
+LWal:Working Meals
+^
+KP
+U-40.00
+T-40.00
+PIppudo
+MWorking on Office Organization
+LCC:Working Meals
+^
+KD
+U3,000.00
+T3,000.00
+PIRA Withdrawal
+MRequired withdrawal from my IRA
+L[Liz IRA-Schwab]
+^
+KD
+U14,002.00
+T14,002.00
+PIRS Treasury
+MFed Tax Returns
+LTax Returns
+^
+KP
+U-6,200.00
+T-6,200.00
+PIsland Air Conditioning
+MNew AC System for CC 5
+LCC:5:Repairs
+^
+KP
+U-615.00
+T-615.00
+PIsland Air Conditioning
+MSystem Maintenance
+LCC:7:Cleaning & Maintenance
+^
+KP
+U-86.03
+T-86.03
+PIsland Prime
+MRestaurant in San Diego
+LPSNL:Family:Vacation
+^
+KP
+U-2.99
+T-2.99
+PItunes
+MMonthly subscription to Genius Scan
+LEntertainment:Music
+^
+KP
+U-2.99
+T-2.99
+C*
+PItunes
+MMonthly subscription to Genius Scan
+LWal:Mgmt Fees:Software
+A
+A
+A
+A
+A
+A
+%
+SWal:Mgmt Fees:Software
+$-0.40
+SCH:Mgmt Fees:Software
+$-0.40
+SVSV:Mgmt Fees:Software
+$-0.40
+SCC:Mgmt Fees:Software
+$-0.40
+SMH:Mgmt Fees:Software
+$-0.39
+^
+KP
+U-2.99
+T-2.99
+C*
+PItunes
+MMonthly subscription to Genius Scan
+LWal:Mgmt Fees:Software
+A
+A
+A
+A
+A
+A
+%
+SWal:Mgmt Fees:Software
+$-1.60
+SCH:Mgmt Fees:Software
+$-1.60
+SVSV:Mgmt Fees:Software
+$-1.61
+SCC:Mgmt Fees:Software
+$-1.61
+SMH:Mgmt Fees:Software
+$-1.57
+^
+KP
+U-42.80
+T-42.80
+PIzzy's Steaks
+MSF Restaurant
+LPSNL:Family:Dining Out & Entertainment
+^
+KD
+U864.49
+T864.49
+PJ. Moni
+M1/17-1/20/18, Square Payment
+LRents Received:CC:3
+^
+KP
+U-43.00
+T-43.00
+PJack And Jones Portaferr Bacelona
+MBar in Barcelona
+LPSNL:Family:Vacation:Andorra
+^
+KP
+U-160.00
+T-160.00
+PJackeline Garcia
+MCleaning W7
+^
+KP
+U-160.00
+T-160.00
+PJackeline Garcia
+MCleaning W7
+LWal:Cleaning & Maintenance:7
+^
+KP
+U-200.00
+T-200.00
+PJackeline Garcia
+MCleaning CH #1
+LCH:Cleaning & Maintenance
+^
+KP
+U-180.00
+T-180.00
+PJackie
+MCleaning for Walnut
+LWal:Cleaning & Maintenance
+^
+KP
+U-14.97
+T-14.97
+PJai Wintersilks Vip
+^
+KP
+U-14.97
+T-14.97
+PJai Wintersilks Vip
+MSilk shirts
+LPSNL:Glen:Clothing
+^
+KD
+U10,000.00
+T10,000.00
+PJames Stevick
+MTransfer for purchase of Mango Cove
+L[Mango Cove]
+^
+KP
+U-300.00
+T-300.00
+PJames Stevick
+MGift, Birthday
+LPSNL:Family:Gifts Given
+^
+KP
+U-325.00
+T-325.00
+PJames Stevick
+MOffice Organization
+LWal:Mgmt Fees
+^
+KP
+U-1,000.00
+T-1,000.00
+PJames Stevick/ Prop 10 Support
+MProp 10 Support
+LWal:Legal
+^
+KD
+U241.10
+T241.10
+PJanette Snyder
+M6/9-6/12/18, Square Payment
+LRents Received:CC:7
+^
+KD
+U2,290.00
+T2,290.00
+PJanlaw Minor
+M2/14-2/28/18
+LRents Received:CC:6
+^
+KD
+U2,850.00
+T2,850.00
+PJanlaw Minor
+M2/19-2/29/20 Partial Payment
+LRents Received:CC:7
+^
+KP
+U-460.65
+T-460.65
+PJapanpost Bank Saga
+MPottery fair, pottery dishes, cups, vases
+LWal:Supplies
+^
+KP
+U-50.28
+T-50.28
+PJBS On The Beach
+MLunch
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-50.28
+T-50.28
+PJBS On The Beach
+MLooking for comparable rents in pompano
+LCC:Advertising
+^
+KP
+U-2.11
+T-2.11
+PJC Penney
+MMango Cove
+LMC:Supplies
+^
+KP
+U-2.11
+T-2.11
+PJC Penny
+MTowels
+LMC:Supplies
+^
+KD
+U1,950.00
+T1,950.00
+PJeff Simenauer
+MDec 2018 Rent
+LRents Received:CC:5
+^
+KP
+U-146.85
+T-146.85
+PJeffrey Kurtz Home Remodeling
+MReplace Sliding Screen Door
+LCC:5:Repairs
+^
+KP
+U-7,694.68
+T-7,694.68
+PJeffrey Kurtz Home Remodeling
+MDeck Remodel, Rotten wood, plus $5000
+LCC:7:Repairs
+^
+KP
+U-287.00
+T-287.00
+PJeffrey Kurtz Home Remodeling
+MDeck Remodel, Rotten wood, plus $5000
+LCC:4:Repairs
+SCC:4:Repairs/Replace door hinges and adjust
+$-153.50
+SCC:2:Repairs/Replace hinge and adjust
+$-133.50
+^
+KP
+U-1,685.50
+T-1,685.50
+PJeffrey Kurtz Home Remodeling
+LMC:Repairs
+^
+KD
+U1,075.00
+T1,075.00
+PJeremy Henderson
+MAug 2018 Rent
+LRents Received:VSV:9
+^
+KP
+U-300.00
+T-300.00
+PJeremy Henderson
+MPaper towels, toilet paper, dishsoap
+LVSV:Supplies
+^
+KD
+U170.27
+T170.27
+PJeremy Henderson
+MReturn of petty cash
+LReturn Of Capital
+^
+KP
+U-137.12
+T-137.12
+PJerry Artarama
+^
+KP
+U-272.70
+T-272.70
+PJet Blue
+MLiz flight from Maine to New York
+LMH:Travel
+^
+KP
+U-223.20
+T-223.20
+PJet Blue
+MLiz flying from BOS to FLL
+LCC:Travel
+^
+KP
+U-410.40
+T-410.40
+PJet Blue
+MFlight for John
+LMC:Travel
+^
+KP
+U-959.54
+T-959.54
+PJetblue
+MJohn's flight from SFo to BOS to Costa Rica and back
+LPSNL:John:Travel
+^
+KP
+U-50.00
+T-50.00
+PJhonnathan Buevedo
+MPlumbing help for W8 Fridge
+^
+KP
+U-180.00
+T-180.00
+PJhonnathan Buevedo
+MPlumbing help for Walnut #5
+LWal:Repairs
+^
+KP
+U-100.00
+T-100.00
+PJim Chard
+MDelray Beach Mayoral Candidate
+LDonations & Charity/CC:Mgmt Fees
+^
+KP
+U-225.00
+T-225.00
+PJoe And Denise
+MCleaning Mango Cove Apts
+LCC:6:Cleaning & Maintenance
+^
+KP
+U-260.00
+T-260.00
+PJoe And Denise
+MCleaning exterior windows
+LMC:Cln & Maintenance
+^
+KD
+U1,000.00
+T1,000.00
+PJohn & Lara Elliott
+MSec Dep for CH 1
+LRents Received:CH:Security Deposits
+^
+KD
+U4,500.00
+T4,500.00
+PJohn & Lara Elliott
+MJanuary 2018 Rent
+LRents Received:CH:1
+^
+KD
+U300.00
+T300.00
+PJohn Christian Ottem
+MDeposit
+L?
+^
+KD
+U300.00
+T300.00
+PJohn Christian Ottem
+MWalnut #5 Jan 5 - Feb 24, 2019
+L[Sec Deposits]
+^
+KD
+U300.00
+T300.00
+PJohn Christian Ottem
+MDeposit, Walnut #1
+L[Wal Security Deposits]
+^
+KD
+U4,500.00
+T4,500.00
+PJohn D. Elliott And Lara M. Kueppers
+M?
+L?
+^
+KD
+U4,500.00
+T4,500.00
+PJohn D. Elliott And Lara M. Kueppers
+MUpstairs in Victorian
+LRents Received:CH:1
+^
+KP
+U-500.00
+T-500.00
+PJohn P. Shand
+MHelp with Travel to Delray
+LGifts Given
+^
+KP
+U-500.00
+T-500.00
+PJohn P. Shand
+MHelp with Travel to Delray
+LGifts Given
+SGifts Given/Flight to Delray
+$-250.00
+SCC:Management Fees/Help with Emily Apt. Lawsuit
+$-250.00
+^
+KD
+U17,000.00
+T17,000.00
+PJohn Stevick
+M2 of 3 $17k Contributions
+LCH:Capital Contribution
+^
+KP
+U-300.00
+T-300.00
+PJohn Stevick
+MGift for James Birthday
+LPSNL:Family:Gifts Given
+^
+KP
+U-9,450.00
+T-9,450.00
+PJose Cox
+MReturn of Rent for 1/2 May, June, July, & August
+LRents Received:CH:3
+^
+KP
+U-400.00
+T-400.00
+PJose Cox
+MReturn of Security Deposit
+LRents Received:CH:Security Deposits
+^
+KP
+U-187.22
+T-187.22
+PJR Kyushu
+MHotel in Japan
+LPSNL:Liz:Travel
+^
+KP
+U-50.00
+T-50.00
+PJudicial Watch
+MDonation
+LWal:Legal
+^
+KP
+U-35.00
+T-35.00
+PJudicial Watch
+MDonation
+LDonations & Charity
+^
+KP
+U-71.25
+T-71.25
+PJuice Aro
+LHealth & Fitness
+^
+KP
+U-71.25
+T-71.25
+PJuice Aro
+MWeight loss pills for Liz
+LPSNL:Liz:Health Care
+^
+KP
+U-36.56
+T-36.56
+PJupiter
+MDinner with Ben Baulsimer of W10, discusssing needed improvemen
+LWal:Working Meals
+^
+KD
+U50,000.00
+T50,000.00
+PK & S Managment
+MFull Payment for Painting of 5 1722 Walnut Units
+LWal:Painting
+^
+KD
+U7,496.65
+T7,496.65
+PK & S Managment
+MNovember 2018 Payout from K and S
+LRents Received:Walnut:K&S
+^
+KP
+U-65.00
+T-65.00
+PKatie Woodall
+MHair Appt
+LPSNL:Liz:Beauty
+^
+KP
+U-45.00
+T-45.00
+PKatie Woodall Berkeley
+MHaircut
+LPSNL:Liz:Beauty
+^
+KD
+U3,150.00
+T3,150.00
+PKelly Brookbank
+MNovember Rent and deposit, last month
+LRents Received:MC:9
+SRents Received:MC:9
+EKelly Brookbank, Nov, Unit #. 
+$1,200.00
+SRents Received:MC:9
+EKelly Brookbank, Last month
+$1,200.00
+S[Sec Dep MC]
+EKelly Brookbank in Unit 9
+$750.00
+^
+KD
+U5,480.47
+T5,480.47
+PKennebunk Beach Realty
+MKeene Rental August 11 - 18, 2018
+LRents Received:MH
+^
+KD
+U90.00
+T90.00
+PKennebunk Beach Realty
+MReimbursement for carry out of furniture
+LMH:Cleaning & Maintenance
+^
+KP
+U-82.29
+T-82.29
+PKennebunk Kennebunkport & Wells Water District
+LBills & Utilities:Utilities
+^
+KP
+U-43.80
+T-43.80
+PKennebunk Kennebunkport & Wells Water District
+MWater
+LMH:Utilities:Water
+^
+KP
+U-1,635.00
+T-1,635.00
+PKennebunk River Club
+MAnnual Dues
+LMH:Resident Amenities
+^
+KP
+U-100.00
+T-100.00
+PKermit Lynch Wine Event
+MWine event
+LPSNL:Family:Dining Out & Entertainment
+^
+KD
+U3,000.00
+T3,000.00
+PKevin Yin
+MDeposit for CH B
+LRents Received:CH:Security Deposits
+^
+KD
+U4,200.00
+T4,200.00
+PKevin Yin
+Mjanuary 2019 Rent CH B Upper Duplex
+LRents Received:CH:B
+^
+KP
+U-50.00
+T-50.00
+PKG Berkeley Investors
+MTwo weeks parking for Samir in W10, 4/21-5/1/18
+LWal:Mgmt Fees:Resident Amenities:10
+^
+KP
+U-150.00
+T-150.00
+PKG Berkeley Investors
+MTwo weeks parking for Samir in W10, 4/21-5/1/18
+LWal:Mgmt Fees:Resident Amenities:10
+SWal:Mgmt Fees:Resident Amenities:10
+$-50.00
+SWal:Mgmt Fees:Resident Amenities:2
+$-100.00
+^
+KP
+U-100.00
+T-100.00
+PKG Berkeley Investors
+MParking for Dylan Droubay for September 2018
+LWal:Mgmt Fees:Resident Amenities:2
+^
+KP
+U-41.00
+T-41.00
+PKim Caldwell
+MPresent for Cemily reimbursement
+LGifts Given
+^
+KP
+U-403.01
+T-403.01
+PKings Wharfe
+MNew Clothes
+LPSNL:Family:Clothing
+^
+KP
+U-37.87
+T-37.87
+PKirala
+MWorking Lunch with james Stevick/organization
+LWal:Working Meals
+^
+KP
+U-125.00
+T-125.00
+PKitchenfire
+LFood & Dining
+^
+KP
+U-125.00
+T-125.00
+PKitchenfire
+MCooking Classes
+LPSNL:Family:Recreation
+^
+KP
+U-9.98
+T-9.98
+PKitte Hakata
+MTea, Fukuoka
+LBook Exp:Travel:Japan
+^
+KP
+U-35.26
+T-35.26
+PKumamoto Wasuki
+MArt supplies, Sumie
+LBook Exp:Travel:Japan
+^
+KP
+U-366.69
+T-366.69
+PKurtz Home Remodeling
+MRailings for CC7, Faucet Repair for CC6
+LCC:7:Repairs
+SCC:7:Repairs
+EInstallation of railings
+$-301.69
+SCC:6:Repairs
+EFaucet repair
+$-65.00
+^
+KP
+U-379.82
+T-379.82
+PLa Camarga Barcelona
+MDinner with Pedro Adsera and Maria Teresa
+^
+KP
+U-379.82
+T-379.82
+PLa Camarga Barcelona
+MDinner with Pedro Adsera and Maria Teresa
+LPSNL:Family:Vacation:Andorra
+^
+KP
+U-31.44
+T-31.44
+PLa Dulce
+LFood & Dining:Restaurants
+^
+KP
+U-70.41
+T-70.41
+PLa Taberna Del Cura
+MBarcelona, Glen and I looking for boys
+LPSNL:Family:Vacation:Andorra
+^
+KP
+U-29.58
+T-29.58
+PLalimes
+MDining Out
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-363.61
+T-363.61
+PLawsons In Kumamoto
+MBook expenses
+LBook Exp:Travel:Japan
+^
+KP
+U-109.35
+T-109.35
+PLe Garage Bistro
+MRestaurant in Sausalito
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-46.92
+T-46.92
+PLemongrass
+MLunch with Jestena Boughton, Delray planning
+LCC:Working Meals
+^
+KP
+U-46.92
+T-46.92
+PLemongrass
+MLunch with Jestena Boughton, Delray planning
+LCC:Management Fees
+^
+KP
+U-42.00
+T-42.00
+PLethi Pham
+M????
+LWal:Repairs
+^
+KP
+U-42.00
+T-42.00
+PLethi Pham
+MManicure
+LPSNL:Liz:Beauty
+^
+KP
+U-264.00
+T-264.00
+PLisa Crowder, Trustee
+MWatauga Woods, Lot 9 Taxes
+LWatauga Woods:Property Taxes
+^
+KP
+U-1.17
+T-1.17
+PLisa Klug
+M2017 Deposit Interest
+LWal:Security Deposit Interest
+^
+KP
+U-26.17
+T-26.17
+PLittle Louie's Cafe
+MPoint Richmond
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-126.00
+T-126.00
+PLockwise
+MRekeyed and cleaning of all front door keys
+LMH:Cleaning & Maintenance
+^
+KP
+U-187.08
+T-187.08
+PLockwise Locksmith
+MLocks including to lock off upstiars
+LMH:Repairs
+^
+KP
+U-22.52
+T-22.52
+PLodge F B
+LFood & Dining:Restaurants
+^
+KP
+U-22.52
+T-22.52
+PLodge F B
+MSkiing Trip to Northstar Welk
+LPSNL:Family:Vacation
+^
+KD
+U1,000.00
+T1,000.00
+PLori Hines
+MTwo months rent for Jack Hines, Bear Intern
+LRents Received:VSV:2
+^
+KD
+PLottusse Barcelona
+MPair of green heels with circle for Liz
+^
+KP
+U-62.72
+T-62.72
+PLottusse Barcelona
+MPair of green heels with circle for Liz
+LPSNL:Liz:Clothing
+^
+KP
+U-7.99
+T-7.99
+PLTV United
+MFLL SFO trip
+LCC:Travel
+^
+KD
+U1,900.00
+T1,900.00
+PLukas Bittner
+MMarch 2018 Rent + $400 Sec Dep
+LRents Received:VSV:2
+SRents Received:VSV:2
+$1,900.00
+SRents Received:VSV:Security Deposit
+$0.00
+^
+KD
+U1,400.00
+T1,400.00
+PLukas Bittner
+MApril 2018 Rent
+LRents Received:VSV:2
+^
+KP
+U-5.68
+T-5.68
+PLyft
+MPalm Springs
+LPSNL:Family:Vacation
+^
+KP
+U-4.83
+T-4.83
+PLyft
+M????
+LPSNL:Glen:Travel
+^
+KP
+U-54.96
+T-54.96
+PLyft Transportation
+MTravel in Delray
+LCC:Travel
+^
+KP
+U-48.53
+T-48.53
+PLyft Transportation
+MTravel to Palm Springs
+LPSNL:Family:Vacation
+^
+KD
+U1,500.00
+T1,500.00
+PLyman Martin
+MCoral Cove 2019 Deposit
+LRents Received:CC:2
+^
+KP
+U-400.00
+T-400.00
+PM.A.R. Contructions
+MNew oven install / moving new furniture
+LCH:Cleaning & Maintenance
+^
+KP
+U-500.00
+T-500.00
+PM.A.R. Contructions
+MPatch Interior Cracks at 1722 W + New Shower at Wisteria
+LWal:Repairs
+^
+KP
+U-1,200.00
+T-1,200.00
+PMack Rankin
+M1636 W Shower + 1722 W Hallway Cracks
+LWal:Repairs
+SWal:Repairs
+E1722 W Hallway cracks + W2 Kit
+$-600.00
+SHome:Repairs
+E1636 W Toilet Repair, shower v
+$-600.00
+^
+KP
+U-300.00
+T-300.00
+PMack Rankin
+MGift
+LGifts Given
+^
+KP
+U-360.00
+T-360.00
+PMack Rankin
+MRailing Materials
+LWal:Repairs
+^
+KP
+U-1,700.00
+T-1,700.00
+PMacLaren Sing Co
+MNew Sign for Coral Cove
+LCC:Advertising
+^
+KP
+U-77.94
+T-77.94
+PMacys
+MEstee Lauder perfume and deodorant
+LGifts Given
+^
+KP
+U-504.56
+T-504.56
+PMacy's
+^
+KP
+U-97.26
+T-97.26
+PMail-It
+MSheets for Walnut Apartments, Mailing Cross Country
+LWal:Furnishings
+^
+KP
+U-42.19
+T-42.19
+PMama Masin Andora
+MPinchos and wine with Glen
+^
+KP
+U-42.19
+T-42.19
+PMama Masin Andorra
+MPinchos and wine with Glen
+^
+KP
+U-42.19
+T-42.19
+PMama Masin Andorra
+MPinchos and wine with Glen
+LPSNL:Family:Vacation:Andorra
+^
+KD
+PMama Masin Asignar
+MTapas in Andorra la Villa with Jose and Ossiel
+LPSNL:Family:Vacation:Andorra
+^
+KP
+U-833.74
+T-833.74
+PMango Cove Account
+MMoney should have gone to MC
+L[Mango Cove]
+^
+KP
+U-50.36
+T-50.36
+PManpuku Restaurant
+MBerkeley Restaurant
+LPSNL:Family:Dining Out & Entertainment
+^
+KD
+U1,650.00
+T1,650.00
+PMaria Jimenez
+MNovember rent
+LRents Received:MC:5
+^
+KP
+U-1,125.00
+T-1,125.00
+PMaria Jose Sandoval
+MReturn of CH inc, too noisy
+LRents Received:CH:2
+^
+KP
+U-72.10
+T-72.10
+PMarisa Haskell Design
+MJewelry as presents for friends in Japan
+LGifts Given
+^
+KP
+U-237.98
+T-237.98
+PMarriot
+MCourtyard Marriott in Ohio for Mediation with Emily Ripple
+LCC:3:Legal
+SCC:3:Legal
+$-118.99
+SCC:4:Legal
+$-118.99
+^
+KP
+U-195.00
+T-195.00
+PMarriot
+MThree night four day stay in Carmel, Vacation
+LPSNL:Family:Vacation
+^
+KP
+U-300.00
+T-300.00
+PMarriott Encore Project
+MVacation
+LPSNL:Family:Vacation
+^
+KP
+U-237.98
+T-237.98
+PMarriott Hotel
+MCourtyard Marriott in Ohio for Mediation with Emily Ripple
+LCC:3:Legal
+SCC:3:Legal
+$-118.99
+SCC:4:Legal
+$-118.99
+^
+KP
+U-103.64
+T-103.64
+PMarshalls
+^
+KP
+U-112.29
+T-112.29
+PMarshalls
+MPlateware for CC 7
+LCC:7:Supplies
+^
+KP
+U-359.12
+T-359.12
+PMatouk Factory Store
+MNew Linens for MH
+LMH:Furnishings
+^
+KP
+U-1,865.19
+T-1,865.19
+PMatress Firm
+MNew Matress for Glen & Liz
+LHome:Furnishings
+^
+KD
+U542.00
+T542.00
+PMax Kroedel
+MRent for 7/1-7/15
+LRents Received:VSV:1
+^
+KP
+U-4.58
+T-4.58
+PMcdonald's
+LFood & Dining:Fast Food
+^
+KP
+U-15.66
+T-15.66
+PMcdonald's
+MWorking lunch, John & Liz shopping for Supplies
+LWal:Working Meals
+^
+KP
+U-5.67
+T-5.67
+PMcdonald's
+MLiz shopping for new runner for Villas
+LVSV:Working Meals
+^
+KP
+U-45.18
+T-45.18
+PMcdonald's
+MFamily dinner on Drive from Boston airport to Maine House
+LMH:Working Meals
+^
+KP
+U-4.58
+T-4.58
+PMcdonald's
+M????
+LPSNL:Liz:Dining Out & Entertainment
+^
+KP
+U-1,018.93
+T-1,018.93
+PMcGuire Builders
+MRepairs mouse entrances, drawers, windows
+LMH:Repairs
+^
+KP
+U-46.09
+T-46.09
+PMelodres Pay Pal
+MClothing
+LPSNL:Liz:Clothing
+^
+KP
+U-46.00
+T-46.00
+PMia Kitchen Bar
+LFood & Dining:Restaurants
+^
+KP
+U-143.85
+T-143.85
+PMiami Airport Corona Bar
+MAirport Dinner with Uncle King & Sue
+LPSNL:Family:Vacation:Andorra
+^
+KP
+U-2,299.00
+T-2,299.00
+PMiami Insurance Brokers
+MInsurance for Mango Cove
+LMC:Insurance
+^
+KP
+U-69.99
+T-69.99
+PMicrosoft Store
+MOffice 365 for John's Computer
+LCH:Mgmt Fees:Software
+SCH:Mgmt Fees:Software
+$-10.00
+SWal:Mgmt Fees:Software
+$-14.99
+SVSV:Mgmt Fees:Software
+$-15.00
+SCC:Mgmt Fees:Software
+$-15.00
+SMH:Mgmt Fees:Software
+$-15.00
+^
+KP
+U-608.00
+T-608.00
+PMignano Lawn Servicves
+MLandscaping design, grass installation
+LMC:Landscaping
+^
+KD
+U1,109.00
+T1,109.00
+PMike Priano
+M1/15-1/22/2019
+LRents Received:CC:2
+^
+KP
+U-120.08
+T-120.08
+PMikuni Japanese Restaura
+LFood & Dining:Restaurants
+^
+KP
+U-120.08
+T-120.08
+PMikuni Japanese Restaura
+MSkiing Trip to Northstar Welk
+LPSNL:Family:Vacation
+^
+KD
+U2,000.00
+T2,000.00
+PMilty
+M12/29-1/13/18
+LRents Received:CC:2
+^
+KP
+U-4,305.00
+T-4,305.00
+PMiss Mops Cleaners
+MServices for June '18 - Nov '18
+LVSV:Cleaning & Maintenance
+^
+KP
+U-55.00
+T-55.00
+PModel Shoe Renew
+MShoes repaired
+LPSNL:Family:Clothing
+^
+KP
+U-36.13
+T-36.13
+PMoka Restaurnat
+MCoffee on the Ranblas
+LPSNL:Family:Vacation:Andorra
+^
+KP
+U-7,500.00
+T-7,500.00
+PMollica Ball Shan & Sill
+MRipple Scherer Stevick Case Retainer
+LCC:Legal
+^
+KD
+U1,005.09
+T1,005.09
+PMollica, Gall, Sloan
+MReturn of Capital, overpaid on legal deposit
+LReimbursements
+^
+KP
+U-20.01
+T-20.01
+PMollie Stones
+MLunch on the boat for Liz and Glen
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-19.49
+T-19.49
+PMonterey Fish P
+LFood & Dining:Restaurants
+^
+KP
+U-19.49
+T-19.49
+PMonterey Fish P
+MShopping for Akira in W5
+LWal:Mgmt Fees:Resident Amenities
+^
+KP
+U-96.93
+T-96.93
+PMonterey Tokyo Fish Market
+MShopping for Akira in W5
+LWal:Mgmt Fees:Resident Amenities
+^
+KP
+U-58.54
+T-58.54
+PMonterey Tokyo Fish Market
+MTea pot
+LWal:Supplies
+^
+KP
+U-91.37
+T-91.37
+PMonterey Tokyo Fish Market
+MGroceries
+LPSNL:Family:Groceries
+^
+KP
+U-58.54
+T-58.54
+PMonterey Tokyo Fish Market
+MTea pot
+LWal:Supplies:5
+^
+KP
+U-91.37
+T-91.37
+PMonterey Tokyo Fish Market
+MGroceries and dinner party for Akira in W5
+LWal:Resident Amenities
+^
+KP
+U-136.86
+T-136.86
+PMoo.com
+M?
+L?
+^
+KP
+U-136.86
+T-136.86
+PMoo.com
+MBusiness cards
+LWal:Supplies
+^
+KP
+U-11.92
+T-11.92
+PMornings In Paris
+MMaine house meals
+LMH:Working Meals
+^
+KP
+U-3,000.00
+T-3,000.00
+PMove Money Out
+MRequired to move out each year after 70 1/2
+L[Schwab One 7845-9593]
+^
+KP
+U-46.24
+T-46.24
+PMUA
+MDining Out
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-100.00
+T-100.00
+PNathan Shar
+MReturn security minus cleaning
+L[CH Security Deposits]
+^
+KD
+U1,900.00
+T1,900.00
+PNathan Shor
+MCH 3 Rent + Deposit + Cleaning (5/30-6/14/18)
+LRents Received:CH:3
+^
+KP
+U-100.00
+T-100.00
+PNathan Shor
+MDeposit Return minus cleaning
+L[CH Security Deposits]
+^
+KD
+U1,525.00
+T1,525.00
+PNathan Tegeler
+MFebruary 2018 Rent
+LRents Received:VSV:2
+^
+KP
+U-2,710.27
+T-2,710.27
+PNationstar Mr. Cooper
+MPayoff from Nationwide Mr. Cooper
+LAuto & Transport:Mercedes
+^
+KP
+U-2,710.27
+T-2,710.27
+PNationstar Mr. Cooper
+MPayoff from Nationwide Mr. Cooper
+L[Gilman Street BEAR Property Loan]
+^
+KP
+U-3,420.17
+T-3,420.17
+PNationstar Mr. Cooper
+MLoan payment for BEAR building using Tern Inn
+LLoan Payment:Interest
+SLoan Payment:Interest
+$-1.86
+S[Gilman Street BEAR Property Loan]
+$-3,418.31
+^
+KP
+U-173.87
+T-173.87
+PNayade Barcelona
+MRestaurant
+LPSNL:Family:Vacation:Andorra
+^
+KP
+U-100.00
+T-100.00
+PNestor Chavez
+MMoving furniture
+LWal:Cleaning & Maintenance
+^
+KP
+U-10.99
+T-10.99
+PNetflix
+MMovie
+LEntertainment:Movies & DVDs
+^
+KP
+U-10.99
+T-10.99
+PNetflix
+MTV Subscription
+LPSNL:Family:Subscriptions
+^
+KP
+U-10.70
+T-10.70
+PNew York Times
+MNew Subscription
+LPSNL:Family:Subscriptions
+^
+KP
+U-10.70
+T-10.70
+PNew York Times
+MSunday only
+LEntertainment:Newspaper & Magazines
+^
+KP
+U-39.38
+T-39.38
+PNews Connection
+MAirport Snacks
+LPSNL:Family:Vacation:Andorra
+^
+KP
+U-15.17
+T-15.17
+PNico Hideaway
+MTake out
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-7.70
+T-7.70
+PNoah's Bagels
+MBreakfast for Glen
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-129.00
+T-129.00
+PNoom
+MWeight Loss App Subscription
+LPSNL:Family:Subscriptions
+^
+KP
+U-155.49
+T-155.49
+PNorth Berkeley Frame
+MFixing broken frame
+LVSV:Furnishings
+^
+KP
+U-1,050.00
+T-1,050.00
+PNorthstar@Tahoe
+MLife tickets for Liz & Glen
+LPSNL:Family:Vacation
+^
+KP
+U-46.32
+T-46.32
+PNovatel Andorra
+MBus from Barcelona to Andorra for Glen
+LPSNL:Family:Vacation:Andorra
+^
+KP
+U-119.79
+T-119.79
+PNST Home Depot
+MKey pad lock
+LMC:Supplies
+^
+KP
+U-64.39
+T-64.39
+PNumber One Gas
+MTransporting New Matresses and Pads to 1722 W
+LAuto & Transport:Gas & Fuel
+^
+KP
+U-64.39
+T-64.39
+PNumber One Gas
+MTransporting New Matresses and Pads to VSV
+LVSV:Mgmt Fees
+^
+KP
+U-27.75
+T-27.75
+PNumber One Gas
+MTransporting Old Furniture to Dump & New Furniture to Wal
+LWal:Mgmt Fees
+^
+KP
+U-10.70
+T-10.70
+PNY Times
+MNewspaper subscription
+LPSNL:Family:Subscriptions
+^
+KP
+U-10.93
+T-10.93
+POakley
+LHealth & Fitness:Eyecare
+^
+KP
+U-213.08
+T-213.08
+POcean One Grille
+LFood & Dining:Restaurants
+^
+KP
+U-213.08
+T-213.08
+POcean One Grille
+MDinner
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-85.19
+T-85.19
+POffice Depot
+MPurchasing new print roll for Label Maker
+LWal:Supplies
+^
+KP
+U-232.67
+T-232.67
+POffice Depot
+M????
+LWal:Supplies:5
+^
+KP
+U-54.95
+T-54.95
+POko
+MGreen shirt
+LPSNL:Liz:Clothing
+^
+KP
+U-910.00
+T-910.00
+POlga Malcolm Chanbers
+MCleaning Maine House after our visit
+LMH:Cleaning & Maintenance
+^
+KP
+U-205.94
+T-205.94
+POmaha Steaks
+MFor meals
+LFood & Dining:Mail Order
+^
+KP
+U-50.00
+T-50.00
+POnline Banking
+LBills & Utilities:Credit Card Payment
+^
+KD
+POpening Balance
+L[Bank of America Travel Rewards Visa Sign]
+^
+KD
+POpening Balance
+L[Carriage House Credit BofA 7413]
+^
+KD
+U5,617.04
+T5,617.04
+POpening Balance
+L[BofA Rewds Savings x6862]
+^
+KD
+U40,025.21
+T40,025.21
+POpening Balance
+L[Carriage House Chking Dbt 3065]
+^
+KD
+U136,246.19
+T136,246.19
+POpening Balance
+MBeginning balance
+L[Schwab One 7845-9593]
+^
+KD
+U67,189.42
+T67,189.42
+POpening Cash Balance
+^
+KP
+U-8.50
+T-8.50
+POrbitz
+MBooking fee for John Flight
+LPSNL:John:Travel
+^
+KP
+U-81.17
+T-81.17
+POrchard Supply
+MAnt spray
+LHome:Home Improvement
+^
+KP
+U-81.17
+T-81.17
+POrchard Supply
+MAnt spray
+LWal:Pest Control
+^
+KP
+U-40.05
+T-40.05
+PPacific Gas & Electric
+LBills & Utilities:Utilities
+^
+KP
+U-307.61
+T-307.61
+PPacific Gas & Electric
+MGas & Electric
+LCH:Utilities
+^
+KP
+U-256.05
+T-256.05
+PPacific Gas & Electric
+MGas & Electric
+LHome:Utilities
+^
+KP
+U-355.36
+T-355.36
+PPacific Gas & Electric
+MGas & Electric
+LVSV:Utilities:Gas&Electricity
+^
+KP
+U-158.17
+T-158.17
+PPacific Gas & Electric
+M?
+L?
+^
+KP
+U-50.00
+T-50.00
+PPacific Legal Fund
+MContribution Tax Deduction
+LWal:Legal
+^
+KP
+U-84.10
+T-84.10
+PPaisan Berkeley
+MGlen & Liz Eating out with Jay Singer
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-36.00
+T-36.00
+PPalm Beach Country Property Appraisal
+MCC 2, 3, & 4 Appraisals
+LCC:Legal
+^
+KP
+U-25.69
+T-25.69
+PPalm Beach County
+MCC 2 TDT Tax
+LCC:2:Tourist Tax
+^
+KD
+U360.00
+T360.00
+PPalm Beach Gator Ski Club
+MOverpayment refund
+LPSNL:Family:Vacation:Andorra
+^
+KP
+U-2,614.44
+T-2,614.44
+PPalm Beach Tax
+^
+KD
+U4,300.00
+T4,300.00
+PPanda Restaurant Group
+MMarch 2018 Rent + Cleaning Fee
+LRents Received:CH:1
+^
+KP
+U-64.09
+T-64.09
+PPapa John's
+LFood & Dining:Fast Food
+^
+KP
+U-45.32
+T-45.32
+PPapyrus
+MThank you and Christmas notes
+LWal:Supplies
+^
+KP
+U-9.00
+T-9.00
+PParis Baguette
+MCroissants
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-26.60
+T-26.60
+PParty Sushi
+MLunch with Liz and Kim
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-1,100.00
+T-1,100.00
+PPassport Publications
+M1/2 Page Magazine Advertisement
+LCC:Advertising
+^
+KP
+U-17.53
+T-17.53
+PPastime Hardware
+MContact Paper
+LWal:Repairs
+^
+KP
+U-17.53
+T-17.53
+PPastime Hardware
+MContact Paper for VIllas
+LVSV:Cleaning & Maintenance
+^
+KP
+U-44.28
+T-44.28
+PPastime Hdwe
+LHome:Home Improvement
+^
+KP
+U-26.31
+T-26.31
+PPasttime Hardward
+MShower arm, thread seal tape
+LWal:Supplies
+^
+KP
+U-26.31
+T-26.31
+PPasttime Hardward
+MShower arm, thread seal tape
+LCH:Repairs:1
+^
+KD
+U5,000.00
+T5,000.00
+PPatrice Bryan
+M2/15-4/12/2019, Payment 2 of 3
+LRents Received:CC:6
+^
+KD
+U126.50
+T126.50
+PPattern Energy PEGI
+MDividend
+^
+KD
+U126.60
+T126.60
+PPattern Energy PEGI
+MDividend Received
+LDividend Income
+^
+KP
+U-63.55
+T-63.55
+PPaypal
+M????
+LWal:Furnishings
+^
+KD
+U1,250.00
+T1,250.00
+PPaypal
+MTiffany
+L?/?
+^
+KD
+U1,250.00
+T1,250.00
+PPaypal
+MTiffany
+LRents Received:VSV:1
+^
+KP
+U-59.07
+T-59.07
+PPaypal
+MRotita
+LPSNL:Liz:Clothing
+^
+KD
+U0.15
+T0.15
+PPaypal
+MTest for deposit
+LMC:Bank Fees & Charges
+^
+KP
+U-72.00
+T-72.00
+PPdffiller
+LMisc. Expense (Business)
+^
+KP
+U-2,865.00
+T-2,865.00
+PPeckler Kolling + Woodul
+M2017 Taxes
+LWal:Legal
+^
+KP
+U-50.00
+T-50.00
+PPeets Coffee
+MTokunaga from Japan
+LWal:Advertising
+^
+KP
+U-50.00
+T-50.00
+PPeets Coffee
+MCoffee card for business
+LWal:Supplies
+^
+KP
+U-7.98
+T-7.98
+PPeet's Coffee
+MCoffee on way to Florida
+LCC:Travel
+^
+KP
+U-7.00
+T-7.00
+PPeet's Coffee
+MMichael, book writer
+LBook Exp:Travel:Japan
+^
+KP
+U-50.00
+T-50.00
+PPeet's Coffee
+MGift cards
+LWal:Mgmt Fees:Resident Amenities
+^
+KP
+U-7.05
+T-7.05
+PPeet's Coffee
+MCoffee
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-8.25
+T-8.25
+PPeet's Coffee
+MReviewing book over coffee
+LBook Exp
+^
+KP
+U-21.84
+T-21.84
+PPegasus Books
+MBooks
+LGifts Given
+^
+KP
+U-189.00
+T-189.00
+PPetrillo Plumbing
+MMango Cove plumbing repairs
+LMC:Repairs
+^
+KP
+U-225.00
+T-225.00
+PPhilip Lopes
+MElectrician, fixing outlets in VSV first floor hallway
+LVSV:Repairs
+^
+KP
+U-19.00
+T-19.00
+PPi Q
+LFood & Dining:Coffee Shops
+^
+KP
+U-19.00
+T-19.00
+PPi Q
+MLunch
+LPSNL:Liz:Dining Out & Entertainment
+^
+KP
+U-31.80
+T-31.80
+PPilot Travel Center
+LAuto & Transport:Gas & Fuel
+^
+KP
+U-50.00
+T-50.00
+PPLF
+MContribution Tax Deduction
+LCC:Licenses & Permits
+^
+KP
+U-82.08
+T-82.08
+PPlouf Plouf
+MDinner with friends
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-600.00
+T-600.00
+PPoint 8 Pines
+MLot #30 20189 Annual Dues
+LPoint 8 Pines:HOA
+^
+KP
+U-33.43
+T-33.43
+PPoint Communications Systems
+LMisc. Expense (Business)
+^
+KP
+U-96.25
+T-96.25
+PPoints Rapid Rewards
+M????
+LFees & Charges:Bank Fee
+^
+KP
+U-96.25
+T-96.25
+PPoints Rapid Rewards
+MAnnual Fee
+LCC:Mgmt Fees
+^
+KP
+U-17.85
+T-17.85
+PPollo Tropical
+MJohn and Liz working dinner, shopping for MC furnishings
+LMC:Working Meals
+^
+KP
+U-31.60
+T-31.60
+PPort Hardware
+MLED Lightbulbs
+LMH:Supplies
+^
+KP
+U-49.76
+T-49.76
+PPoulet
+LFood & Dining:Restaurants
+^
+KP
+U-23.27
+T-23.27
+PPoulet
+MLunch
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-27.79
+T-27.79
+PPoulet
+MLunch
+LWal:Working Meals
+^
+KP
+U-25.43
+T-25.43
+PPrat De Llobr Sky
+MAirport snacks
+LCC:5:Travel:Andorra Ski Trip
+^
+KP
+U-25.43
+T-25.43
+PPrat De Llobr Sky
+MAirport snacks
+LPSNL:Family:Vacation:Andorra
+^
+KD
+U954.00
+T954.00
+PPreencoded Deposit
+LOther Inc
+^
+KP
+U-198.00
+T-198.00
+PPreferred Guest Resorts
+MExtension on Interval
+LPSNL:Family:Vacation
+^
+KP
+PPreferred Rewards Wire
+LFees & Charges
+^
+KP
+U-35.00
+T-35.00
+PPublix
+MDELRAY BEACH FL
+LFood & Dining:Groceries
+^
+KP
+U-162.14
+T-162.14
+PPublix
+MGroceries
+LPSNL:Family:Groceries
+^
+KP
+U-74.43
+T-74.43
+PPublix
+M?????
+LCC:Supplies
+^
+KP
+U-102.39
+T-102.39
+PPublix
+MGrocieries for Liz while visiting Coral Cove
+LCC:Travel
+^
+KP
+U-67.12
+T-67.12
+PPublix
+MWorking on the deck repairs
+LCC:Management Fees
+^
+KD
+U500.00
+T500.00
+PQian Yetong
+MDeposit for W7+10
+LRents Received:Walnut:Security Deposit
+^
+KP
+U-6,237.09
+T-6,237.09
+C*
+PQuicken Loans
+MMonthly Mortgage Payment
+LCH:Mortgage:Principal
+A
+A
+A
+A
+A
+A
+%
+SCH:Mortgage:Principal
+$-4,058.48
+SCH:Mortgage:Interest
+$-2,178.61
+^
+KP
+U-500.00
+T-500.00
+PQuicken Loans
+MOrigination fee for Mango Cove
+LMC:Bank Fees & Charges
+^
+KD
+U5,279.12
+T5,279.12
+PQUICKEN LOANS Pay Off-
+MOverpayment
+LMango Cove Loan Payment
+^
+KP
+U-54.97
+T-54.97
+PQuinn's Lighthouse
+MDining out, Glen & Liz
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-629.34
+T-629.34
+PR
+MLighting and towels
+LHome:Rent
+^
+KP
+U-29.20
+T-29.20
+PRakutenpay Koransha Pottery
+MTwo vases
+LWal:Supplies
+^
+KP
+U-401.00
+T-401.00
+PRandal Lewis
+MTaxes
+^
+KP
+U-401.00
+T-401.00
+PRandal Lewis
+MTaxes, Big Oak drive
+LPoint 8 Pines:Property Tax
+^
+KD
+U948.90
+T948.90
+PRaphael Roman
+MVRBO, 11/3-11/10/18
+LRents Received:CC:7
+^
+KP
+U-60.64
+T-60.64
+PRaxakoul Cafe
+MLiz bought cheeses and chocaolates
+LPSNL:Family:Groceries
+^
+KP
+U-60.64
+T-60.64
+PRaxakoul Coffe
+LFood & Dining:Coffee Shops
+^
+KP
+U-60.64
+T-60.64
+PRaxakoul Coffe
+MMeal with Akira
+LWal:Mgmt Fees:Resident Amenities
+^
+KP
+U-250.83
+T-250.83
+PRecepcio Galeria2Escaldes
+MNot sure
+LPSNL:Family:Vacation:Andorra
+^
+KP
+U-91.81
+T-91.81
+PRegal Decorating
+^
+KP
+U-91.81
+T-91.81
+PRegal Paint
+MPaint for MC 7, color was antiquity
+LMC:Supplies
+^
+KP
+U-320.00
+T-320.00
+PREI Sporting Goods
+MBirthday present for James, and performance bag
+LPSNL:Family:Gifts Given
+^
+KP
+U-301.63
+T-301.63
+PReimbursement
+MFor faucet#5 and keypad, paid by Coral Cove
+LReimbursements
+^
+KP
+U-320.00
+T-320.00
+PReimbursement
+MBirthday present for James
+LPSNL:Family:Gifts Given
+^
+KD
+U325.63
+T325.63
+PReimbursement From CH
+MCurtains #2 and Chairs for #3
+LReimbursements
+^
+KP
+U-232.48
+T-232.48
+PRejuvenation
+MLighting and towels
+^
+KP
+U-232.48
+T-232.48
+PRejuvenation
+MLighting and towels
+LWal:Furnishings
+^
+KP
+U-237.44
+T-237.44
+PReplacements Tableware
+MReplacement silverware for family sets
+LHome:Furnishings
+^
+KP
+U-130.00
+T-130.00
+PResident Housing Safety Program
+MInspections, city fees
+LVSV:Licenses & Permits
+^
+KP
+U-11.89
+T-11.89
+PRest PI DEL MIG DIA Soldeu
+MSnacks on way to Andorra
+LPSNL:Family:Vacation:Andorra
+^
+KP
+U-280.40
+T-280.40
+PRestauranted Los Caracoles
+MBarcelona with Sam Kragh
+LPSNL:Family:Vacation:Andorra
+^
+KP
+U-26.49
+T-26.49
+PRex Key & Security
+MTwo VSV front and Two Walnut Front Key
+LWal:Repairs
+SWal:Repairs
+$-13.25
+SVSV:Repairs
+$-13.24
+^
+KP
+U-9.83
+T-9.83
+PRex Key & Security
+MNew mailbox keys for Wal3
+LWal:Supplies:3
+^
+KP
+U-219.62
+T-219.62
+PRex Key & Security
+MNew Mailbox Locks + Install
+LWal:Repairs
+^
+KP
+U-18.28
+T-18.28
+PRex Key & Security
+MNew keys for VSV front door
+LVSV:Supplies
+^
+KP
+U-35.51
+T-35.51
+PRex Key & Security
+MDuplicate mailboxes for 1722 Walnut
+LWal:Supplies
+^
+KP
+U-75.00
+T-75.00
+PRichard Sizemore
+MBirthday Present
+LGifts Given
+^
+KP
+U-75.00
+T-75.00
+PRick and Anns Restaurant
+MJamie's birthday
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-75.00
+T-75.00
+PRick and Anns Restaurant
+MMeeting on cottage presentation
+LWal:Legal
+^
+KP
+U-96.57
+T-96.57
+PRick Anns Restaurant
+LFood & Dining:Restaurants
+^
+KP
+U-96.57
+T-96.57
+PRick Anns Restaurant
+MFamily brunch with Neha
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-300.00
+T-300.00
+PRingdahl
+MPest Control, roaches, mice, mosquitoes
+^
+KP
+U-19.71
+T-19.71
+PRL Show Store
+M????
+LPSNL:Family:Vacation
+^
+KP
+U-19.71
+T-19.71
+PRL Show Store
+MClothing, Ralph lauren
+LPSNL:Liz:Clothing
+^
+KP
+U-296.11
+T-296.11
+PRoam Rental Car
+MAce Rental Car in FL
+LCC:Travel
+^
+KD
+U984.00
+T984.00
+PRobin Benarrouch
+MDeposit + January 2018 Rent
+LRents Received:VSV:Security Deposit
+SRents Received:VSV:Security Deposit
+$200.00
+SRents Received:VSV:10
+$684.00
+SVSV:Cleaning & Maintenance
+$100.00
+^
+KP
+U-324.86
+T-324.86
+PRobin Benarrouch
+MPetty Cash
+LVSV:Supplies
+^
+KD
+U1,050.00
+T1,050.00
+PRobin Benarrouch
+MDecember rent
+LRents Received:VSV:10
+^
+KP
+U-10,000.00
+T-10,000.00
+PRoofing Logistics
+MFinal payment for New 1636 Walnut Roof
+LWal:Repairs
+SWal:Repairs
+$-5,000.00
+SHome:Repairs
+$-5,000.00
+^
+KP
+U-34.28
+T-34.28
+PRosa Maria Fores Barcelona
+MMisc expenses
+LPSNL:Family:Vacation:Andorra
+^
+KP
+U-33.36
+T-33.36
+PRubys Diner
+MRestaurant in Carlsbad
+LPSNL:Family:Vacation
+^
+KP
+U-61.00
+T-61.00
+PRue Lepic Restaurant
+MSF Restaurant
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-88.00
+T-88.00
+PRum Reggae
+M????
+LPSNL:Family:Recreation
+^
+KP
+U-456.50
+T-456.50
+PRum Reggae
+MTee Shirts for family and friends in Japan
+LGifts Given
+^
+KP
+U-88.00
+T-88.00
+PRum Reggae
+MGlen & Liz date night
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-210.73
+T-210.73
+PS Ferregamo Ecommerce
+MShoes for Glen
+LPSNL:Glen:Clothing
+^
+KP
+U-20.96
+T-20.96
+PSafeway
+MCat food
+LPets:Pet Food & Supplies
+^
+KP
+U-8.40
+T-8.40
+PSafeway
+MCoffee for Sole
+LCH:Cleaning & Maintenance
+^
+KP
+U-39.34
+T-39.34
+PSafeway
+MTrash bags, soap detergent, beer for new tenants
+LCH:Supplies
+^
+KP
+U-3.28
+T-3.28
+PSafeway
+MNewspaper
+LBook Exp:Consulting
+^
+KP
+U-19.97
+T-19.97
+PSafeway
+MGroceries
+LFood & Dining:Groceries
+^
+KP
+U-9.72
+T-9.72
+PSafeway
+MGroceries
+LPSNL:Family:Groceries
+^
+KP
+U-6.86
+T-6.86
+PSam Hort Berkley
+LFood & Dining:Groceries
+^
+KP
+U-19.39
+T-19.39
+PSam Hort Berkley
+MPlants for front of 1722 W
+LWal:Landscaping
+^
+KD
+U950.00
+T950.00
+PSameer Pardhy
+M4/21-5/1/18 Rent
+LRents Received:Walnut:9-Cottage
+^
+KD
+U1,760.00
+T1,760.00
+PSameer Pardhy
+MRent
+LRents Received:Walnut:9-Cottage
+SRents Received:Walnut:9-Cottage
+$1,710.00
+$50.00
+^
+KP
+U-400.00
+T-400.00
+PSameer Pardhy
+MPaint removal on car reimbursement (Painters to pay us back)
+LWal:Mgmt Fees:Resident Amenities:10
+^
+KP
+U-375.00
+T-375.00
+PSameer Pardhy
+MSec Dep Return for W 7 Stay
+LRents Received:Walnut:Security Deposit
+^
+KP
+U-112.35
+T-112.35
+PSams Cleaners
+MRug cleaning
+LWal:Cleaning & Maintenance
+^
+KP
+U-68.90
+T-68.90
+PSam's Cleaners
+MArea rug
+LWal:Cleaning & Maintenance
+^
+KP
+U-55.90
+T-55.90
+PSam's Cleaners
+MDry cleaning
+LPSNL:Glen:Clothing
+^
+KP
+U-49.10
+T-49.10
+PSam's Club
+^
+KP
+U-45.00
+T-45.00
+PSam's Club
+MClub membership fee for Maine House supply purchases
+LMH:Mgmt Fees
+^
+KP
+U-421.34
+T-421.34
+PSam's Club
+MNew rug, towels, knives, paper towels, trash cans, bulbs
+LMH:Supplies
+^
+KP
+U-63.25
+T-63.25
+PSan Francisco International Airport
+MFood while traveling to Japan
+LPSNL:Liz:Travel
+^
+KD
+U1,000.00
+T1,000.00
+PSang
+MSept  2018 Rent
+LRents Received:VSV:5
+^
+KD
+U1,550.00
+T1,550.00
+PSang Bin Cho
+MDec 2018 Rent
+LRents Received:VSV:5
+^
+KP
+U-14.76
+T-14.76
+PSankaku In San Francisco
+MMatcha tea cakes
+LFood & Dining:Groceries
+^
+KD
+U3,188.21
+T3,188.21
+PSarah Jones
+M2/1-2/14/18, Square Payment
+LRents Received:CC:7
+^
+KP
+U-42.00
+T-42.00
+PSaul's
+MMeeting with James Stevifk re CC Money lawsuit
+LCC:Legal
+^
+KP
+U-42.49
+T-42.49
+PSaul's Restaurant
+MWorking lunch with John & Liz; discussing roof bids for 1722 W
+LWal:Working Meals
+^
+KP
+U-25.61
+T-25.61
+PSaul's Restaurant
+MJohn & Liz discussing granite in Villas
+LVSV:Working Meals
+^
+KP
+U-62.93
+T-62.93
+PSaul's Restaurant
+MFamily Dinner
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-78.53
+T-78.53
+PSausalito Yacht Club
+MBlue Devils, Fleet Week
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-206.48
+T-206.48
+PScandinavian Designs
+LHome:Furnishings
+^
+KP
+U-1,876.92
+T-1,876.92
+PScandinavian Designs
+MSofabed for Wal1
+LWal:Furnishings:1
+^
+KP
+U-817.19
+T-817.19
+PScandinavian Designs
+MSide table fojjjW7,Coffee Bean Table W2
+LWal:Furnishings
+^
+KD
+U9.55
+T9.55
+PSchwab
+MSchwab interest
+LInterest Inc
+^
+KD
+U3.25
+T3.25
+PSchwab
+MSchwab interest
+LInterest Inc:Schwab One
+^
+KD
+U18.74
+T18.74
+PSchwab 9593 Dividend
+MInterest dividend
+LInterest Inc:Schwab One
+^
+KD
+U6.08
+T6.08
+PSchwab Interest
+MInterest
+LInterest Inc:Schwab One
+^
+KP
+U-300.00
+T-300.00
+PScott Lymburner
+MChristmas bonus/gift
+LCC:Management Fees
+^
+KP
+U-1,963.33
+T-1,963.33
+PScotts Management Services
+MPetty Cash
+LCC:Petty Cash
+^
+KP
+U-2,459.93
+T-2,459.93
+PScott's Management Services
+MNew Bosch Fridge, Reimbursement
+LCC:7:Appliances
+^
+KP
+U-990.00
+T-990.00
+PScott's Management Services
+MJanuary 2018 Fees for White Dove Cleaning
+LCC:Cleaning & Maintenance
+^
+KP
+U-1,923.81
+T-1,923.81
+PScott's Management Services
+MMay + June 2018 Petty Cash
+LCC:Petty Cash
+^
+KP
+U-531.50
+T-531.50
+PScott's Management Services
+MOctober 2018 Commissions
+LCC:Commissions
+^
+KP
+U-1,923.81
+T-1,923.81
+PScott's Management Services
+MMay + June 2018 Petty Cash
+LCC:7:Cleaning & Maintenance
+SCC:7:Cleaning & Maintenance
+ECC7 White Dove
+$-390.00
+SCC:4:Cleaning & Maintenance
+ECC4 White Dove
+$-140.00
+SCC:2:Cleaning & Maintenance
+ECC 2 White Dove
+$-180.00
+SCC:3:Cleaning & Maintenance
+ECC 3 White Dove
+$-90.00
+SCC:7:Supplies
+ESheets and supplies
+$-101.06
+SCC:7:Plumbing
+EPetrillos for flapper and fill
+$-132.00
+SCC:7:Cleaning & Maintenance
+EClean sofa and rug twice
+$-215.00
+SCC:3:Supplies
+ETarget, new TV and blanket
+$-675.75
+SCC:4:Supplies
+ESupplies, Publix
+$0.00
+^
+KP
+U-36.96
+T-36.96
+PScoula Vecchia Pizza
+MDinner
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-36.96
+T-36.96
+PScoula Vecchia Pizza
+MBeach Property Owners Assn meeting,
+LCC:Management Fees
+^
+KP
+U-36.96
+T-36.96
+PScoula Vecchia Pizza
+MBeach Property Owners Assn meeting,
+LCC:Working Meals
+^
+KD
+U1,050.00
+T1,050.00
+PSecurity Deposits
+MChantall 3 and Maria Jimenewz 5
+L[Sec Dep MC]
+S[Sec Dep MC]
+EMaria Jimenez, Unit 5
+$750.00
+S[Sec Dep MC]
+EChantalle, Unit3
+$300.00
+^
+KP
+U-3.78
+T-3.78
+PSelecta CH AG Kirchberg Be
+MSnacks on way to Andorra
+LPSNL:Family:Vacation:Andorra
+^
+KP
+U-29.95
+T-29.95
+PService Fees
+MCoral Cove Business monthly fee
+LCC:Management Fees
+^
+KP
+U-26.00
+T-26.00
+PSf Chronicle Subscript
+LEntertainment:Newspaper & Magazines
+^
+KP
+U-99.00
+T-99.00
+PSf Chronicle Subscription
+MNewspaper Subscription
+LPSNL:Family:Subscriptions
+^
+KP
+U-157.00
+T-157.00
+PSFMTACity Payment
+MTwo parking tickets for Cheve Volt
+LAuto & Transport
+^
+KP
+U-125.00
+T-125.00
+PSFO Parking
+MParking for Liz and John trip to FL
+LCC:Travel
+^
+KP
+U-39.00
+T-39.00
+PSharpshooter Image
+M????
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-12.50
+T-12.50
+PShattuck Cinema
+MMovie for Mom
+LPSNL:Family:Dining Out & Entertainment
+^
+KD
+U3,900.00
+T3,900.00
+PShazib Haq
+MAugust 2018 Rent
+LRents Received:CH:A
+^
+KP
+U-45.52
+T-45.52
+PShell
+MSkiing Trip to Northstar Welk
+LPSNL:Family:Vacation
+^
+KP
+U-18.42
+T-18.42
+PShell
+MDELRAY BEACH FL
+LAuto & Transport:Gas & Fuel
+^
+KP
+U-30.00
+T-30.00
+PShell Oil
+MGas Station for Rental Car
+LCC:Travel
+^
+KD
+U1,046.96
+T1,046.96
+PSherri Atkinson
+M7/11-7/18/18
+LRents Received:CC:4
+^
+KP
+U-65.50
+T-65.50
+PShoes.com
+MShoe's for Glen
+LPSNL:Glen:Clothing
+^
+KD
+U650.00
+T650.00
+PShugi Xu
+M?
+L?
+^
+KD
+U650.00
+T650.00
+PShugi Xu
+MNovember rent
+LRents Received:Walnut:7
+^
+KD
+U2,200.00
+T2,200.00
+PShugi Xu
+MDecember 2018 Rent
+LRents Received:Walnut:7
+SRents Received:Walnut:7
+$1,500.00
+SRents Received:VSV:9
+$700.00
+^
+KP
+U-76.98
+T-76.98
+PSkates On The Bay
+MDining out
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-121.99
+T-121.99
+PSkates On The Bay
+MFlight back from Delray, re Coral Cove deck
+LCC:7:Repairs
+^
+KP
+U-170.00
+T-170.00
+PSkin Care And Co
+MPalm Springs Beauty Stop
+LPSNL:Liz:Beauty
+^
+KD
+PSky Prat, Barcelona Airport
+MSnack while waiting plane
+^
+KP
+U-25.43
+T-25.43
+PSky Prat, Barcelona Airport
+MSnack while waiting plane
+^
+KP
+U-25.43
+T-25.43
+PSky Prat, Barcelona Airport
+MSnack while waiting plane
+LPSNL:Family:Vacation:Andorra
+^
+KP
+U-26.88
+T-26.88
+PSling.Com
+MStreaming Cable
+LWal:Utilities:Cable:1
+^
+KP
+U-26.88
+T-26.88
+PSling.Com
+MStreaming Cable
+LWal:Utilities:Cable:2
+^
+KP
+U-26.88
+T-26.88
+PSling.Com
+MStreaming Cable
+LWal:Utilities:Cable:5
+^
+KP
+U-26.88
+T-26.88
+PSling.Com
+MStreaming Cable
+LWal:Utilities:Cable:4
+^
+KP
+U-26.88
+T-26.88
+PSling.Com
+MStreaming Cable
+LCH:Utilities:Cable:1
+^
+KP
+U-50.00
+T-50.00
+PSmile Train
+MDonation
+LDonations & Charity
+^
+KP
+U-209.72
+T-209.72
+PSnappy Turtle
+MOutdoor rug for Deck of CC6
+LCC:6:Furnishings
+^
+KP
+U-1,181.95
+T-1,181.95
+PSnow.Com Vail Resorts
+^
+KP
+U-1,390.95
+T-1,390.95
+PSnow.Com Vail Resorts
+MSeason passes for Liz, John, & James
+LPSNL:Family:Recreation:Skiing
+^
+KP
+U-350.00
+T-350.00
+PSoledad Cortes
+MCleaning CH B, 2, & 3 - April 2018
+LCH:Cleaning & Maintenance
+^
+KP
+U-187.49
+T-187.49
+PSoledad Cortes
+MOctober supplies, cleansers, mops,
+LWal:Supplies
+^
+KP
+U-300.00
+T-300.00
+PSoledad Cortes
+MFor work done cleaning
+LWal:Cleaning & Maintenance
+^
+KP
+U-109.94
+T-109.94
+PSoledad Cortes
+MCH Materials May Through September
+LCH:Supplies
+^
+KP
+U-1,500.00
+T-1,500.00
+PSoledad Cortes
+MFeliz Navidad
+LGifts Given
+^
+KP
+U-167.88
+T-167.88
+PSoma Intimates
+MPajamas
+LPSNL:Family:Clothing
+^
+KP
+U-147.23
+T-147.23
+PSor Technology
+MFlights to Florida
+LCC:Travel
+^
+KP
+U-11.20
+T-11.20
+PSouthwest
+MTrip to Ontario to visit Holly in Palm Desert
+LPSNL:Liz:Travel
+^
+KP
+U-89.50
+T-89.50
+PSp Berle Apparel
+^
+KP
+U-439.45
+T-439.45
+PSpang Fuel Bill
+LBills & Utilities
+^
+KP
+U-164.57
+T-164.57
+PSpang Fuel Bill
+MHeating Oil
+LMH:Utilities:Heating
+^
+KP
+U-420.61
+T-420.61
+PSpang Fuel Bill
+MHeating oil
+LMH:Utilities
+^
+KP
+U-171.61
+T-171.61
+PSpectrum
+MCable bill
+LMH:Utilities:TV Cable
+^
+KP
+U-171.61
+T-171.61
+PSpectrum Time Warner
+MTern Inn cable and internet
+LMH:Utilities:TV Cable
+^
+KP
+U-58.10
+T-58.10
+PSpirit Truckee
+LAuto & Transport:Gas & Fuel
+^
+KP
+U-58.10
+T-58.10
+PSpirit Truckee
+MGas for return drive home, Skiing Trip to Northstar Welk
+LPSNL:Family:Vacation
+^
+KD
+U15.73
+T15.73
+PSports Basement
+MShoes, orange did not fit so exchanged,
+LPSNL:Liz:Clothing
+^
+KD
+U1,447.35
+T1,447.35
+PSquare
+MSusan Macri, 12/22-12/31/18
+LRents Received:CC:7
+^
+KD
+U1,069.07
+T1,069.07
+PSquare
+MAlan Dunbar, 12/26-12/31/18
+LRents Received:CC:3
+^
+KD
+U1,393.16
+T1,393.16
+PSquare
+L?
+^
+KD
+U1,393.16
+T1,393.16
+PSquare
+MClaire Marcus
+LRents Received:CC:6
+^
+KD
+U960.99
+T960.99
+PSquare
+LRents Received:CC
+^
+KP
+U-10.93
+T-10.93
+PSSI Oakley
+MFacemask
+LPSNL:Family:Vacation
+^
+KD
+U2,300.00
+T2,300.00
+PStan Schneider
+MPartial Payment for 2019, 1/31-3/1/19
+LRents Received:CC:4
+^
+KP
+U-111.51
+T-111.51
+PStaples
+MPost its, white out, files, notebooks
+LWal:Supplies
+^
+KP
+U-25.00
+T-25.00
+PStarbucks
+MCoffee for tenants
+LWal:Working Meals
+^
+KP
+U-11.82
+T-11.82
+PStarbucks
+MMeal on the go for Liz in Maine
+LMH:Travel
+^
+KP
+U-14.08
+T-14.08
+PStarbucks
+MMeeting with landscapers
+LCC:Landscaping
+^
+KP
+U-25.00
+T-25.00
+PStarbucks
+MDelray Beach meetings
+LCC:Management Fees
+^
+KP
+U-25.00
+T-25.00
+PStarbucks
+MCoffee for tenants
+LWal:Mgmt Fees:Resident Amenities
+^
+KP
+U-13.89
+T-13.89
+PStarbucks Store Delray
+MWorking meeting with John & Preston re cable
+LCC:Working Meals
+^
+KD
+U103.19
+T103.19
+PState Farm Insurance
+MOverpayment
+LReturn Of Capital
+^
+KP
+U-885.00
+T-885.00
+PState Farm Insurance
+M2018/2019 Insurance Premium
+LVSV:Insurance
+^
+KD
+U103.19
+T103.19
+PState Farm Insurance
+MOverpayment for 2017/2018  Insurance Premium
+LMH:Insurance
+^
+KP
+U-472.00
+T-472.00
+PState Farm Insurance
+MInsurance for the carriage house
+LCH:Insurance
+^
+KP
+U-140.00
+T-140.00
+PState Of CA DMV
+MRegistration fees for Mercedes
+LAuto & Transport:Mercedes:Registration Fees
+^
+KP
+U-1,696.00
+T-1,696.00
+PStatefarm
+M2017/2018 Insurance Premium
+LMH:Insurance
+^
+KP
+U-2,077.00
+T-2,077.00
+PStatefarm
+M2017/2018 Insurance Premium
+LWal:Insurance
+^
+KP
+U-885.00
+T-885.00
+PStatefarm
+M2018/2019 Insurance Premium
+LVSV:Insurance
+^
+KP
+U-30.74
+T-30.74
+PStonebridge Liquors
+MWine for Deborah cocktail party
+LPSNL:Family:Gifts Given
+^
+KP
+U-17.95
+T-17.95
+PStyle Of Modern Store
+M?????
+LCC:6:Furnishings
+^
+KP
+U-17.95
+T-17.95
+PStyle Of Modern Store
+MBunion Corrector
+LPSNL:Liz:Health Care
+^
+KP
+U-6.51
+T-6.51
+PSubway
+MGlen meal
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-662.13
+T-662.13
+PSuizenji Kyousai Kaikan
+MHotel in Kumamoto,Working on book
+LBook Exp:Travel:Japan
+^
+KP
+U-39.19
+T-39.19
+PSummit Deck Grill
+LFood & Dining:Restaurants
+^
+KP
+U-33.78
+T-33.78
+PSummit Deck Grill
+MLunch on the Slopes, Skiing Trip to Northstar Welk
+LPSNL:Family:Vacation
+^
+KD
+U2,500.00
+T2,500.00
+PSun Yue
+MRent for Villas, September
+LRents Received:VSV:5
+^
+KD
+U2,500.00
+T2,500.00
+PSun Yue
+L?
+^
+KD
+U2,500.00
+T2,500.00
+PSun Yue
+MZelle October rent
+LRents Received:VSV:7
+^
+KP
+U-138.75
+T-138.75
+PSunbiz.org
+M?????
+LCC:Advertising
+^
+KP
+U-138.75
+T-138.75
+PSunbiz.org
+MAnnual LLC Fees for CC 6
+LCC:6:Legal & Professional Fees
+^
+KP
+U-15.81
+T-15.81
+PSunoco
+LAuto & Transport:Gas & Fuel
+^
+KP
+U-26.71
+T-26.71
+PSunoco
+MGas for rental car
+LMC:Travel
+^
+KP
+U-40.84
+T-40.84
+PSunoco
+MGas for rental car
+LCC:Travel
+^
+KP
+U-34.75
+T-34.75
+PSuper Thrift
+MTwo table chairs and a crate of water
+LMC:Furnishings:3
+^
+KP
+U-15.00
+T-15.00
+PSuperior Court Of Alameda
+MLawsuit History Search on Lisa Klug
+LWal:Legal
+^
+KP
+U-1,328.38
+T-1,328.38
+PSur La Table
+LHome:Furnishings
+^
+KD
+U1,447.35
+T1,447.35
+PSusan & Greg Macri
+M12/22-12/31/18, Square Payment, 1st Payment
+LRents Received:CC:7
+^
+KD
+U21.00
+T21.00
+PSutter Health
+MMedical Visit Overpayment Correction
+LPSNL:Family:Health Care
+^
+KD
+U100.00
+T100.00
+PSuzan Persutti
+MOne night early, 3/9/18
+LRents Received:CC:4
+^
+KP
+U-2,010.17
+T-2,010.17
+PSvensson Automotive
+LAuto & Transport:Service & Parts
+^
+KP
+U-147.57
+T-147.57
+PSwatch
+MTwo satches for Liz
+^
+KP
+U-147.57
+T-147.57
+PSwatch
+MTwo satches for Liz
+^
+KP
+U-147.57
+T-147.57
+PSwatch
+MTwo swatches for Liz
+LPSNL:Liz:Clothing
+^
+KP
+U-27.59
+T-27.59
+PSweet Green
+MJames Working lunch organization work
+LWal:Mgmt Fees
+^
+KP
+U-13.38
+T-13.38
+PSweet Green
+MJames Working lunch organization work
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-146.99
+T-146.99
+PSwift Dry Cleaners & Shoe Repair
+MRepair of Shoes
+LPSNL:Glen:Clothing
+^
+KP
+U-146.99
+T-146.99
+PSwift Dry Cleaners & Shoe Repair
+MW 7 Comforter Wash
+LWal:Cleaning & Maintenance
+^
+KP
+U-146.99
+T-146.99
+PSwift Dry Cleaners & Shoe Repair
+MCoral Cove 7 Two rugs dry cleaned
+LCC:Cleaning & Maintenance
+^
+KP
+U-90.00
+T-90.00
+PSwiss Intl
+MSeat Upgrade, Skiing Trip to Andorra
+^
+KP
+U-90.00
+T-90.00
+PSwiss Intl
+MSeat Upgrade, Skiing Trip to Andorra
+LPSNL:Family:Vacation
+^
+KD
+U9.04
+T9.04
+PSwvxx
+MMoney Market Index Dividend
+LDividend Income:SWVXX
+^
+KP
+U-18.92
+T-18.92
+PTaco Bell In Modesto
+MDriving out to hear Mack Rankin
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-97.43
+T-97.43
+PTahoe Sports Exchange
+MSnowboard rental for Glen
+LPSNL:Glen:Vacation
+^
+KP
+U-340.77
+T-340.77
+PTarget
+MWalnut Apt Supplies + Psnl
+LWal:Supplies
+SWal:Supplies/Mirror, pots and pans, dinnerware
+$-314.37
+SGifts Given
+EValentine's Day
+$-26.40
+^
+KP
+U-28.94
+T-28.94
+PTarget
+MBathrug, pillows, chopping mats
+LCC:Supplies
+^
+KP
+U-181.85
+T-181.85
+PTarget
+MDecorative tray and two ottomans
+LMC:Furnishings:5
+^
+KP
+U-149.44
+T-149.44
+PTarget
+MBrooms, cleaners, pillows, drapery rod, curtains
+LWal:Supplies
+^
+KP
+U-72.74
+T-72.74
+PTarget
+MTowels, coffee makers, toasters, bath towels
+LMC:Supplies
+^
+KP
+U-3,229.64
+T-3,229.64
+PTax Collector, Palm Beach County
+MCoral Cove 6
+LCC:6:Property Tax
+^
+KP
+U-2,746.41
+T-2,746.41
+PTax Collector, Palm Beach County
+MCoral Cove 2
+LCC:2:Property Tax
+^
+KP
+U-2,746.41
+T-2,746.41
+PTax Collector, Palm Beach County
+MCoral Cove 3
+LCC:3:Property Tax
+^
+KP
+U-2,746.41
+T-2,746.41
+PTax Collector, Palm Beach County
+MCoral Cove 4
+LCC:4:Property Tax
+^
+KP
+U-3,132.99
+T-3,132.99
+PTax Collector, Palm Beach County
+MCoral Cove 5
+LCC:5:Property Tax
+^
+KP
+U-38.78
+T-38.78
+PTender Greens
+MWorking lunch with Liz and John discussing W Exterior Paint
+LWal:Working Meals
+^
+KP
+U-99.00
+T-99.00
+PTeresa Ketterman
+MTeeth Cleaning for John
+LPSNL:John:Health Care
+^
+KP
+U-300.00
+T-300.00
+PTeresa Mejia
+MCleaning of 3 apts
+LMC:Cln & Maintenance
+^
+KP
+U-120.89
+T-120.89
+PTexas Roadhouse
+MLunch during mediation with Emily Ripple
+LCC:3:Legal
+SCC:3:Legal
+$-60.44
+SCC:4:Legal
+$-60.45
+^
+KD
+U5,738.31
+T5,738.31
+PThank You Bill
+LBills & Utilities:Credit Card Payment
+^
+KD
+U11,955.63
+T11,955.63
+PThankyou Image
+LBills & Utilities:Credit Card Payment
+^
+KP
+U-17.00
+T-17.00
+PThe Beat
+MBerkeley Dancing Lessons
+LPSNL:Family:Recreation
+^
+KP
+U-31.68
+T-31.68
+PThe Cheese Board
+MLunch
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-11.25
+T-11.25
+PThe Cheese Board
+MBreakfast filing
+LWal:Working Meals
+^
+KP
+U-100.00
+T-100.00
+PThe Colony Hotel
+MDining out in Kennebunkport
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-48.36
+T-48.36
+PThe Colony Hotel
+MDining out in Kennebunkport
+LPSNL:Family:Vacation
+^
+KP
+U-1,000.00
+T-1,000.00
+PThe Colony Hotel
+M2019 Cabana Club Membership
+LCC:Management Fees:Resident Amenities
+^
+KP
+U-36.50
+T-36.50
+PThe Fournee Bakery
+MThanksgiving apple pie
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-17.01
+T-17.01
+PThe French Bakery
+MJohn and Liz Lunch
+LCC:Working Meals
+^
+KP
+U-77.34
+T-77.34
+PThe Great China
+MDinner for VSV Resident Meeting to discuss chores
+LVSV:Resident Amenities
+^
+KP
+U-75.00
+T-75.00
+PThe Greater Delray Beach Chamber Of Commerce
+MBrochures
+LCC:Advertising
+^
+KP
+U-50.00
+T-50.00
+PThe Heritage Foundation
+MDonation
+LDonations & Charity
+^
+KP
+U-50.00
+T-50.00
+PThe Heritage Foundation
+MDonation
+LWal:Legal
+^
+KP
+U-56.98
+T-56.98
+PThe Hideaway
+MCoffee & Snack
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-103.72
+T-103.72
+PThe Home Depot
+MNew grill for Villas
+LVSV:Supplies
+^
+KP
+U-18.65
+T-18.65
+PThe Home Depot
+MWindow locks for W1
+LWal:Supplies
+^
+KP
+U-24.45
+T-24.45
+PThe Home Depot
+MTable set for CH Patio
+LCH:Landscaping
+^
+KP
+U-186.12
+T-186.12
+PThe Home Depot
+MMini refrigerator, mops
+LMC:Supplies
+^
+KP
+U-23.62
+T-23.62
+PThe Home Depot
+MConnectors, cable ethernet
+LMC:Utilities:Internet
+^
+KP
+U-13.49
+T-13.49
+PThe Juice Bar
+MJuice for Liz
+LPSNL:Liz:Dining Out & Entertainment
+^
+KP
+U-11.50
+T-11.50
+PThe Local Butcher Shop
+MLunch
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-800.00
+T-800.00
+PThe McConnell Group
+MLisa Klug Case, 1722 Wlanut Apt 3, Feb 2018
+LWal:Legal
+^
+KP
+U-158.46
+T-158.46
+PThe Missing Link
+MBicycle repair for Liz
+LPSNL:Family:Recreation:Biking
+^
+KP
+U-87.00
+T-87.00
+PThe Office
+MLiz, Charles, Sue and John discussing Coral Cove improvements
+LCC:Working Meals
+^
+KP
+U-108.15
+T-108.15
+PThe Pilot
+MDining out
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-40.15
+T-40.15
+PThe Pilot
+MWorking lunch for Liz & Glen
+LMH:Working Meals
+^
+KP
+U-120.00
+T-120.00
+PThe River Club
+MOutdoor lunch and Bingo night
+LPSNL:Family:Vacation
+^
+KP
+U-148.05
+T-148.05
+PThe Seagate
+ML. Friberg, Scott
+LCC:Management Fees
+^
+KP
+U-154.90
+T-154.90
+PThe Tasting Room
+MWine Tasting
+LEntertainment:Amusement
+^
+KP
+U-50.64
+T-50.64
+PThe UPS Store
+MMailing mailers and flyers
+LCC:Management Fees
+^
+KP
+U-32.42
+T-32.42
+PThe UPS Store On Shattuck
+MSending money to lawyer for CC 3 and 4
+LCC:3:Legal
+SCC:3:Legal/Money to settle #3
+$-16.21
+SCC:4:Legal/Money to settle 4
+$-16.21
+^
+KP
+U-477.20
+T-477.20
+PThe Window Doctor
+MWindow repairs
+LMC:Repairs
+^
+KP
+U-54.55
+T-54.55
+PThe Wine Wave
+MResident Amenities
+LCC:Resident Amenities
+^
+KP
+U-482.90
+T-482.90
+PThibodeau Landscaping Bill
+LBills & Utilities
+^
+KP
+U-1,444.33
+T-1,444.33
+PThibodeau Landscaping Bill
+MAll summer 2018
+LMH:Landscaping
+^
+KP
+U-47.12
+T-47.12
+PThrifty
+MFee for FastPass through Tolls
+LCC:Travel
+^
+KP
+U-339.41
+T-339.41
+PThrifty
+MBook expenses, visiting Holly in Palm Desert
+LBook Exp:Travel
+^
+KD
+U300.00
+T300.00
+PTiffany Wu
+MSec Dep for Villa 1
+^
+KD
+U300.00
+T300.00
+PTiffany Wu
+MSec Dep for Villa 1
+LRents Received:VSV:Security Deposit
+^
+KD
+U1,325.00
+T1,325.00
+PTiffany Wu
+MZelle, Vine Street Villa #1
+LRents Received:VSV:1
+^
+KP
+U-17.47
+T-17.47
+PTigerlily
+MLunch
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-2,395.50
+T-2,395.50
+PTimberline Floors
+MHalf payment for new floors in CH1
+LCH:Repairs
+^
+KP
+U-2,395.50
+T-2,395.50
+PTimberline Floors
+MSecond half payment for new floors in CH1
+LCH:Repairs:1
+^
+KP
+U-153.48
+T-153.48
+PTime Warner
+LBills & Utilities:Television
+^
+KP
+U-35.00
+T-35.00
+PTMAGAC
+MSupporting Trump
+LDonations & Charity
+^
+KD
+U919.08
+T919.08
+PTodd Cramer
+M6/21-6/24/18
+LRents Received:CC:7
+^
+KP
+U-19.85
+T-19.85
+PTokyo Fish Maket
+MShopping for Akira Sensei for cakes and curry
+LWal:Mgmt Fees:Resident Amenities
+^
+KP
+U-10.14
+T-10.14
+PToronto Duty Free
+LFood & Dining:Alcohol & Bars
+^
+KP
+U-130.55
+T-130.55
+PTotal Wine & More
+MWine bottles as Resident Amenity Gifts
+LWal:Resident Amenities
+^
+KP
+U-125.49
+T-125.49
+PTotal Wine & More
+MGift for Eunice Birthday
+LPSNL:Family:Gifts Given
+^
+KP
+U-456.00
+T-456.00
+PTown Of Kennebunkport
+M2018 Sewer Bill
+LMH:Utilities:Water
+^
+KP
+U-3,837.75
+T-3,837.75
+PTown Of Kennebunkport
+M2018-19 Taxes, Payment 2 of 2
+LMH:Property Taxes
+^
+KP
+U-31.44
+T-31.44
+PTownhouse
+LFood & Dining:Restaurants
+^
+KP
+U-631.54
+T-631.54
+PToyota
+LAuto & Transport:Auto Payment
+^
+KD
+U183.36
+T183.36
+PToyota Motors Dividend
+MDividend minus 33.52 foreign tax paid
+LDividend Income:Toyota
+^
+KP
+U-10.58
+T-10.58
+PTrader Joe's
+MGroceries
+LPSNL:Family:Groceries
+^
+KP
+U-27.92
+T-27.92
+PTrader Joe's
+MGroceries for managing apartments
+LCC:Travel
+^
+KP
+U-61.48
+T-61.48
+PTrader Joe's
+MBerkeley
+LFood & Dining:Groceries
+^
+KP
+U-127.43
+T-127.43
+PTrader Joe's
+MGroceries for managing apartments
+LMC:Travel
+^
+KP
+U-8,000.00
+T-8,000.00
+PTransfer Funds To Schwab Bank
+MIncrease balance in checking account
+L[Schwab Chking-Dbt 8566]
+^
+KD
+U1,000.00
+T1,000.00
+PTransfer Funds To Schwab Bank
+MIncrease balance in checking account
+L[Schwab One 7845-9593]
+^
+KP
+U-643,462.40
+T-643,462.40
+PTransfer Funds To Schwab IRA
+MReturn using Glen's IRA Money
+L[Glen IRA-Schwab]
+^
+KP
+U-649.58
+T-649.58
+PTravel Reservations
+MDelray Condo Assoc Meeting 3/16 - 4/5/2018
+LCC:Travel
+^
+KP
+U-1,047.00
+T-1,047.00
+PTravelers Insurance
+MInsurance for Coral Cove (to be pad by Swank)
+LCC:Insurance
+^
+KP
+U-19.47
+T-19.47
+PTrip
+^
+KP
+U-19.47
+T-19.47
+PTrip
+MAirport, SF to Florida
+LMC:Travel
+^
+KP
+U-50.00
+T-50.00
+PTrump Make America Great
+MPolitival donation
+LDonations & Charity
+^
+KP
+U-2.00
+T-2.00
+PTruthfinder.com
+MInvestigative Report on Lisa Klug, Automatic subscription charg
+LWal:Legal
+^
+KP
+U-7.49
+T-7.49
+PTst Saul Resta
+LFood & Dining:Restaurants
+^
+KP
+U-95.59
+T-95.59
+PTsuruya Hyakkaten
+MPillow cases
+LWal:Supplies
+^
+KP
+U-19.51
+T-19.51
+PTsuruya Hyakkaten
+MGroceries, mentaiko, fish
+LBook Exp:Travel:Japan
+^
+KD
+U438.39
+T438.39
+PTsuyoshi Nakamoto
+MMarch 2018 Rent
+LRents Received:Walnut:8
+^
+KD
+U906.00
+T906.00
+PU.S. Treasury Social Security
+MNovember  2018 Benefit Received
+LSocial Security
+^
+KP
+U-35.67
+T-35.67
+PUber
+MUber from Airport
+LMC:Travel
+^
+KP
+U-56.01
+T-56.01
+PUber Eats
+MEast Hilton
+LMC:Travel
+^
+KP
+U-4.90
+T-4.90
+PUber Technology
+MRide from BEAR to organize office
+LWal:Office Help
+^
+KP
+U-22.93
+T-22.93
+PUber Trip
+MCar to Coral Cove, Supervise deck
+LCC:7:Travel
+^
+KP
+U-2.00
+T-2.00
+PUber.Com
+MTip for Uber ride in SF
+LPSNL:John:Travel
+^
+KP
+U-16.20
+T-16.20
+PUber.Com
+MFrom CC to Cabana Club for Dinner
+LPSNL:Liz:Travel
+^
+KP
+U-8.31
+T-8.31
+PUber.Com
+MCoral Cove trip to Hardware Store
+LCC:Travel
+^
+KP
+U-13.20
+T-13.20
+PUber.Com
+MGlen work uber ???
+LBear Expenses
+^
+KP
+U-240.00
+T-240.00
+PUCB Haas Alumni
+MNetworking Event
+LWal:Advertising
+^
+KD
+U26.00
+T26.00
+PUnited
+MUnited Refund
+LMH:Travel
+^
+KP
+U-26.00
+T-26.00
+PUnited
+MUnited flight credit
+LCC:Travel
+^
+KD
+U190.40
+T190.40
+PUnited
+MTrip to Palm Desert
+LPSNL:Vacation:Welk
+^
+KP
+U-603.40
+T-603.40
+PUnited
+MRoundtrip to Burbank, SFO to BUR
+LBear Expenses
+^
+KP
+U-356.20
+T-356.20
+PUnited
+MPalm Springs
+LPSNL:Family:Vacation
+^
+KP
+U-321.40
+T-321.40
+PUnited Airlines
+MFlight to FLL for landscaping, palm trees, rentals
+LCC:Travel
+^
+KP
+U-142.50
+T-142.50
+PUniversal Collection System
+M?
+L?
+^
+KD
+U4,115.00
+T4,115.00
+PUnknown
+M?
+L?
+^
+KP
+U-25.00
+T-25.00
+PUnmberto Costa
+MNewspaper Delivery thank you
+LPSNL:Family:Subscriptions
+^
+KP
+U-21.12
+T-21.12
+PUps
+LPostage and Delivery (Business)
+^
+KP
+U-21.12
+T-21.12
+PUPS
+MGive sent to Mary Bliss
+LGifts Given
+^
+KP
+U-24.68
+T-24.68
+PUPS
+MSending package to previous tenant
+LCC:Postage
+^
+KP
+U-24.68
+T-24.68
+PUPS
+MSEnding documents to E. Ripple lawyers
+LCC:3:Legal
+SCC:3:Legal
+$-12.34
+SCC:4:Legal
+$-12.34
+^
+KP
+U-103.00
+T-103.00
+PUsps
+LPostage and Delivery (Business)
+^
+KP
+U-103.00
+T-103.00
+PUSPS
+MPostage Stamps + Certified Mail for Proposed Project Flyer
+LWal:Mgmt Fees
+^
+KP
+U-4.10
+T-4.10
+PUSPS
+MSending Nathan T (former VSV tenant) his glasses
+LVSV:Mgmt Fees
+^
+KP
+U-25.49
+T-25.49
+PUSPS
+M????
+LCC:Supplies
+^
+KD
+U3,379.35
+T3,379.35
+PValerie King
+MAirbnb, 4/10-5/11/2018
+LRents Received:CH:1
+^
+KP
+U-80.78
+T-80.78
+PVan Heusen
+MGifts for John and James
+LPSNL:Family:Gifts Given
+^
+KD
+U2,296.00
+T2,296.00
+PVarious
+M?
+^
+KP
+U-45.17
+T-45.17
+PVic And Angelos
+MDinner
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-45.17
+T-45.17
+PVic And Angelos
+MDinner, Jestena & Liz discussing summer rentals
+LCC:Working Meals
+^
+KP
+U-39.88
+T-39.88
+PVintage Berkeley
+MWines for New Tenants
+LWal:Resident Amenities
+^
+KD
+U1.55
+T1.55
+PVirgin America
+MSavings
+^
+KP
+U-306.60
+T-306.60
+PVirgin America
+MFlight to Florida for Late March
+LCC:Travel
+^
+KD
+U1.55
+T1.55
+PVirgin America
+MIn flight entertainment
+LCC:6:Travel
+^
+KP
+U-132.62
+T-132.62
+PVisa Payment To 7413
+L?
+^
+KP
+U-132.62
+T-132.62
+PVisa Payment To 7413
+MVisa
+L[Carriage House Credit BofA 7413]
+^
+KP
+U-1,385.00
+T-1,385.00
+PVOID
+MVOID
+LVSV:Cleaning & Maintenance
+^
+KD
+U870.58
+T870.58
+PVRBO
+MJohn Oshea, 12/29/18-1/3/19
+LRents Received:CC:4
+^
+KD
+U948.90
+T948.90
+PVRBO
+MBILL SHULMAN, 11/17-11/24/2018
+LRents Received:CC:7
+^
+KD
+U475.95
+T475.95
+PVRBO
+L?
+^
+KD
+U951.96
+T951.96
+PVRBO
+MKENNETH MARCH, 11/7-11/13/2018
+LRents Received:CC:2
+^
+KD
+U404.74
+T404.74
+PVRBO
+MDenise Betka
+LRents Received:CC:3
+^
+KP
+U-31.34
+T-31.34
+PWakaba
+MMeel in Airport on way to Florida
+LCC:Travel
+^
+KP
+U-31.34
+T-31.34
+PWakaba
+MMeal in Airport on way to Florida, Installing New AC System
+LCC:5:Travel
+^
+KP
+U-205.88
+T-205.88
+PWal Mart
+^
+KP
+U-140.25
+T-140.25
+PWal Mart
+MMattress for single bed, garbage pails
+LMC:Furnishings:7
+^
+KP
+U-23.47
+T-23.47
+PWalgreens
+M????
+LPSNL:Family:Health Care
+^
+KP
+U-157.11
+T-157.11
+PWalgreens
+MTide, garbage bags, led bulbs, blender, sponge
+LCC:Supplies
+^
+KP
+U-116.04
+T-116.04
+PWalgreens
+MGroceries + Personal Care
+LPSNL:Family:Groceries
+^
+KP
+U-109.82
+T-109.82
+PWalgreens
+MHair dryer, cleaning supplies
+LWal:Supplies
+^
+KP
+U-109.82
+T-109.82
+PWalgreens
+MWet ones, aspirin, medical supplies for residents
+LWal:Supplies
+SWal:Supplies
+EWet wipes, monitor, aspirin
+$-63.15
+SPSNL:Family:Health Care
+EWart remover, compound gel
+$-46.67
+^
+KP
+U-167.21
+T-167.21
+PWall Street Journal
+MWines
+LWal:Mgmt Fees:Resident Amenities
+^
+KP
+U-313.93
+T-313.93
+PWalmart
+MChina, bath mats, kettle, towels, misc. supplies
+LMH:Supplies
+^
+KP
+U-79.45
+T-79.45
+PWalmart
+MCleaning supplies
+LMC:Supplies
+^
+KP
+U-76.16
+T-76.16
+PWalmart Supercenter
+MBrooms, iron, ironing board, mops, cleansers
+LCC:Supplies
+^
+KP
+U-105.73
+T-105.73
+PWalmart Supercenter
+^
+KP
+U-20.91
+T-20.91
+PWalter Zurich
+MSnack for Dad between flights
+LPSNL:Family:Vacation:Andorra
+^
+KP
+U-3,050.00
+T-3,050.00
+PWalt's Windows
+MOrdering new windows
+LMC:Repairs
+^
+KP
+U-63.86
+T-63.86
+PWaste Management
+MGarbage
+LMC:Garbage
+^
+KD
+U500.00
+T500.00
+PWastern Union
+MDeposit
+LRents Received:Walnut:Security Deposit
+^
+KP
+U-260.00
+T-260.00
+PWatauga Woods HOA
+MWatauga Woods Annual HOA Fees
+LWatauga Woods:HOA Fees
+^
+KP
+U-4,263.18
+T-4,263.18
+PWelk Resort Group
+MBuy in for Platinum Level
+LPSNL:Vacation:Welk
+^
+KD
+U500.00
+T500.00
+PWendi Corr
+MDeposit for KT for VSV 8 by Mother
+LRents Received:VSV:Security Deposit
+^
+KD
+U1,500.00
+T1,500.00
+PWendi Corr
+MRent for December 2018  for KT
+LRents Received:VSV:8
+^
+KP
+U-11.66
+T-11.66
+PWhole Foods
+LFood & Dining:Groceries
+^
+KP
+U-11.20
+T-11.20
+PWhole Foods
+MLunch while hauling items to dump
+LWal:Working Meals
+^
+KP
+U-11.27
+T-11.27
+PWhole Foods
+MLunch
+LPSNL:Family:Groceries
+^
+KP
+U-36.47
+T-36.47
+PWindchaser
+MWine tasting
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-450.00
+T-450.00
+PWindow Doctor
+MRepairing windows
+LMC:Repairs
+^
+KP
+U-79.15
+T-79.15
+PWine.Com
+LFood & Dining
+^
+KP
+U-180.93
+T-180.93
+PWine.Com
+MWine for new residents
+LWal:Mgmt Fees:Resident Amenities
+^
+KP
+U-79.15
+T-79.15
+PWine.Com
+MXmas gift for Tom Ripple
+LGifts Given
+^
+KP
+U-135,000.00
+T-135,000.00
+PWired Funds To Escrow
+MPurchase property Liz and Glen
+L[Mango Cove]
+^
+KP
+U-135,000.00
+T-135,000.00
+PWired Funds To Escrow For Mango Cove
+MPurchase property Liz and Glen
+L[Mango Cove]
+^
+KP
+U-306.00
+T-306.00
+PWix.com
+MTHree year subscription for web support for Openrents.com
+LWal:Mgmt Fees
+^
+KP
+U-13.00
+T-13.00
+PWordpress
+MHave contacted support to question
+LPSNL:Family:Subscriptions
+^
+KD
+U1,800.00
+T1,800.00
+PWynnie Young
+MDecember 2018 Rent
+LRents Received:VSV:7
+^
+KD
+U1,400.00
+T1,400.00
+PXinyun Chen
+MNov 2018 Rent
+LRents Received:VSV:6
+^
+KP
+U-184.59
+T-184.59
+PYamakai Fish Sushi
+LFood & Dining:Restaurants
+^
+KP
+U-184.59
+T-184.59
+PYamakai Fish Sushi
+MFamily Dinner, Skiing trip at Northstar Welk
+LPSNL:Family:Vacation
+^
+KD
+U1,600.00
+T1,600.00
+PYimin He
+MJanuary 2018 Rent
+LRents Received:VSV:8
+^
+KD
+U800.00
+T800.00
+PYue Sun
+MAugust 2018 Rent - Zelle
+LRents Received:Walnut:9-Cottage
+^
+KP
+U-125.00
+T-125.00
+PYui Koda
+MHelp with office organization
+LWal:Office Help
+^
+KD
+U2,120.00
+T2,120.00
+PYujing Li
+MDeposit + January 2018 Rent
+LRents Received
+^
+KD
+U2,700.00
+T2,700.00
+PYujing Li
+MApril 2018 Rent
+LRents Received:Walnut:1
+^
+KP
+U-400.00
+T-400.00
+PYujing Li
+MSec Dep Return
+LRents Received:Walnut:Security Deposit
+^
+KD
+U3,900.00
+T3,900.00
+PYuki Nakamura
+MNovember rent
+LRents Received:CH:A
+^
+KP
+U-56.14
+T-56.14
+PZara Andorra La Vella
+MHeavy navy blue ski jacket
+LPSNL:Liz:Clothing
+^
+KP
+U-41.02
+T-41.02
+PZephyr Lodge
+LFood & Dining:Restaurants
+^
+KP
+U-19.25
+T-19.25
+PZephyr Lodge
+MLunch on the Slopes, Skiing Trip to Northstar Welk
+LPSNL:Family:Vacation
+^
+KP
+U-35.15
+T-35.15
+PZiree Sushi Boca Raton
+MLunch with Glen and Liz
+LPSNL:Family:Dining Out & Entertainment
+^
+KP
+U-35.15
+T-35.15
+PZiree Sushi Boca Raton
+MLunch with L. Oxford
+LCC:3:Legal
+SCC:3:Legal
+$-17.75
+SCC:4:Legal
+$-17.40
+^
+KP
+U-118.33
+T-118.33
+PZut Berkeley
+MDinner with Glen & Liz
+LPSNL:Family:Dining Out & Entertainment
+^
+KD
+U500.00
+T500.00
+PZuzana Ikels
+MSec Dep
+LRents Received:CH:Security Deposits
+^
+KD
+U2,800.00
+T2,800.00
+PZuzana Ikels
+MApril 2018 Rent
+LRents Received:CH:2
+^
+!Type:Template
