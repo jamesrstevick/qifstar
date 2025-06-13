@@ -1,0 +1,247 @@
+﻿Date,Arriving by date,Type,Confirmation code,Booking date,Start date,End date,Nights,Guest,Listing,Details,Reference code,Currency,Amount,Paid out,Service fee,Fast pay fee,Cleaning fee,Gross earnings,Occupancy taxes,Earnings year
+06/10/2025,06/17/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-UR6QJCHCKLWE6,USD,,4289.75,,,,,,
+06/10/2025,,Adjustment,HM5BBH8S4Z,09/16/2024,02/09/2025,06/05/2025,116,Federico Di Gennaro,Corner Room in Big Grad House,,,USD,-221.15,,-6.85,,0.00,,0.00,2025
+06/10/2025,,Reservation,HMZKT2KXM9,04/27/2025,06/08/2025,09/21/2025,105,Arjun Dhamrait,Grad Study Bedroom Close 2 UCB,,,USD,1686.41,,52.16,,22.57,1738.57,0.00,2025
+06/10/2025,,Reservation,HM23Z5XQ24,05/08/2025,06/08/2025,07/07/2025,29,Amir Ali Noori Naeini,Quiet North Berkeley Apartment Next to Campus,,,USD,2824.49,,87.36,,80.00,2911.85,349.42,2025
+06/07/2025,06/13/2025,Payout,,,,,,,,"Transfer to John Stevick, Checking 1687 (USD)",G-NSSJP5NS733LP,USD,,4519.23,,,,,,
+06/07/2025,,Reservation,HM5ZP2TYNR,05/13/2025,06/05/2025,07/05/2025,30,Chandana Tiruvayepati,Sunny 3BR/2BA Duplex Unit - 2nd Floor,,,USD,4519.23,,139.77,,159.00,4659.00,0.00,2025
+06/02/2025,06/06/2025,Payout,,,,,,,,"Transfer to John Stevick, Checking 1687 (USD)",G-6MSAX3IFNUD76,USD,,3110.30,,,,,,
+06/02/2025,,Reservation,HM48XZ2MA5,05/27/2025,05/31/2025,06/29/2025,29,John Peng,Modern Apartment in North Berkeley,,,USD,3110.30,,96.20,,89.00,3206.50,384.78,2025
+06/02/2025,06/06/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-2QGCMSNSLW73H,USD,,3221.79,,,,,,
+06/02/2025,,Reservation,HMWFCM3BST,02/23/2025,05/31/2025,08/09/2025,70,Tyler Garza,North Berkeley + Super Central,,,USD,3221.79,,99.64,,0.00,3321.43,0.00,2025
+06/01/2025,06/06/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-3ASEJRYUWTS65,USD,,3453.68,,,,,,
+06/01/2025,,Reservation,HMK8QPPCX2,03/04/2025,05/31/2025,07/27/2025,57,Cathleen Bise,Delray Beach Villa on the Ocean,,,USD,3453.68,,106.81,,54.39,3560.49,249.24,2025
+05/29/2025,06/06/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-HJKLWKBAPFOOY,USD,,1434.12,,,,,,
+05/29/2025,,Reservation,HMQPDBXCM5,04/11/2025,05/28/2025,08/31/2025,95,Fatima Aselouani,Private Spacious Grad Room,,,USD,1434.12,,44.35,,32.63,1478.47,0.00,2025
+05/29/2025,06/05/2025,Payout,,,,,,,,"Transfer to John Stevick, Checking 1687 (USD)",G-GFNRCAWQ2TB7D,USD,,914.87,,,,,,
+05/29/2025,,Reservation,HM5KPC5CAN,01/04/2025,02/15/2025,06/07/2025,112,David Chu,Spacious Victorian Home,,,USD,914.87,,28.29,,0.00,943.16,0.00,2025
+05/29/2025,06/05/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-XGFH5QI4MIA7J,USD,,3037.18,,,,,,
+05/29/2025,,Reservation,HMHA4K8H2N,02/07/2024,07/27/2024,05/31/2026,673,Melània Gómez Rodríguez,Spacious 2nd Floor 1-BR Apt in the Heart of Berk!,,,USD,3037.18,,93.91,,-30.91,3131.09,0.00,2025
+05/27/2025,06/03/2025,Payout,,,,,,,,"Transfer to John Stevick, Checking 1687 (USD)",G-54JKQ3RVAO4UX,USD,,95.63,,,,,,
+05/27/2025,,Reservation,HMDJ3DE4HA,04/15/2025,04/18/2025,06/16/2025,59,Julia Lin,Modern Apartment in Great North Berkeley Area,,,USD,95.63,,2.95,,0.00,98.58,0.00,2025
+05/26/2025,06/02/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-R24SORDOARV54,USD,,1455.00,,,,,,
+05/26/2025,,Reservation,HMYB3TD83R,02/14/2025,05/25/2025,06/01/2025,7,Jl Giannone,Seaside Serenity: Chic 1-Bed/2-Bath on A1A,,,USD,1455.00,,45.00,,100.00,1500.00,105.00,2025
+05/26/2025,06/02/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-XIS72DZGUZE3U,USD,,100.00,,,,,,
+05/26/2025,,Resolution Adjustment,HMEZK28KKF,,01/15/2025,05/17/2025,122,Rohan Yelamanchili,"Bright, Furnished 1BR with Charm, Close to Campus",Resolution adjustment for resolution 40785041,,USD,-100.00,,,,,-100.00,,2025
+05/26/2025,,Resolution Payout,HMEZK28KKF,,01/15/2025,05/17/2025,122,Rohan Yelamanchili,"Bright, Furnished 1BR with Charm, Close to Campus",Resolution payout for resolution CLA-854EHW9XM4 - Reservation HMEZK28KKF,,USD,200.00,,,,,200.00,,2025
+05/24/2025,05/30/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-KOS3HKQUZW6KF,USD,,112.66,,,,,,
+05/24/2025,,Reservation,HMC9XTAKQ2,02/06/2025,02/22/2025,05/24/2025,91,Takumi Suzumura,Grad Study Bedroom Close 2 UCB,,,USD,112.66,,3.48,,1.74,116.14,0.00,2025
+05/22/2025,05/29/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-22AACRDMXVH5Z,USD,,1021.66,,,,,,
+05/22/2025,,Reservation,HMD8RQMZKF,01/20/2024,08/20/2024,05/31/2025,284,Helene Rondey,Large 1-BR Apartment with Old World Charm,,,USD,1021.66,,31.60,,3.86,1053.26,0.00,2025
+05/21/2025,05/28/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-DDZXMRQNI32XW,USD,,950.60,,,,,,
+05/21/2025,,Reservation,HMF2WFRKXC,03/14/2025,05/20/2025,05/25/2025,5,Julia Derzsak,Stay Right on the Beach!,,,USD,950.60,,29.40,,80.00,980.00,68.60,2025
+05/21/2025,05/28/2025,Payout,,,,,,,,"Transfer to John Stevick, Checking 1687 (USD)",G-A76JCX4M72SBN,USD,,4973.54,,,,,,
+05/21/2025,,Reservation,HMAWDZYX3A,02/17/2025,05/19/2025,07/27/2025,69,Enrique Galeana,Big Remodeled 3BR w/ Lush Garden,,,USD,4973.54,,153.82,,89.86,5127.36,0.00,2025
+05/21/2025,05/28/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-6NP4VDUP3O72F,USD,,48.37,,,,,,
+05/21/2025,,Reservation,HMC2FW4HK3,04/14/2025,04/19/2025,05/20/2025,31,Brian Myers,Private Spacious Grad Room,,,USD,48.37,,1.50,,3.23,49.87,0.00,2025
+05/19/2025,05/27/2025,Payout,,,,,,,,"Transfer to John Stevick, Checking 1687 (USD)",G-2QMNBAOMTHAJX,USD,,2712.70,,,,,,
+05/19/2025,,Reservation,HMDJ3DE4HA,04/15/2025,04/18/2025,06/16/2025,59,Julia Lin,Modern Apartment in Great North Berkeley Area,,,USD,2712.70,,83.90,,36.36,2796.60,0.00,2025
+05/19/2025,05/27/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-PD4MGNLKAAJHO,USD,,3035.75,,,,,,
+05/19/2025,,Reservation,HMWQ39HBEX,02/11/2025,05/18/2025,08/16/2025,90,Jaime Eguiarte,"Bright, Furnished 1BR with Charm, Close to Campus",,,USD,3035.75,,93.89,,34.44,3129.64,0.00,2025
+05/17/2025,05/23/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-QPT54CL7G7IBC,USD,,1739.29,,,,,,
+05/17/2025,,Reservation,HM8JST2N2Q,02/24/2025,04/15/2025,07/25/2025,101,Sophia Keip,Cozy private room in Graduate House,,,USD,1739.29,,53.79,,27.32,1793.08,0.00,2025
+05/16/2025,05/23/2025,Payout,,,,,,,,"Transfer to John Stevick, Checking 1687 (USD)",G-GNCGJ2UF2TWST,USD,,2102.00,,,,,,
+05/16/2025,,Reservation,HM5KPC5CAN,01/04/2025,02/15/2025,06/07/2025,112,David Chu,Spacious Victorian Home,,,USD,2102.00,,65.01,,12.19,2167.01,0.00,2025
+05/16/2025,05/23/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-67E53KUCCAPNT,USD,,194.03,,,,,,
+05/16/2025,,Reservation,HMEZK28KKF,11/10/2024,01/15/2025,05/17/2025,122,Rohan Yelamanchili,"Bright, Furnished 1BR with Charm, Close to Campus",,,USD,194.03,,6.00,,1.64,200.03,0.00,2025
+05/16/2025,05/23/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-WWHQTKMSJZBXO,USD,,1404.56,,,,,,
+05/16/2025,,Reservation,HMQZ2K4J9R,03/25/2025,05/15/2025,05/24/2025,9,Regina McClellan,Stay on the Beach!,,,USD,1404.56,,43.44,,80.00,1448.00,101.36,2025
+05/16/2025,05/23/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-SCMXG2AUYM7K7,USD,,1542.52,,,,,,
+05/16/2025,,Reservation,HMH9W5SA9C,03/21/2025,04/14/2025,05/30/2025,46,Jaehun Cha,Quiet North Berkeley Apartment Next to Campus,,,USD,1542.52,,47.71,,27.83,1590.23,0.00,2025
+05/14/2025,05/22/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-D6KKJDA6Z6JMM,USD,,2931.10,,,,,,
+05/14/2025,,Reservation,HM8DAJY5AA,03/04/2025,05/13/2025,06/11/2025,29,Chun-Hsi Lin,Cozy North Berkeley Apt in Prime Location,,,USD,2931.10,,90.65,,100.00,3021.75,362.61,2025
+05/13/2025,05/20/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-6ASJ27JYB7J43,USD,,1673.08,,,,,,
+05/13/2025,,Reservation,HMPAMDWFR5,04/28/2025,05/11/2025,07/11/2025,61,Jeff Stogsdill,Private Bedroom in Graduate Student House,,,USD,1673.08,,51.74,,50.82,1724.82,0.00,2025
+05/10/2025,05/16/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-NAMRNPDYSIOL4,USD,,1739.05,,,,,,
+05/10/2025,,Reservation,HM5BBH8S4Z,09/16/2024,02/09/2025,06/05/2025,116,Federico Di Gennaro,Corner Room in Big Grad House,,,USD,1739.05,,53.79,,25.84,1792.84,0.00,2025
+05/10/2025,05/16/2025,Payout,,,,,,,,"Transfer to John Stevick, Checking 1687 (USD)",G-T7336JM5MHK37,USD,,2563.19,,,,,,
+05/10/2025,,Reservation,HMB8SZ5XQM,02/07/2025,03/08/2025,05/25/2025,78,Shaila Emani,Sunny 3BR/2BA Duplex Unit - 2nd Floor,,,USD,2563.19,,79.27,,34.66,2642.46,0.00,2025
+05/09/2025,05/16/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-GI7YYFQM3LJRY,USD,,100.86,,,,,,
+05/09/2025,,Reservation,HMHYQZWKJY,03/06/2025,04/08/2025,05/09/2025,31,Li Yu Lin,Cozy North Berkeley Apt in Prime Location,,,USD,100.86,,3.12,,3.23,103.98,0.00,2025
+05/06/2025,05/13/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-KLWEAW5YIWV7B,USD,,776.00,,,,,,
+05/06/2025,,Reservation,HMYZ2P9N4P,03/07/2025,05/05/2025,05/09/2025,4,Michael Nolan,Stay Right on the Beach!,,,USD,776.00,,24.00,,80.00,800.00,56.00,2025
+05/02/2025,05/09/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-SUBN5XFRH7NV3,USD,,472.88,,,,,,
+05/02/2025,,Reservation,HMH2DJRB8P,04/01/2025,04/01/2025,05/06/2025,35,Zixi Hu,North Berkeley + Super Central,,,USD,472.88,,14.62,,0.00,487.50,0.00,2025
+05/02/2025,05/09/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-3VCKKSICBFUJ4,USD,,902.10,,,,,,
+05/02/2025,,Reservation,HMXKSZ5STT,04/29/2025,05/01/2025,05/06/2025,5,Leon Demaille,Cozy beach bungalow steps to the Sand!,,,USD,902.10,,27.90,,80.00,930.00,65.10,2025
+04/29/2025,05/06/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-RO33KNLN52CF7,USD,,2974.97,,,,,,
+04/29/2025,,Reservation,HMHA4K8H2N,02/07/2024,07/27/2024,05/31/2026,673,Melània Gómez Rodríguez,Spacious 2nd Floor 1-BR Apt in the Heart of Berk!,,,USD,2974.97,,92.01,,6.98,3066.98,0.00,2025
+04/28/2025,05/02/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-SVTAVM4LK7IHL,USD,,2785.84,,,,,,
+04/28/2025,,Reservation,HMQN4PY8JY,03/14/2025,04/26/2025,05/24/2025,28,Yuka Ikarashi,Great Spacious 1-BR Right by Campus + Gourmet Dwtn,,,USD,2785.84,,86.16,,100.00,2872.00,344.64,2025
+04/24/2025,05/01/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-KYGSKWM6CFI2A,USD,,5041.67,,,,,,
+04/24/2025,,Reservation,HMTXZYA2RF,11/05/2024,04/23/2025,04/29/2025,6,Jasmine Bilali,Cozy beach bungalow steps to the Sand!,,,USD,1445.30,,44.70,,80.00,1490.00,104.30,2025
+04/24/2025,,Reservation,HM2CRX8ADX,02/19/2025,04/23/2025,05/21/2025,28,Tatiana Braga,Delray Beach Villa on the Ocean,,,USD,3596.37,,111.23,,100.00,3707.60,273.74,2025
+04/24/2025,05/01/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-IZE7XOWIM3762,USD,,1689.78,,,,,,
+04/24/2025,,Reservation,HMC9XTAKQ2,02/06/2025,02/22/2025,05/24/2025,91,Takumi Suzumura,Grad Study Bedroom Close 2 UCB,,,USD,1689.78,,52.26,,26.04,1742.04,0.00,2025
+04/21/2025,04/29/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-KQW4XH6JT3QJG,USD,,2786.38,,,,,,
+04/21/2025,,Reservation,HMD8RQMZKF,01/20/2024,08/20/2024,05/31/2025,284,Helene Rondey,Large 1-BR Apartment with Old World Charm,,,USD,2786.38,,86.18,,10.56,2872.56,0.00,2025
+04/21/2025,04/25/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-GSFVXEJSUSSWP,USD,,1451.09,,,,,,
+04/21/2025,,Reservation,HMC2FW4HK3,04/14/2025,04/19/2025,05/20/2025,31,Brian Myers,Private Spacious Grad Room,,,USD,1451.09,,44.88,,96.77,1495.97,0.00,2025
+04/19/2025,04/25/2025,Payout,,,,,,,,"Transfer to John Stevick, Checking 1687 (USD)",G-XCQRFFWTAE7RR,USD,,2911.01,,,,,,
+04/19/2025,,Reservation,HMDJ3DE4HA,04/15/2025,04/18/2025,06/16/2025,59,Julia Lin,Modern Apartment in Great North Berkeley Area,,,USD,2911.01,,90.03,,43.64,3001.04,0.00,2025
+04/19/2025,04/25/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-7SDNW25PNGSBG,USD,,1513.20,,,,,,
+04/19/2025,,Reservation,HMJCD5FWYF,02/02/2025,04/18/2025,04/22/2025,4,Michael Simone,Stay Right on the Beach!,,,USD,1513.20,,46.80,,80.00,1560.00,109.20,2025
+04/17/2025,04/24/2025,Payout,,,,,,,,"Transfer to John Stevick, Checking 1687 (USD)",G-DWXJHN6TCJ3RM,USD,,3941.26,,,,,,
+04/17/2025,,Reservation,HM5KPC5CAN,01/04/2025,02/15/2025,06/07/2025,112,David Chu,Spacious Victorian Home,,,USD,3941.26,,121.89,,22.86,4063.15,0.00,2025
+04/17/2025,04/24/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-AEOYUMKQJIPWF,USD,,1683.18,,,,,,
+04/17/2025,,Reservation,HM8JST2N2Q,02/24/2025,04/15/2025,07/25/2025,101,Sophia Keip,Cozy private room in Graduate House,,,USD,1683.18,,52.06,,26.44,1735.24,0.00,2025
+04/17/2025,04/24/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-TJDHTCSOJ3PQM,USD,,2910.48,,,,,,
+04/17/2025,,Reservation,HMEZK28KKF,11/10/2024,01/15/2025,05/17/2025,122,Rohan Yelamanchili,"Bright, Furnished 1BR with Charm, Close to Campus",,,USD,2910.48,,90.01,,24.59,3000.49,0.00,2025
+04/17/2025,04/23/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-7YKOWX2FL3RS5,USD,,2892.22,,,,,,
+04/17/2025,,Reservation,HMH9W5SA9C,03/21/2025,04/14/2025,05/30/2025,46,Jaehun Cha,Quiet North Berkeley Apartment Next to Campus,,,USD,2892.22,,89.45,,52.17,2981.67,0.00,2025
+04/17/2025,04/23/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-YHKVH2N3AGSAW,USD,,888.62,,,,,,
+04/17/2025,,Reservation,HMHTEM5YHK,01/07/2025,02/14/2025,04/30/2025,75,Maximilian Hillen,Private BR in Friendly 10BR Grad / Post Doc House!,,,USD,888.62,,27.48,,18.98,916.10,0.00,2025
+04/17/2025,04/22/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-ULGK5NHOMCAVO,USD,,1503.50,,,,,,
+04/17/2025,,Reservation,HMBHKAYZMA,03/22/2025,04/14/2025,04/19/2025,5,Victoria Shetler,Delray Beach Villa on the Ocean,,,USD,1503.50,,46.50,,100.00,1550.00,108.50,2025
+04/11/2025,04/18/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-GDNHFCXVB3YBK,USD,,1682.95,,,,,,
+04/11/2025,,Reservation,HM5BBH8S4Z,09/16/2024,02/09/2025,06/05/2025,116,Federico Di Gennaro,Corner Room in Big Grad House,,,USD,1682.95,,52.05,,25.00,1735.00,0.00,2025
+04/10/2025,04/17/2025,Payout,,,,,,,,"Transfer to John Stevick, Checking 1687 (USD)",G-CMSO6NHDAO7JX,USD,,4523.26,,,,,,
+04/10/2025,,Reservation,HMB8SZ5XQM,02/07/2025,03/08/2025,05/25/2025,78,Shaila Emani,Sunny 3BR/2BA Duplex Unit - 2nd Floor,,,USD,4523.26,,139.89,,61.15,4663.15,0.00,2025
+04/10/2025,04/17/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-HAQMEBJGWJHZU,USD,,220.61,,,,,,
+04/10/2025,,Reservation,HM8MDFT4HW,02/27/2025,03/08/2025,04/12/2025,35,Matthieu Choppin De Janvry,Private Bedroom in Graduate Student House,,,USD,220.61,,6.82,,11.43,227.43,0.00,2025
+04/09/2025,04/16/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-IPH4DLN5T6LR7,USD,,1872.10,,,,,,
+04/09/2025,,Reservation,HMXQH4CQKS,03/20/2025,04/08/2025,04/13/2025,5,Steve Guild,Stay Right on the Beach!,,,USD,1872.10,,57.90,,80.00,1930.00,135.10,2025
+04/09/2025,04/17/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-34WJNRHJRBSIJ,USD,,3025.69,,,,,,
+04/09/2025,,Reservation,HMHYQZWKJY,03/06/2025,04/08/2025,05/09/2025,31,Li Yu Lin,Cozy North Berkeley Apt in Prime Location,,,USD,3025.69,,93.58,,96.77,3119.27,0.00,2025
+04/08/2025,04/15/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-Z52YPM72VGHGI,USD,,1503.50,,,,,,
+04/08/2025,,Reservation,HMCEYJ3NXE,03/13/2025,04/07/2025,04/12/2025,5,Chris Major,Delray Beach Villa on the Ocean,,,USD,1503.50,,46.50,,100.00,1550.00,108.49,2025
+04/05/2025,04/11/2025,Payout,,,,,,,,"Transfer to John Stevick, Checking 1687 (USD)",G-JRAOIHLLFEEVV,USD,,207.58,,,,,,
+04/05/2025,,Reservation,HMA4K83M9C,02/06/2025,02/15/2025,04/08/2025,52,Matthew Maccabee,Modern Apartment in North Berkeley,,,USD,207.58,,6.42,,0.00,214.00,0.00,2025
+04/03/2025,04/10/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-HYG2X37D3BUOR,USD,,2913.88,,,,,,
+04/03/2025,,Reservation,HMH2DJRB8P,04/01/2025,04/01/2025,05/06/2025,35,Zixi Hu,North Berkeley + Super Central,,,USD,2913.88,,90.12,,79.00,3004.00,0.00,2025
+03/29/2025,04/04/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-RA7ZX7WMFLCGP,USD,,2584.08,,,,,,
+03/29/2025,,Reservation,HM2MT4KYMC,03/11/2025,03/28/2025,04/05/2025,8,Audrey O'Cana,Cozy beach bungalow steps to the Sand!,,,USD,2584.08,,79.92,,80.00,2664.00,186.48,2025
+03/28/2025,04/04/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-XW6AVMNZ6N54W,USD,,3074.13,,,,,,
+03/28/2025,,Reservation,HMHA4K8H2N,02/07/2024,07/27/2024,05/31/2026,673,Melània Gómez Rodríguez,Spacious 2nd Floor 1-BR Apt in the Heart of Berk!,,,USD,3074.13,,95.08,,7.21,3169.21,0.00,2025
+03/28/2025,04/04/2025,Payout,,,,,,,,"Transfer to John Stevick, Checking 1687 (USD)",G-TTVMZDSB5AI5I,USD,,622.74,,,,,,
+03/28/2025,,Reservation,HMA4K83M9C,02/06/2025,02/15/2025,04/08/2025,52,Matthew Maccabee,Modern Apartment in North Berkeley,,,USD,622.74,,19.26,,0.00,642.00,0.00,2025
+03/27/2025,04/04/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-ZI5U2OGY2F5RR,USD,,1499.46,,,,,,
+03/27/2025,,Reservation,HM4X5KDJ4X,03/25/2025,03/26/2025,04/26/2025,31,Marco Antonio ,Private Spacious Grad Room,,,USD,1499.46,,46.38,,100.00,1545.84,0.00,2025
+03/25/2025,04/02/2025,Payout,,,,,,,,"Transfer to John Stevick, Checking 1687 (USD)",G-N4SZZCSAGZ7UA,USD,,907.24,,,,,,
+03/25/2025,,Reservation,HMKD8WRSCD,02/21/2025,02/24/2025,04/02/2025,37,Heather Foley,Modern Apartment in Great North Berkeley Area,,,USD,907.24,,28.06,,19.46,935.30,0.00,2025
+03/24/2025,03/31/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-T77D3WMI7JORZ,USD,,1775.10,,,,,,
+03/24/2025,,Reservation,HMAQFM9JK2,01/28/2025,03/23/2025,03/28/2025,5,Julia Hasler,Stay Right on the Beach!,,,USD,1775.10,,54.90,,80.00,1830.00,128.10,2025
+03/24/2025,03/28/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-24OWBQU6ZVUVD,USD,,1746.11,,,,,,
+03/24/2025,,Reservation,HMC9XTAKQ2,02/06/2025,02/22/2025,05/24/2025,91,Takumi Suzumura,Grad Study Bedroom Close 2 UCB,,,USD,1746.11,,54.00,,26.91,1800.11,0.00,2025
+03/23/2025,03/28/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-QO7EUSLDMYP3N,USD,,2643.25,,,,,,
+03/23/2025,,Reservation,HM2SZXKBK9,03/03/2025,03/22/2025,03/29/2025,7,Tim Stotz,Delray Beach Villa on the Ocean,,,USD,2643.25,,81.75,,100.00,2725.00,190.75,2025
+03/21/2025,03/28/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-HG2JYOQBDQ4XJ,USD,,2879.27,,,,,,
+03/21/2025,,Reservation,HMD8RQMZKF,01/20/2024,08/20/2024,05/31/2025,284,Helene Rondey,Large 1-BR Apartment with Old World Charm,,,USD,2879.27,,89.05,,10.92,2968.32,0.00,2025
+03/21/2025,03/28/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-URHPMRBYRYW4S,USD,,1726.60,,,,,,
+03/21/2025,,Reservation,HMQNNPQFFJ,03/11/2025,03/20/2025,03/25/2025,5,Marjan Khanjani,Cozy beach bungalow steps to the Sand!,,,USD,1726.60,,53.40,,80.00,1780.00,124.60,2025
+03/20/2025,03/27/2025,Payout,,,,,,,,"Transfer to John Stevick, Checking 1687 (USD)",G-6FDWSANFYRS63,USD,,311.37,,,,,,
+03/20/2025,,Reservation,HMA4K83M9C,02/06/2025,02/15/2025,04/08/2025,52,Matthew Maccabee,Modern Apartment in North Berkeley,,,USD,311.37,,9.63,,0.00,321.00,0.00,2025
+03/19/2025,03/26/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-IY52MAEALEOET,USD,,1775.10,,,,,,
+03/19/2025,,Reservation,HMZTNC84E3,03/02/2025,03/18/2025,03/23/2025,5,Katherine Taylor,Stay Right on the Beach!,,,USD,1775.10,,54.90,,80.00,1830.00,128.10,2025
+03/18/2025,03/21/2025,Payout,,,,,,,,"Transfer to John Stevick, Checking 1687 (USD)",G-F6NB5SIE7UUDL,USD,,1349.34,,,,,,
+03/18/2025,,Reservation,HMA4K83M9C,02/06/2025,02/15/2025,04/08/2025,52,Matthew Maccabee,Modern Apartment in North Berkeley,,,USD,1349.34,,41.73,,0.00,1391.07,0.00,2025
+03/18/2025,03/21/2025,Payout,,,,,,,,"Transfer to John Stevick, Checking 1687 (USD)",G-NZINOXGDUNKDE,USD,,4072.62,,,,,,
+03/18/2025,,Reservation,HM5KPC5CAN,01/04/2025,02/15/2025,06/07/2025,112,David Chu,Spacious Victorian Home,,,USD,4072.62,,125.96,,23.62,4198.58,0.00,2025
+03/18/2025,03/21/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-5SWC47OVYI3TS,USD,,3007.49,,,,,,
+03/18/2025,,Reservation,HMEZK28KKF,11/10/2024,01/15/2025,05/17/2025,122,Rohan Yelamanchili,"Bright, Furnished 1BR with Charm, Close to Campus",,,USD,3007.49,,93.02,,25.41,3100.51,0.00,2025
+03/16/2025,03/21/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-MVHK72WU4NH74,USD,,1726.60,,,,,,
+03/16/2025,,Reservation,HMBH3HNXET,02/19/2025,03/15/2025,03/20/2025,5,Katherine Goncharov,Cozy beach bungalow steps to the Sand!,,,USD,1726.60,,53.40,,80.00,1780.00,124.60,2025
+03/15/2025,03/21/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-TYU7NAARUG7FA,USD,,1721.71,,,,,,
+03/15/2025,,Reservation,HMHTEM5YHK,01/07/2025,02/14/2025,04/30/2025,75,Maximilian Hillen,Private BR in Friendly 10BR Grad / Post Doc House!,,,USD,1721.71,,53.25,,36.79,1774.96,0.00,2025
+03/15/2025,03/21/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-Y7FEWVWNXAWQN,USD,,1435.60,,,,,,
+03/15/2025,,Reservation,HMBHMABZS2,02/16/2025,03/14/2025,03/18/2025,4,Melissa Kemp,Stay Right on the Beach!,,,USD,1435.60,,44.40,,80.00,1480.00,103.60,2025
+03/15/2025,03/21/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-BD7MR5W5QPPRT,USD,,373.51,,,,,,
+03/15/2025,,Reservation,HMYKY9KBNJ,09/11/2024,01/13/2025,03/21/2025,67,Marta Pérez Verdugo,Private Spacious Grad Room,,,USD,373.51,,11.55,,11.94,385.06,0.00,2025
+03/11/2025,03/18/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-VSE5FQYH7UDEP,USD,,1435.60,,,,,,
+03/11/2025,,Reservation,HM3DHABJDX,02/27/2025,03/10/2025,03/14/2025,4,Gavin McCabe,Stay Right on the Beach!,,,USD,1435.60,,44.40,,80.00,1480.00,103.60,2025
+03/11/2025,03/18/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-ESDXMF6UAPAIV,USD,,1739.04,,,,,,
+03/11/2025,,Reservation,HM5BBH8S4Z,09/16/2024,02/09/2025,06/05/2025,116,Federico Di Gennaro,Corner Room in Big Grad House,,,USD,1739.04,,53.79,,25.83,1792.83,0.00,2025
+03/10/2025,03/14/2025,Payout,,,,,,,,"Transfer to John Stevick, Checking 1687 (USD)",G-YBJOKBOA6PP7M,USD,,4674.03,,,,,,
+03/10/2025,,Reservation,HMB8SZ5XQM,02/07/2025,03/08/2025,05/25/2025,78,Shaila Emani,Sunny 3BR/2BA Duplex Unit - 2nd Floor,,,USD,4674.03,,144.56,,63.19,4818.59,0.00,2025
+03/10/2025,03/14/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-XYB4LA5ZAV72M,USD,,1709.69,,,,,,
+03/10/2025,,Reservation,HM8MDFT4HW,02/27/2025,03/08/2025,04/12/2025,35,Matthieu Choppin De Janvry,Private Bedroom in Graduate Student House,,,USD,1709.69,,52.88,,88.57,1762.57,0.00,2025
+03/09/2025,03/14/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-XTJ4NVCBXDIJ7,USD,,1324.05,,,,,,
+03/09/2025,,Reservation,HM3Y2HJMT4,09/26/2024,03/08/2025,03/13/2025,5,John Skeppstrom,Cozy beach bungalow steps to the Sand!,,,USD,1324.05,,40.95,,80.00,1365.00,95.55,2025
+03/05/2025,03/13/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-4DHAAU2ORRGOS,USD,,1775.10,,,,,,
+03/05/2025,,Reservation,HMC3AYJMWT,01/25/2025,03/04/2025,03/09/2025,5,Christy Chiaro,Stay Right on the Beach!,,,USD,1775.10,,54.90,,80.00,1830.00,128.10,2025
+03/02/2025,03/07/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-5GL2VVRTV77VD,USD,,1648.13,,,,,,
+03/02/2025,,Reservation,HMTMJA5F24,05/12/2024,03/01/2025,03/08/2025,7,Sheri Olans,Cozy beach bungalow steps to the Sand!,,,USD,1648.13,,50.97,,80.00,1699.10,118.94,2025
+03/01/2025,03/07/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-B3DCUDG6WE3BJ,USD,,2776.63,,,,,,
+03/01/2025,,Reservation,HMHA4K8H2N,02/07/2024,07/27/2024,05/31/2026,673,Melània Gómez Rodríguez,Spacious 2nd Floor 1-BR Apt in the Heart of Berk!,,,USD,2776.63,,85.88,,6.51,2862.51,0.00,2025
+02/26/2025,03/05/2025,Payout,,,,,,,,"Transfer to John Stevick, Checking 1687 (USD)",G-V7NT7NS4PJWPX,USD,,2822.53,,,,,,
+02/26/2025,,Reservation,HMKD8WRSCD,02/21/2025,02/24/2025,04/02/2025,37,Heather Foley,Modern Apartment in Great North Berkeley Area,,,USD,2822.53,,87.29,,60.54,2909.82,0.00,2025
+02/25/2025,03/05/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-6BRZLX4JFAMEX,USD,,1668.40,,,,,,
+02/25/2025,,Reservation,HM3FJMFZ2R,02/12/2025,02/24/2025,02/28/2025,4,Philip Hookham,Cozy beach bungalow steps to the Sand!,,,USD,1668.40,,51.60,,80.00,1720.00,120.40,2025
+02/24/2025,03/04/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-K2ILCZSH66NAR,USD,,2231.00,,,,,,
+02/24/2025,,Reservation,HMM52JB8HC,01/10/2025,02/23/2025,03/01/2025,6,Hanna Reinhertz,Stay Right on the Beach!,,,USD,2231.00,,69.00,,80.00,2300.00,161.00,2025
+02/24/2025,02/28/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-ZMCCLFZCUSQ7T,USD,,1577.13,,,,,,
+02/24/2025,,Reservation,HMC9XTAKQ2,02/06/2025,02/22/2025,05/24/2025,91,Takumi Suzumura,Grad Study Bedroom Close 2 UCB,,,USD,1577.13,,48.78,,24.31,1625.91,0.00,2025
+02/22/2025,02/28/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-QXERO5XWYN2VN,USD,,2600.63,,,,,,
+02/22/2025,,Reservation,HMD8RQMZKF,01/20/2024,08/20/2024,05/31/2025,284,Helene Rondey,Large 1-BR Apartment with Old World Charm,,,USD,2600.63,,80.43,,9.86,2681.06,0.00,2025
+02/20/2025,02/27/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-5DEBPOTEW64GH,USD,,57.88,,,,,,
+02/20/2025,,Reservation,HMAHBPY5XF,12/11/2024,01/18/2025,02/19/2025,32,Anna Geisler,Grad Study Bedroom Close 2 UCB,,,USD,57.88,,1.79,,2.47,59.67,0.00,2025
+02/19/2025,02/27/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-UN4LD7ZYPKOL2,USD,,3576.99,,,,,,
+02/19/2025,,Reservation,HM4XQMASFY,06/13/2024,01/18/2025,03/01/2025,42,David Shur,Delray Beach Villa on the Ocean,,,USD,3576.99,,110.63,,20.95,3687.62,258.13,2025
+02/17/2025,02/25/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-WX7AP5G5F3URU,USD,,1137.30,,,,,,
+02/17/2025,,Reservation,HM2DFTJPFH,12/31/2024,01/16/2025,02/28/2025,43,Matt Reardon,North Berkeley + Super Central,,,USD,1137.30,,35.17,,2.47,1172.47,0.00,2025
+02/17/2025,02/25/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-BTIFJFWNBTQ45,USD,,2589.90,,,,,,
+02/17/2025,,Reservation,HMXR9E8C9H,08/30/2024,02/16/2025,02/23/2025,7,Ryan Foley,Stay Right on the Beach!,,,USD,2589.90,,80.10,,80.00,2670.00,186.90,2025
+02/17/2025,02/21/2025,Payout,,,,,,,,"Transfer to John Stevick, Checking 1687 (USD)",G-GGMYSPF3NBKFI,USD,,2907.02,,,,,,
+02/17/2025,,Reservation,HMA4K83M9C,02/06/2025,02/15/2025,04/08/2025,52,Matthew Maccabee,Modern Apartment in North Berkeley,,,USD,2907.02,,89.91,,0.00,2996.93,0.00,2025
+02/17/2025,02/21/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-VRWJURO7JFD7I,USD,,2716.45,,,,,,
+02/17/2025,,Reservation,HMEZK28KKF,11/10/2024,01/15/2025,05/17/2025,122,Rohan Yelamanchili,"Bright, Furnished 1BR with Charm, Close to Campus",,,USD,2716.45,,84.01,,22.95,2800.46,0.00,2025
+02/16/2025,02/21/2025,Payout,,,,,,,,"Transfer to John Stevick, Checking 1687 (USD)",G-SKDXC3N5F4J3B,USD,,2030.32,,,,,,
+02/16/2025,,Adjustment,HMERBB85KQ,02/06/2025,02/07/2025,02/15/2025,8,Ray Dennis,Modern Apartment in Great North Berkeley Area,,,USD,-1648.17,,-50.98,,5.33,,-203.90,2025
+02/16/2025,,Reservation,HM5KPC5CAN,01/04/2025,02/15/2025,06/07/2025,112,David Chu,Spacious Victorian Home,,,USD,3678.49,,113.77,,21.33,3792.26,0.00,2025
+02/16/2025,02/21/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-VJZQUU4JXOEEZ,USD,,2549.72,,,,,,
+02/16/2025,,Pass Through Tot,HMB34WZFM9,05/06/2024,02/15/2025,02/22/2025,7,Harold Brown,Oceanfront Elegance - Sun Sand & Style,"Feb 15 – 22, 2025 HMB34WZFM9",,USD,272.16,,0.00,,0.00,272.16,0.00,2025
+02/16/2025,,Reservation,HMB34WZFM9,05/06/2024,02/15/2025,02/22/2025,7,Harold Brown,Oceanfront Elegance - Sun Sand & Style,,,USD,2277.56,,70.44,,80.00,2348.00,164.36,2025
+02/15/2025,02/21/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-5SLDTAE7YFZIW,USD,,1555.09,,,,,,
+02/15/2025,,Reservation,HMHTEM5YHK,01/07/2025,02/14/2025,04/30/2025,75,Maximilian Hillen,Private BR in Friendly 10BR Grad / Post Doc House!,,,USD,1555.09,,48.10,,33.23,1603.19,0.00,2025
+02/15/2025,02/21/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-DXTNF5AARBDSV,USD,,1307.28,,,,,,
+02/15/2025,,Reservation,HMYKY9KBNJ,09/11/2024,01/13/2025,03/21/2025,67,Marta Pérez Verdugo,Private Spacious Grad Room,,,USD,1307.28,,40.43,,41.79,1347.71,0.00,2025
+02/13/2025,02/20/2025,Payout,,,,,,,,"Transfer to John Stevick, Checking 1687 (USD)",G-HTVNY7KCHSCAL,USD,,4027.24,,,,,,
+02/13/2025,,Reservation,HMYCRJXS8R,11/06/2024,01/11/2025,03/08/2025,56,Nicolas Mai,Big Remodeled 3BR w/ Lush Garden,,,USD,4027.24,,124.55,,89.29,4151.79,0.00,2025
+02/12/2025,02/20/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-GJR4YEKUYR2D7,USD,,1872.10,,,,,,
+02/12/2025,,Reservation,HM2WNDF9EA,01/11/2025,02/11/2025,02/16/2025,5,Barbara Lamkin,Stay Right on the Beach!,,,USD,1872.10,,57.90,,80.00,1930.00,135.10,2025
+02/11/2025,02/19/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-6DW6E3VGANVYR,USD,,3511.10,,,,,,
+02/11/2025,,Pass Through Tot,HMPHY8DQC3,03/19/2024,02/10/2025,02/24/2025,14,Steven Willens,Cozy beach bungalow steps to the Sand!,"Feb 10 – 24, 2025 HMPHY8DQC3",,USD,378.00,,0.00,,0.00,378.00,0.00,2025
+02/11/2025,,Reservation,HMPHY8DQC3,03/19/2024,02/10/2025,02/24/2025,14,Steven Willens,Cozy beach bungalow steps to the Sand!,,,USD,3133.10,,96.90,,80.00,3230.00,226.10,2025
+02/11/2025,02/18/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-LWOIWP2UGX6DG,USD,,1567.06,,,,,,
+02/11/2025,,Reservation,HM5BBH8S4Z,09/16/2024,02/09/2025,06/05/2025,116,Federico Di Gennaro,Corner Room in Big Grad House,,,USD,1567.06,,48.47,,23.33,1615.53,0.00,2025
+02/09/2025,02/14/2025,Payout,,,,,,,,"Transfer to John Stevick, Checking 1687 (USD)",G-KZN5M52UESVU7,USD,,2836.23,,,,,,
+02/09/2025,,Reservation,HMERBB85KQ,02/06/2025,02/07/2025,02/15/2025,8,Ray Dennis,Modern Apartment in Great North Berkeley Area,,,USD,2836.23,,87.72,,74.67,2923.95,146.98,2025
+02/09/2025,02/14/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-JCOADXX63B4HD,USD,,2813.00,,,,,,
+02/09/2025,,Reservation,HMRPPB53AQ,01/17/2025,02/07/2025,03/05/2025,26,Sun-Young Kim,Lovely North Berkeley Apt-Just Blocks to Downtown,,,USD,2813.00,,87.00,,0.00,2900.00,348.00,2025
+02/09/2025,02/14/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-BAXB3NLLGKLGG,USD,,200.00,,,,,,
+02/09/2025,,Resolution Payout,HMRPPB53AQ,,02/07/2025,03/05/2025,26,Sun-Young Kim,Lovely North Berkeley Apt-Just Blocks to Downtown,Resolution payout for resolution CLA-B9HRJSPQAN - Reservation HMRPPB53AQ,,USD,200.00,,,,,200.00,,2025
+02/07/2025,02/14/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-R4UW2MWLE6ER5,USD,,2833.37,,,,,,
+02/07/2025,,Reservation,HMB5RE3458,01/25/2025,02/06/2025,03/06/2025,28,Michael Nielsen,Cozy North Berkeley Apt in Prime Location,,,USD,2833.37,,87.63,,100.00,2921.00,350.52,2025
+02/07/2025,02/14/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-GJWXUZYJ6E4NP,USD,,1513.20,,,,,,
+02/07/2025,,Reservation,HMQBY5P92H,01/25/2025,02/06/2025,02/10/2025,4,Brian Sullivan,Stay Right on the Beach!,,,USD,1513.20,,46.80,,80.00,1560.00,109.20,2025
+02/03/2025,02/07/2025,Payout,,,,,,,,"Transfer to John Stevick, Checking 1687 (USD)",G-EELHGDAV6DOTG,USD,,4085.28,,,,,,
+02/03/2025,,Reservation,HM9P3EEF2A,10/14/2024,01/01/2025,02/28/2025,58,Maria Santelices,Sunny 3BR/2BA Duplex Unit - 2nd Floor,,,USD,4085.28,,126.35,,69.83,4211.63,0.00,2025
+01/29/2025,02/05/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-K4V6NSGFWNVAM,USD,,3074.13,,,,,,
+01/29/2025,,Reservation,HMHA4K8H2N,02/07/2024,07/27/2024,05/31/2026,673,Melània Gómez Rodríguez,Spacious 2nd Floor 1-BR Apt in the Heart of Berk!,,,USD,3074.13,,95.08,,7.21,3169.21,0.00,2025
+01/28/2025,02/05/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-YVUEFHXT6GUJI,USD,,3511.10,,,,,,
+01/28/2025,,Pass Through Tot,HMSXXH9ZPA,04/09/2024,01/27/2025,02/10/2025,14,Maureen Parsons,Cozy beach bungalow steps to the Sand!,"Jan 27 – Feb 10, 2025 HMSXXH9ZPA",,USD,378.00,,0.00,,0.00,378.00,0.00,2025
+01/28/2025,,Reservation,HMSXXH9ZPA,04/09/2024,01/27/2025,02/10/2025,14,Maureen Parsons,Cozy beach bungalow steps to the Sand!,,,USD,3133.10,,96.90,,80.00,3230.00,226.10,2025
+01/22/2025,01/29/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-RBMM4R3T7RWT4,USD,,2879.27,,,,,,
+01/22/2025,,Reservation,HMD8RQMZKF,01/20/2024,08/20/2024,05/31/2025,284,Helene Rondey,Large 1-BR Apartment with Old World Charm,,,USD,2879.27,,89.05,,10.92,2968.32,0.00,2025
+01/20/2025,01/24/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-2FGGML6MJUM5M,USD,,1794.24,,,,,,
+01/20/2025,,Reservation,HMAHBPY5XF,12/11/2024,01/18/2025,02/19/2025,32,Anna Geisler,Grad Study Bedroom Close 2 UCB,,,USD,1794.24,,55.49,,76.53,1849.73,0.00,2025
+01/19/2025,01/24/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-QXY7GQSUAT45W,USD,,11855.71,,,,,,
+01/19/2025,,Reservation,HMY2H3KFYC,09/02/2024,01/18/2025,01/25/2025,7,BernieJoe Casey,Cozy beach bungalow steps to the Sand!,,,USD,1775.10,,54.90,,80.00,1830.00,128.10,2025
+01/19/2025,,Reservation,HM4XQMASFY,06/13/2024,01/18/2025,03/01/2025,42,David Shur,Delray Beach Villa on the Ocean,,,USD,10080.61,,311.77,,59.05,10392.38,727.47,2025
+01/17/2025,01/24/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-CY4LZ6MDQ4FTN,USD,,3006.06,,,,,,
+01/17/2025,,Reservation,HM2DFTJPFH,12/31/2024,01/16/2025,02/28/2025,43,Matt Reardon,North Berkeley + Super Central,,,USD,3006.06,,92.97,,76.53,3099.03,0.00,2025
+01/17/2025,01/24/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-MA7HYVKKSANID,USD,,3007.49,,,,,,
+01/17/2025,,Reservation,HMEZK28KKF,11/10/2024,01/15/2025,05/17/2025,122,Rohan Yelamanchili,"Bright, Furnished 1BR with Charm, Close to Campus",,,USD,3007.49,,93.02,,25.41,3100.51,0.00,2025
+01/16/2025,01/23/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-ZMMDBXCV7DBNY,USD,,99.25,,,,,,
+01/16/2025,,Reservation,HM4M3NHKJT,11/25/2024,12/14/2024,01/15/2025,32,Rafael Irgolic,"Bright, Furnished 1BR with Charm, Close to Campus",,,USD,99.25,,3.07,,3.12,102.32,0.00,2025
+01/15/2025,01/22/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-YMLPJZ2DI5XXI,USD,,1447.35,,,,,,
+01/15/2025,,Reservation,HMYKY9KBNJ,09/11/2024,01/13/2025,03/21/2025,67,Marta Pérez Verdugo,Private Spacious Grad Room,,,USD,1447.35,,44.76,,46.27,1492.11,0.00,2025
+01/14/2025,01/21/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-YIQSUMXN5KTBX,USD,,317.43,,,,,,
+01/14/2025,,Reservation,HMDM85SWB3,01/09/2025,01/09/2025,01/15/2025,6,William Wunderlich,Cozy beach bungalow steps to the Sand!,,,USD,317.43,,9.82,,0.00,327.25,22.91,2025
+01/13/2025,01/17/2025,Payout,,,,,,,,"Transfer to John Stevick, Checking 1687 (USD)",G-TLCW7M6VJWI7G,USD,,4993.76,,,,,,
+01/13/2025,,Reservation,HMYCRJXS8R,11/06/2024,01/11/2025,03/08/2025,56,Nicolas Mai,Big Remodeled 3BR w/ Lush Garden,,,USD,4993.76,,154.45,,110.71,5148.21,0.00,2025
+01/10/2025,01/17/2025,Payout,,,,,,,,"Transfer to Elizabeth Scherer, Checking 0149 (USD)",G-GYUEZHQWEBSE2,USD,,1829.65,,,,,,
+01/10/2025,,Resolution Adjustment,HM3MMMZBJR,,08/15/2024,12/24/2024,131,Jola Schmidt,Grad Study Bedroom Close 2 UCB,Resolution adjustment for resolution 37131387,,USD,-115.20,,,,,-115.20,,2025
+01/10/2025,,Reservation,HMDM85SWB3,01/09/2025,01/09/2025,01/15/2025,6,William Wunderlich,Cozy beach bungalow steps to the Sand!,,,USD,1944.85,,60.15,,80.00,2005.00,140.35,2025
+01/03/2025,01/10/2025,Payout,,,,,,,,"Transfer to John Stevick, Checking 1687 (USD)",G-DKZN2MVUPEU55,USD,,4690.50,,,,,,
+01/03/2025,,Reservation,HM9P3EEF2A,10/14/2024,01/01/2025,02/28/2025,58,Maria Santelices,Sunny 3BR/2BA Duplex Unit - 2nd Floor,,,USD,4690.50,,145.07,,80.17,4835.57,0.00,2025

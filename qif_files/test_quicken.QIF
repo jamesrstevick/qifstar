@@ -1,0 +1,42 @@
+!Account
+NChking CH BofA - 1687
+TBank
+^
+!Type:Bank 
+D8/ 1'25
+U2,333.33
+T2,333.33
+NAirbnb
+PJames Stev
+MFeb 24 – Apr 2 (37 nights)
+LRental Inc:Carriage House:CH3
+^
+
+!Account
+NChkng Main BofA-0149
+TBank
+^
+!Type:Bank 
+D8/ 5'25
+U2,332.33
+T2,332.33
+NAirbnb
+PJames Stev
+MFeb 24 – Apr 2 (37 nights)
+LRental Inc:Carriage House:CH3
+^
+D2/18'25
+U2,030.32
+T2,030.32
+CX
+NAirbnb
+PRay Dennis
+MFeb 7 – 15
+L--Split--
+SRental Inc:Carriage House:CH3
+ERay Dennis, Feb 7 – 15
+$-1,648.17
+SRental Inc:Carriage House:CH1
+EDavid Chu, Feb 15 – May 31
+$3,678.49
+^
