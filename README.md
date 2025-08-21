@@ -14,6 +14,10 @@ How to export a CSV file of earnings [Airbnb link](https://www.airbnb.com/help/a
 ** TODO
 * Select Open on your device or Email your report and place the CSV file in "airbnb_files"
 
+* File > File import > Quicken Interchange Format (.QIF) File...
+* Browse for file, use All Accounts, only select Transactions
+
+
 ## Installation
 
 ## Notes

@@ -24,8 +24,8 @@ from header import *
 # Accounts
 accounts = [CH_CHK_1687, BOFA_CHK_0149]  # CH_CHK_1687, BOFA_CHK_0149
 # Date filter in format "MM/DD/YYYY", filter will include the following dates
-start_date = "05/01/2025"
-end_date = "05/31/2025"
+start_date = "07/01/2025"
+end_date = "07/31/2025"
 ###########################################
 
 
@@ -141,9 +141,14 @@ def create_memo(row_dict):
     " ({} Nights) [{}]".format(int(row_dict[NIGHTS]),row_dict[CONF_CODE])
     return memo
 
-
-
-
+# Memo in split can only handle 25 characters
+def create_short_memo(row_dict):
+    input_name = row_dict[GUEST]
+    name_split = input_name.split(" ")
+    name_split_filtered = [x for x in name_split if x!='']
+    name = name_split[-1]
+    memo = name[:12] + " [{}]".format(row_dict[CONF_CODE])
+    return memo
 
 
 # Setup
@@ -200,6 +205,7 @@ for row in airbnb_data.iterrows():
         split_dict = {}
         split_dict[PAYEE] = row[GUEST]
         split_dict[MEMO] = create_memo(row)
+        split_dict[SHORTER_MEMO] = create_short_memo(row)
         if row[LISTING] in airbnb_to_quicken_properties:
             split_dict[CATEGORY] = airbnb_to_quicken_properties[row[LISTING]]
         else:
@@ -276,7 +282,7 @@ with open(qif_file, 'w+') as f:
                     f.write("L--Split--\n")
                     for split in entry[SPLITS]:
                         f.write(f"S{split[CATEGORY]}\n")
-                        f.write(f"E{split[MEMO]}\n")
+                        f.write(f"E{split[SHORTER_MEMO]}\n")
                         f.write(f"${split[AMOUNT]}\n")
                 f.write("^\n")
         f.write("\n")

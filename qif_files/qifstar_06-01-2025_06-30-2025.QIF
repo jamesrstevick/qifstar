@@ -1,0 +1,204 @@
+!Account
+NChking CH BofA - 1687
+TBank
+^
+!Type:Bank
+D6/30'25
+U2926.88
+T2926.88
+C*
+NAirbnb
+PAlina Lazar
+MAlina Lazar, 6/29/25-8/8/25 (40 Nights) [HM4WXEWKQT]
+LRental Inc:Carriage House:CH3
+^
+D6/21'25
+U4813.1
+T4813.1
+C*
+NAirbnb
+PEnrique Galeana
+MEnrique Galeana, 5/19/25-7/27/25 (69 Nights) [HMAWDZYX3A]
+LRental Inc:Carriage House:CHA
+^
+D6/15'25
+U3866.15
+T3866.15
+C*
+NAirbnb
+PJanet Ozzard
+MJanet Ozzard, 6/14/25-7/13/25 (29 Nights) [HMWPEQSH2A]
+LRental Inc:Carriage House:CH1
+^
+D6/15'25
+U62.62
+T62.62
+C*
+NAirbnb
+PDavid Chu
+MDavid Chu, 2/15/25-6/7/25 (112 Nights) [HM5KPC5CAN]
+L--Split--
+SRental Inc:Carriage House:CH1
+EDavid Chu, 2/15/25-6/7/25 (112 Nights) [HM5KPC5CAN]
+$-33.0
+SRental Inc:Carriage House:CH3
+EJulia Lin, 4/18/25-6/17/25 (60 Nights) [HMDJ3DE4HA]
+$95.62
+^
+D6/7'25
+U4519.23
+T4519.23
+C*
+NAirbnb
+PChandana Tiruvayepati
+MChandana Tiruvayepati, 6/5/25-7/5/25 (30 Nights) [HM5ZP2TYNR]
+LRental Inc:Carriage House:CHB
+^
+D6/2'25
+U3110.3
+T3110.3
+C*
+NAirbnb
+PJohn Peng
+MJohn Peng, 5/31/25-6/29/25 (29 Nights) [HM48XZ2MA5]
+LRental Inc:Carriage House:CH2
+^
+
+!Account
+NChkng Main BofA-0149
+TBank
+^
+!Type:Bank
+D6/30'25
+U1387.86
+T1387.86
+C*
+NAirbnb
+PFatima Aselouani
+MFatima Aselouani, 5/28/25-8/31/25 (95 Nights) [HMQPDBXCM5]
+LRental Inc:Villas:VSV8
+^
+D6/28'25
+U2853.82
+T2853.82
+C*
+NAirbnb
+PRyan Wu 
+MRyan Wu , 6/27/25-8/9/25 (43 Nights) [HMTD4PHAH8]
+L--Split--
+SRental Inc:Wal 1722:Wal6
+ERyan Wu , 6/27/25-8/9/25 (43 Nights) [HMTD4PHAH8]
+$0.01
+SRental Inc:Wal 1722:Wal7
+EMelània Gómez Rodríguez, 7/27/24-5/31/26 (673 Nights) [HMHA4K8H2N]
+$2853.81
+^
+D6/26'25
+U2825.12
+T2825.12
+C*
+NAirbnb
+PMalia Sittler
+MMalia Sittler, 6/25/25-7/25/25 (30 Nights) [HMDDJ9DMYM]
+LRental Inc:Wal 1722:Wal3
+^
+D6/23'25
+U962.24
+T962.24
+C*
+NAirbnb
+PDouglas 
+MDouglas , 6/22/25-6/28/25 (6 Nights) [HMS3PKDJ3A]
+LRental Inc:Coral Cove:CC4
+^
+D6/22'25
+U2874.29
+T2874.29
+C*
+NAirbnb
+PJaime Sevilla
+MJaime Sevilla, 6/21/25-8/25/25 (65 Nights) [HMFWC34JNC]
+LRental Inc:Wal 1722:Wal4
+^
+D6/19'25
+U2942.33
+T2942.33
+C*
+NAirbnb
+PJaime Eguiarte
+MJaime Eguiarte, 5/18/25-8/16/25 (90 Nights) [HMWQ39HBEX]
+LRental Inc:Wal 1722:Wal1
+^
+D6/17'25
+U1683.18
+T1683.18
+C*
+NAirbnb
+PSophia Keip
+MSophia Keip, 4/15/25-7/25/25 (101 Nights) [HM8JST2N2Q]
+LRental Inc:Villas:VSV4
+^
+D6/16'25
+U2910.9
+T2910.9
+C*
+NAirbnb
+PPeiyang Song
+MPeiyang Song, 6/14/25-9/19/25 (97 Nights) [HMHKPM4KYS]
+LRental Inc:Wal 1722:Wal6
+^
+D6/13'25
+U1619.1
+T1619.1
+C*
+NAirbnb
+PJeff Stogsdill
+MJeff Stogsdill, 5/11/25-7/31/25 (81 Nights) [HMPAMDWFR5]
+LRental Inc:Villas:VSV3
+^
+D6/11'25
+U962.24
+T962.24
+C*
+NAirbnb
+PKarl Whitley
+MKarl Whitley, 6/10/25-6/16/25 (6 Nights) [HM4T8JH38C]
+LRental Inc:Coral Cove:CC4
+^
+D6/10'25
+U4289.75
+T4289.75
+C*
+NAirbnb
+PFederico Di Gennaro
+MFederico Di Gennaro, 2/9/25-6/5/25 (116 Nights) [HM5BBH8S4Z]
+L--Split--
+SRental Inc:Villas:VSV9
+EFederico Di Gennaro, 2/9/25-6/5/25 (116 Nights) [HM5BBH8S4Z]
+$-221.15
+SRental Inc:Villas:VSV5
+EArjun Dhamrait, 6/8/25-9/21/25 (105 Nights) [HMZKT2KXM9]
+$1686.41
+SRental Inc:Wal 1722:Wal2
+EAmir Ali Noori Naeini, 6/8/25-7/7/25 (29 Nights) [HM23Z5XQ24]
+$2824.49
+^
+D6/2'25
+U3221.79
+T3221.79
+C*
+NAirbnb
+PTyler Garza
+MTyler Garza, 5/31/25-8/9/25 (70 Nights) [HMWFCM3BST]
+LRental Inc:Wal 1722:Wal9
+^
+D6/1'25
+U3453.68
+T3453.68
+C*
+NAirbnb
+PCathleen Bise
+MCathleen Bise, 5/31/25-7/27/25 (57 Nights) [HMK8QPPCX2]
+LRental Inc:Coral Cove:CC5
+^
+
