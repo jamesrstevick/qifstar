@@ -24,8 +24,8 @@ from header import *
 # Accounts
 accounts = [CH_CHK_1687, BOFA_CHK_0149]  # CH_CHK_1687, BOFA_CHK_0149
 # Date filter in format "MM/DD/YYYY", filter will include the following dates
-start_date = "07/01/2025"
-end_date = "07/31/2025"
+start_date = "10/01/2025"
+end_date = "10/31/2025"
 ###########################################
 
 
@@ -255,7 +255,7 @@ print(f"Number of transactions in date range: {num_transactions}")
 # Write file
 print(f"\nWriting QIF file for {len(accounts)} accounts...")
 num_transactions = dict.fromkeys(accounts)
-with open(qif_file, 'w+') as f:
+with open(qif_file, 'w+', encoding='utf-8') as f:
     for account in accounts:
         num_transactions[account] = 0
         f.write("!Account\n")
