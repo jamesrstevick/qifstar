@@ -1,0 +1,186 @@
+!Account
+NChking CH BofA - 1687
+TBank
+^
+!Type:Bank
+D11/24'25
+U1913.88
+T1913.88
+C*
+NAirbnb
+PVíctor Hernández
+MVíctor Hernández, 8/23/25-12/5/25 (104 Nights) [HMRMSAYEP8]
+LRental Inc:Carriage House:CHA
+^
+D11/13'25
+U867.53
+T867.53
+C*
+NAirbnb
+PJulia Lin
+MJulia Lin, 8/12/25-11/21/25 (101 Nights) [HMP4P5CT9M]
+LRental Inc:Carriage House:CH3
+^
+D11/13'25
+U2571.38
+T2571.38
+C*
+NAirbnb
+PRashid Shanneb
+MRashid Shanneb, 9/12/25-12/31/25 (110 Nights) [HMCNDNE3W3]
+LRental Inc:Carriage House:CH2
+^
+
+!Account
+NChkng Main BofA-0149
+TBank
+^
+!Type:Bank
+D11/28'25
+U2840.71
+T2840.71
+C*
+NAirbnb
+PMelània Gómez Rodríguez
+MMelània Gómez Rodríguez, 7/27/24-5/31/26 (673 Nights) [HMHA4K8H2N]
+LRental Inc:Wal 1722:Wal7
+^
+D11/26'25
+U1297.07
+T1297.07
+C*
+NAirbnb
+PJoan Pyle
+MJoan Pyle, 11/25/25-12/2/25 (7 Nights) [HMHEQ82BEW]
+LRental Inc:Coral Cove:CC3
+^
+D11/23'25
+U1098.5
+T1098.5
+C*
+NAirbnb
+PAndrew Russell
+MAndrew Russell, 11/22/25-11/28/25 (6 Nights) [HMR3YYJJFH]
+LRental Inc:Coral Cove:CC5
+^
+D11/22'25
+U200.0
+T200.0
+C*
+NAirbnb
+PMaisy Tarlow
+MMaisy Tarlow, 11/18/25-1/18/26 (61 Nights) [HMRWBA5Y3S]
+LRental Inc:Wal 1722:Wal9
+^
+D11/21'25
+U805.1
+T805.1
+C*
+NAirbnb
+PKim Lavoie
+MKim Lavoie, 11/20/25-11/25/25 (5 Nights) [HMPDXKEESB]
+LRental Inc:Coral Cove:CC3
+^
+D11/19'25
+U2874.93
+T2874.93
+C*
+NAirbnb
+PMaisy Tarlow
+MMaisy Tarlow, 11/18/25-1/18/26 (61 Nights) [HMRWBA5Y3S]
+LRental Inc:Wal 1722:Wal9
+^
+D11/17'25
+U1592.8
+T1592.8
+C*
+NAirbnb
+PManon Polverini
+MManon Polverini, 8/16/25-12/30/25 (136 Nights) [HMAS2N5J5A]
+LRental Inc:Villas:VSV3
+^
+D11/16'25
+U671.04
+T671.04
+C*
+NAirbnb
+PHayden Rahn
+MHayden Rahn, 9/15/25-11/22/25 (68 Nights) [HMNXEE5ZMB]
+LRental Inc:Wal 1722:Wal2
+^
+D11/ 8'25
+U3266.96
+T3266.96
+C*
+NAirbnb
+PRaymon Parker
+MRaymon Parker, 11/7/25-11/14/25 (7 Nights) [HMWKBRYKRN]
+L--Split--
+SRental Inc:Coral Cove:CC3
+EParker [HMWKBRYKRN]
+$1094.16
+SRental Inc:Coral Cove:CC7
+EHartley [HMQADMNDPC]
+$1047.6
+SRental Inc:Coral Cove:CC2
+EPeabody [HMY2WR8R44]
+$1125.2
+^
+D11/ 7'25
+U762.98
+T762.98
+C*
+NAirbnb
+PPeter 
+MPeter , 2/15/26-2/28/26 (13 Nights) [HMR85MP8M3]
+L--Split--
+SRental Inc:Coral Cove:CC4
+E [HMR85MP8M3]
+$-398.0
+SRental Inc:Coral Cove:CC3
+EHalcomb [HM9TQSWCXP]
+$130.08
+SRental Inc:Coral Cove:CC6
+EFeldman [HM8KNKSZ52]
+$1030.9
+^
+D11/ 3'25
+U4427.83
+T4427.83
+C*
+NAirbnb
+PMaximilian Berbig
+MMaximilian Berbig, 11/2/25-12/3/25 (31 Nights) [HMBPZX8WYS]
+L--Split--
+SRental Inc:Villas:VSV9
+EBerbig [HMBPZX8WYS]
+$1641.99
+SRental Inc:Wal 1722:Wal6
+EPérez [HMT2AY4MEB]
+$2785.84
+^
+D11/ 2'25
+U3301.35
+T3301.35
+C*
+NAirbnb
+PLuke Johnson
+MLuke Johnson, 9/1/25-11/30/25 (90 Nights) [HMYEMM8D4Y]
+L--Split--
+SRental Inc:Villas:VSV8
+EJohnson [HMYEMM8D4Y]
+$1608.09
+SRental Inc:Villas:VSV5
+E中村 [HMXDB3B3QY]
+$1693.26
+^
+D11/ 2'25
+U732.83
+T732.83
+C*
+NAirbnb
+PCatherine Halcomb
+MCatherine Halcomb, 11/1/25-11/7/25 (6 Nights) [HM9TQSWCXP]
+LRental Inc:Coral Cove:CC3
+^
+

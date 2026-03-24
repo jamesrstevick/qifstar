@@ -15,23 +15,23 @@ import sys
 from datetime import datetime
 import pandas as pd
 from tkinter import messagebox
-from header import *
+from header import *  # includes TYPES_AS_SPLITS
 
 
 ###########################################
 # INPUTS
 ###########################################
-# Accounts
+# Accounts to include in the QIF (only these are written); all_acounts below is used only to match payouts
 accounts = [CH_CHK_1687, BOFA_CHK_0149]  # CH_CHK_1687, BOFA_CHK_0149
 # Date filter in format "MM/DD/YYYY", filter will include the following dates
-start_date = "10/01/2025"
-end_date = "10/31/2025"
+start_date = "01/01/2026"
+end_date = "02/28/2026"
 ###########################################
 
 
 
 
-all_acounts = [CH_CHK_1687, BOFA_CHK_0149]
+all_acounts = [CH_CHK_1687, BOFA_CHK_0149, JOHN_CHK_7949]
 airbnb_keys = [DATE, TYPE, ARRIVE, DEPART, CONF_CODE, NIGHTS, GUEST, LISTING, DETAILS, PAYOUT, AMOUNT]
 quicken_keys = [DATE, ARRIVE, DEPART, CONF_CODE, NIGHTS, GUEST, LISTING, DETAILS, PAYOUT, AMOUNT]
 transactions = []
@@ -39,7 +39,8 @@ transactions = []
 
 # Dictionaries
 account_numbers = {CH_CHK_1687:'1687',
-                   BOFA_CHK_0149:'0149'}
+                   BOFA_CHK_0149:'0149',
+                   JOHN_CHK_7949:'7949'}
 
 airbnb_to_quicken_properties = {'Private Room in a 10-BR Grad/Post Doc Villa House!':'Rental Inc:Villas:VSV1',
                                 'Private BR in Friendly 10BR Grad / Post Doc House!':'Rental Inc:Villas:VSV2',
@@ -134,20 +135,28 @@ def shorter_date(date):
     year = year[-2:]
     return day + '/' + month + '/' + year
 
+def _safe_str(val):
+    """Convert CSV value to str; treat NaN/empty as ''."""
+    if pd.isna(val):
+        return ''
+    return str(val).strip()
+
 def create_memo(row_dict):
-    memo = row_dict[GUEST] + ", " +\
+    guest = _safe_str(row_dict[GUEST])
+    memo = guest + ", " +\
     shorter_date(row_dict[ARRIVE]) +\
     "-" + shorter_date(row_dict[DEPART]) +\
-    " ({} Nights) [{}]".format(int(row_dict[NIGHTS]),row_dict[CONF_CODE])
+    " ({} Nights) [{}]".format(int(row_dict[NIGHTS]), _safe_str(row_dict[CONF_CODE]))
     return memo
 
 # Memo in split can only handle 25 characters
 def create_short_memo(row_dict):
-    input_name = row_dict[GUEST]
-    name_split = input_name.split(" ")
-    name_split_filtered = [x for x in name_split if x!='']
-    name = name_split[-1]
-    memo = name[:12] + " [{}]".format(row_dict[CONF_CODE])
+    input_name = _safe_str(row_dict[GUEST])
+    name_split = input_name.split(" ") if input_name else ['']
+    name_split_filtered = [x for x in name_split if x != '']
+    name = name_split_filtered[-1] if name_split_filtered else ''
+    conf = _safe_str(row_dict[CONF_CODE])
+    memo = name[:12] + " [{}]".format(conf)
     return memo
 
 
@@ -185,6 +194,7 @@ in_splits = False
 # Create data packets for transactions
 
 num_payments = 0
+missing_listings = []  # (listing_name, date, guest) for fail message
 for row in airbnb_data.iterrows(): 
     row = row[1]
     if row[TYPE] == TYPE_PAYOUT:
@@ -196,25 +206,76 @@ for row in airbnb_data.iterrows():
         transaction_dict[DATE_FILTER] = datetime.strptime(row[DATE], DATE_TIME_FORMAT).timestamp()
         transaction_dict[TOTAL] = row[PAYOUT]
         for account in all_acounts:
-            if account_numbers[account] in row[DETAILS]:
+            if account_numbers[account] in _safe_str(row[DETAILS]):
                 transaction_dict[ACCOUNT] = account
+                break
+        if ACCOUNT not in transaction_dict:
+            raise RuntimeError(
+                f"Payout on {row[DATE]} (amount {row[PAYOUT]}) could not be assigned to an account. "
+                f'Details from CSV: "{_safe_str(row[DETAILS])}". '
+                f"Expected one of: {list(account_numbers.values())}. Add or fix account match and re-run."
+            )
         transaction_dict[SPLITS] = []
     else:
+        if row[TYPE] not in TYPES_AS_SPLITS:
+            continue
         in_splits = True
         num_payments += 1
         split_dict = {}
-        split_dict[PAYEE] = row[GUEST]
-        split_dict[MEMO] = create_memo(row)
-        split_dict[SHORTER_MEMO] = create_short_memo(row)
-        if row[LISTING] in airbnb_to_quicken_properties:
-            split_dict[CATEGORY] = airbnb_to_quicken_properties[row[LISTING]]
-        else:
-            print('ISSUE')
         split_dict[AMOUNT] = row[AMOUNT]
+        if row[TYPE] == TYPE_MISC_CREDIT:
+            split_dict[SPLIT_TYPE] = "misc_credit"
+            split_dict[PAYEE] = MISC_CREDIT_PAYEE
+            split_dict[MEMO] = MISC_CREDIT_MEMO
+            split_dict[SHORTER_MEMO] = MISC_CREDIT_MEMO
+            split_dict[CATEGORY] = MISC_CREDIT_CATEGORY
+        else:
+            split_dict[SPLIT_TYPE] = "reservation"
+            split_dict[PAYEE] = _safe_str(row[GUEST])
+            split_dict[MEMO] = create_memo(row)
+            split_dict[SHORTER_MEMO] = create_short_memo(row)
+            if row[LISTING] in airbnb_to_quicken_properties:
+                split_dict[CATEGORY] = airbnb_to_quicken_properties[row[LISTING]]
+            else:
+                listing_name = _safe_str(row[LISTING]) or "(blank)"
+                # Only fail on missing listing for accounts we're writing; skip listing check for other accounts (e.g. 7949)
+                if transaction_dict[ACCOUNT] in accounts:
+                    missing_listings.append((listing_name, row[DATE], _safe_str(row[GUEST])))
+                split_dict[CATEGORY] = "[Unknown listing - set in Quicken]"  # placeholder so we can move on
         transaction_dict[SPLITS].append(split_dict.copy())
 if in_splits == True:
     transactions.append(transaction_dict.copy())
     in_splits = False
+
+if missing_listings:
+    unique_listings = sorted(set(m[0] for m in missing_listings))
+    lines = [f"  Listing: {m[0]!r}  |  Date: {m[1]}  |  Guest: {m[2]}" for m in missing_listings]
+    raise RuntimeError(
+        "FAIL: One or more listings are not in airbnb_to_quicken_properties.\n\n"
+        "What was expected: Every Reservation/Resolution Adjustment row must have a Listing that appears "
+        "as a key in the airbnb_to_quicken_properties dict in airbnb_to_qif.py.\n\n"
+        "What didn't happen: No Quicken category could be assigned for the row(s) below; script stops so you can add them.\n\n"
+        f"Missing listing(s) to add (unique, {len(unique_listings)}): {unique_listings}\n\n"
+        "Occurrences (listing | date | guest):\n" + "\n".join(lines)
+    )
+
+# Ensure no payout mixes Misc Credit with Reservation/Resolution; mark all-Misc as single-line
+for item in transactions:
+    if len(item[SPLITS]) < 1:
+        continue
+    types_in_payout = {s[SPLIT_TYPE] for s in item[SPLITS]}
+    if "misc_credit" in types_in_payout and "reservation" in types_in_payout:
+        date_str = item[DATE]
+        raise RuntimeError(
+            f"Payout on {date_str} has mixed split types (Misc Credit and Reservation/Resolution). "
+            "Not supported. Please address this case."
+        )
+    if types_in_payout == {"misc_credit"}:
+        item[SINGLE_LINE_MISC_CREDIT] = True
+        # One line for whole payout; use first split's payee/memo/category
+        item[PAYEE] = item[SPLITS][0][PAYEE]
+        item[MEMO] = item[SPLITS][0][MEMO]
+        item[CATEGORY] = item[SPLITS][0][CATEGORY]
 
 
 num_lines = len(airbnb_data)
@@ -224,7 +285,7 @@ print(f"Rows of data: {num_lines}")
 print(f"Number of payments: {num_payments}")
 print(f"Number of transactions: {num_transactions}")
 
-# Verify each transactions
+# Verify each transaction: splits must sum to payout total
 valid_transactions = []
 for item in transactions:
     if len(item[SPLITS]) < 1:
@@ -271,7 +332,12 @@ with open(qif_file, 'w+', encoding='utf-8') as f:
                 f.write(f"T{entry[TOTAL]}\n")
                 f.write("C*\n")
                 f.write("NAirbnb\n")
-                if len(entry[SPLITS]) == 1:
+                if entry.get(SINGLE_LINE_MISC_CREDIT):
+                    # Single-line transaction (no split). QIF fields: D=Date, U/T=Amount, P=Payee, M=Memo, L=Category
+                    f.write(f"P{entry[PAYEE]}\n")
+                    f.write(f"M{entry[MEMO]}\n")
+                    f.write(f"L{entry[CATEGORY]}\n")
+                elif len(entry[SPLITS]) == 1:
                     split = entry[SPLITS][0]
                     f.write(f"P{split[PAYEE]}\n")
                     f.write(f"M{split[MEMO]}\n")
