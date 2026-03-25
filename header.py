@@ -2,6 +2,8 @@
 
 AIRBNB_FOLDER = "airbnb_files"
 QIF_FOLDER = "qif_files"
+AIRBNB_ARCHIVE_FOLDER = "airbnb_files_archive"
+LOGS_CSV = "logs.csv"
 
 CH_CHK_1687 = "Chking CH BofA - 1687"
 BOFA_CHK_0149 = "Chkng Main BofA-0149"
@@ -19,6 +21,7 @@ NIGHTS = "Nights"
 GUEST = "Guest"
 LISTING = "Listing"
 DETAILS = "Details"
+REFERENCE_CODE = "Reference code"
 PAYOUT = "Paid out"
 AMOUNT = "Amount"
 TYPE = "Type"
@@ -42,6 +45,8 @@ DATE_FILTER = "date_filter"
 ACCOUNT = "account"
 SPLIT_TYPE = "split_type"
 SINGLE_LINE_MISC_CREDIT = "single_line_misc_credit"
+PAYOUT_REF = "payout_ref"  # internal key on transaction dict (from CSV Reference code on Payout rows)
+PAYOUT_DATE_RAW = "payout_date_raw"  # MM/DD/YYYY from CSV before quicken_date()
 
 DATE_TIME_FORMAT = '%m/%d/%Y'
 

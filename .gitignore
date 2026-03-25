@@ -1,0 +1,9 @@
+# Finance / export data (keep logs.csv tracked — see below)
+airbnb_files/*.csv
+airbnb_files_archive/
+qif_files/*.QIF
+# Year-to-date Airbnb CSV at repo root (e.g. airbnb_12_2025-03_2026.csv)
+airbnb_*.csv
+
+# Import audit log is intentionally NOT ignored
+!logs.csv
