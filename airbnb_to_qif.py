@@ -25,9 +25,9 @@ from header import *  # includes TYPES_AS_SPLITS
 # Accounts to include in the QIF (only these are written); all_acounts below is used only to match payouts
 accounts = [CH_CHK_1687, BOFA_CHK_0149]  # CH_CHK_1687, BOFA_CHK_0149
 # Put one airbnb_*.csv at repo root (YTD export). Successful runs append logs.csv and archive the CSV to
-# airbnb_files_archive as name_PROCESSED_MMDDYYYY.csv. Next run skips payouts already in logs (by Reference code).
-# If logs.csv is empty, every payout in the file is imported—use a CSV that only has new rows since last Quicken
-# import, or seed logs.csv with prior payout_refs if you are mid-year.
+# airbnb_files_archive as name_PROCESSED_MMDDYYYY.csv. Next run skips payouts already in logs (by payout ID:
+# Airbnb Reference code when present, otherwise a synthetic ID). If logs.csv is empty, every payout in the file
+# is imported—use a CSV that only has new rows since last Quicken import, or seed logs.csv with prior payout_refs.
 ###########################################
 
 
@@ -186,46 +186,102 @@ def _find_source_airbnb_csv(main_folder):
     return candidates[0]
 
 
-def _assert_reference_codes_unique(df):
-    """Non-empty Reference code values must be unique across the file."""
-    seen = {}
-    for idx, row in df.iterrows():
-        ref = _safe_str(row[REFERENCE_CODE])
-        if not ref:
-            continue
-        if ref in seen:
-            raise RuntimeError(
-                f"Duplicate Reference code in CSV: {ref!r} (rows at index {seen[ref]} and {idx})."
-            )
-        seen[ref] = idx
+def _account_from_details(details):
+    """Return checking account number (1687, 0149, …) parsed from payout Details text."""
+    details = _safe_str(details)
+    for num in account_numbers.values():
+        if num in details:
+            return num
+    return ""
 
 
-def _assert_payout_rows_have_reference(df):
-    for idx, row in df.iterrows():
-        if row[TYPE] == TYPE_PAYOUT and not _safe_str(row[REFERENCE_CODE]):
-            raise RuntimeError(
-                f"Payout on {row[DATE]} has no Reference code; cannot track or deduplicate imports."
-            )
-
-
-def _filter_unprocessed_payout_rows(df, already_refs):
-    """Keep rows of payout groups whose payout Reference code is not in already_refs."""
-    mask = []
-    include = True
-    saw_payout = False
+def _iter_payout_groups(df):
+    """Yield (payout_row, child_rows) for each Payout group in CSV order."""
+    payout_row = None
+    child_rows = []
     for _, row in df.iterrows():
         if row[TYPE] == TYPE_PAYOUT:
-            saw_payout = True
-            ref = _safe_str(row[REFERENCE_CODE])
-            include = ref not in already_refs
-        elif not saw_payout:
-            include = False
-        mask.append(include)
+            if payout_row is not None:
+                yield payout_row, child_rows
+            payout_row = row
+            child_rows = []
+        elif payout_row is not None and row[TYPE] in TYPES_AS_SPLITS:
+            child_rows.append(row)
+    if payout_row is not None:
+        yield payout_row, child_rows
+
+
+def _child_confirmation_codes(child_rows):
+    codes = []
+    for row in child_rows:
+        if row[TYPE] not in TYPES_AS_SPLITS:
+            continue
+        code = _safe_str(row[CONF_CODE])
+        if code:
+            codes.append(code)
+    return sorted(set(codes))
+
+
+def _compute_payout_id(payout_row, child_rows):
+    """Payout ID for dedup: Reference code when present, else synthetic from payout + child rows."""
+    ref = _safe_str(payout_row[REFERENCE_CODE])
+    if ref:
+        return ref
+    date = str(payout_row[DATE]).strip().split()[0]
+    acct = _account_from_details(payout_row[DETAILS])
+    if not acct:
+        raise RuntimeError(
+            f"Payout on {date} (amount {payout_row[PAYOUT]}) has no account in Details: "
+            f"{_safe_str(payout_row[DETAILS])!r}. Expected one of: {list(account_numbers.values())}."
+        )
+    confs = _child_confirmation_codes(child_rows)
+    if confs:
+        return f"{date}|{acct}|{','.join(confs)}"
+    paid = round(float(payout_row[PAYOUT]), 2)
+    return f"{date}|{acct}|{paid:.2f}"
+
+
+def _should_process_payout(payout_row, child_rows, already_refs, last_log_last_txn):
+    """True if this payout group should be imported on this run."""
+    payout_id = _compute_payout_id(payout_row, child_rows)
+    if payout_id in already_refs:
+        return False
+    if not _safe_str(payout_row[REFERENCE_CODE]) and last_log_last_txn and last_log_last_txn.strip():
+        payout_ts = _parse_csv_date(payout_row[DATE]).timestamp()
+        prev_ts = datetime.strptime(last_log_last_txn.strip(), DATE_TIME_FORMAT).timestamp()
+        if payout_ts <= prev_ts + 1e-6:
+            return False
+    return True
+
+
+def _assert_payout_ids_unique(df):
+    """Computed payout IDs must be unique across the file."""
+    seen = {}
+    for payout_row, child_rows in _iter_payout_groups(df):
+        payout_id = _compute_payout_id(payout_row, child_rows)
+        idx = payout_row.name
+        if payout_id in seen:
+            raise RuntimeError(
+                f"Duplicate payout ID in CSV: {payout_id!r} (payout rows at index {seen[payout_id]} and {idx})."
+            )
+        seen[payout_id] = idx
+
+
+def _filter_unprocessed_payout_rows(df, already_refs, last_log_last_txn):
+    """Keep rows of payout groups that are not already logged and pass the date safety net."""
+    include_indices = set()
+    for payout_row, child_rows in _iter_payout_groups(df):
+        if not _should_process_payout(payout_row, child_rows, already_refs, last_log_last_txn):
+            continue
+        include_indices.add(payout_row.name)
+        for child in child_rows:
+            include_indices.add(child.name)
+    mask = [idx in include_indices for idx in df.index]
     return df.loc[mask].reset_index(drop=True)
 
 
 def _load_logs_state(logs_path):
-    """Returns (set of all payout refs from prior runs, last_txn_date from last row or None)."""
+    """Returns (set of all payout IDs from prior runs, last_txn_date from last row or None)."""
     if not os.path.isfile(logs_path):
         return set(), None
     with open(logs_path, newline="", encoding="utf-8") as f:
@@ -250,13 +306,12 @@ def _sanity_new_dates_after_previous(last_log_last_txn, df):
     if not last_log_last_txn or not last_log_last_txn.strip():
         return
     prev_ts = datetime.strptime(last_log_last_txn.strip(), DATE_TIME_FORMAT).timestamp()
-    for _, row in df.iterrows():
-        if row[TYPE] != TYPE_PAYOUT:
-            continue
-        dts = _parse_csv_date(row[DATE]).timestamp()
+    for payout_row, child_rows in _iter_payout_groups(df):
+        dts = _parse_csv_date(payout_row[DATE]).timestamp()
         if dts + 1e-6 < prev_ts:
+            payout_id = _compute_payout_id(payout_row, child_rows)
             raise RuntimeError(
-                f"Sanity check failed: payout on {row[DATE]} (ref {_safe_str(row[REFERENCE_CODE])!r}) is "
+                f"Sanity check failed: payout on {payout_row[DATE]} (id {payout_id!r}) is "
                 f"before last logged transaction date {last_log_last_txn!r}. "
                 "Investigate logs.csv or CSV order; new entries should not be older than the previous upload's last date."
             )
@@ -268,7 +323,7 @@ def _validate_split_totals(transactions):
         if len(item[SPLITS]) < 1:
             raise RuntimeError(
                 f"Payout {item[PAYOUT_REF]!r} (Quicken date {item[DATE]}) has no split rows — need at least one "
-                "Reservation, Resolution Adjustment, or Misc Credit under this payout."
+                "Reservation, Resolution Adjustment/Payout, Adjustment, or Misc Credit under this payout."
             )
         total_splits = round(sum(float(split[AMOUNT]) for split in item[SPLITS]), 2)
         payout_total = round(float(item[TOTAL]), 2)
@@ -337,15 +392,14 @@ def run_airbnb_to_qif():
 
     full_airbnb_data = pd.read_csv(source_csv_path)
     if REFERENCE_CODE not in full_airbnb_data.columns:
-        raise RuntimeError(f'CSV must have a "{REFERENCE_CODE}" column.')
+        full_airbnb_data[REFERENCE_CODE] = ""
     full_airbnb_data = full_airbnb_data[airbnb_keys]
 
-    _assert_payout_rows_have_reference(full_airbnb_data)
-    _assert_reference_codes_unique(full_airbnb_data)
+    _assert_payout_ids_unique(full_airbnb_data)
 
     already_refs, last_log_last_txn = _load_logs_state(logs_path)
 
-    airbnb_data = _filter_unprocessed_payout_rows(full_airbnb_data, already_refs)
+    airbnb_data = _filter_unprocessed_payout_rows(full_airbnb_data, already_refs, last_log_last_txn)
     if len(airbnb_data) == 0:
         print("No new payouts to import (already logged). Nothing to do.")
         return
@@ -370,36 +424,46 @@ def run_airbnb_to_qif():
     date_range_display = f"{min_d.strftime(DATE_TIME_FORMAT)} – {max_d.strftime(DATE_TIME_FORMAT)}"
 
     transactions = []
-    in_splits = False
     missing_listings = []
+    current_payout = None
+    current_children = []
+    transaction_dict = None
+
+    def _append_current_transaction():
+        if transaction_dict is None:
+            return
+        transaction_dict[PAYOUT_REF] = _compute_payout_id(current_payout, current_children)
+        transactions.append(transaction_dict.copy())
 
     for row in airbnb_data.iterrows():
         row = row[1]
         if row[TYPE] == TYPE_PAYOUT:
-            if in_splits == True:
-                transactions.append(transaction_dict.copy())
-                in_splits = False
+            if current_payout is not None:
+                _append_current_transaction()
+            current_payout = row
+            current_children = []
             transaction_dict = {}
             transaction_dict[PAYOUT_DATE_RAW] = str(row[DATE]).strip()
             transaction_dict[DATE] = quicken_date(row[DATE])
             transaction_dict[DATE_FILTER] = _parse_csv_date(row[DATE]).timestamp()
             transaction_dict[TOTAL] = row[PAYOUT]
-            for account in all_acounts:
-                if account_numbers[account] in _safe_str(row[DETAILS]):
-                    transaction_dict[ACCOUNT] = account
-                    break
+            acct_num = _account_from_details(row[DETAILS])
+            if acct_num:
+                for account in all_acounts:
+                    if account_numbers[account] == acct_num:
+                        transaction_dict[ACCOUNT] = account
+                        break
             if ACCOUNT not in transaction_dict:
                 raise RuntimeError(
                     f"Payout on {row[DATE]} (amount {row[PAYOUT]}) could not be assigned to an account. "
                     f'Details from CSV: "{_safe_str(row[DETAILS])}". '
                     f"Expected one of: {list(account_numbers.values())}. Add or fix account match and re-run."
                 )
-            transaction_dict[PAYOUT_REF] = _safe_str(row[REFERENCE_CODE])
             transaction_dict[SPLITS] = []
         else:
             if row[TYPE] not in TYPES_AS_SPLITS:
                 continue
-            in_splits = True
+            current_children.append(row)
             split_dict = {}
             split_dict[AMOUNT] = row[AMOUNT]
             if row[TYPE] == TYPE_MISC_CREDIT:
@@ -421,9 +485,8 @@ def run_airbnb_to_qif():
                         missing_listings.append((listing_name, row[DATE], _safe_str(row[GUEST])))
                     split_dict[CATEGORY] = "[Unknown listing - set in Quicken]"
             transaction_dict[SPLITS].append(split_dict.copy())
-    if in_splits == True:
-        transactions.append(transaction_dict.copy())
-        in_splits = False
+    if current_payout is not None:
+        _append_current_transaction()
 
     if missing_listings:
         unique_listings = sorted(set(m[0] for m in missing_listings))

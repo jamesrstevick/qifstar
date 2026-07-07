@@ -1,11 +1,11 @@
 # qifstar
 
-Convert Airbnb year-to-date payout CSV exports into Quicken-compatible QIF files. **Duplicate imports are avoided** by logging each payout’s **Reference code** after a successful run; the next run only imports payouts that are not already in the log.
+Convert Airbnb year-to-date payout CSV exports into Quicken-compatible QIF files. **Duplicate imports are avoided** by logging each payout’s **ID** after a successful run; the next run only imports payouts that are not already in the log. IDs are Airbnb **Reference code** when present, otherwise a **synthetic ID** derived from the payout and its child rows.
 
 ## What it does
 
 - Expects **one** `airbnb_*.csv` at the **repo root** (e.g. `airbnb_12_2025-03_2026.csv`), not inside `airbnb_files/`.
-- Groups each **Payout** row with the **Reservation**, **Resolution Adjustment**, and **Misc Credit** rows that belong to it.
+- Groups each **Payout** row with the **Reservation**, **Resolution Adjustment** / **Resolution Payout** / **Adjustment**, and **Misc Credit** rows that belong to it.
 - Maps listings to Quicken categories (`airbnb_to_quicken_properties` in `airbnb_to_qif.py`); writes **split** lines when one payout has multiple reservations.
 - **Misc Credit–only** payouts (e.g. Prohost incentives) become a single QIF line (payee/memo/category from `header.py`).
 - Matches payouts to bank accounts using the **Details** text (checking numbers). Only accounts listed in **`accounts`** in `airbnb_to_qif.py` are written to the QIF; other accounts (e.g. a third checking) are still parsed but not exported.
@@ -43,7 +43,7 @@ Convert Airbnb year-to-date payout CSV exports into Quicken-compatible QIF files
    ```
 
 4. **First run** with an empty or missing `logs.csv` imports **every** payout in that file. For a mid-year start, either use a CSV that only contains rows you have not yet imported, or seed **`payout_refs`** in `logs.csv` from earlier imports.
-5. **Later runs:** the script skips any payout whose **Reference code** already appears in **`payout_refs`** in any row of `logs.csv`. It also checks that new payout dates are not **before** the previous run’s **`last_txn_date`** (sanity check).
+5. **Later runs:** the script skips any payout whose **ID** already appears in **`payout_refs`** in any row of `logs.csv`. Payouts without a Reference code get a synthetic ID (`Date|account|confirmation codes`, or `Date|account|amount` for Misc Credit–only payouts). Payouts on or before the previous run’s **`last_txn_date`** are also skipped when Reference code is blank (safety net for YTD re-exports). New payout dates must not be **before** **`last_txn_date`** (sanity check).
 6. Import the new QIF from `qif_files/` into Quicken.
 
 ### Terminal output (success)
@@ -66,7 +66,7 @@ If every payout in the file was already logged, the script prints that there is 
 |------|--------|
 | `airbnb_to_qif.py` | Main converter: discovery, validation, QIF build, log append, archive |
 | `header.py` | Folders, account display names, CSV column names, Misc Credit labels |
-| `logs.csv` | One row per successful run; **`payout_refs`** lists Reference codes written to the QIF (for dedup) |
+| `logs.csv` | One row per successful run; **`payout_refs`** lists payout IDs written to the QIF (Reference codes or synthetic IDs, for dedup) |
 | `qif_files/` | Output QIF files (`qifstar_<from>_<to>_run<MMDDYYYY>.QIF`) |
 | `airbnb_files_archive/` | Processed source CSVs renamed with `_PROCESSED_MMDDYYYY` |
 | `airbnb_files/` | Legacy / optional; not used as the primary input path |
@@ -80,7 +80,14 @@ If every payout in the file was already logged, the script prints that there is 
 
 ## CSV format
 
-Airbnb payout export with columns including: **Date**, **Type**, **Start date**, **End date**, **Confirmation code**, **Nights**, **Guest**, **Listing**, **Details**, **Reference code**, **Paid out**, **Amount**. Names match `header.py`. Every **Payout** row must have a non-empty **Reference code**; non-empty reference codes must be **unique** in the file.
+Airbnb payout export with columns including: **Date**, **Type**, **Start date**, **End date**, **Confirmation code**, **Nights**, **Guest**, **Listing**, **Details**, **Reference code** (optional—Airbnb often leaves this blank on newer payouts), **Paid out**, **Amount**. Names match `header.py`. Extra columns (e.g. **Arriving by date**, **Currency**) are ignored.
+
+**Payout IDs for dedup:** If **Reference code** is present on a Payout row, that value is the ID. Otherwise the script computes a synthetic ID:
+
+- Reservation / Resolution Adjustment payout: `MM/DD/YYYY|account|confirmation codes` (sorted, comma-separated if multiple)
+- Misc Credit–only payout: `MM/DD/YYYY|account|paid out amount`
+
+Account is the checking number parsed from **Details** (1687, 0149, etc.). Payout IDs must be **unique** within each CSV file.
 
 ## License
 
