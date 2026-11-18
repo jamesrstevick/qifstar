@@ -1,0 +1,442 @@
+!Type:Bank 
+D1/16'26
+U0.89
+T0.89
+CX
+NINT
+PBank Int
+MInterest
+LInterest:Schwab One
+^
+D1/20'26
+U13,322.03
+T13,322.03
+CX
+NDEP
+PBerkeley Eng
+MGRS Salary
+LGRS Salary, BEAR
+^
+D1/21'26
+U-7,000.00
+T-7,000.00
+CX
+NTXFR
+PMove Money From 9593
+MTransf from Schwab One to Checking
+L[Chking Schwab ...045]
+^
+D1/26'26
+U-75,000.00
+T-75,000.00
+CX
+NTXFR
+PMove To Checking Fm Schw One
+MFunds needed for remodel from Brokerage -9593
+L[Chking Schwab ...045]
+^
+D1/28'26
+U-11,006.30
+T-11,006.30
+CX
+NTXFR
+PCoral Cove Condo Assn
+MAssessments
+L--Split--
+SCC2:Assessments
+E1st and 2nd Q of 2024
+$-1,347.96
+SCC3:Assessments
+E1st and 2nd Q of 2024
+$-1,409.80
+SCC4:Assessments
+E1st and 2nd Q of 2024
+$-1,409.80
+SCC5:Assessments
+E1st and 2nd Q of 2024
+$-1,793.16
+SCC6:Assessments
+E1st and 2nd Q of 2024
+$-2,176.52
+SCC7:Assessments
+E1st and 2nd Q of 2024
+$-2,869.06
+^
+D1/30'26
+U602.73
+T602.73
+CX
+NDIV
+PSchwab SNAXX
+MDividend
+LDividends:SNAXX
+^
+D1/30'26
+U5,856.47
+T5,856.47
+CX
+NDIV
+PSchwab SNAXX
+MDividend
+LDividends:SNAXX
+^
+D1/30'26
+U20,934.51
+T20,934.51
+CX
+NChange
+PChange In Value
+MChange in investments
+LInvestments
+^
+D2/ 2'26
+U66.50
+T66.50
+CX
+NDIV
+PCVS Stock Dividend
+MDividend
+LDividends:CVS
+^
+D2/ 3'26
+U13,677.43
+T13,677.43
+CX
+NDEP
+PBerkeley Eng
+MGRS Salary
+LGRS Salary, BEAR
+^
+D2/17'26
+U0.19
+T0.19
+CX
+NINT
+PBank Int
+MInterest
+LInterest:Schwab One
+^
+D2/18'26
+U13,677.43
+T13,677.43
+CX
+NDEP
+PBerkeley Eng
+MGRS Salary
+LGRS Salary, BEAR
+^
+D2/19'26
+U30.13
+T30.13
+CX
+NDIV
+PSchwab SNAXX
+MDividend
+LDividends:SNAXX
+^
+D2/27'26
+U5,608.27
+T5,608.27
+CX
+NDIV
+PSchwab SNAXX
+MDividend
+LDividends:SNAXX
+^
+D2/28'26
+U-9,469.60
+T-9,469.60
+CX
+NChange
+PChange In Value
+MChange in Investments
+LInvestments
+^
+D3/ 4'26
+U14,048.38
+T14,048.38
+CX
+NDEP
+PBerkeley Eng
+MGRS Salary
+LGRS Salary, BEAR
+^
+D3/16'26
+U0.44
+T0.44
+CX
+NINT
+PBank Int
+MInterest
+LInterest:Schwab One
+^
+D3/18'26
+U14,558.53
+T14,558.53
+CX
+NDEP
+PBerkeley Eng
+MGRS Salary
+LGRS Salary, BEAR
+^
+D3/26'26
+U58.25
+T58.25
+CX
+NDIV
+PHome Depot Dividends
+MDividends
+LDividends:Home Depot
+^
+D3/31'26
+U5,978.30
+T5,978.30
+CX
+NDIV
+PSchwab SNAXX
+MDividend
+LDividends:SNAXX
+^
+D3/31'26
+U-19,325.97
+T-19,325.97
+CX
+NChange
+PChange In Value
+MChange in Investments
+LInvestments
+^
+D4/ 6'26
+U13,677.43
+T13,677.43
+CX
+NDEP
+PBerkeley Eng
+MGRS Salary
+LGRS Salary, BEAR
+^
+D4/ 6'26
+U-50,000.00
+T-50,000.00
+CX
+NTXFR
+PTransfer To Checking
+MTransfer to Checking
+L[Chking Schwab ...045]
+^
+D4/ 8'26
+U1,217.38
+T1,217.38
+CX
+NDIV
+PNovo Nordisk Dividend
+MDividend
+LDividends:NOVO
+^
+D4/ 8'26
+U-328.69
+T-328.69
+CX
+NDIV
+PNovo Nordisk Foreign Tax
+MForeign tax dividend
+LDividends:NOVO
+^
+D4/ 8'26
+U-15.00
+T-15.00
+CX
+NFee
+PNovo Nordisk ADR Pass Thru Fee
+MADR pass Thru Fee
+LDividends:NOVO
+^
+D4/15'26
+U-30,000.00
+T-30,000.00
+CX
+NTXFR
+PFrom 9593 Schwab One
+MLow balance transfer
+L[Chkng Main BofA-0149]
+^
+D4/16'26
+U0.66
+T0.66
+CX
+NINT
+PBank Int
+MInterest
+LInterest:Schwab One
+^
+D4/17'26
+U13,677.43
+T13,677.43
+CX
+NDEP
+PBerkeley Eng
+MGRS Salary
+LGRS Salary, BEAR
+^
+D4/30'26
+U114,012.66
+T114,012.66
+CX
+NChange
+PChange In Value
+MChange in Investments
+LInvestments
+^
+D4/30'26
+U5,970.32
+T5,970.32
+CX
+NDIV
+PSchwab SNAXX
+MDividend
+LDividends:SNAXX
+^
+D5/ 4'26
+U14,409.03
+T14,409.03
+CX
+NDEP
+PBerkeley Eng
+MGRS Salary
+LGRS Salary, BEAR
+^
+D5/ 4'26
+U66.50
+T66.50
+CX
+NDIV
+PCVS Stock Dividend
+MDividend
+LDividends:CVS
+^
+D5/ 4'26
+U0.36
+T0.36
+CX
+NINT
+PBank Int
+MInterest
+LInterest:Schwab One
+^
+D5/15'26
+U-30,000.00
+T-30,000.00
+CX
+NTXFR
+PFrom 9593 Schwab One
+MLow balance transfer
+L[Chkng Main BofA-0149]
+^
+D5/19'26
+U15,009.23
+T15,009.23
+CX
+NDEP
+PBerkeley Eng
+MGRS Salary
+LGRS Salary, BEAR
+^
+D5/26'26
+U-30,000.00
+T-30,000.00
+CX
+NTXFR
+PFrom 9593 Schwab One
+MLow balance tranfer
+L[Chkng Main BofA-0149]
+^
+D5/27'26
+U-20,000.00
+T-20,000.00
+CX
+NTXFR
+PFrom 9593 Schwab One
+MLow balance transfer
+L[Chkng Main BofA-0149]
+^
+D5/29'26
+U6,120.23
+T6,120.23
+CX
+NDIV
+PSchwab SNAXX
+MDividend
+LDividends:SNAXX
+^
+D5/31'26
+U58,304.35
+T58,304.35
+CX
+NChange
+PChange In Value
+MChange in Investments
+LInvestments
+^
+D6/ 1'26
+U155.86
+T155.86
+CX
+NDIV
+PFord Motor Company
+MDividend
+LDividends:Ford Motor
+^
+D6/ 3'26
+U15,357.83
+T15,357.83
+CX
+NDEP
+PBerkeley Eng
+MGRS Salary
+LGRS Salary, BEAR
+^
+D6/16'26
+U0.12
+T0.12
+CX
+NINT
+PBank Interest
+MInterest Earned
+LInterest:Schwab One
+^
+D6/18'26
+U15,205.07
+T15,205.07
+CX
+NDEP
+PBerkeley Eng
+MGRS Salary
+LGRS Salary, BEAR
+^
+D6/18'26
+U58.25
+T58.25
+CX
+NDIV
+PHome Depot, Inc
+MQual dividend
+LDividends:Home Depot
+^
+D6/18'26
+U5,962.82
+T5,962.82
+CX
+NDIV
+PSchwab SNAXX
+MDividend
+LDividends:SNAXX
+^
+D6/30'26
+U28,434.47
+T28,434.47
+CX
+NChange
+PChange In Value
+MChange in Investments
+LInvestments
+^

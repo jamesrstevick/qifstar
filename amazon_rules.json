@@ -1,0 +1,3755 @@
+{
+  "default_category": "PSNL:Shopping",
+  "default_payee": "Amazon",
+  "hand_item_category": [
+    {
+      "category": "PSNL:Pets:Pet Food",
+      "note": "Personal pet food, even when shipped to a property address",
+      "title_contains": "cat food"
+    }
+  ],
+  "hand_ship_to_name": [
+    {
+      "category": "PSNL:Gifts Given",
+      "fingerprint": "EUNICE KANG 28550 GRANDVIEW DR MORENO VALLEY CA | 28550",
+      "name_contains": "EUNICE KANG",
+      "note": "Grandma \u2014 usually gifts given (same Grandview house as Lyle)",
+      "root": "PSNL"
+    },
+    {
+      "category": "Walnut 1722:Supplies",
+      "fingerprint": "GLEN STEVICK 1310 6TH ST BERKELEY CA 94710 | 94710",
+      "note": "Berkeley address (not CC). July+Aug mostly Walnut 1722",
+      "root": "Walnut 1722",
+      "street_contains": "1310 6TH ST"
+    }
+  ],
+  "keyword_category": {
+    "about": {
+      "count": 2,
+      "value": "PSNL:Entertainment:Movies"
+    },
+    "absorbent": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "accent": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies:Furnishings"
+    },
+    "accessories": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "adhesive": {
+      "count": 5,
+      "value": "Walnut 1722:Supplies"
+    },
+    "adirondack": {
+      "count": 3,
+      "value": "CH:Supplies:Deck"
+    },
+    "adjustable": {
+      "count": 4,
+      "value": "VSV:Supplies"
+    },
+    "adult": {
+      "count": 2,
+      "value": "CC:Supplies:Amenities"
+    },
+    "adults": {
+      "count": 2,
+      "value": "CC:Supplies:Amenities"
+    },
+    "airtag": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "alarm": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "allen": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "alternative": {
+      "count": 2,
+      "value": "CC:Supplies:Bedding"
+    },
+    "aluminum": {
+      "count": 3,
+      "value": "VSV:Supplies"
+    },
+    "amazing": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies:Decor"
+    },
+    "amber": {
+      "count": 5,
+      "value": "CC:Supplies"
+    },
+    "america": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "analysis": {
+      "count": 2,
+      "value": "Education:Books & Supplies"
+    },
+    "anti": {
+      "count": 4,
+      "value": "CC:Supplies"
+    },
+    "apple": {
+      "count": 3,
+      "value": "PSNL:Food & Dining:Groceries"
+    },
+    "appliance": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "applicable": {
+      "count": 9,
+      "value": "PSNL:Entertainment:Movies"
+    },
+    "area": {
+      "count": 2,
+      "value": "VSV:Supplies"
+    },
+    "areas": {
+      "count": 2,
+      "value": "CC:Supplies:Pest Control"
+    },
+    "aroma": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "arrangement": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies:Painting And Decor"
+    },
+    "artificial": {
+      "count": 6,
+      "value": "Walnut 1722:Supplies:Painting And Decor"
+    },
+    "assembly": {
+      "count": 2,
+      "value": "VSV:Supplies:Furnishings"
+    },
+    "assorted": {
+      "count": 2,
+      "value": "Walnut 1722:Repairs"
+    },
+    "assortment": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "automan": {
+      "count": 2,
+      "value": "CC HOA"
+    },
+    "automatic": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "avocado": {
+      "count": 7,
+      "value": "PSNL:Food & Dining:Groceries"
+    },
+    "avocados": {
+      "count": 5,
+      "value": "PSNL:Food & Dining:Groceries"
+    },
+    "baby": {
+      "count": 2,
+      "value": "PSNL:Food & Dining:Groceries"
+    },
+    "back": {
+      "count": 2,
+      "value": "VSV:Supplies"
+    },
+    "backing": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "backlight": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "bags": {
+      "count": 9,
+      "value": "VSV:Supplies"
+    },
+    "bait": {
+      "count": 3,
+      "value": "Walnut 1722:Cleaning & Maint:Pest Control"
+    },
+    "ball": {
+      "count": 5,
+      "value": "CC:Supplies"
+    },
+    "banana": {
+      "count": 5,
+      "value": "PSNL:Food & Dining:Groceries"
+    },
+    "base": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies"
+    },
+    "basket": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "bath": {
+      "count": 4,
+      "value": "CC:Supplies"
+    },
+    "bathroom": {
+      "count": 21,
+      "value": "CC:Supplies"
+    },
+    "battery": {
+      "count": 4,
+      "value": "CC:Supplies:Tools"
+    },
+    "beach": {
+      "count": 4,
+      "value": "CC:Supplies"
+    },
+    "bedding": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "bedroom": {
+      "count": 14,
+      "value": "Walnut 1722:Supplies"
+    },
+    "bedside": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies"
+    },
+    "bent": {
+      "count": 2,
+      "value": "Ocean Breeze:Renovation:Electrical"
+    },
+    "bible": {
+      "count": 6,
+      "value": "PSNL:Entertainment:Books"
+    },
+    "binder": {
+      "count": 2,
+      "value": "MH:Supplies"
+    },
+    "bins": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies"
+    },
+    "birthday": {
+      "count": 2,
+      "value": "PSNL:Gifts Given"
+    },
+    "bits": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "blackout": {
+      "count": 4,
+      "value": "Walnut 1722:Supplies"
+    },
+    "blade": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "blankets": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "blender": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "blinds": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies"
+    },
+    "blue": {
+      "count": 5,
+      "value": "CC:Supplies"
+    },
+    "blueberries": {
+      "count": 5,
+      "value": "PSNL:Food & Dining:Groceries"
+    },
+    "boards": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "boat": {
+      "count": 6,
+      "value": "Boats:Tiramisu:Supplies"
+    },
+    "body": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "boho": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies"
+    },
+    "bolt": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "bolts": {
+      "count": 4,
+      "value": "CC:Supplies:Tools"
+    },
+    "bonus": {
+      "count": 2,
+      "value": "PSNL:Entertainment:Movies"
+    },
+    "book": {
+      "count": 4,
+      "value": "Education:Books & Supplies"
+    },
+    "boost": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "bottle": {
+      "count": 2,
+      "value": "Walnut 1722:Gardening"
+    },
+    "bottles": {
+      "count": 2,
+      "value": "Walnut 1722:Gardening"
+    },
+    "bottom": {
+      "count": 2,
+      "value": "VSV:Supplies"
+    },
+    "bracket": {
+      "count": 3,
+      "value": "CC:Supplies:Tools"
+    },
+    "brackets": {
+      "count": 2,
+      "value": "VSV:Supplies"
+    },
+    "brass": {
+      "count": 4,
+      "value": "CC:Supplies"
+    },
+    "britbox": {
+      "count": 11,
+      "value": "PSNL:Entertainment:Movies"
+    },
+    "broccoli": {
+      "count": 3,
+      "value": "PSNL:Food & Dining:Groceries"
+    },
+    "brown": {
+      "count": 2,
+      "value": "PSNL:Food & Dining:Groceries"
+    },
+    "brushed": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "bulb": {
+      "count": 5,
+      "value": "CC:Supplies"
+    },
+    "bulbs": {
+      "count": 6,
+      "value": "CC:Supplies"
+    },
+    "bulk": {
+      "count": 3,
+      "value": "CC:Supplies:Amenities"
+    },
+    "bullet": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "bumpers": {
+      "count": 2,
+      "value": "Boats:Tiramisu:Supplies"
+    },
+    "bunch": {
+      "count": 2,
+      "value": "PSNL:Food & Dining:Groceries"
+    },
+    "bundle": {
+      "count": 2,
+      "value": "CC:Supplies:Cleaning"
+    },
+    "bunion": {
+      "count": 6,
+      "value": "PSNL:Health:Pharmacy"
+    },
+    "business": {
+      "count": 2,
+      "value": "PSNL:Shopping:Clothing:Glen"
+    },
+    "button": {
+      "count": 4,
+      "value": "PSNL:Shopping:Clothing:Glen"
+    },
+    "cabinet": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "cabinets": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies"
+    },
+    "cable": {
+      "count": 5,
+      "value": "Walnut 1722:Supplies"
+    },
+    "calamity": {
+      "count": 2,
+      "value": "PSNL:Entertainment:Movies"
+    },
+    "california": {
+      "count": 2,
+      "value": "VSV:Supplies"
+    },
+    "canister": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "canopy": {
+      "count": 3,
+      "value": "MH:Supplies"
+    },
+    "canvas": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies:Painting And Decor"
+    },
+    "carbon": {
+      "count": 4,
+      "value": "CC:Supplies"
+    },
+    "carpet": {
+      "count": 4,
+      "value": "Walnut 1722:Supplies:Appliances"
+    },
+    "carport": {
+      "count": 2,
+      "value": "MH:Supplies"
+    },
+    "cars": {
+      "count": 3,
+      "value": "CC HOA"
+    },
+    "case": {
+      "count": 4,
+      "value": "Walnut 1722:Management Fees"
+    },
+    "cashmere": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "casual": {
+      "count": 3,
+      "value": "PSNL:Shopping:Clothing:Glen"
+    },
+    "catcher": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "ceiling": {
+      "count": 14,
+      "value": "CC:Supplies"
+    },
+    "cell": {
+      "count": 8,
+      "value": "Education:Books & Supplies"
+    },
+    "centerpiece": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies:Painting And Decor"
+    },
+    "century": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies:Furnishings"
+    },
+    "ceramic": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies:Painting And Decor"
+    },
+    "certified": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "chain": {
+      "count": 11,
+      "value": "CC:Supplies"
+    },
+    "chains": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "chainsaw": {
+      "count": 4,
+      "value": "CC:Supplies:Tools"
+    },
+    "chair": {
+      "count": 5,
+      "value": "CC:Supplies:Furniture"
+    },
+    "chairs": {
+      "count": 2,
+      "value": "CC:Supplies:Furniture"
+    },
+    "characterization": {
+      "count": 2,
+      "value": "Education:Books & Supplies"
+    },
+    "chicken": {
+      "count": 2,
+      "value": "PSNL:Food & Dining:Groceries"
+    },
+    "children": {
+      "count": 2,
+      "value": "CC:Supplies:Amenities"
+    },
+    "chrisdowa": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "christ": {
+      "count": 2,
+      "value": "PSNL:Entertainment:Books"
+    },
+    "chrome": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "cilantro": {
+      "count": 2,
+      "value": "PSNL:Food & Dining:Groceries"
+    },
+    "ciokea": {
+      "count": 2,
+      "value": "CH:Supplies:Deck"
+    },
+    "clamp": {
+      "count": 2,
+      "value": "CC HOA:Repairs"
+    },
+    "classic": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "clean": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "cleaner": {
+      "count": 6,
+      "value": "Walnut 1722:Supplies:Cleaning"
+    },
+    "cleaning": {
+      "count": 4,
+      "value": "Walnut 1722:Supplies:Appliances"
+    },
+    "cleansing": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "clear": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies:Painting And Decor"
+    },
+    "clips": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "clogging": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "closet": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies"
+    },
+    "cloth": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "clothes": {
+      "count": 5,
+      "value": "Walnut 1722:Supplies"
+    },
+    "cloths": {
+      "count": 4,
+      "value": "Walnut 1722:Supplies"
+    },
+    "coastal": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "cockroach": {
+      "count": 2,
+      "value": "CC:Supplies:Pest Control"
+    },
+    "code": {
+      "count": 2,
+      "value": "PSNL:Entertainment:Movies"
+    },
+    "coffee": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies:Painting And Decor"
+    },
+    "color": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "comfort": {
+      "count": 3,
+      "value": "CC:Supplies:Bedding"
+    },
+    "comforter": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "commercial": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "compact": {
+      "count": 5,
+      "value": "CC:Supplies"
+    },
+    "compatible": {
+      "count": 4,
+      "value": "CC:Supplies"
+    },
+    "complete": {
+      "count": 2,
+      "value": "CC:Supplies:Cleaning"
+    },
+    "complex": {
+      "count": 2,
+      "value": "PSNL:Health"
+    },
+    "computer": {
+      "count": 2,
+      "value": "VSV:Supplies"
+    },
+    "conditioner": {
+      "count": 3,
+      "value": "CC:Supplies:Tools"
+    },
+    "connector": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "contact": {
+      "count": 5,
+      "value": "Walnut 1722:Supplies"
+    },
+    "containers": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "control": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "conventional": {
+      "count": 4,
+      "value": "PSNL:Food & Dining:Groceries"
+    },
+    "cooker": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "cooking": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "cord": {
+      "count": 4,
+      "value": "CC:Supplies"
+    },
+    "cordless": {
+      "count": 4,
+      "value": "CC:Supplies:Tools"
+    },
+    "corner": {
+      "count": 4,
+      "value": "Walnut 1722:Supplies"
+    },
+    "correction": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies"
+    },
+    "cosy": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "cotton": {
+      "count": 7,
+      "value": "Walnut 1722:Supplies"
+    },
+    "couch": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies:Appliances"
+    },
+    "courtyard": {
+      "count": 2,
+      "value": "CC:Supplies:Tools"
+    },
+    "cover": {
+      "count": 6,
+      "value": "CC:Supplies"
+    },
+    "coverage": {
+      "count": 2,
+      "value": "MH:Supplies"
+    },
+    "covers": {
+      "count": 4,
+      "value": "Walnut 1722:Supplies"
+    },
+    "craft": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "crimper": {
+      "count": 2,
+      "value": "CC:Supplies:Tools"
+    },
+    "crossbody": {
+      "count": 2,
+      "value": "VSV:Supplies"
+    },
+    "curtain": {
+      "count": 12,
+      "value": "VSV:Supplies"
+    },
+    "curtains": {
+      "count": 8,
+      "value": "VSV:Supplies"
+    },
+    "cushion": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies"
+    },
+    "cushions": {
+      "count": 2,
+      "value": "PSNL:Health:Pharmacy"
+    },
+    "cutting": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "daffodil": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies:Painting And Decor"
+    },
+    "darkening": {
+      "count": 3,
+      "value": "VSV:Supplies"
+    },
+    "darkness": {
+      "count": 2,
+      "value": "PSNL:Entertainment:Movies"
+    },
+    "dawn": {
+      "count": 2,
+      "value": "1636 Walnut:Remodel Project"
+    },
+    "deadbolt": {
+      "count": 4,
+      "value": "CC:Supplies"
+    },
+    "deck": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "decoding": {
+      "count": 2,
+      "value": "Education:Books & Supplies"
+    },
+    "decomposed": {
+      "count": 2,
+      "value": "MH:Supplies"
+    },
+    "decor": {
+      "count": 8,
+      "value": "CC:Supplies"
+    },
+    "decoration": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies:Painting And Decor"
+    },
+    "decorative": {
+      "count": 6,
+      "value": "CC:Supplies"
+    },
+    "deep": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies:Appliances"
+    },
+    "degreaser": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies:Cleaning"
+    },
+    "design": {
+      "count": 4,
+      "value": "CC:Supplies"
+    },
+    "desk": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies"
+    },
+    "detector": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "detergent": {
+      "count": 6,
+      "value": "CC:Supplies"
+    },
+    "dewenwils": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies:Appliances"
+    },
+    "diameter": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "digital": {
+      "count": 2,
+      "value": "CC:Supplies:Appliances"
+    },
+    "dimmable": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "dining": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies:Painting And Decor"
+    },
+    "dish": {
+      "count": 2,
+      "value": "VSV:Supplies"
+    },
+    "dishwasher": {
+      "count": 4,
+      "value": "CC:Supplies:Cleaning"
+    },
+    "dishwashing": {
+      "count": 2,
+      "value": "VSV:Supplies"
+    },
+    "dispenser": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "dive": {
+      "count": 2,
+      "value": "CC:Supplies:Amenities"
+    },
+    "diving": {
+      "count": 5,
+      "value": "CC:Supplies:Amenities"
+    },
+    "documentaries": {
+      "count": 4,
+      "value": "PSNL:Entertainment:Movies"
+    },
+    "door": {
+      "count": 11,
+      "value": "CC:Supplies"
+    },
+    "doorbell": {
+      "count": 2,
+      "value": "Ocean Breeze:Renovation:Electrical"
+    },
+    "double": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "down": {
+      "count": 5,
+      "value": "CC:Supplies:Bedding"
+    },
+    "drain": {
+      "count": 8,
+      "value": "CC:Supplies"
+    },
+    "drapery": {
+      "count": 2,
+      "value": "VSV:Supplies"
+    },
+    "drapes": {
+      "count": 3,
+      "value": "VSV:Supplies"
+    },
+    "drawers": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "drawstring": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "dress": {
+      "count": 2,
+      "value": "PSNL:Shopping:Clothing:Glen"
+    },
+    "drill": {
+      "count": 11,
+      "value": "CC:Supplies"
+    },
+    "drip": {
+      "count": 4,
+      "value": "CC:Supplies"
+    },
+    "drive": {
+      "count": 4,
+      "value": "CC HOA:Repairs"
+    },
+    "driver": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "drop": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies:Painting And Decor"
+    },
+    "dryer": {
+      "count": 5,
+      "value": "CC:Supplies"
+    },
+    "dual": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "durable": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "dusk": {
+      "count": 2,
+      "value": "1636 Walnut:Remodel Project"
+    },
+    "duty": {
+      "count": 10,
+      "value": "CC:Supplies"
+    },
+    "duvet": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "each": {
+      "count": 7,
+      "value": "PSNL:Food & Dining:Groceries"
+    },
+    "easy": {
+      "count": 5,
+      "value": "Walnut 1722:Supplies"
+    },
+    "edge": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "edges": {
+      "count": 2,
+      "value": "Walnut 1722:Management Fees"
+    },
+    "edition": {
+      "count": 2,
+      "value": "PSNL:Entertainment:Movies"
+    },
+    "eggs": {
+      "count": 2,
+      "value": "PSNL:Food & Dining:Groceries"
+    },
+    "elastic": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "electric": {
+      "count": 4,
+      "value": "CC:Supplies"
+    },
+    "electrical": {
+      "count": 4,
+      "value": "CC:Supplies"
+    },
+    "emoda": {
+      "count": 2,
+      "value": "VSV:Supplies:Furnishings"
+    },
+    "english": {
+      "count": 2,
+      "value": "PSNL:Food & Dining:Groceries"
+    },
+    "entry": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "entryway": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "equipment": {
+      "count": 2,
+      "value": "VSV:Supplies"
+    },
+    "equivalent": {
+      "count": 9,
+      "value": "CC:Supplies"
+    },
+    "espresso": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "essential": {
+      "count": 4,
+      "value": "PSNL:Entertainment:Movies"
+    },
+    "essentials": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "ethernet": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies"
+    },
+    "euro": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies"
+    },
+    "everyday": {
+      "count": 9,
+      "value": "VSV:Supplies"
+    },
+    "exercise": {
+      "count": 2,
+      "value": "VSV:Supplies"
+    },
+    "extended": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "extension": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "exterior": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "extra": {
+      "count": 3,
+      "value": "VSV:Supplies"
+    },
+    "extractor": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "fabric": {
+      "count": 7,
+      "value": "Walnut 1722:Supplies"
+    },
+    "facial": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "faith": {
+      "count": 2,
+      "value": "PSNL:Entertainment:Movies"
+    },
+    "fake": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies:Painting And Decor"
+    },
+    "family": {
+      "count": 2,
+      "value": "PSNL:Entertainment:Movies"
+    },
+    "fans": {
+      "count": 5,
+      "value": "CC:Supplies"
+    },
+    "farmhouse": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "farms": {
+      "count": 3,
+      "value": "PSNL:Food & Dining:Groceries"
+    },
+    "faucet": {
+      "count": 5,
+      "value": "CC:Supplies"
+    },
+    "faux": {
+      "count": 4,
+      "value": "Walnut 1722:Supplies:Painting And Decor"
+    },
+    "febreze": {
+      "count": 4,
+      "value": "VSV:Supplies"
+    },
+    "feet": {
+      "count": 2,
+      "value": "MH:Supplies"
+    },
+    "fender": {
+      "count": 2,
+      "value": "Boats:Tiramisu:Supplies"
+    },
+    "fenders": {
+      "count": 2,
+      "value": "Boats:Tiramisu:Supplies"
+    },
+    "fertilizer": {
+      "count": 2,
+      "value": "Walnut 1722:Gardening"
+    },
+    "fiberglass": {
+      "count": 2,
+      "value": "CC:Supplies:Tools"
+    },
+    "fill": {
+      "count": 3,
+      "value": "CC:Supplies:Bedding"
+    },
+    "filter": {
+      "count": 2,
+      "value": "Walnut 1722:Repairs"
+    },
+    "fingertip": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "finials": {
+      "count": 2,
+      "value": "VSV:Supplies"
+    },
+    "finish": {
+      "count": 5,
+      "value": "CC:Supplies"
+    },
+    "fins": {
+      "count": 6,
+      "value": "CC:Supplies:Amenities"
+    },
+    "fire": {
+      "count": 4,
+      "value": "VSV:Supplies"
+    },
+    "firm": {
+      "count": 3,
+      "value": "CC:Supplies:Bedding"
+    },
+    "first": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies:Painting And Decor"
+    },
+    "fits": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "fitted": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "fixtures": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "flat": {
+      "count": 4,
+      "value": "CC:Supplies:Tools"
+    },
+    "flex": {
+      "count": 9,
+      "value": "VSV:Supplies"
+    },
+    "flexible": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "flippers": {
+      "count": 2,
+      "value": "CC:Supplies:Amenities"
+    },
+    "flood": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "floor": {
+      "count": 7,
+      "value": "VSV:Supplies"
+    },
+    "flooring": {
+      "count": 2,
+      "value": "CC:Supplies:Tools"
+    },
+    "floors": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies:Cleaning"
+    },
+    "floral": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "florets": {
+      "count": 2,
+      "value": "PSNL:Food & Dining:Groceries"
+    },
+    "floss": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "flow": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "flower": {
+      "count": 4,
+      "value": "Walnut 1722:Supplies:Painting And Decor"
+    },
+    "flowers": {
+      "count": 5,
+      "value": "Walnut 1722:Supplies:Painting And Decor"
+    },
+    "flush": {
+      "count": 6,
+      "value": "CC:Supplies"
+    },
+    "foam": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "folding": {
+      "count": 3,
+      "value": "CC:Supplies:Furniture"
+    },
+    "food": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "foot": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies:Appliances"
+    },
+    "forceflex": {
+      "count": 6,
+      "value": "VSV:Supplies"
+    },
+    "formula": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "foxoneus": {
+      "count": 4,
+      "value": "PSNL:Entertainment:Movies"
+    },
+    "frame": {
+      "count": 3,
+      "value": "VSV:Supplies:Furnishings"
+    },
+    "free": {
+      "count": 6,
+      "value": "CC:Supplies"
+    },
+    "friendly": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "friends": {
+      "count": 9,
+      "value": "PSNL:Entertainment:Movies"
+    },
+    "full": {
+      "count": 6,
+      "value": "VSV:Supplies"
+    },
+    "fungicide": {
+      "count": 2,
+      "value": "Walnut 1722:Gardening"
+    },
+    "furniture": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "gain": {
+      "count": 7,
+      "value": "VSV:Supplies"
+    },
+    "galatians": {
+      "count": 4,
+      "value": "PSNL:Entertainment:Books"
+    },
+    "gallon": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "garage": {
+      "count": 4,
+      "value": "MH:Supplies"
+    },
+    "garbage": {
+      "count": 2,
+      "value": "VSV:Supplies"
+    },
+    "garden": {
+      "count": 11,
+      "value": "CC HOA"
+    },
+    "gardening": {
+      "count": 2,
+      "value": "MH:Supplies"
+    },
+    "garlic": {
+      "count": 2,
+      "value": "PSNL:Food & Dining:Groceries"
+    },
+    "gauge": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies:Appliances"
+    },
+    "gear": {
+      "count": 5,
+      "value": "CC:Supplies:Amenities"
+    },
+    "gifts": {
+      "count": 2,
+      "value": "CC:Supplies:Tools"
+    },
+    "gingham": {
+      "count": 2,
+      "value": "PSNL:Shopping:Clothing:Glen"
+    },
+    "girl": {
+      "count": 2,
+      "value": "PSNL:Entertainment:Movies"
+    },
+    "glad": {
+      "count": 7,
+      "value": "VSV:Supplies"
+    },
+    "glass": {
+      "count": 3,
+      "value": "Walnut 1722:Management Fees"
+    },
+    "gloves": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "glue": {
+      "count": 4,
+      "value": "MH:Supplies"
+    },
+    "goggles": {
+      "count": 4,
+      "value": "CC:Supplies:Amenities"
+    },
+    "gold": {
+      "count": 2,
+      "value": "CC:Supplies:Decor"
+    },
+    "grace": {
+      "count": 4,
+      "value": "PSNL:Entertainment:Books"
+    },
+    "grade": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "granite": {
+      "count": 2,
+      "value": "MH:Supplies"
+    },
+    "grass": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies:Tools"
+    },
+    "grater": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "gravel": {
+      "count": 4,
+      "value": "MH:Supplies"
+    },
+    "gray": {
+      "count": 2,
+      "value": "Boats:Tiramisu:Supplies"
+    },
+    "grease": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies:Cleaning"
+    },
+    "green": {
+      "count": 5,
+      "value": "CC:Supplies"
+    },
+    "grey": {
+      "count": 5,
+      "value": "Walnut 1722:Supplies"
+    },
+    "grinder": {
+      "count": 2,
+      "value": "CC:Supplies:Appliances"
+    },
+    "grommet": {
+      "count": 4,
+      "value": "VSV:Supplies"
+    },
+    "ground": {
+      "count": 5,
+      "value": "MH:Supplies"
+    },
+    "grounded": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies:Appliances"
+    },
+    "guide": {
+      "count": 2,
+      "value": "Education:Books & Supplies"
+    },
+    "hair": {
+      "count": 8,
+      "value": "CC:Supplies"
+    },
+    "hallway": {
+      "count": 2,
+      "value": "VSV:Supplies:Furnishings"
+    },
+    "hand": {
+      "count": 4,
+      "value": "CC:Supplies"
+    },
+    "handheld": {
+      "count": 4,
+      "value": "CC:Supplies:Tools"
+    },
+    "handicrafts": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "handle": {
+      "count": 10,
+      "value": "CC:Supplies"
+    },
+    "handles": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies"
+    },
+    "hanger": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies"
+    },
+    "hangers": {
+      "count": 5,
+      "value": "Walnut 1722:Supplies"
+    },
+    "hanging": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "hardware": {
+      "count": 4,
+      "value": "CC:Supplies"
+    },
+    "hass": {
+      "count": 9,
+      "value": "PSNL:Food & Dining:Groceries"
+    },
+    "hatchet": {
+      "count": 2,
+      "value": "CC:Supplies:Tools"
+    },
+    "head": {
+      "count": 9,
+      "value": "CC HOA:Repairs"
+    },
+    "headphones": {
+      "count": 2,
+      "value": "CC:Management Fees:Productivity"
+    },
+    "heat": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "heater": {
+      "count": 5,
+      "value": "CC:Supplies:Appliances"
+    },
+    "heavy": {
+      "count": 9,
+      "value": "CC:Supplies"
+    },
+    "high": {
+      "count": 7,
+      "value": "CC:Supplies"
+    },
+    "hitch": {
+      "count": 2,
+      "value": "PSNL:Entertainment:Movies"
+    },
+    "holder": {
+      "count": 6,
+      "value": "CC:Supplies"
+    },
+    "holders": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "hole": {
+      "count": 8,
+      "value": "CC:Supplies"
+    },
+    "holes": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "honeycrisp": {
+      "count": 2,
+      "value": "PSNL:Food & Dining:Groceries"
+    },
+    "hook": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies"
+    },
+    "hooks": {
+      "count": 4,
+      "value": "MH:Supplies:Decor"
+    },
+    "hose": {
+      "count": 10,
+      "value": "CC HOA"
+    },
+    "hotel": {
+      "count": 7,
+      "value": "CC:Supplies"
+    },
+    "house": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "household": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "husband": {
+      "count": 2,
+      "value": "CC:Supplies:Tools"
+    },
+    "hypoallergenic": {
+      "count": 5,
+      "value": "CC:Supplies:Bedding"
+    },
+    "impact": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "included": {
+      "count": 2,
+      "value": "MH:Supplies"
+    },
+    "includes": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "indoor": {
+      "count": 4,
+      "value": "CC:Supplies"
+    },
+    "industrial": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "insecticide": {
+      "count": 2,
+      "value": "Walnut 1722:Gardening"
+    },
+    "inserts": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "installation": {
+      "count": 2,
+      "value": "CC:Supplies:Tools"
+    },
+    "instant": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "insulated": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies"
+    },
+    "interior": {
+      "count": 4,
+      "value": "CC:Supplies"
+    },
+    "interlocking": {
+      "count": 2,
+      "value": "VSV:Supplies"
+    },
+    "intricate": {
+      "count": 2,
+      "value": "Education:Books & Supplies"
+    },
+    "invisibleshield": {
+      "count": 2,
+      "value": "Walnut 1722:Management Fees"
+    },
+    "iphone": {
+      "count": 5,
+      "value": "Walnut 1722:Management Fees"
+    },
+    "iron": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "jane": {
+      "count": 2,
+      "value": "PSNL:Entertainment:Movies"
+    },
+    "jemitop": {
+      "count": 2,
+      "value": "PSNL:Shopping:Clothing:Glen"
+    },
+    "jerdon": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "juicer": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "kayak": {
+      "count": 2,
+      "value": "CC:Supplies:Amenities"
+    },
+    "keyless": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "kids": {
+      "count": 3,
+      "value": "VSV:Supplies"
+    },
+    "killer": {
+      "count": 4,
+      "value": "CC:Supplies:Pest Control"
+    },
+    "king": {
+      "count": 4,
+      "value": "CC:Supplies:Bedding"
+    },
+    "kinlink": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "knife": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "knob": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "knobs": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "krud": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies:Cleaning"
+    },
+    "kutter": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies:Cleaning"
+    },
+    "lagoon": {
+      "count": 2,
+      "value": "PSNL:Entertainment:Movies"
+    },
+    "lamp": {
+      "count": 7,
+      "value": "VSV:Supplies"
+    },
+    "landscape": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "landscaping": {
+      "count": 2,
+      "value": "MH:Supplies"
+    },
+    "large": {
+      "count": 7,
+      "value": "Walnut 1722:Supplies"
+    },
+    "laser": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "latch": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "launch": {
+      "count": 2,
+      "value": "Education:Books & Supplies"
+    },
+    "laundry": {
+      "count": 6,
+      "value": "CC:Supplies"
+    },
+    "lawn": {
+      "count": 4,
+      "value": "CC HOA"
+    },
+    "leather": {
+      "count": 2,
+      "value": "VSV:Supplies"
+    },
+    "legs": {
+      "count": 2,
+      "value": "VSV:Supplies:Furnishings"
+    },
+    "lemon": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "length": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "level": {
+      "count": 3,
+      "value": "MH:Supplies"
+    },
+    "leveling": {
+      "count": 2,
+      "value": "MH:Supplies"
+    },
+    "light": {
+      "count": 23,
+      "value": "CC:Supplies"
+    },
+    "lighting": {
+      "count": 2,
+      "value": "1636 Walnut:Remodel Project"
+    },
+    "lights": {
+      "count": 8,
+      "value": "CC:Supplies"
+    },
+    "lightweight": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "like": {
+      "count": 3,
+      "value": "CC:Supplies:Bedding"
+    },
+    "line": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "linen": {
+      "count": 3,
+      "value": "VSV:Supplies"
+    },
+    "liner": {
+      "count": 9,
+      "value": "Walnut 1722:Supplies"
+    },
+    "lipstick": {
+      "count": 2,
+      "value": "PSNL:Beauty"
+    },
+    "liquid": {
+      "count": 5,
+      "value": "CC:Supplies"
+    },
+    "lite": {
+      "count": 8,
+      "value": "PSNL:Entertainment:Movies"
+    },
+    "lithium": {
+      "count": 12,
+      "value": "Education:Books & Supplies"
+    },
+    "little": {
+      "count": 3,
+      "value": "CC:Supplies:Bedding"
+    },
+    "living": {
+      "count": 8,
+      "value": "Walnut 1722:Supplies"
+    },
+    "loads": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "lock": {
+      "count": 4,
+      "value": "CC:Supplies"
+    },
+    "lockdown": {
+      "count": 2,
+      "value": "MH:Supplies"
+    },
+    "loft": {
+      "count": 4,
+      "value": "CC:Supplies:Bedding"
+    },
+    "long": {
+      "count": 4,
+      "value": "VSV:Supplies"
+    },
+    "lupanter": {
+      "count": 2,
+      "value": "CC:Supplies:Tools"
+    },
+    "luxury": {
+      "count": 2,
+      "value": "VSV:Supplies"
+    },
+    "macarthur": {
+      "count": 6,
+      "value": "PSNL:Entertainment:Books"
+    },
+    "machine": {
+      "count": 6,
+      "value": "CC:Supplies"
+    },
+    "machines": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "made": {
+      "count": 2,
+      "value": "CC:Supplies:Tools"
+    },
+    "magnetic": {
+      "count": 2,
+      "value": "Walnut 1722:Management Fees"
+    },
+    "magnets": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "magsafe": {
+      "count": 2,
+      "value": "Walnut 1722:Management Fees"
+    },
+    "make": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "maker": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "makeup": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "manufacturing": {
+      "count": 4,
+      "value": "Education:Books & Supplies"
+    },
+    "mask": {
+      "count": 5,
+      "value": "CC:Supplies:Amenities"
+    },
+    "mastering": {
+      "count": 2,
+      "value": "Education:Books & Supplies"
+    },
+    "material": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "materials": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "mats": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "matte": {
+      "count": 2,
+      "value": "Walnut 1722:Management Fees"
+    },
+    "mattress": {
+      "count": 4,
+      "value": "CC:Supplies"
+    },
+    "measure": {
+      "count": 4,
+      "value": "Walnut 1722:Supplies"
+    },
+    "measurement": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "medicine": {
+      "count": 2,
+      "value": "CC:Supplies:Furniture"
+    },
+    "medium": {
+      "count": 5,
+      "value": "PSNL:Food & Dining:Groceries"
+    },
+    "memory": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "metal": {
+      "count": 6,
+      "value": "CC HOA:Repairs"
+    },
+    "microfiber": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "microwave": {
+      "count": 2,
+      "value": "Walnut 1722:Repairs"
+    },
+    "miele": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "minced": {
+      "count": 2,
+      "value": "PSNL:Food & Dining:Groceries"
+    },
+    "mini": {
+      "count": 9,
+      "value": "CC:Supplies:Tools"
+    },
+    "mirror": {
+      "count": 6,
+      "value": "CC:Supplies"
+    },
+    "miticide": {
+      "count": 2,
+      "value": "Walnut 1722:Gardening"
+    },
+    "modeling": {
+      "count": 2,
+      "value": "Education:Books & Supplies"
+    },
+    "modern": {
+      "count": 5,
+      "value": "CC:Supplies"
+    },
+    "mold": {
+      "count": 3,
+      "value": "CC:Supplies:Cleaning"
+    },
+    "moldable": {
+      "count": 4,
+      "value": "CC:Supplies"
+    },
+    "motor": {
+      "count": 4,
+      "value": "CC:Supplies"
+    },
+    "mount": {
+      "count": 7,
+      "value": "CC:Supplies"
+    },
+    "mounted": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "mounting": {
+      "count": 2,
+      "value": "CC:Supplies:Tools"
+    },
+    "movie": {
+      "count": 2,
+      "value": "PSNL:Entertainment:Movies"
+    },
+    "muffins": {
+      "count": 2,
+      "value": "PSNL:Food & Dining:Groceries"
+    },
+    "mulch": {
+      "count": 2,
+      "value": "MH:Supplies"
+    },
+    "multi": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies:Cleaning"
+    },
+    "music": {
+      "count": 20,
+      "value": "PSNL:Entertainment:Music"
+    },
+    "nail": {
+      "count": 2,
+      "value": "CC:Supplies:Tools"
+    },
+    "narrow": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies:Appliances"
+    },
+    "natural": {
+      "count": 2,
+      "value": "CC:Supplies:Pest Control"
+    },
+    "nautical": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "navel": {
+      "count": 2,
+      "value": "PSNL:Food & Dining:Groceries"
+    },
+    "nearsighted": {
+      "count": 4,
+      "value": "CC:Supplies:Amenities"
+    },
+    "nickel": {
+      "count": 9,
+      "value": "CC:Supplies"
+    },
+    "night": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "nightstand": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies"
+    },
+    "nose": {
+      "count": 4,
+      "value": "Ocean Breeze:Renovation:Electrical"
+    },
+    "nozzle": {
+      "count": 6,
+      "value": "CC HOA"
+    },
+    "nuts": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "nylon": {
+      "count": 2,
+      "value": "MH:Supplies"
+    },
+    "ocean": {
+      "count": 3,
+      "value": "CC:Supplies:Decor"
+    },
+    "octopus": {
+      "count": 2,
+      "value": "CC:Supplies:Decor"
+    },
+    "office": {
+      "count": 5,
+      "value": "Walnut 1722:Supplies"
+    },
+    "offices": {
+      "count": 2,
+      "value": "VSV:Supplies"
+    },
+    "onion": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies"
+    },
+    "open": {
+      "count": 2,
+      "value": "CC:Supplies:Amenities"
+    },
+    "orange": {
+      "count": 2,
+      "value": "PSNL:Food & Dining:Groceries"
+    },
+    "orchid": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies:Painting And Decor"
+    },
+    "orchids": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies:Painting And Decor"
+    },
+    "organic": {
+      "count": 17,
+      "value": "PSNL:Food & Dining:Groceries"
+    },
+    "organicgirl": {
+      "count": 2,
+      "value": "PSNL:Food & Dining:Groceries"
+    },
+    "organizer": {
+      "count": 4,
+      "value": "Walnut 1722:Supplies"
+    },
+    "original": {
+      "count": 7,
+      "value": "VSV:Supplies"
+    },
+    "ounce": {
+      "count": 2,
+      "value": "PSNL:Beauty"
+    },
+    "outdoor": {
+      "count": 12,
+      "value": "CC:Supplies"
+    },
+    "outlet": {
+      "count": 2,
+      "value": "1636 Walnut:Remodel Project"
+    },
+    "outside": {
+      "count": 4,
+      "value": "CC:Supplies"
+    },
+    "oven": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "oversize": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "package": {
+      "count": 3,
+      "value": "VSV:Supplies"
+    },
+    "packaging": {
+      "count": 8,
+      "value": "VSV:Supplies"
+    },
+    "packed": {
+      "count": 2,
+      "value": "Education:Books & Supplies"
+    },
+    "packs": {
+      "count": 6,
+      "value": "VSV:Supplies"
+    },
+    "padded": {
+      "count": 2,
+      "value": "CC:Supplies:Furniture"
+    },
+    "pain": {
+      "count": 2,
+      "value": "PSNL:Health:Pharmacy"
+    },
+    "paint": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "painting": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "palmolive": {
+      "count": 2,
+      "value": "VSV:Supplies"
+    },
+    "panels": {
+      "count": 3,
+      "value": "VSV:Supplies"
+    },
+    "pans": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "pants": {
+      "count": 4,
+      "value": "Walnut 1722:Supplies"
+    },
+    "paper": {
+      "count": 22,
+      "value": "VSV:Supplies"
+    },
+    "paramount": {
+      "count": 27,
+      "value": "PSNL:Entertainment:Movies"
+    },
+    "parker": {
+      "count": 2,
+      "value": "PSNL:Entertainment:Movies"
+    },
+    "parts": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "passage": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "patio": {
+      "count": 5,
+      "value": "CC:Supplies"
+    },
+    "patterns": {
+      "count": 3,
+      "value": "CC HOA"
+    },
+    "peach": {
+      "count": 3,
+      "value": "PSNL:Food & Dining:Groceries"
+    },
+    "peacock": {
+      "count": 2,
+      "value": "PSNL:Entertainment:Movies"
+    },
+    "pebbles": {
+      "count": 2,
+      "value": "MH:Supplies"
+    },
+    "peel": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies"
+    },
+    "perfect": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "petra": {
+      "count": 2,
+      "value": "MH:Supplies"
+    },
+    "pets": {
+      "count": 3,
+      "value": "CC HOA"
+    },
+    "phalaenopsis": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies:Painting And Decor"
+    },
+    "philippians": {
+      "count": 2,
+      "value": "PSNL:Entertainment:Books"
+    },
+    "phillips": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "phillps": {
+      "count": 3,
+      "value": "CC HOA:Repairs"
+    },
+    "phone": {
+      "count": 2,
+      "value": "Walnut 1722:Management Fees"
+    },
+    "photoelectric": {
+      "count": 2,
+      "value": "VSV:Supplies"
+    },
+    "picture": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "pillow": {
+      "count": 11,
+      "value": "Walnut 1722:Supplies"
+    },
+    "pillows": {
+      "count": 3,
+      "value": "VSV:Supplies"
+    },
+    "pink": {
+      "count": 2,
+      "value": "Walnut 1722:Management Fees"
+    },
+    "pint": {
+      "count": 5,
+      "value": "PSNL:Food & Dining:Groceries"
+    },
+    "pipe": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "plaid": {
+      "count": 2,
+      "value": "PSNL:Shopping:Clothing:Glen"
+    },
+    "plant": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies:Painting And Decor"
+    },
+    "plants": {
+      "count": 3,
+      "value": "CC HOA"
+    },
+    "plastic": {
+      "count": 5,
+      "value": "CC:Supplies"
+    },
+    "plate": {
+      "count": 7,
+      "value": "CC:Supplies"
+    },
+    "play": {
+      "count": 2,
+      "value": "VSV:Supplies"
+    },
+    "pliers": {
+      "count": 2,
+      "value": "Ocean Breeze:Renovation:Electrical"
+    },
+    "plug": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "plus": {
+      "count": 11,
+      "value": "PSNL:Entertainment:Movies"
+    },
+    "plush": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "pocket": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "pods": {
+      "count": 2,
+      "value": "CC:Supplies:Cleaning"
+    },
+    "porcelain": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "porch": {
+      "count": 2,
+      "value": "CH:Supplies:Deck"
+    },
+    "portable": {
+      "count": 3,
+      "value": "CC:Supplies:Tools"
+    },
+    "pots": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies:Painting And Decor"
+    },
+    "powder": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "power": {
+      "count": 3,
+      "value": "VSV:Supplies"
+    },
+    "premium": {
+      "count": 4,
+      "value": "VSV:Supplies"
+    },
+    "prep": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "pressure": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "prime": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "process": {
+      "count": 2,
+      "value": "Education:Books & Supplies"
+    },
+    "professional": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "profile": {
+      "count": 4,
+      "value": "CC:Supplies"
+    },
+    "prong": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies:Appliances"
+    },
+    "proof": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "prosourcefit": {
+      "count": 2,
+      "value": "VSV:Supplies"
+    },
+    "protection": {
+      "count": 2,
+      "value": "Walnut 1722:Management Fees"
+    },
+    "protector": {
+      "count": 2,
+      "value": "Walnut 1722:Management Fees"
+    },
+    "protectors": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "pull": {
+      "count": 5,
+      "value": "CC:Supplies"
+    },
+    "puller": {
+      "count": 2,
+      "value": "CC:Supplies:Tools"
+    },
+    "pulley": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "pump": {
+      "count": 2,
+      "value": "CC:Supplies:Tools"
+    },
+    "pure": {
+      "count": 2,
+      "value": "PSNL:Food & Dining:Groceries"
+    },
+    "purpose": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "putogesafe": {
+      "count": 2,
+      "value": "VSV:Supplies"
+    },
+    "puzzle": {
+      "count": 2,
+      "value": "VSV:Supplies"
+    },
+    "quality": {
+      "count": 4,
+      "value": "VSV:Supplies"
+    },
+    "queen": {
+      "count": 5,
+      "value": "CC:Supplies"
+    },
+    "quiet": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "quilted": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "rattan": {
+      "count": 3,
+      "value": "CC:Supplies:Furniture"
+    },
+    "reading": {
+      "count": 2,
+      "value": "VSV:Supplies"
+    },
+    "ready": {
+      "count": 2,
+      "value": "Walnut 1722:Gardening"
+    },
+    "real": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies:Painting And Decor"
+    },
+    "rebar": {
+      "count": 2,
+      "value": "MH:Supplies"
+    },
+    "reference": {
+      "count": 4,
+      "value": "Education:Books & Supplies"
+    },
+    "regular": {
+      "count": 22,
+      "value": "VSV:Supplies"
+    },
+    "reinforced": {
+      "count": 2,
+      "value": "Walnut 1722:Management Fees"
+    },
+    "relief": {
+      "count": 2,
+      "value": "PSNL:Health:Pharmacy"
+    },
+    "remote": {
+      "count": 5,
+      "value": "CC:Supplies"
+    },
+    "removable": {
+      "count": 4,
+      "value": "Walnut 1722:Supplies"
+    },
+    "remover": {
+      "count": 4,
+      "value": "CC:Supplies"
+    },
+    "repair": {
+      "count": 4,
+      "value": "CC:Supplies"
+    },
+    "repellent": {
+      "count": 2,
+      "value": "CC:Supplies:Pest Control"
+    },
+    "replacement": {
+      "count": 9,
+      "value": "CC:Supplies"
+    },
+    "reserve": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "resistant": {
+      "count": 4,
+      "value": "CC:Supplies"
+    },
+    "restmo": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "return": {
+      "count": 2,
+      "value": "PSNL:Entertainment:Movies"
+    },
+    "reversible": {
+      "count": 5,
+      "value": "CC:Supplies"
+    },
+    "rings": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "roach": {
+      "count": 5,
+      "value": "CC:Supplies:Pest Control"
+    },
+    "rock": {
+      "count": 5,
+      "value": "CC HOA"
+    },
+    "rocks": {
+      "count": 4,
+      "value": "CC HOA"
+    },
+    "rods": {
+      "count": 4,
+      "value": "VSV:Supplies"
+    },
+    "roll": {
+      "count": 12,
+      "value": "VSV:Supplies"
+    },
+    "roller": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "rolls": {
+      "count": 44,
+      "value": "VSV:Supplies"
+    },
+    "room": {
+      "count": 9,
+      "value": "Walnut 1722:Supplies"
+    },
+    "rooms": {
+      "count": 2,
+      "value": "VSV:Supplies"
+    },
+    "rose": {
+      "count": 2,
+      "value": "Walnut 1722:Gardening"
+    },
+    "rotating": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies:Appliances"
+    },
+    "round": {
+      "count": 7,
+      "value": "CC:Supplies"
+    },
+    "rubber": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "rugs": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "rust": {
+      "count": 2,
+      "value": "MH:Supplies:Decor"
+    },
+    "ryan": {
+      "count": 9,
+      "value": "PSNL:Entertainment:Movies"
+    },
+    "safe": {
+      "count": 5,
+      "value": "CC:Supplies"
+    },
+    "safety": {
+      "count": 2,
+      "value": "VSV:Supplies"
+    },
+    "salt": {
+      "count": 2,
+      "value": "PSNL:Food & Dining:Groceries"
+    },
+    "sash": {
+      "count": 2,
+      "value": "Walnut 1722:Repairs"
+    },
+    "satin": {
+      "count": 6,
+      "value": "CC:Supplies"
+    },
+    "saving": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "scale": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies"
+    },
+    "scent": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "schlage": {
+      "count": 2,
+      "value": "Walnut 1722:Repairs"
+    },
+    "science": {
+      "count": 2,
+      "value": "Education:Books & Supplies"
+    },
+    "scraper": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies"
+    },
+    "scratch": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "screen": {
+      "count": 2,
+      "value": "Walnut 1722:Management Fees"
+    },
+    "screw": {
+      "count": 4,
+      "value": "CC:Supplies"
+    },
+    "screwdriver": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "screws": {
+      "count": 10,
+      "value": "CC HOA:Repairs"
+    },
+    "scrub": {
+      "count": 2,
+      "value": "VSV:Supplies"
+    },
+    "scuba": {
+      "count": 3,
+      "value": "CC:Supplies:Amenities"
+    },
+    "season": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "seat": {
+      "count": 2,
+      "value": "MH:Supplies:Furniture"
+    },
+    "secretariat": {
+      "count": 2,
+      "value": "PSNL:Entertainment:Movies"
+    },
+    "seed": {
+      "count": 2,
+      "value": "PSNL:Gifts Given"
+    },
+    "seeds": {
+      "count": 2,
+      "value": "PSNL:Gifts Given"
+    },
+    "self": {
+      "count": 5,
+      "value": "Walnut 1722:Supplies"
+    },
+    "sense": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "sensor": {
+      "count": 2,
+      "value": "VSV:Supplies"
+    },
+    "septic": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "series": {
+      "count": 5,
+      "value": "CC:Supplies"
+    },
+    "sets": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "shades": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies"
+    },
+    "shaft": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "sham": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "sharpener": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "shears": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies:Tools"
+    },
+    "shed": {
+      "count": 3,
+      "value": "MH:Supplies"
+    },
+    "sheer": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies:Decor"
+    },
+    "sheet": {
+      "count": 6,
+      "value": "CC HOA:Repairs"
+    },
+    "sheets": {
+      "count": 27,
+      "value": "VSV:Supplies"
+    },
+    "shelf": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies"
+    },
+    "shelter": {
+      "count": 3,
+      "value": "MH:Supplies"
+    },
+    "shield": {
+      "count": 2,
+      "value": "PSNL:Health:Pharmacy"
+    },
+    "shirt": {
+      "count": 3,
+      "value": "PSNL:Gifts Given"
+    },
+    "shirts": {
+      "count": 4,
+      "value": "PSNL:Shopping:Clothing:Glen"
+    },
+    "shockproof": {
+      "count": 2,
+      "value": "Walnut 1722:Management Fees"
+    },
+    "shower": {
+      "count": 15,
+      "value": "CC:Supplies"
+    },
+    "showering": {
+      "count": 2,
+      "value": "CC HOA"
+    },
+    "showtime": {
+      "count": 23,
+      "value": "PSNL:Entertainment:Movies"
+    },
+    "side": {
+      "count": 4,
+      "value": "Walnut 1722:Supplies"
+    },
+    "siding": {
+      "count": 3,
+      "value": "Ocean Breeze:Renovation:Dry Walls"
+    },
+    "silver": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "single": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "sink": {
+      "count": 7,
+      "value": "CC:Supplies"
+    },
+    "sizes": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "skin": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "skirt": {
+      "count": 3,
+      "value": "CC:Supplies:Furniture"
+    },
+    "skirts": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "sleeping": {
+      "count": 3,
+      "value": "CC:Supplies:Bedding"
+    },
+    "sleepy": {
+      "count": 3,
+      "value": "CC:Supplies:Bedding"
+    },
+    "sleeve": {
+      "count": 4,
+      "value": "PSNL:Shopping:Clothing:Glen"
+    },
+    "slicing": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "slim": {
+      "count": 2,
+      "value": "PSNL:Shopping:Clothing:Glen"
+    },
+    "slip": {
+      "count": 5,
+      "value": "Walnut 1722:Supplies"
+    },
+    "small": {
+      "count": 5,
+      "value": "CC:Supplies"
+    },
+    "smart": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "smoke": {
+      "count": 5,
+      "value": "VSV:Supplies"
+    },
+    "smudge": {
+      "count": 2,
+      "value": "Walnut 1722:Management Fees"
+    },
+    "snorkel": {
+      "count": 5,
+      "value": "CC:Supplies:Amenities"
+    },
+    "snorkeling": {
+      "count": 6,
+      "value": "CC:Supplies:Amenities"
+    },
+    "soap": {
+      "count": 7,
+      "value": "CC:Supplies"
+    },
+    "socket": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "sofa": {
+      "count": 2,
+      "value": "CC:Supplies:Furniture"
+    },
+    "soft": {
+      "count": 14,
+      "value": "CC:Supplies"
+    },
+    "solid": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "someone": {
+      "count": 2,
+      "value": "PSNL:Entertainment"
+    },
+    "source": {
+      "count": 2,
+      "value": "PSNL:Entertainment:Books"
+    },
+    "space": {
+      "count": 4,
+      "value": "Walnut 1722:Supplies:Appliances"
+    },
+    "spacer": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "spaces": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies:Decor"
+    },
+    "specialist": {
+      "count": 2,
+      "value": "PSNL:Entertainment:Movies"
+    },
+    "speed": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "spinach": {
+      "count": 4,
+      "value": "PSNL:Food & Dining:Groceries"
+    },
+    "split": {
+      "count": 3,
+      "value": "CC:Supplies:Tools"
+    },
+    "sponge": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "sponges": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "spot": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies:Appliances"
+    },
+    "spray": {
+      "count": 4,
+      "value": "CC:Supplies"
+    },
+    "sprayer": {
+      "count": 2,
+      "value": "MH:Supplies"
+    },
+    "spring": {
+      "count": 3,
+      "value": "VSV:Supplies:Furnishings"
+    },
+    "square": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "stabilizer": {
+      "count": 2,
+      "value": "MH:Supplies"
+    },
+    "stain": {
+      "count": 4,
+      "value": "CC:Supplies:Cleaning"
+    },
+    "stainless": {
+      "count": 22,
+      "value": "CC:Supplies"
+    },
+    "stains": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies:Cleaning"
+    },
+    "stakes": {
+      "count": 4,
+      "value": "MH:Supplies"
+    },
+    "stand": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies"
+    },
+    "standard": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies"
+    },
+    "standing": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "starfish": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "stations": {
+      "count": 2,
+      "value": "Walnut 1722:Cleaning & Maint:Pest Control"
+    },
+    "steamer": {
+      "count": 2,
+      "value": "CC:Supplies:Appliances"
+    },
+    "steel": {
+      "count": 31,
+      "value": "CC:Supplies"
+    },
+    "stem": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "step": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "stick": {
+      "count": 4,
+      "value": "Walnut 1722:Supplies"
+    },
+    "sticky": {
+      "count": 2,
+      "value": "MH:Supplies"
+    },
+    "stone": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "stones": {
+      "count": 2,
+      "value": "MH:Supplies"
+    },
+    "stools": {
+      "count": 2,
+      "value": "CH:Supplies"
+    },
+    "stopper": {
+      "count": 5,
+      "value": "CC:Supplies"
+    },
+    "storage": {
+      "count": 11,
+      "value": "Walnut 1722:Supplies"
+    },
+    "stove": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "strainer": {
+      "count": 4,
+      "value": "CC:Supplies"
+    },
+    "strap": {
+      "count": 3,
+      "value": "CC HOA:Repairs"
+    },
+    "strength": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "strike": {
+      "count": 6,
+      "value": "CC:Supplies"
+    },
+    "string": {
+      "count": 5,
+      "value": "MH:Supplies"
+    },
+    "strong": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies"
+    },
+    "stronger": {
+      "count": 2,
+      "value": "Walnut 1722:Management Fees"
+    },
+    "studies": {
+      "count": 6,
+      "value": "PSNL:Entertainment:Books"
+    },
+    "substance": {
+      "count": 2,
+      "value": "PSNL:Entertainment:Movies"
+    },
+    "support": {
+      "count": 3,
+      "value": "CC:Supplies:Bedding"
+    },
+    "surface": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies:Cleaning"
+    },
+    "surfaces": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies:Cleaning"
+    },
+    "surround": {
+      "count": 2,
+      "value": "VSV:Supplies"
+    },
+    "swim": {
+      "count": 6,
+      "value": "CC:Supplies:Amenities"
+    },
+    "swimming": {
+      "count": 2,
+      "value": "CC:Supplies:Amenities"
+    },
+    "systems": {
+      "count": 2,
+      "value": "CC:Supplies:Tools"
+    },
+    "table": {
+      "count": 6,
+      "value": "Walnut 1722:Supplies"
+    },
+    "tabletop": {
+      "count": 2,
+      "value": "CC:Supplies:Furniture"
+    },
+    "tall": {
+      "count": 11,
+      "value": "VSV:Supplies"
+    },
+    "taloya": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "tape": {
+      "count": 9,
+      "value": "Walnut 1722:Supplies"
+    },
+    "tapping": {
+      "count": 5,
+      "value": "CC HOA:Repairs"
+    },
+    "tarp": {
+      "count": 4,
+      "value": "Walnut 1722:Supplies:Painting And Decor"
+    },
+    "tassels": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "taylor": {
+      "count": 2,
+      "value": "PSNL:Food & Dining:Groceries"
+    },
+    "tear": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "tempered": {
+      "count": 3,
+      "value": "CC:Supplies:Furniture"
+    },
+    "tensile": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "tension": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies:Decor"
+    },
+    "tent": {
+      "count": 2,
+      "value": "MH:Supplies"
+    },
+    "terry": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "test": {
+      "count": 2,
+      "value": "VSV:Supplies"
+    },
+    "testing": {
+      "count": 2,
+      "value": "Education:Books & Supplies"
+    },
+    "texture": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "theme": {
+      "count": 2,
+      "value": "CC:Supplies:Decor"
+    },
+    "thermal": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies"
+    },
+    "thermometer": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "thick": {
+      "count": 4,
+      "value": "Walnut 1722:Supplies"
+    },
+    "thin": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "three": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "throw": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies"
+    },
+    "thyme": {
+      "count": 2,
+      "value": "PSNL:Food & Dining:Groceries"
+    },
+    "tier": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "ties": {
+      "count": 5,
+      "value": "Walnut 1722:Repairs"
+    },
+    "tile": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "tiles": {
+      "count": 4,
+      "value": "VSV:Supplies"
+    },
+    "timer": {
+      "count": 3,
+      "value": "CC:Supplies:Appliances"
+    },
+    "toaster": {
+      "count": 2,
+      "value": "CC:Supplies:Appliances"
+    },
+    "toilet": {
+      "count": 13,
+      "value": "VSV:Supplies"
+    },
+    "toiletries": {
+      "count": 2,
+      "value": "CC:Supplies:Amenities"
+    },
+    "tool": {
+      "count": 6,
+      "value": "CC:Supplies:Tools"
+    },
+    "tools": {
+      "count": 2,
+      "value": "MH:Supplies"
+    },
+    "topper": {
+      "count": 4,
+      "value": "CC:Supplies"
+    },
+    "total": {
+      "count": 4,
+      "value": "CC:Supplies"
+    },
+    "touch": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies:Painting And Decor"
+    },
+    "tough": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies:Cleaning"
+    },
+    "towel": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "towels": {
+      "count": 11,
+      "value": "CC:Supplies"
+    },
+    "transitional": {
+      "count": 2,
+      "value": "PSNL:Shopping:Clothing:Glen"
+    },
+    "translucent": {
+      "count": 2,
+      "value": "Walnut 1722:Management Fees"
+    },
+    "trash": {
+      "count": 8,
+      "value": "VSV:Supplies"
+    },
+    "travel": {
+      "count": 4,
+      "value": "CC:Supplies"
+    },
+    "travertine": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "treatment": {
+      "count": 2,
+      "value": "PSNL:Food & Dining:Groceries"
+    },
+    "tree": {
+      "count": 3,
+      "value": "CC:Supplies:Tools"
+    },
+    "trim": {
+      "count": 2,
+      "value": "CC:Supplies:Tools"
+    },
+    "truth": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "tube": {
+      "count": 3,
+      "value": "CC HOA:Repairs"
+    },
+    "turtle": {
+      "count": 4,
+      "value": "CC:Supplies"
+    },
+    "twine": {
+      "count": 2,
+      "value": "MH:Supplies"
+    },
+    "twist": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies:Decor"
+    },
+    "ultra": {
+      "count": 5,
+      "value": "Walnut 1722:Supplies"
+    },
+    "umbrella": {
+      "count": 4,
+      "value": "CH:Supplies:Backyard"
+    },
+    "under": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies"
+    },
+    "underbed": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "universal": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "unlimited": {
+      "count": 20,
+      "value": "PSNL:Entertainment:Music"
+    },
+    "unscented": {
+      "count": 6,
+      "value": "VSV:Supplies"
+    },
+    "upholstery": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies:Appliances"
+    },
+    "utopia": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "uwant": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies:Appliances"
+    },
+    "vacuum": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "validation": {
+      "count": 2,
+      "value": "Education:Books & Supplies"
+    },
+    "value": {
+      "count": 9,
+      "value": "VSV:Supplies"
+    },
+    "valve": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "vanilla": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "vanity": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "vary": {
+      "count": 15,
+      "value": "VSV:Supplies"
+    },
+    "vase": {
+      "count": 7,
+      "value": "Walnut 1722:Supplies:Painting And Decor"
+    },
+    "velvet": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies"
+    },
+    "vinyl": {
+      "count": 4,
+      "value": "Ocean Breeze:Renovation:Dry Walls"
+    },
+    "vitamin": {
+      "count": 3,
+      "value": "PSNL:Health"
+    },
+    "voltage": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "waffle": {
+      "count": 2,
+      "value": "VSV:Supplies"
+    },
+    "wall": {
+      "count": 7,
+      "value": "CC:Supplies"
+    },
+    "wallpaper": {
+      "count": 7,
+      "value": "Walnut 1722:Supplies"
+    },
+    "warm": {
+      "count": 4,
+      "value": "CC:Supplies"
+    },
+    "warning": {
+      "count": 2,
+      "value": "VSV:Supplies"
+    },
+    "wash": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "washable": {
+      "count": 6,
+      "value": "Walnut 1722:Supplies"
+    },
+    "washer": {
+      "count": 2,
+      "value": "CC HOA:Repairs"
+    },
+    "washers": {
+      "count": 4,
+      "value": "CC:Supplies:Tools"
+    },
+    "washing": {
+      "count": 4,
+      "value": "CC HOA"
+    },
+    "water": {
+      "count": 5,
+      "value": "CC HOA"
+    },
+    "watering": {
+      "count": 5,
+      "value": "CC HOA"
+    },
+    "waterproof": {
+      "count": 9,
+      "value": "Walnut 1722:Supplies"
+    },
+    "watt": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "weather": {
+      "count": 2,
+      "value": "CH:Supplies:Deck"
+    },
+    "wedding": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies:Painting And Decor"
+    },
+    "weight": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "what": {
+      "count": 2,
+      "value": "PSNL:Entertainment:Movies"
+    },
+    "wheel": {
+      "count": 3,
+      "value": "CC:Supplies"
+    },
+    "window": {
+      "count": 4,
+      "value": "Walnut 1722:Supplies"
+    },
+    "windows": {
+      "count": 2,
+      "value": "VSV:Supplies"
+    },
+    "wire": {
+      "count": 2,
+      "value": "Walnut 1722:Repairs"
+    },
+    "wired": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "wite": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "women": {
+      "count": 3,
+      "value": "CC:Supplies:Amenities"
+    },
+    "wondrous": {
+      "count": 4,
+      "value": "PSNL:Entertainment:Books"
+    },
+    "wood": {
+      "count": 8,
+      "value": "CC:Supplies:Tools"
+    },
+    "wooden": {
+      "count": 3,
+      "value": "Walnut 1722:Supplies"
+    },
+    "work": {
+      "count": 2,
+      "value": "VSV:Supplies"
+    },
+    "workout": {
+      "count": 2,
+      "value": "VSV:Supplies"
+    },
+    "year": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "yellow": {
+      "count": 6,
+      "value": "CC:Supplies"
+    },
+    "youngstex": {
+      "count": 2,
+      "value": "VSV:Supplies"
+    },
+    "youth": {
+      "count": 2,
+      "value": "CC:Supplies:Amenities"
+    },
+    "zagg": {
+      "count": 2,
+      "value": "Walnut 1722:Management Fees"
+    },
+    "zippered": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    }
+  },
+  "memo_max_len": 63,
+  "payee_category": {
+    "amazon": {
+      "count": 82,
+      "value": "CC:Supplies"
+    },
+    "amazon music": {
+      "count": 2,
+      "value": "PSNL:Entertainment:Music"
+    },
+    "kindle svcs": {
+      "count": 1,
+      "value": "PSNL:Entertainment:Books"
+    },
+    "kindle svcs*ni40h3z91": {
+      "count": 1,
+      "value": "PSNL:Entertainment:Books"
+    },
+    "kindle svcs*t86iq3uj3": {
+      "count": 1,
+      "value": "PSNL:Entertainment:Books"
+    },
+    "prime video": {
+      "count": 49,
+      "value": "PSNL:Entertainment:Movies"
+    }
+  },
+  "payee_defaults": [
+    {
+      "category": "PSNL:Entertainment:Movies",
+      "payee": "Prime Video",
+      "payee_contains": "prime video"
+    },
+    {
+      "category": "PSNL:Entertainment:Music",
+      "payee": "Amazon Music",
+      "payee_contains": "amazon music"
+    },
+    {
+      "category": "PSNL:Entertainment:Books",
+      "payee": "Kindle Svcs",
+      "payee_contains": "kindle"
+    }
+  ],
+  "ship_to_category": {
+    "CHARLES K SCHERER 6825 SKYLINE DR DELRAY BEACH | 33446": {
+      "count": 3,
+      "value": "PSNL:Gifts Given"
+    },
+    "ELIZABETH SCHERER 100 OCEAN AVE KENNEBUNKPORT ME 04046 | 04046": {
+      "count": 5,
+      "value": "MH:Supplies"
+    },
+    "ELIZABETH SCHERER 1636 WALNUT ST BERKELEY CA 94709 | 94709": {
+      "count": 32,
+      "value": "Walnut 1722:Supplies"
+    },
+    "ELIZABETH SCHERER 88 S OCEAN BLVD APT 7 | 33483": {
+      "count": 2,
+      "value": "CC:Supplies"
+    },
+    "EUNICE KANG 28550 GRANDVIEW DR MORENO VALLEY CA | 28550": {
+      "count": 1,
+      "hand": true,
+      "value": "PSNL:Gifts Given"
+    },
+    "GLEN R STEVICK 808 GILMAN ST BERKELEY CA | 94710": {
+      "count": 1,
+      "value": "VSV:Supplies"
+    },
+    "GLEN STEVICK 1310 6TH ST BERKELEY CA 94710 | 94710": {
+      "count": 1,
+      "hand": true,
+      "value": "Walnut 1722:Supplies"
+    },
+    "GLEN STEVICK 1636 WALNUT ST BERKELEY CA 94709 | 94709": {
+      "count": 1,
+      "value": "Walnut 1722:Supplies"
+    },
+    "GLEN STEVICK 88 S OCEAN BLVD APT 7 | 33483": {
+      "count": 7,
+      "value": "PSNL:Food & Dining:Groceries"
+    },
+    "JAMES STEVICK 1661 FILBERT ST SAN FRANCISCO CA | 94123": {
+      "count": 1,
+      "value": "Walnut 1722:Supplies"
+    },
+    "JOHN STEVICK 1131 N OCEAN BREEZE LAKE WORTH | 33460": {
+      "count": 1,
+      "value": "CC:Supplies:Furniture"
+    },
+    "JOHN STEVICK 1446 MLK JR WAY BERKELEY CA | 94709": {
+      "count": 30,
+      "value": "VSV:Supplies"
+    },
+    "JOHN STEVICK 1636 WALNUT ST BERKELEY CA 94709 | 94709": {
+      "count": 2,
+      "value": "Walnut 1722:Supplies"
+    },
+    "JOHN STEVICK 1716 ROSE ST BERKELEY CA 94703 | 94703": {
+      "count": 2,
+      "value": "CH:Supplies"
+    },
+    "JOHN STEVICK 630 E WOOLBRIGHT RD APT 428 | 33435": {
+      "count": 1,
+      "value": "CC:Supplies"
+    },
+    "JOHN STEVICK 88 S OCEAN BLVD APT 7 | 33483": {
+      "count": 71,
+      "value": "CC:Supplies"
+    },
+    "LYLE STEVICK 28550 GRANDVIEW DR MORENO VALLEY CA | 28550": {
+      "count": 1,
+      "value": "PSNL:Gifts Given"
+    }
+  },
+  "ship_to_root": {
+    "CHARLES K SCHERER 6825 SKYLINE DR DELRAY BEACH | 33446": {
+      "count": 3,
+      "value": "PSNL"
+    },
+    "ELIZABETH SCHERER 100 OCEAN AVE KENNEBUNKPORT ME 04046 | 04046": {
+      "count": 8,
+      "value": "MH"
+    },
+    "ELIZABETH SCHERER 1636 WALNUT ST BERKELEY CA 94709 | 94709": {
+      "count": 60,
+      "value": "Walnut 1722"
+    },
+    "ELIZABETH SCHERER 88 S OCEAN BLVD APT 7 | 33483": {
+      "count": 2,
+      "value": "CC"
+    },
+    "EUNICE KANG 28550 GRANDVIEW DR MORENO VALLEY CA | 28550": {
+      "count": 1,
+      "hand": true,
+      "value": "PSNL"
+    },
+    "GLEN R STEVICK 808 GILMAN ST BERKELEY CA | 94710": {
+      "count": 1,
+      "value": "VSV"
+    },
+    "GLEN STEVICK 1310 6TH ST BERKELEY CA 94710 | 94710": {
+      "count": 1,
+      "hand": true,
+      "value": "Walnut 1722"
+    },
+    "GLEN STEVICK 1636 WALNUT ST BERKELEY CA 94709 | 94709": {
+      "count": 1,
+      "value": "Walnut 1722"
+    },
+    "GLEN STEVICK 88 S OCEAN BLVD APT 7 | 33483": {
+      "count": 15,
+      "value": "CC"
+    },
+    "JAMES STEVICK 1661 FILBERT ST SAN FRANCISCO CA | 94123": {
+      "count": 1,
+      "value": "Walnut 1722"
+    },
+    "JOHN STEVICK 1131 N OCEAN BREEZE LAKE WORTH | 33460": {
+      "count": 1,
+      "value": "CC"
+    },
+    "JOHN STEVICK 1446 MLK JR WAY BERKELEY CA | 94709": {
+      "count": 34,
+      "value": "VSV"
+    },
+    "JOHN STEVICK 1636 WALNUT ST BERKELEY CA 94709 | 94709": {
+      "count": 2,
+      "value": "Walnut 1722"
+    },
+    "JOHN STEVICK 1716 ROSE ST BERKELEY CA 94703 | 94703": {
+      "count": 5,
+      "value": "CH"
+    },
+    "JOHN STEVICK 630 E WOOLBRIGHT RD APT 428 | 33435": {
+      "count": 2,
+      "value": "CC"
+    },
+    "JOHN STEVICK 88 S OCEAN BLVD APT 7 | 33483": {
+      "count": 106,
+      "value": "CC"
+    },
+    "LYLE STEVICK 28550 GRANDVIEW DR MORENO VALLEY CA | 28550": {
+      "count": 1,
+      "value": "PSNL"
+    }
+  },
+  "trained_pairs": 398,
+  "version": 1
+}

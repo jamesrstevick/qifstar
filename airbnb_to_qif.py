@@ -11,6 +11,7 @@
 import csv
 import glob
 import os
+import re
 import shutil
 import sys
 from datetime import datetime
@@ -26,8 +27,10 @@ from header import *  # includes TYPES_AS_SPLITS
 accounts = [CH_CHK_1687, BOFA_CHK_0149]  # CH_CHK_1687, BOFA_CHK_0149
 # Put one airbnb_*.csv at repo root (YTD export). Successful runs append logs.csv and archive the CSV to
 # airbnb_files_archive as name_PROCESSED_MMDDYYYY.csv. Next run skips payouts already in logs (by payout ID:
-# Airbnb Reference code when present, otherwise a synthetic ID). If logs.csv is empty, every payout in the file
-# is imported—use a CSV that only has new rows since last Quicken import, or seed logs.csv with prior payout_refs.
+# Airbnb Reference code when present, otherwise a synthetic ID). If Airbnb later fills in a Reference code on a
+# payout that was logged with a synthetic ID, that payout is still skipped. If logs.csv is empty, every payout
+# in the file is imported—use a CSV that only has new rows since last Quicken import, or seed logs.csv with
+# prior payout_refs.
 ###########################################
 
 
@@ -160,14 +163,21 @@ def create_memo(row_dict):
     " ({} Nights) [{}]".format(int(row_dict[NIGHTS]), _safe_str(row_dict[CONF_CODE]))
     return memo
 
-# Memo in split can only handle 25 characters
+# Quicken split memo (E…) max is 25 characters; transaction memo (M…) is 64.
+SPLIT_MEMO_MAX_LEN = 25
+
+
 def create_short_memo(row_dict):
+    """Build a split-line memo that fits Quicken's 25-char E-field limit."""
     input_name = _safe_str(row_dict[GUEST])
     name_split = input_name.split(" ") if input_name else ['']
     name_split_filtered = [x for x in name_split if x != '']
     name = name_split_filtered[-1] if name_split_filtered else ''
     conf = _safe_str(row_dict[CONF_CODE])
+    # last name (up to 12) + " [CONF]" — kept well under SPLIT_MEMO_MAX_LEN
     memo = name[:12] + " [{}]".format(conf)
+    if len(memo) > SPLIT_MEMO_MAX_LEN:
+        memo = memo[:SPLIT_MEMO_MAX_LEN]
     return memo
 
 
@@ -222,11 +232,8 @@ def _child_confirmation_codes(child_rows):
     return sorted(set(codes))
 
 
-def _compute_payout_id(payout_row, child_rows):
-    """Payout ID for dedup: Reference code when present, else synthetic from payout + child rows."""
-    ref = _safe_str(payout_row[REFERENCE_CODE])
-    if ref:
-        return ref
+def _synthetic_payout_id(payout_row, child_rows):
+    """Stable ID from date, account, and child confirmation codes (or paid-out amount)."""
     date = str(payout_row[DATE]).strip().split()[0]
     acct = _account_from_details(payout_row[DETAILS])
     if not acct:
@@ -241,10 +248,22 @@ def _compute_payout_id(payout_row, child_rows):
     return f"{date}|{acct}|{paid:.2f}"
 
 
+def _compute_payout_id(payout_row, child_rows):
+    """Payout ID for dedup: Reference code when present, else synthetic from payout + child rows."""
+    ref = _safe_str(payout_row[REFERENCE_CODE])
+    if ref:
+        return ref
+    return _synthetic_payout_id(payout_row, child_rows)
+
+
 def _should_process_payout(payout_row, child_rows, already_refs, last_log_last_txn):
     """True if this payout group should be imported on this run."""
     payout_id = _compute_payout_id(payout_row, child_rows)
     if payout_id in already_refs:
+        return False
+    # Airbnb may backfill Reference code after we already logged a synthetic ID.
+    synth_id = _synthetic_payout_id(payout_row, child_rows)
+    if synth_id in already_refs:
         return False
     if not _safe_str(payout_row[REFERENCE_CODE]) and last_log_last_txn and last_log_last_txn.strip():
         payout_ts = _parse_csv_date(payout_row[DATE]).timestamp()
@@ -280,6 +299,33 @@ def _filter_unprocessed_payout_rows(df, already_refs, last_log_last_txn):
     return df.loc[mask].reset_index(drop=True)
 
 
+# payout_refs is a comma-separated list, but synthetic IDs can also contain commas
+# (multiple confirmation codes). Do not split on comma alone.
+_PAYOUT_ID_IN_LOG = re.compile(
+    r"(?:"
+    r"\d{2}/\d{2}/\d{4}\|\d+\|(?:-?\d+\.\d{2}|[A-Za-z][A-Za-z0-9]+(?:,[A-Za-z][A-Za-z0-9]+)*)"
+    r"|"
+    r"[A-Za-z]-[A-Za-z0-9]+"
+    r")"
+)
+
+
+def _parse_payout_refs(payout_refs_field):
+    """Parse payout IDs from a logs.csv payout_refs cell (Reference codes and/or synthetic IDs)."""
+    pr = (payout_refs_field or "").strip()
+    if not pr:
+        return []
+    ids = _PAYOUT_ID_IN_LOG.findall(pr)
+    leftover = _PAYOUT_ID_IN_LOG.sub("", pr)
+    leftover = leftover.replace(",", "").replace(";", "").strip()
+    if leftover:
+        raise RuntimeError(
+            f"Could not parse payout_refs (unrecognized leftover {leftover!r}). "
+            f"Field starts: {pr[:180]!r}"
+        )
+    return ids
+
+
 def _load_logs_state(logs_path):
     """Returns (set of all payout IDs from prior runs, last_txn_date from last row or None)."""
     if not os.path.isfile(logs_path):
@@ -291,11 +337,8 @@ def _load_logs_state(logs_path):
         return set(), None
     all_refs = set()
     for r in rows:
-        pr = r.get("payout_refs") or ""
-        for x in pr.split(","):
-            x = x.strip()
-            if x:
-                all_refs.add(x)
+        for x in _parse_payout_refs(r.get("payout_refs") or ""):
+            all_refs.add(x)
     last = rows[-1]
     last_txn = last.get("last_txn_date") or None
     return all_refs, last_txn

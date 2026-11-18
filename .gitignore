@@ -5,5 +5,16 @@ qif_files/*.QIF
 # Year-to-date Airbnb CSV at repo root (e.g. airbnb_12_2025-03_2026.csv)
 airbnb_*.csv
 
+# Schwab 9593 transaction exports (keep research QIF / tickers / MD tracked)
+schwab_9593/Living_Trust_*.csv
+
+# Amazon Privacy Central export (PII: addresses, cards, order history, delivery photos)
+amazon/
+amazon/_upload_charges.csv
+
+# Bytecode / local tooling
+__pycache__/
+*.py[cod]
+
 # Import audit log is intentionally NOT ignored
 !logs.csv

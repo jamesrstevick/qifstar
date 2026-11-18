@@ -1,5 +1,19 @@
 # qifstar
 
+Build Quicken QIF imports from several **data sources**, each covering one or more Quicken accounts (fully or partially). Airbnb was the first pipeline; Schwab 9593 and Amazon are additional sources in the same repo.
+
+## Sources → Quicken accounts
+
+| Source | Status | Inputs | Quicken coverage |
+|--------|--------|--------|------------------|
+| **Schwab One 9593** | Complete | Transactions CSV + end-of-month PDF statements (`schwab_9593/`, statements on OneDrive) | **Fully** fills one account: `Schwab One ...9593-Cash` |
+| **Airbnb** | Complete (ongoing runs) | Year-to-date payout CSV | **Partially** fills multiple checking accounts (payouts only; not the full register history) |
+| **Amazon** | Work in progress | Order History + card statements / charge CSV (`amazon/`, `AMAZON.md`) | **Partially** fills some property/CC categories; expected to **fully** fill Chase Prime **5144** once the reviewer/export path is finished |
+
+Use this table as the map while adding more sources. Details for each pipeline live in the sections / files below (`SCHWAB_9593.md`, Airbnb docs in this README, `AMAZON.md`).
+
+## Airbnb → QIF
+
 Convert Airbnb year-to-date payout CSV exports into Quicken-compatible QIF files. **Duplicate imports are avoided** by logging each payout’s **ID** after a successful run; the next run only imports payouts that are not already in the log. IDs are Airbnb **Reference code** when present, otherwise a **synthetic ID** derived from the payout and its child rows.
 
 ## What it does
@@ -43,7 +57,7 @@ Convert Airbnb year-to-date payout CSV exports into Quicken-compatible QIF files
    ```
 
 4. **First run** with an empty or missing `logs.csv` imports **every** payout in that file. For a mid-year start, either use a CSV that only contains rows you have not yet imported, or seed **`payout_refs`** in `logs.csv` from earlier imports.
-5. **Later runs:** the script skips any payout whose **ID** already appears in **`payout_refs`** in any row of `logs.csv`. Payouts without a Reference code get a synthetic ID (`Date|account|confirmation codes`, or `Date|account|amount` for Misc Credit–only payouts). Payouts on or before the previous run’s **`last_txn_date`** are also skipped when Reference code is blank (safety net for YTD re-exports). New payout dates must not be **before** **`last_txn_date`** (sanity check).
+5. **Later runs:** the script skips any payout whose **ID** already appears in **`payout_refs`** in any row of `logs.csv`. Payouts without a Reference code get a synthetic ID (`Date|account|confirmation codes`, or `Date|account|amount` for Misc Credit–only payouts). If Airbnb later fills in a Reference code on a payout that was previously logged with a synthetic ID, that payout is still skipped (both IDs are checked). Payouts on or before the previous run’s **`last_txn_date`** are also skipped when Reference code is blank (safety net for YTD re-exports). New payout dates must not be **before** **`last_txn_date`** (sanity check).
 6. Import the new QIF from `qif_files/` into Quicken.
 
 ### Terminal output (success)
@@ -65,9 +79,11 @@ If every payout in the file was already logged, the script prints that there is 
 | Path | Purpose |
 |------|--------|
 | `airbnb_to_qif.py` | Main converter: discovery, validation, QIF build, log append, archive |
+| `schwab_9593_to_qif.py` | Schwab One 9593 CSV (+ statement PDF Change) → Bank QIF |
+| `schwab_9593/` | Schwab inputs: transactions CSV, tickers JSON, research MD, training QIFs |
 | `header.py` | Folders, account display names, CSV column names, Misc Credit labels |
 | `logs.csv` | One row per successful run; **`payout_refs`** lists payout IDs written to the QIF (Reference codes or synthetic IDs, for dedup) |
-| `qif_files/` | Output QIF files (`qifstar_<from>_<to>_run<MMDDYYYY>.QIF`) |
+| `qif_files/` | Output QIF files (`qifstar_…_run….QIF`, `schwab_9593_<MM-DD-YYYY>_<MM-DD-YYYY>_run<MMDDYYYY>.QIF`) |
 | `airbnb_files_archive/` | Processed source CSVs renamed with `_PROCESSED_MMDDYYYY` |
 | `airbnb_files/` | Legacy / optional; not used as the primary input path |
 | `.gitignore` | Ignores typical finance exports and QIFs; **`logs.csv` is not ignored** |
@@ -82,7 +98,7 @@ If every payout in the file was already logged, the script prints that there is 
 
 Airbnb payout export with columns including: **Date**, **Type**, **Start date**, **End date**, **Confirmation code**, **Nights**, **Guest**, **Listing**, **Details**, **Reference code** (optional—Airbnb often leaves this blank on newer payouts), **Paid out**, **Amount**. Names match `header.py`. Extra columns (e.g. **Arriving by date**, **Currency**) are ignored.
 
-**Payout IDs for dedup:** If **Reference code** is present on a Payout row, that value is the ID. Otherwise the script computes a synthetic ID:
+**Payout IDs for dedup:** If **Reference code** is present on a Payout row, that value is the ID. Otherwise the script computes a synthetic ID. A payout is skipped if **either** the current ID **or** the synthetic ID is already in `logs.csv` (Airbnb sometimes backfills Reference codes after a run that logged the synthetic ID). `payout_refs` is comma-separated; synthetic IDs may themselves contain commas when a payout has multiple confirmation codes, so the log parser matches whole IDs rather than splitting on every comma.
 
 - Reservation / Resolution Adjustment payout: `MM/DD/YYYY|account|confirmation codes` (sorted, comma-separated if multiple)
 - Misc Credit–only payout: `MM/DD/YYYY|account|paid out amount`

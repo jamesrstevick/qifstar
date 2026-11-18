@@ -1,0 +1,194 @@
+{
+  "version": 1,
+  "notes": [
+    "Append one object to months[] after each reconciled statement rule review.",
+    "Do not overfit: skip one-off category overrides at shared property addresses.",
+    "Hand pins live in amazon_cc/rules.py HAND_SHIP_TO_NAME and HAND_ITEM_CATEGORY (survive amazon_train.py).",
+    "Geography: CC is Florida-only; Berkeley ships are VSV / CH / Walnut / PSNL — never CC.",
+    "Ship-to uses frequency: minority full-category loses to majority root (e.g. Glen@FL groceries n=7 vs CC root n=15)."
+  ],
+  "deferred": [
+    {
+      "id": "glen_1310_6th_st_root",
+      "first_seen": "2026_July15",
+      "fingerprint": "GLEN STEVICK 1310 6TH ST BERKELEY CA 94710 | 94710",
+      "july_categories": [
+        "Walnut 1722:Supplies",
+        "Walnut 1722:Supplies:Tools",
+        "1636 Walnut:Remodel Project:Wisteria"
+      ],
+      "aug_categories": [
+        "Walnut 1722:Supplies",
+        "Walnut 1722:Repairs"
+      ],
+      "status": "pinned",
+      "resolved_in": "2026_Aug15",
+      "reason": "Pinned HAND_SHIP_TO street 1310 6TH ST → Walnut 1722:Supplies after July+Aug Berkeley majority (still watch rare 1636 remodel)."
+    },
+    {
+      "id": "walnut_address_non_supplies_overrides",
+      "first_seen": "2026_July15",
+      "status": "watch",
+      "reason": "Groceries / gardening / CH / VSV / Tools / remodel at 1636 Walnut ship-tos are human judgment — do not bake into ship_to_category from a single month. Cat food now hand-pinned."
+    },
+    {
+      "id": "cc_subcategory_refine",
+      "first_seen": "2026_Aug15",
+      "status": "watch",
+      "reason": "August often uses CC:Supplies:Tools / :Cleaning / :Decor / CC:Repairs while rules land on CC:Supplies. Root is correct; subcategory still needs stronger keyword evidence or human review."
+    }
+  ],
+  "months": [
+    {
+      "statement_id": "2026_July15",
+      "progress": "amazon/review_progress/Chase_Prime_5144_2026_July15.json",
+      "qif": "JRSS Reconciliation/QIF files/amazon_5144_2026_July15_reconcile.QIF",
+      "analyzed_at": "2026-11-18",
+      "charges": 35,
+      "payments": 1,
+      "unmatched": 0,
+      "scorecard": {
+        "payee_exact": "35/35",
+        "category_exact": "23/35 (66%)",
+        "category_root": "26/35 (74%)",
+        "memo_exact": "11/35 (31%)"
+      },
+      "ship_tos": [
+        {
+          "who": "Elizabeth Scherer 1636 Walnut",
+          "n": 19,
+          "approved_top": ["Walnut 1722:Supplies (14)", "CH:Supplies (2)", "groceries/gardening/furnishings"]
+        },
+        {
+          "who": "Glen Stevick 1636 Walnut",
+          "n": 6,
+          "approved_top": ["Walnut 1722:Supplies", "PSNL groceries", "VSV wifi", "Tools"]
+        },
+        {
+          "who": "Glen Stevick 1310 6th St",
+          "n": 4,
+          "approved_top": ["Walnut 1722", "1636 Remodel:Wisteria"],
+          "trained": false
+        },
+        {
+          "who": "John Stevick MLK (VSV)",
+          "n": 2,
+          "approved_top": ["VSV:Supplies"]
+        },
+        {
+          "who": "Eunice Kang Grandview (Moreno Valley)",
+          "n": 1,
+          "approved_top": ["PSNL:Gifts Given"],
+          "note": "Grandma gift (flowers); keyword wrongly guessed Walnut decor"
+        },
+        {
+          "who": "John Stevick Ocean Blvd FL",
+          "n": 1,
+          "approved_top": ["CC:Supplies"]
+        }
+      ],
+      "category_mismatches_summary": [
+        "Ship-to Walnut → Supplies beat human groceries/gardening/CH/VSV/Tools/remodel",
+        "Eunice Kang → keyword flower → Walnut decor (fixed by hand pin)",
+        "1310 6th St untrained → keyword → CC:Supplies"
+      ],
+      "hand_changes_applied": [
+        {
+          "pin": "EUNICE KANG → PSNL:Gifts Given",
+          "where": "amazon_cc/rules.py HAND_SHIP_TO_NAME",
+          "why": "Stable person knowledge; not product-keyword inferable"
+        }
+      ],
+      "not_applied": [
+        "No keyword rules from July memos or one-off titles",
+        "No Walnut ship-to subcategory overrides",
+        "No 1310 6th St root yet (deferred until Aug)"
+      ]
+    },
+    {
+      "statement_id": "2026_Aug15",
+      "progress": "amazon/review_progress/Chase_Prime_5144_2026_Aug15.json",
+      "qif": "JRSS Reconciliation/QIF files/amazon_5144_2026_Aug15_reconcile.QIF",
+      "analyzed_at": "2026-11-18",
+      "charges": 31,
+      "payments": 1,
+      "unmatched": 0,
+      "scorecard_before_fixes": {
+        "category_exact": "13/31 (42%)",
+        "category_root": "17/31 (55%)",
+        "memo_exact": "15/31 (48%)",
+        "note": "Stored suggested-at-review; Glen@FL ship_to_category overfit to groceries"
+      },
+      "scorecard_after_fixes": {
+        "category_exact": "22/31 (71%)",
+        "category_root": "31/31 (100%)",
+        "memo_exact": "6/31 (19%)",
+        "note": "Memo exact drops mostly from intentional soft-casing vs human Title Case"
+      },
+      "ship_tos": [
+        {
+          "who": "John Stevick Ocean Blvd FL",
+          "n": 13,
+          "approved_top": ["CC:Supplies", "CC:Supplies:Cleaning", "CC:Repairs", "groceries"]
+        },
+        {
+          "who": "Glen Stevick Ocean Blvd FL",
+          "n": 11,
+          "approved_top": ["CC:Supplies", "CC:Supplies:Tools", "Decor", "groceries"]
+        },
+        {
+          "who": "Glen Stevick 1310 6th St Berkeley",
+          "n": 3,
+          "approved_top": ["Walnut 1722:Supplies", "Walnut 1722:Repairs"]
+        },
+        {
+          "who": "Elizabeth 1636 Walnut",
+          "n": 1,
+          "approved_top": ["PSNL:Pets:Pet Food"]
+        },
+        {
+          "who": "John MLK (VSV)",
+          "n": 1,
+          "approved_top": ["VSV:Supplies"]
+        }
+      ],
+      "category_mismatches_summary": [
+        "Before: Glen@FL → PSNL groceries (count 7) beat CC root (count 15) for tools/cords/paint",
+        "Before: Berkeley 1310 → keyword CC (illegal geographically)",
+        "Before: Cat food at Walnut → Walnut 1722:Supplies",
+        "Before: memos ending in 'with'; dimensions as (18x)",
+        "After remaining: CC subcategory Tools/Cleaning/Decor/Repairs still often CC:Supplies (root OK)"
+      ],
+      "hand_changes_applied": [
+        {
+          "pin": "cat food → PSNL:Pets:Pet Food",
+          "where": "amazon_cc/rules.py HAND_ITEM_CATEGORY"
+        },
+        {
+          "pin": "1310 6TH ST → Walnut 1722:Supplies",
+          "where": "amazon_cc/rules.py HAND_SHIP_TO_NAME"
+        },
+        {
+          "change": "Berkeley addresses cannot guess CC; Florida heuristic unchanged",
+          "where": "guess_from_order region filter"
+        },
+        {
+          "change": "Ship-to frequency: majority root wins over minority full category",
+          "where": "pick_ship_to_category"
+        },
+        {
+          "change": "Keyword refine under same root + strong PSNL overlay (groceries)",
+          "where": "refine_category_with_keywords"
+        },
+        {
+          "change": "Memo soft-casing; strip trailing with/and/for; dimensions ≠ qty",
+          "where": "format_memo_casing / strip_trailing_memo_glue / qty_hint_from_title"
+        }
+      ],
+      "not_applied": [
+        "No per-item CC:Tools / Cleaning / Repairs hard pins from August alone",
+        "No memo dictionary of every human short name (Floor lamp style)"
+      ]
+    }
+  ]
+}

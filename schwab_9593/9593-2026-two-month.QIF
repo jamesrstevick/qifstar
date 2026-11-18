@@ -1,0 +1,181 @@
+!Type:Bank 
+D7/ 2'26
+U15,205.07
+T15,205.07
+CX
+NDEP
+PBerkeley Eng
+MGRS Salary
+LGRS Salary, BEAR
+^
+D7/16'26
+U15,357.83
+T15,357.83
+CX
+NDEP
+PBerkeley Eng
+MGRS Salary
+LGRS Salary, BEAR
+^
+D7/16'26
+U0.55
+T0.55
+CX
+NINT
+PBank Int
+MInterest
+LInterest:Schwab One
+^
+D7/31'26
+U6,575.48
+T6,575.48
+CX
+NDEP
+PSchwab SNAXX
+MDividend
+LDividends:SNAXX
+^
+D7/31'26
+U-94,339.33
+T-94,339.33
+CX
+NChange
+PChange In Value
+MChange in Investments
+LInvestments
+^
+D7/31'26
+U-25,000.00
+T-25,000.00
+CX
+NTXFR
+PFrom 9593 Schwab One
+MLow balance transfer
+L[Chking Schwab ...045]
+^
+D8/ 3'26
+U66.50
+T66.50
+CX
+NDIV
+PCVS Stock Dividend
+MDividend
+LDividends:CVS
+^
+D8/ 4'26
+U15,357.83
+T15,357.83
+CX
+NDEP
+PBerkeley Eng
+MGRS Salary
+LGRS Salary, BEAR
+^
+D8/10'26
+U-20,000.00
+T-20,000.00
+CX
+NTXFR
+PTransfer To Auto Trader
+MTransfer into Jame Autotrader 7709
+L[Auto Trader  XXXXX709]
+^
+D8/10'26
+U-300,000.00
+T-300,000.00
+CX
+NTXFR
+PJohn Stevick
+MInitial Loan (5%)
+L[John Misc Loan]
+^
+D8/11'26
+U1.56
+T1.56
+CX
+NINT
+PBank Int
+MInterest
+LInterest:Schwab One
+^
+D8/11'26
+U13.85
+T13.85
+CX
+NDIV
+PNokia Dividend
+MDividend
+LDividends:NOK
+^
+D8/11'26
+U-2.77
+T-2.77
+CX
+NDIV
+PNokia Foreign Tax
+MForeign tax dividend
+LDividends:NOK
+^
+D8/11'26
+U-1.28
+T-1.28
+CX
+NDIV
+PNokia ADR Pass Thru Fee
+MADR pass Thru Fee
+LDividends:NOK
+^
+D8/18'26
+U15,147.78
+T15,147.78
+CX
+NDEP
+PBerkeley Eng
+MGRS Salary
+LGRS Salary, BEAR
+^
+D8/25'26
+U579.19
+T579.19
+CX
+NDIV
+PNovo Nordisk Dividend
+MDividend
+LDividends:NOVO
+^
+D8/25'26
+U-156.38
+T-156.38
+CX
+NDIV
+PNovo Nordisk Foreign Tax
+MForeign tax dividend
+LDividends:NOVO
+^
+D8/25'26
+U-15.00
+T-15.00
+CX
+NDIV
+PNovo Nordisk ADR Pass Thru Fee
+MADR pass Thru Fee
+LDividends:NOVO
+^
+D8/30'26
+U8,288.92
+T8,288.92
+CX
+NChange
+PChange In Value
+MChange in Investments
+LInvestments
+^
+D8/31'26
+U4,978.36
+T4,978.36
+CX
+NDIV
+PSchwab SNAXX
+MDividend
+LDividends:SNAXX
+^

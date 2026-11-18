@@ -1,0 +1,72 @@
+{
+  "ADBE": {
+    "category": "Dividends:ADBE",
+    "dividend_payee": "ADBE Dividend",
+    "foreign_tax_payee": "ADBE Foreign Tax",
+    "adr_fee_payee": "ADBE ADR Pass Thru Fee"
+  },
+  "AMZN": {
+    "category": "Dividends:AMZN",
+    "dividend_payee": "AMZN Dividend",
+    "foreign_tax_payee": "AMZN Foreign Tax",
+    "adr_fee_payee": "AMZN ADR Pass Thru Fee"
+  },
+  "CPER": {
+    "category": "Dividends:CPER",
+    "dividend_payee": "CPER Dividend",
+    "foreign_tax_payee": "CPER Foreign Tax",
+    "adr_fee_payee": "CPER ADR Pass Thru Fee"
+  },
+  "CVS": {
+    "category": "Dividends:CVS",
+    "dividend_payee": "CVS Stock Dividend"
+  },
+  "F": {
+    "category": "Dividends:Ford Motor",
+    "dividend_payee": "Ford Motor Company"
+  },
+  "GOOG": {
+    "category": "Dividends:GOOG",
+    "dividend_payee": "GOOG Dividend",
+    "foreign_tax_payee": "GOOG Foreign Tax",
+    "adr_fee_payee": "GOOG ADR Pass Thru Fee"
+  },
+  "HD": {
+    "category": "Dividends:Home Depot",
+    "dividend_payee": "Home Depot"
+  },
+  "INTC": {
+    "category": "Dividends:INTC",
+    "dividend_payee": "INTC Dividend",
+    "foreign_tax_payee": "INTC Foreign Tax",
+    "adr_fee_payee": "INTC ADR Pass Thru Fee"
+  },
+  "JPAN": {
+    "category": "Dividends:JPAN",
+    "dividend_payee": "JPAN Dividend",
+    "foreign_tax_payee": "JPAN Foreign Tax",
+    "adr_fee_payee": "JPAN ADR Pass Thru Fee"
+  },
+  "NOK": {
+    "category": "Dividends:NOK",
+    "dividend_payee": "Nokia Dividend",
+    "foreign_tax_payee": "Nokia Foreign Tax",
+    "adr_fee_payee": "Nokia ADR Pass Thru Fee"
+  },
+  "NVO": {
+    "category": "Dividends:NOVO",
+    "dividend_payee": "Novo Nordisk Dividend",
+    "foreign_tax_payee": "Novo Nordisk Foreign Tax",
+    "adr_fee_payee": "Novo Nordisk ADR Pass Thru Fee"
+  },
+  "PLAB": {
+    "category": "Dividends:PLAB",
+    "dividend_payee": "PLAB Dividend",
+    "foreign_tax_payee": "PLAB Foreign Tax",
+    "adr_fee_payee": "PLAB ADR Pass Thru Fee"
+  },
+  "SNAXX": {
+    "category": "Dividends:SNAXX",
+    "dividend_payee": "Schwab SNAXX"
+  }
+}
