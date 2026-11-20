@@ -9,7 +9,7 @@ import os
 import re
 from datetime import datetime
 
-from amazon_cc.qif_io import is_card_payment_qif_fields
+from amazon_cc.qif_io import is_positive_ccard_qif_fields
 from amazon_cc.statements import (
     legacy_statement_ids_from_path,
     statement_id_from_path,
@@ -299,8 +299,9 @@ def save_progress(progress, path):
 
 
 def first_unreviewed_index(progress):
+    """First charge that still needs Approve. Skips do not count as done."""
     for i, row in enumerate(progress.get("charges") or []):
-        if not row.get("reviewed") and not row.get("skipped"):
+        if not row.get("reviewed"):
             return i
     return len(progress.get("charges") or [])
 
@@ -352,6 +353,8 @@ def mark_reviewed(progress, index, qif_fields, suggested=None):
     # Partial-match bookkeeping so later charges can claim the remainder.
     if qif_fields.get("match_level"):
         qif["match_level"] = qif_fields.get("match_level") or ""
+    if qif_fields.get("match_kind"):
+        qif["match_kind"] = qif_fields.get("match_kind") or ""
     if qif_fields.get("matched_tracking"):
         qif["matched_tracking"] = qif_fields.get("matched_tracking") or ""
     if qif_fields.get("matched_total") is not None and qif_fields.get("matched_total") != "":
@@ -424,8 +427,8 @@ def qif_transactions_from_progress(progress):
         except ValueError:
             dt = datetime.strptime(q.get("date_iso") or row["date"], "%Y-%m-%d")
         amt = abs(float(q["amount"]))
-        # Purchases are negative on CCard; payment credits are positive.
-        signed = amt if is_card_payment_qif_fields(q) else -amt
+        # Purchases are negative on CCard; payments and refunds are positive.
+        signed = amt if is_positive_ccard_qif_fields(q) else -amt
         txns.append(
             {
                 "date": dt,

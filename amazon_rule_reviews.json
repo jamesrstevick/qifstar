@@ -5,7 +5,11 @@
     "Do not overfit: skip one-off category overrides at shared property addresses.",
     "Hand pins live in amazon_cc/rules.py HAND_SHIP_TO_NAME and HAND_ITEM_CATEGORY (survive amazon_train.py).",
     "Geography: CC is Florida-only; Berkeley ships are VSV / CH / Walnut / PSNL — never CC.",
-    "Ship-to uses frequency: minority full-category loses to majority root (e.g. Glen@FL groceries n=7 vs CC root n=15)."
+    "Ship-to uses frequency: minority full-category loses to majority root (e.g. Glen@FL groceries n=7 vs CC root n=15).",
+    "PSNL keyword overlay is food and pets only. Movies, clothing, and other PSNL categories do not override a property ship-to.",
+    "Size/glue words (medium, large, small, extra, plus, essential, each) do not vote during keyword refine.",
+    "Titles containing plant food or fertilizer refine to {ship-to root}:Gardening.",
+    "Clear tool titles (pliers, screwdriver, wrench, drill bit(s), socket set, impact socket, hand sewing) refine to {ship-to root}:Supplies:Tools."
   ],
   "deferred": [
     {
@@ -35,7 +39,13 @@
       "id": "cc_subcategory_refine",
       "first_seen": "2026_Aug15",
       "status": "watch",
-      "reason": "August often uses CC:Supplies:Tools / :Cleaning / :Decor / CC:Repairs while rules land on CC:Supplies. Root is correct; subcategory still needs stronger keyword evidence or human review."
+      "reason": "Tools title phrases now pin :Supplies:Tools (Aug+Oct). Still watching Cleaning / Decor / Repairs / Gardening-hose / Office / Furniture — October added CC:Supplies:Office (envelopes) and CC:Supplies:Furniture (medicine cabinet); leave for human review."
+    },
+    {
+      "id": "walnut_management_vs_supplies",
+      "first_seen": "2026_Sept15",
+      "status": "watch",
+      "reason": "One split order: ScanSnap scanner → Walnut 1722:Management Fees, e-bike battery charger → Walnut 1722:Management Fees:Resident Amenities. Ship-to stays Walnut 1722:Supplies."
     }
   ],
   "months": [
@@ -188,6 +198,152 @@
       "not_applied": [
         "No per-item CC:Tools / Cleaning / Repairs hard pins from August alone",
         "No memo dictionary of every human short name (Floor lamp style)"
+      ]
+    },
+    {
+      "statement_id": "2026_Sept15",
+      "progress": "amazon/review_progress/Chase_Prime_5144_2026_Sept15.json",
+      "qif": "JRSS Reconciliation/QIF files/amazon_5144_2026_Sept15.QIF",
+      "analyzed_at": "2026-11-20",
+      "charges": 16,
+      "payments": 1,
+      "unmatched": 0,
+      "scorecard_before_fixes": {
+        "payee_exact": "16/16",
+        "category_exact": "10/16 (62%)",
+        "category_root": "13/16 (81%)",
+        "memo_exact": "7/16 (44%)",
+        "note": "Stored suggestion at review. Re-guess with then-current rules matched those rates."
+      },
+      "scorecard_after_fixes": {
+        "payee_exact": "16/16",
+        "category_exact": "13/16 (81%)",
+        "category_root": "16/16 (100%)",
+        "memo_exact": "7/16 (44%)",
+        "note": "Memo misses are shortened human names (HP original ink, soap and toiletries), not a new casing bug."
+      },
+      "ship_tos": [
+        {
+          "who": "John Stevick Ocean Blvd FL",
+          "n": 4,
+          "approved_top": ["CC:Supplies (3)", "CC:Gardening (1, RV/marine hose)"]
+        },
+        {
+          "who": "Elizabeth Scherer 100 Ocean Ave Kennebunkport ME",
+          "n": 4,
+          "approved_top": ["MH:Supplies (3)", "MH:Gardening (1, plant food + bird food)"]
+        },
+        {
+          "who": "Elizabeth Scherer 1636 Walnut",
+          "n": 3,
+          "approved_top": ["Walnut 1722:Supplies", "Management Fees (scanner)", "Resident Amenities (bike charger)"]
+        },
+        {
+          "who": "John Stevick MLK (VSV)",
+          "n": 3,
+          "approved_top": ["VSV:Supplies"]
+        },
+        {
+          "who": "Digital (no ship-to)",
+          "n": 2,
+          "approved_top": ["PSNL:Entertainment:Music", "PSNL:Entertainment:Movies"]
+        }
+      ],
+      "category_mismatches_summary": [
+        "Before: Kennebunkport ship-to was already MH:Supplies, then keyword refine overrode it — Osmocote 'plus' → Movies, brush-size 'medium' → Groceries, polo 'shirts' → Glen clothing",
+        "Before: same 'plus' → Movies bug on July Osmocote (approved Walnut 1722:Gardening)",
+        "Before: plant food stayed Supplies instead of Gardening (July and September)",
+        "After remaining: ScanSnap → Management Fees and bike charger → Resident Amenities (one split order); RV hose → CC:Gardening (one item)"
+      ],
+      "hand_changes_applied": [
+        {
+          "change": "PSNL keyword overlay limited to food and pets",
+          "where": "refine_category_with_keywords"
+        },
+        {
+          "change": "Refine stopwords: medium, large, small, extra, plus, essential, each",
+          "where": "refine_keyword_votes"
+        },
+        {
+          "change": "plant food / fertilizer → {ship-to root}:Gardening",
+          "where": "gardening_category_from_items"
+        }
+      ],
+      "not_applied": [
+        "No hose → CC:Gardening pin",
+        "No scanner → Management Fees or charger → Resident Amenities pins",
+        "No memo dictionary for shortened human names",
+        "Payee left as Amazon on the music charge (approved matched the suggestion; do not force Amazon Music)"
+      ]
+    },
+    {
+      "statement_id": "2026_Oct15",
+      "progress": "amazon/review_progress/Chase_Prime_5144_2026_Oct15.json",
+      "qif": "JRSS Reconciliation/QIF files/amazon_5144_2026_Oct15_reconcile.QIF",
+      "analyzed_at": "2026-11-20",
+      "charges": 13,
+      "payments": 1,
+      "unmatched": 0,
+      "scorecard_before_fixes": {
+        "payee_exact": "13/13",
+        "category_exact": "10/13 (77%)",
+        "category_root": "13/13 (100%)",
+        "memo_exact": "9/13 (69%)",
+        "note": "Stored suggestion at review; root already perfect after Sept training."
+      },
+      "scorecard_after_fixes": {
+        "payee_exact": "13/13",
+        "category_exact": "11/13 (85%)",
+        "category_root": "13/13 (100%)",
+        "memo_exact": "10/13 (77%)",
+        "note": "Tools phrase + doormat memo. Remaining: Office envelopes, Furniture cabinet."
+      },
+      "ship_tos": [
+        {
+          "who": "John Stevick MLK (VSV)",
+          "n": 5,
+          "approved_top": ["VSV:Supplies (5)"]
+        },
+        {
+          "who": "John Stevick Ocean Blvd FL",
+          "n": 5,
+          "approved_top": ["CC:Supplies (3)", "CC:Supplies:Office (1)", "CC:Supplies:Furniture (1)"]
+        },
+        {
+          "who": "Elizabeth Scherer 100 Ocean Ave Kennebunkport ME",
+          "n": 1,
+          "approved_top": ["MH:Supplies:Tools (pliers / wrench / screwdriver)"]
+        },
+        {
+          "who": "Elizabeth Scherer 1636 Walnut",
+          "n": 1,
+          "approved_top": ["Walnut 1722:Supplies (doormat)"]
+        },
+        {
+          "who": "Digital (no ship-to)",
+          "n": 1,
+          "approved_top": ["PSNL:Entertainment:Music"]
+        }
+      ],
+      "category_mismatches_summary": [
+        "Before: MH tools order stayed MH:Supplies (pliers/wrench/screwdriver in titles)",
+        "Before: Aug CC tools (DEWALT drill bits, impact socket, hand sewing) also stayed CC:Supplies — same gap across months",
+        "After remaining: envelopes/postage → CC:Supplies:Office; medicine cabinet → CC:Supplies:Furniture"
+      ],
+      "hand_changes_applied": [
+        {
+          "change": "Tool title phrases → {ship-to root}:Supplies:Tools",
+          "where": "tools_category_from_items"
+        },
+        {
+          "change": "doormat / door mat → memo Doormat",
+          "where": "MEMO_PRODUCT_PHRASES"
+        }
+      ],
+      "not_applied": [
+        "No envelopes/postage → Office pin (first sighting)",
+        "No cabinet/medicine cabinet → Furniture pin (keyword votes too weak vs CC:Supplies)",
+        "No Cleaning / Decor / Repairs pins beyond existing Aug watch"
       ]
     }
   ]

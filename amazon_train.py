@@ -15,7 +15,16 @@ from amazon_cc.rules import DEFAULT_RULES_PATH, save_rules, train_rules
 
 
 DEFAULT_QIF = "amazon/5144_2025_2026.QIF"
-DEFAULT_ORDERS = "amazon/Your Orders/Your Amazon Orders/Order History.csv"
+def _default_orders():
+    try:
+        from amazon_cc.amazon_data import order_history_path
+
+        return order_history_path()
+    except Exception:
+        return "amazon/Your Orders/Your Amazon Orders/Order History.csv"
+
+
+DEFAULT_ORDERS = _default_orders()
 
 
 def main(argv=None):

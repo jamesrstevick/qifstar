@@ -17,7 +17,9 @@ import streamlit as st
 from amazon_cc.matching import (
     find_near_miss_orders,
     find_orders_for_charge,
+    find_refunds_for_credit,
     load_order_index,
+    load_refund_index,
     order_claims_from_progress,
 )
 from amazon_cc.progress import (
@@ -42,15 +44,27 @@ from amazon_cc.qif_io import (
     card_payment_template_from_qif,
     format_qif_date,
     is_statement_card_payment,
+    is_statement_refund_credit,
     load_known_categories,
     nearest_category,
     write_ccard_qif,
 )
 from amazon_cc.rules import (
+    DEFAULT_MEMO_MAX_LEN,
     DEFAULT_RULES_PATH,
+    clamp_memo,
     guess_from_order,
     guess_without_order,
     load_rules,
+)
+from amazon_cc.amazon_data import order_history_path
+from amazon_cc.dashboard import (
+    amazon_data_through,
+    build_dashboard_tasks,
+    build_statement_inventory,
+    build_status_summary,
+    next_actionable_statement,
+    run_sync_audit,
 )
 from amazon_cc.statements import (
     QIF_DIR,
@@ -59,7 +73,8 @@ from amazon_cc.statements import (
     list_statement_pdfs,
     load_charges,
     match_statement_name,
-    next_unreconciled_statement,
+    next_incomplete_statement,
+    normalize_downloaded_statements,
     qif_basename_for_statement,
     qif_path_for_statement,
     reconciled_tag,
@@ -67,12 +82,14 @@ from amazon_cc.statements import (
     rename_statement_tag,
     resolve_qif_dir,
     resolve_statements_dir,
+    statement_display_label,
     statement_id_from_path,
     statement_stage,
 )
 
-ORDER_HISTORY = "amazon/Your Orders/Your Amazon Orders/Order History.csv"
 TRAINING_QIF = "amazon/5144_2025_2026.QIF"
+# Full Quicken category list export (shared JRSS QIF folder)
+CATEGORIES_QIF = os.path.join(QIF_DIR, "Categories.QIF")
 
 
 def _init_state():
@@ -82,6 +99,7 @@ def _init_state():
         "progress": None,
         "progress_path": None,
         "orders_cache": None,
+        "refunds_cache": None,
         "rules": None,
         "categories": None,
         "loaded_path": None,
@@ -103,8 +121,16 @@ def _ensure_orders():
             st.session_state.orders_cache = None
     if st.session_state.orders_cache is None:
         with st.spinner("Loading Order History..."):
-            st.session_state.orders_cache = load_order_index(ORDER_HISTORY)
+            st.session_state.orders_cache = load_order_index(order_history_path())
+            st.session_state.refunds_cache = None
     return st.session_state.orders_cache
+
+
+def _ensure_refunds():
+    if st.session_state.refunds_cache is None:
+        with st.spinner("Loading Amazon refunds..."):
+            st.session_state.refunds_cache = load_refund_index(_ensure_orders())
+    return st.session_state.refunds_cache
 
 
 def _ensure_rules():
@@ -115,10 +141,30 @@ def _ensure_rules():
 
 def _ensure_categories(include_transfers=False):
     cache_key = "categories_xfer" if include_transfers else "categories"
+    # Bust cache when Categories.QIF is replaced
+    cat_mtime = None
+    if os.path.isfile(CATEGORIES_QIF):
+        try:
+            cat_mtime = os.path.getmtime(CATEGORIES_QIF)
+        except OSError:
+            cat_mtime = None
+    if st.session_state.get("_categories_mtime") != cat_mtime:
+        st.session_state["_categories_mtime"] = cat_mtime
+        st.session_state["categories"] = None
+        st.session_state["categories_xfer"] = None
     if st.session_state.get(cache_key) is None:
+        # Prefer full Quicken Categories.QIF export; fall back to training QIF.
+        cat_source = CATEGORIES_QIF if os.path.isfile(CATEGORIES_QIF) else TRAINING_QIF
         cats = load_known_categories(
-            TRAINING_QIF, include_transfers=include_transfers
+            cat_source, include_transfers=include_transfers
         )
+        # Keep any training-QIF categories missing from the export
+        if cat_source != TRAINING_QIF and os.path.isfile(TRAINING_QIF):
+            for c in load_known_categories(
+                TRAINING_QIF, include_transfers=include_transfers
+            ):
+                if c not in cats:
+                    cats = sorted(set(cats) | {c}, key=lambda s: s.lower())
         # Keep common defaults from rules even if rare in QIF
         for rule in (_ensure_rules().get("payee_defaults") or []):
             if rule.get("category"):
@@ -145,11 +191,34 @@ def _guess_for_charge(charge, selected_order, rules):
         guess_order = dict(selected_order)
         if selected_order.get("match_items"):
             guess_order["items"] = selected_order["match_items"]
-        return guess_from_order(
+        guess = guess_from_order(
             guess_order,
             statement_payee=charge.get("payee") or "",
             rules=rules,
         )
+        # Tag gift-card residual matches in memo + reason so review/QIF show it.
+        if (
+            selected_order.get("match_kind") == "gift_card_partial"
+            or selected_order.get("match_level") == "gift_card"
+        ):
+            max_len = (rules or {}).get("memo_max_len", DEFAULT_MEMO_MAX_LEN)
+            memo = (guess.get("memo") or "").strip()
+            tag = "(gift card)"
+            if tag not in memo.lower():
+                # Reserve room so clamp does not drop the gift-card tag.
+                room = max(0, int(max_len) - len(tag) - 1)
+                base = clamp_memo(memo, room) if memo else ""
+                memo = "{} {}".format(base, tag).strip() if base else tag
+                memo = clamp_memo(memo, max_len)
+            guess = dict(guess)
+            guess["memo"] = memo
+            reason = guess.get("reason") or ""
+            if "gift_card" not in reason:
+                guess["reason"] = (
+                    "{}+gift_card_partial".format(reason) if reason else "gift_card_partial"
+                )
+        # Digital refunds in training keep the product memo (no "refund" suffix).
+        return guess
     if is_statement_card_payment(charge.get("payee") or ""):
         return card_payment_template_from_qif(TRAINING_QIF)
     return guess_without_order(
@@ -333,6 +402,13 @@ def _order_claims(except_index=None):
 def _matches_for(charge):
     if is_statement_card_payment(charge.get("payee") or ""):
         return []
+    if is_statement_refund_credit(charge):
+        return find_refunds_for_credit(
+            _ensure_refunds(),
+            amount=charge["amount"],
+            date=charge.get("date"),
+            window_days=7,
+        )
     orders = _ensure_orders()
     return find_orders_for_charge(
         orders,
@@ -347,6 +423,14 @@ def _matches_for(charge):
 def _near_misses_for(charge):
     if is_statement_card_payment(charge.get("payee") or ""):
         return []
+    if is_statement_refund_credit(charge):
+        # Wider window for delayed refund posts vs Return Date
+        return find_refunds_for_credit(
+            _ensure_refunds(),
+            amount=charge["amount"],
+            date=charge.get("date"),
+            window_days=30,
+        )
     orders = _ensure_orders()
     return find_near_miss_orders(
         orders,
@@ -387,8 +471,8 @@ def _non_closed_statuses(statuses):
 
 def _format_order_block(order, charge_amount=None):
     """
-    Detail under the matched-order radio: one line for link|date|amount,
-    then address, then warnings, then items.
+    Detail under the matched-order radio:
+    Description (link|date|amount, address, warnings), then Items.
     """
     lines = []
     d = order.get("order_date")
@@ -398,8 +482,14 @@ def _format_order_block(order, charge_amount=None):
 
     csv_amt = float(order.get("matched_total") or order.get("total") or 0)
     level = order.get("match_level") or "order"
-    amt_show = csv_amt if level != "order" else float(order.get("total") or 0)
+    # Full-order views (including gift-card residual) show Order History total.
+    amt_show = (
+        float(order.get("total") or 0)
+        if level in ("order", "gift_card")
+        else csv_amt
+    )
 
+    lines.append("Description:")
     if url:
         head = "[{}]({})".format(oid, url)
     else:
@@ -424,15 +514,6 @@ def _format_order_block(order, charge_amount=None):
             "- ⚠️ **Warning — status not Closed:** {}".format(", ".join(odd))
         )
 
-    basis = order.get("date_basis") or ""
-    delta = order.get("date_delta_days")
-    if basis == "ship" and delta is not None:
-        lines.append(
-            "- Matched on **ship date** ({} day{} from charge; order date can be earlier)".format(
-                delta, "" if delta == 1 else "s"
-            )
-        )
-
     rewards = int(order.get("rewards_dollars") or 0)
     if order.get("match_kind") == "rewards" and rewards > 0:
         lines.append(
@@ -440,6 +521,28 @@ def _format_order_block(order, charge_amount=None):
                 _money_text(rewards),
                 _money_text(csv_amt),
                 _money_text(charge_amount if charge_amount is not None else 0),
+            )
+        )
+
+    if order.get("match_kind") == "gift_card_partial" or level == "gift_card":
+        order_total = float(order.get("total") or 0)
+        card_amt = (
+            float(charge_amount)
+            if charge_amount is not None
+            else float(order.get("matched_total") or 0)
+        )
+        gift_amt = order.get("gift_card_inferred")
+        if gift_amt is None and order_total > card_amt:
+            gift_amt = round(order_total - card_amt, 2)
+        pay = ", ".join(order.get("payments") or []) or "Gift Certificate/Card"
+        lines.append(
+            "- ⚠️ **Gift card + card** — Order History total {} vs card charge "
+            "{} (inferred gift ~{}). Payment: {}. "
+            "Open the order link above to confirm the gift-card split on Amazon.".format(
+                _money_text(order_total),
+                _money_text(card_amt),
+                _money_text(gift_amt if gift_amt is not None else 0),
+                pay,
             )
         )
 
@@ -475,12 +578,10 @@ def _format_order_block(order, charge_amount=None):
     }
 
     lines.append("")
+    lines.append("Items:")
     if level in ("shipment", "line", "remainder") and match_items and (
         level == "remainder" or len(match_items) < len(all_items)
     ):
-        lines.append(
-            "Remaining items:" if level == "remainder" else "Matched items:"
-        )
         for item in match_items:
             name = item.get("name") or ""
             lines.append(
@@ -501,7 +602,6 @@ def _format_order_block(order, charge_amount=None):
                 )
             )
     else:
-        lines.append("Items:")
         for item in all_items:
             name = item.get("name") or ""
             lines.append(
@@ -578,45 +678,340 @@ def _inject_theme_css():
             padding: 0.75rem 1rem 1rem 1rem;
             min-height: 28rem;
         }
+        .task-row {
+            padding: 0.35rem 0;
+            border-bottom: 1px solid #2a3340;
+        }
+        /* Radio label sits flush above the order detail line */
+        div[data-testid="stVerticalBlock"] > div:has([data-testid="stRadio"]) {
+            margin-bottom: 0 !important;
+        }
+        div[data-testid="stVerticalBlock"] > div:has([data-testid="stRadio"]) + div {
+            margin-top: -1rem !important;
+        }
         </style>
         """,
         unsafe_allow_html=True,
     )
 
 
+def _fmt_dash_date(dt):
+    if not dt:
+        return "—"
+    return "{}/{}/{}".format(dt.month, dt.day, dt.strftime("%y"))
+
+
+@st.cache_data(ttl=120, show_spinner=False)
+def _cached_amazon_through():
+    return amazon_data_through()
+
+
+@st.cache_data(ttl=60, show_spinner="Scanning statements…")
+def _cached_inventory(statements_dir, _mtime_key):
+    # _mtime_key busts cache when folder contents change
+    return build_statement_inventory(statements_dir)
+
+
+def _folder_mtime_key(statements_dir):
+    try:
+        names = sorted(os.listdir(statements_dir))
+    except OSError:
+        return "missing"
+    return "{}|{}".format(len(names), "|".join(names))
+
+
+def _render_sync_report(report):
+    """Show last Sync audit results."""
+    if not report:
+        return
+    counts = report.get("counts") or {}
+    with st.expander(
+        "Sync audit — {} err · {} warn · {} resolved".format(
+            counts.get("errors") or 0,
+            counts.get("warnings") or 0,
+            counts.get("resolved") or 0,
+        ),
+        expanded=bool(counts.get("errors") or counts.get("resolved")),
+    ):
+        st.caption(
+            "Checked {} · review {} · approved {} · done {} · QIFs {}".format(
+                report.get("checked_at") or "?",
+                counts.get("unreconciled") or 0,
+                counts.get("approved") or 0,
+                counts.get("reconciled") or 0,
+                counts.get("amazon_5144_qifs") or 0,
+            )
+        )
+        for line in report.get("resolved") or []:
+            st.success(line)
+        for line in report.get("errors") or []:
+            st.error(line)
+        for line in report.get("warnings") or []:
+            st.warning(line)
+        ok_lines = report.get("ok") or []
+        if ok_lines:
+            with st.expander("Passed checks ({})".format(len(ok_lines))):
+                for line in ok_lines:
+                    st.caption("✓ {}".format(line))
+
+
+def _run_sync_and_refresh(statements_dir, prior_tasks):
+    """Clear caches, run name/count audit, stash report, rerun."""
+    report = run_sync_audit(
+        statements_dir=statements_dir,
+        prior_tasks=prior_tasks,
+    )
+    st.session_state["sync_report"] = report
+    _cached_inventory.clear()
+    _cached_amazon_through.clear()
+    # Force Order History + category reload after Amazon Data / Categories swap
+    st.session_state.orders_cache = None
+    st.session_state.refunds_cache = None
+    st.session_state["_categories_mtime"] = None
+    st.session_state["categories"] = None
+    st.session_state["categories_xfer"] = None
+    return report
+
+
+def _render_dashboard(statements_dir, inventory, tasks, status):
+    """Status metrics, next-up tasks, and statement progress table."""
+    head_l, head_r = st.columns((4, 1), gap="small")
+    with head_l:
+        st.subheader("Dashboard")
+    with head_r:
+        if st.button(
+            ":material/sync: Sync",
+            help=(
+                "Re-check folders for new Amazon/statement files, rename Chase "
+                "downloads, and audit stage tags vs QIF names (no txn parse)."
+            ),
+            width="stretch",
+        ):
+            with st.spinner("Syncing…"):
+                _run_sync_and_refresh(statements_dir, prior_tasks=tasks)
+            st.rerun()
+
+    _render_sync_report(st.session_state.get("sync_report"))
+
+    with st.container(horizontal=True):
+        st.metric(
+            "Reconciled through",
+            _fmt_dash_date(status.get("reconciled_through")),
+            border=True,
+            help="Latest statement tagged [REC …]",
+        )
+        st.metric(
+            "Amazon data through",
+            _fmt_dash_date(status.get("amazon_through")),
+            border=True,
+            help="Max order/ship date in your Order History export",
+        )
+        st.metric(
+            "Txns left to review",
+            status.get("transactions_left_to_review") or 0,
+            border=True,
+        )
+        st.metric(
+            "Statements behind",
+            status.get("statements_behind") or 0,
+            delta="{} approved · {} in review".format(
+                status.get("approved_count") or 0,
+                status.get("unreconciled_count") or 0,
+            ),
+            delta_color="off",
+            border=True,
+        )
+
+    left, right = st.columns((1.2, 1), gap="medium")
+    with left:
+        with st.container(border=True):
+            st.markdown("**Next up**")
+            if not tasks:
+                st.success("Caught up — nothing waiting.")
+            else:
+                for i, task in enumerate(tasks[:8]):
+                    kind = task.get("kind")
+                    icon = {
+                        "download_statement": ":material/download:",
+                        "amazon_data": ":material/cloud_download:",
+                        "review": ":material/rate_review:",
+                        "export_qif": ":material/upload_file:",
+                        "mark_reconciled": ":material/done_all:",
+                        "side_task": ":material/swap_horiz:",
+                    }.get(kind, ":material/task:")
+                    st.markdown("{} **{}**".format(icon, task.get("title") or ""))
+                    if task.get("detail"):
+                        st.caption(task["detail"])
+                    if task.get("path") and kind in (
+                        "review",
+                        "export_qif",
+                        "mark_reconciled",
+                    ):
+                        if st.button(
+                            "Open {}".format(
+                                statement_display_label(
+                                    task["path"], include_stage=False
+                                )
+                            ),
+                            key="task_open_{}".format(i),
+                        ):
+                            try:
+                                _load_file(task["path"])
+                                st.session_state.auto_loaded = True
+                                st.rerun()
+                            except Exception as exc:
+                                st.error(str(exc))
+                    if i < min(len(tasks), 8) - 1:
+                        st.divider()
+                if len(tasks) > 8:
+                    st.caption("+ {} more task(s)".format(len(tasks) - 8))
+
+    with right:
+        with st.container(border=True):
+            st.markdown("**Statements**")
+            show = [
+                r
+                for r in inventory.get("statements") or []
+                if r.get("stage") != "reconciled"
+                or (
+                    status.get("reconciled_through")
+                    and r.get("period")
+                    and r["period"] >= status["reconciled_through"]
+                )
+            ]
+            # Always show incomplete + last few reconciled for context
+            incomplete = [
+                r
+                for r in inventory.get("statements") or []
+                if r.get("stage") in ("unreconciled", "approved")
+            ]
+            recent_rec = [
+                r
+                for r in inventory.get("reconciled") or []
+            ][-3:]
+            show = recent_rec + incomplete
+            if not show:
+                st.caption("No statements found.")
+            else:
+                for row in show:
+                    stage = row.get("stage")
+                    color = {
+                        "reconciled": "green",
+                        "approved": "orange",
+                        "unreconciled": "blue",
+                    }.get(stage, "gray")
+                    badge = {
+                        "reconciled": "done",
+                        "approved": "approved",
+                        "unreconciled": "review",
+                    }.get(stage, stage)
+                    period = row.get("period")
+                    title = (
+                        period.strftime("%b %Y")
+                        if period
+                        else statement_display_label(
+                            row["path"], include_stage=False
+                        )
+                    )
+                    st.markdown(
+                        "**{}** :{}-badge[{}] · {} txns".format(
+                            title, color, badge, row.get("total") or 0
+                        )
+                    )
+                    if stage == "unreconciled":
+                        total = max(int(row.get("total") or 0), 1)
+                        done = int(row.get("reviewed") or 0)
+                        st.progress(
+                            float(done) / float(total),
+                            text="{}/{} approved".format(done, row.get("total") or 0),
+                        )
+                    elif stage == "approved":
+                        st.caption("QIF exported — reconcile in Quicken")
+                    elif row.get("error"):
+                        st.caption("Parse error: {}".format(row["error"]))
+
+            hidden = inventory.get("hidden_downloads") or []
+            if hidden:
+                with st.expander("Duplicate Chase downloads (hidden)"):
+                    for path in hidden:
+                        st.caption(os.path.basename(path))
+                    st.caption(
+                        "Same month already has an archived filename — safe to delete "
+                        "the YYYYMMDD-statements-5144 download copies."
+                    )
+
+
 def main():
     st.set_page_config(page_title="Amazon CC Reviewer", layout="wide")
     _inject_theme_css()
     _init_state()
-    st.title("Amazon CC reviewer")
+    st.title("Amazon CC reconciliation")
     st.caption(
-        "Stage 1: review unreconciled Chase statements → Stage 2: export QIF "
-        "([APPROVED]) → Stage 3: after Quicken reconcile, mark [REC JRS date]."
+        "Stage 1 review → Stage 2 export QIF ([APPROVED]) → Stage 3 Quicken "
+        "reconcile ([REC …] + `*_reconcile.QIF`)."
     )
 
     statements_dir = resolve_statements_dir()
+
+    # Rename Chase download PDFs (YYYYMMDD-statements-5144-.pdf) to archive names
+    norm = normalize_downloaded_statements(statements_dir)
+    if norm.get("renamed"):
+        _cached_inventory.clear()
+        for item in norm["renamed"]:
+            st.toast(
+                "Renamed {} → {}".format(
+                    os.path.basename(item["from"]),
+                    os.path.basename(item["to"]),
+                )
+            )
+
+    mtime_key = _folder_mtime_key(statements_dir)
+    inventory = _cached_inventory(statements_dir, mtime_key)
+    amazon_through = _cached_amazon_through()
+    status = build_status_summary(
+        inventory=inventory,
+        statements_dir=statements_dir,
+        amazon_through=amazon_through,
+    )
+    dash_tasks = build_dashboard_tasks(
+        inventory=inventory,
+        statements_dir=statements_dir,
+        amazon_through=amazon_through,
+    )
+
     pdfs = list_statement_pdfs(statements_dir)
     unreconciled = pdfs.get("unreconciled") or []
     approved = pdfs.get("approved") or []
+    incomplete = unreconciled + approved
 
-    # Auto-load earliest unreconciled statement once per session
+    # Auto-load next actionable statement once per session
     if (
         not st.session_state.auto_loaded
         and not st.session_state.loaded_path
-        and unreconciled
     ):
-        try:
-            _load_file(unreconciled[0])
+        nxt = next_actionable_statement(
+            tasks=dash_tasks,
+            inventory=inventory,
+            statements_dir=statements_dir,
+        )
+        if nxt:
+            try:
+                _load_file(nxt)
+                st.session_state.auto_loaded = True
+            except Exception as exc:
+                st.session_state.auto_loaded = True
+                st.sidebar.error("Auto-load failed: {}".format(exc))
+        else:
             st.session_state.auto_loaded = True
-        except Exception as exc:
-            st.session_state.auto_loaded = True
-            st.sidebar.error("Auto-load failed: {}".format(exc))
+
+    _render_dashboard(statements_dir, inventory, dash_tasks, status)
+    st.divider()
 
     with st.sidebar:
-        st.header("Statements")
+        st.header("Workflow")
         st.caption(statements_dir)
         st.write(
-            "Unreconciled: {} · Approved: {} · Reconciled: {}".format(
+            "Review: {} · Approved: {} · Done: {}".format(
                 len(unreconciled),
                 len(approved),
                 len(pdfs.get("reconciled") or []),
@@ -624,26 +1019,31 @@ def main():
         )
         st.session_state.last4 = st.text_input("Card last-4", st.session_state.last4)
 
-        st.subheader("1 — Review")
-        if not unreconciled:
-            st.info("No unreconciled statements (`[]`).")
+        st.subheader("Open statement")
+        if not incomplete:
+            st.info("No open statements — all caught up or waiting on downloads.")
             path_choice = None
         else:
             default_idx = 0
-            if st.session_state.loaded_path in unreconciled:
-                default_idx = unreconciled.index(st.session_state.loaded_path)
+            if st.session_state.loaded_path in incomplete:
+                default_idx = incomplete.index(st.session_state.loaded_path)
+            elif status.get("next_path") in incomplete:
+                default_idx = incomplete.index(status["next_path"])
             path_choice = st.selectbox(
-                "Unreconciled statement",
-                options=unreconciled,
+                "Not-done statements",
+                options=incomplete,
                 index=default_idx,
-                format_func=os.path.basename,
+                format_func=statement_display_label,
+                help="Any statement still in review or waiting on Quicken reconcile.",
             )
             if st.button("Load statement", type="primary"):
                 try:
                     _load_file(path_choice)
+                    st.session_state.auto_loaded = True
+                    _cached_inventory.clear()
                     st.success(
                         "Loaded {} ({} charges, {} reviewed)".format(
-                            os.path.basename(path_choice),
+                            statement_display_label(path_choice, include_stage=False),
                             len(st.session_state.charges),
                             reviewed_count(st.session_state.progress),
                         )
@@ -666,8 +1066,10 @@ def main():
                 st.success("All charges approved — ready to export.")
             else:
                 st.caption("Export unlocks when every charge is approved.")
-            if st.session_state.progress_path:
-                st.caption(st.session_state.progress_path)
+            if st.session_state.loaded_path:
+                st.caption(
+                    statement_display_label(st.session_state.loaded_path)
+                )
         else:
             st.write("Reviewed: 0")
 
@@ -684,6 +1086,7 @@ def main():
         if st.button("Export statement QIF & mark approved"):
             try:
                 out_path, n_txn = _export_statement_qif()
+                _cached_inventory.clear()
                 st.success(
                     "Wrote {} ({} txns). Statement tagged [APPROVED].".format(
                         out_path, n_txn
@@ -710,14 +1113,14 @@ def main():
                 after = json.dumps(progress.get("side_tasks") or [], sort_keys=True)
                 if before != after:
                     _persist()
-            tasks = [
+            side_tasks = [
                 t
                 for t in (progress.get("side_tasks") or [])
                 if t.get("id") == CH_TRANSFER_TASK_ID
             ]
-            if not tasks:
+            if not side_tasks:
                 st.caption("No CH reimbursement task yet (appears when CH:* is used).")
-            for task in tasks:
+            for task in side_tasks:
                 label = (
                     "Transfer ${:.2f} from 4900 → reimburse 5144/0149 ({} CH charge{})"
                 ).format(
@@ -757,7 +1160,7 @@ def main():
             st.caption("No [APPROVED] statements waiting.")
         else:
             for apath in approved:
-                label = os.path.basename(apath)
+                label = statement_display_label(apath, include_stage=False)
                 qif_hint = _resolve_exported_qif_path(
                     apath,
                     st.session_state.progress
@@ -769,14 +1172,17 @@ def main():
                     else None,
                 )
                 if qif_hint:
-                    st.caption("QIF: {}".format(qif_hint))
+                    st.caption("QIF: {}".format(os.path.basename(qif_hint)))
                 if st.button(
                     "Mark reconciled: {}".format(label),
-                    key="rec_{}".format(label),
+                    key="rec_{}".format(os.path.basename(apath)),
                 ):
                     try:
                         new_path, qif_new = _mark_statement_reconciled(apath)
-                        msg = "Statement → {}".format(os.path.basename(new_path))
+                        _cached_inventory.clear()
+                        msg = "Statement → {}".format(
+                            statement_display_label(new_path)
+                        )
                         if qif_new:
                             msg += " · QIF → {}".format(os.path.basename(qif_new))
                         st.success(msg)
@@ -793,32 +1199,51 @@ def main():
             st.session_state.loaded_path = None
             st.session_state.seed_sig = None
             st.session_state.auto_loaded = False
+            _cached_inventory.clear()
             st.rerun()
 
     charges = st.session_state.charges
     if not charges:
-        nxt = next_unreconciled_statement(statements_dir)
+        nxt = next_incomplete_statement(statements_dir)
         st.info(
-            "No statement loaded. Unreconciled PDFs live in the JRSS folder; "
-            "the next one chronologically is selected automatically when available."
+            "No statement loaded. Pick any not-done statement in the sidebar, "
+            "or wait for auto-load of the next one."
         )
         if nxt:
-            st.caption("Next up: {}".format(os.path.basename(nxt)))
+            st.caption("Next up: {}".format(statement_display_label(nxt)))
         return
 
     idx = st.session_state.index
     progress = st.session_state.progress
     n_all = len(charges)
     n_rev = reviewed_count(progress) if progress else 0
-    st.progress(float(n_rev) / max(n_all, 1))
+    n_skip = skipped_count(progress) if progress else 0
+    # Bar tracks position through the statement (Charge N/N), not approved count —
+    # sidebar bars own the reviewed/approved progress.
+    charge_pos = n_all if idx >= n_all else min(idx + 1, n_all)
+    st.progress(float(charge_pos) / max(n_all, 1))
     stage = statement_stage(st.session_state.loaded_path or "")
+    cur_row = None
+    if progress and idx < n_all:
+        rows = progress.get("charges") or []
+        if 0 <= idx < len(rows):
+            cur_row = rows[idx]
+    if cur_row and cur_row.get("reviewed"):
+        status_mark = " ✓"
+    elif cur_row and cur_row.get("skipped"):
+        status_mark = " (skipped)"
+    else:
+        status_mark = ""
     st.write(
-        "Charge **{}/{}**  |  reviewed **{}**  |  stage **{}**  |  `{}`".format(
-            min(idx + 1, n_all) if idx < n_all else n_all,
+        "Charge **{}/{}**{}  |  approved **{}**  |  {}  |  {}".format(
+            charge_pos,
             n_all,
+            status_mark,
             n_rev,
             stage,
-            os.path.basename(st.session_state.loaded_path or "?"),
+            statement_display_label(
+                st.session_state.loaded_path or "?", include_stage=False
+            ),
         )
     )
 
@@ -829,11 +1254,13 @@ def main():
                 "(stage 2).".format(n_rev)
             )
         else:
-            st.success(
-                "All charges visited. Reviewed: {}. Finish Approving any skips, "
-                "then export from the sidebar.".format(n_rev)
+            st.warning(
+                "All charges visited, but {} still need Approve "
+                "({} skipped). Export requires every charge approved.".format(
+                    n_all - n_rev, n_skip
+                )
             )
-        if st.button("Go to first unreviewed / start"):
+        if st.button("Go to first unapproved"):
             st.session_state.index = first_unreviewed_index(progress) if progress else 0
             if st.session_state.index >= n_all:
                 st.session_state.index = 0
@@ -845,25 +1272,34 @@ def main():
     prog_row = _current_progress_row()
     rules = _ensure_rules()
     is_payment = is_statement_card_payment(charge.get("payee") or "")
+    is_refund = (not is_payment) and is_statement_refund_credit(charge)
     matches = _matches_for(charge)
 
     if prog_row and prog_row.get("reviewed"):
-        st.info("Human reviewed — you can still edit and Approve again to update.")
+        st.info("✓ Approved — you can still edit and Approve again to update.")
     elif prog_row and prog_row.get("skipped"):
-        st.warning("Previously skipped — Approve to mark reviewed, or Skip again.")
+        st.warning("Skipped — Approve required before export (Skip only defers).")
 
     left, right = st.columns(2, gap="medium")
 
     with left:
         with st.container(border=True):
             st.subheader("Your Orders")
+            kind_label = "Refund" if is_refund else "Statement"
             st.write(
-                "Statement: **{}**  ${:.2f}  {}".format(
+                "{}: **{}**  ${:.2f}  {}".format(
+                    kind_label,
                     charge["date"].strftime("%m/%d/%Y") if charge["date"] else "?",
                     charge["amount"],
                     charge.get("payee") or "",
                 )
             )
+            if is_refund:
+                st.caption(
+                    "Statement credit — matched against Digital Returns / Refund "
+                    "Details. QIF export will be a **positive** CCard amount "
+                    "(same as training refunds)."
+                )
             if is_payment:
                 st.info(
                     "Credit card payment (statement payment credit) — no Amazon "
@@ -874,8 +1310,12 @@ def main():
                 selected_order = None
             elif not matches:
                 st.warning(
-                    "No Order History match (exact ±7 days, or integer-dollar "
-                    "rewards ±3 days, card)."
+                    "No {} match (exact ±7 days{}).".format(
+                        "refund" if is_refund else "Order History",
+                        ""
+                        if is_refund
+                        else ", or integer-dollar rewards ±3 days, card",
+                    )
                 )
                 near_misses = _near_misses_for(charge)
                 if near_misses:
@@ -947,7 +1387,24 @@ def main():
                     label = "{} — {} — {}".format(
                         o["order_id"], d, _money_text(csv_amt)
                     )
-                    if o.get("match_level") == "remainder":
+                    if o.get("match_level") == "refund" or o.get("match_kind") == "refund":
+                        label = "{} (refund)".format(label)
+                    elif o.get("match_kind") == "gift_card_partial" or o.get(
+                        "match_level"
+                    ) == "gift_card":
+                        gift = o.get("gift_card_inferred")
+                        order_total = float(o.get("total") or 0)
+                        if gift is not None:
+                            label = "{} (gift card; order {} / gift ~{})".format(
+                                label,
+                                _money_text(order_total),
+                                _money_text(gift),
+                            )
+                        else:
+                            label = "{} (gift card; order {})".format(
+                                label, _money_text(order_total)
+                            )
+                    elif o.get("match_level") == "remainder":
                         label = "{} (remainder)".format(label)
                     elif o.get("match_level") in ("shipment", "line"):
                         label = "{} (partial)".format(label)
@@ -959,7 +1416,7 @@ def main():
                         )
                     labels.append(label)
                 order_sel = st.radio(
-                    "Matched order(s)",
+                    "Matched refund(s)" if is_refund else "Matched order(s)",
                     options=list(range(len(matches))),
                     format_func=lambda i: labels[i],
                     key="order_sel_{}".format(idx),
@@ -986,6 +1443,23 @@ def main():
             st.caption(
                 "Guess reason: {}".format(st.session_state.get("_guess_reason", ""))
             )
+            if selected_order and (
+                selected_order.get("match_kind") == "gift_card_partial"
+                or selected_order.get("match_level") == "gift_card"
+            ):
+                oid = selected_order.get("order_id") or ""
+                url = _amazon_order_url(oid)
+                gift = selected_order.get("gift_card_inferred")
+                order_total = float(selected_order.get("total") or 0)
+                link = "[{}]({})".format(oid, url) if url else oid
+                st.warning(
+                    "Gift card used on this order — statement shows card residual "
+                    "only (order {}, inferred gift ~{}). Check {} if needed.".format(
+                        _money_text(order_total),
+                        _money_text(gift if gift is not None else 0),
+                        link,
+                    )
+                )
 
             known_cats = _ensure_categories(include_transfers=is_payment)
             date_default = (
@@ -1014,7 +1488,7 @@ def main():
                 "Category (exact Quicken path)",
                 options=known_cats,
                 key="cat_{}".format(idx),
-                help="Only categories already used in your training QIF — avoids creating new ones in Quicken.",
+                help="Categories from your Quicken Categories.QIF export — exact paths only.",
             )
             if is_ch_category(category):
                 st.warning(
@@ -1051,7 +1525,11 @@ def main():
                         qif_fields["match_level"] = "payment"
                     elif selected_order:
                         qif_fields["match_level"] = (
-                            selected_order.get("match_level") or ""
+                            selected_order.get("match_level")
+                            or ("refund" if is_refund else "")
+                        )
+                        qif_fields["match_kind"] = (
+                            selected_order.get("match_kind") or ""
                         )
                         qif_fields["matched_tracking"] = (
                             selected_order.get("matched_tracking") or ""
@@ -1060,6 +1538,9 @@ def main():
                             "matched_total"
                         )
                         qif_fields["order_total"] = selected_order.get("total")
+                    elif is_refund:
+                        # Manual refund approve still exports as a positive credit
+                        qif_fields["match_level"] = "refund"
                     mark_reviewed(
                         st.session_state.progress,
                         idx,

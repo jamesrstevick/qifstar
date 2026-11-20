@@ -11,7 +11,7 @@ Wanted: local Order History + trained guesses + a simple review UI (human confir
 ## Workflow (current)
 
 ```text
-1) Privacy Central "Your Orders"  →  amazon/Your Orders/.../Order History.csv
+1) Privacy Central "Your Orders"  →  `JRSS Reconciliation/Amazon Data/Your Orders/.../Order History.csv`
 2) Reconciled Quicken export     →  amazon/5144_2025_2026.QIF
 3) python amazon_train.py        →  amazon_rules.json  (+ match-rate report)
 4) New-month charges CSV or PDF  →  Streamlit reviewer
@@ -40,6 +40,10 @@ Latest train snapshot (will change if you re-export):
 - Sparse **hand** pins in `amazon_cc/rules.py` survive retrain: `HAND_SHIP_TO_NAME` (Eunice Kang → gifts; 1310 6th St → Walnut), `HAND_ITEM_CATEGORY` (cat food → `PSNL:Pets:Pet Food`)
 - Geography: **CC = Florida only**; Berkeley ships are VSV / CH / Walnut / PSNL — never CC
 - Ship-to uses **frequency**: majority root wins over a minority full-category (then keyword refine)
+- Keyword refine may overlay **food or pets** only. Movies, clothing, and other personal categories stay on the property ship-to
+- Refine ignores size/glue words (`medium`, `large`, `small`, `extra`, `plus`, `essential`, `each`) so they cannot outvote the ship-to
+- Titles with **plant food** or **fertilizer** refine to `{ship-to root}:Gardening`
+- Clear tool titles (pliers, screwdriver, wrench, drill bit(s), socket set, impact socket, hand sewing) refine to `{ship-to root}:Supplies:Tools`
 - Memos: soft-casing (keep `DEWALT`, lower non-proper nouns), no trailing `with`/`and`/`for`, dimensions like `18 x 30` are not `(18x)`
 - After each reconciled month, append findings to [`amazon_rule_reviews.json`](amazon_rule_reviews.json) (scorecard + deferred watches; avoid overfitting)
 
@@ -49,6 +53,8 @@ Latest train snapshot (will change if you re-export):
 streamlit run amazon_review_app.py
 ```
 
+- **Dashboard (top):** reconciled-through date, Amazon Order History coverage, txns left, ordered next-up tasks (download statement / refresh Amazon / review / export / mark reconciled)
+- Auto-opens the next actionable statement; sidebar picker still lists every not-done month
 - **Left:** statement charge + matched Your Orders (items, ship-to)  
 - **Right:** editable payee / memo / category (pre-filled guess)  
 - **Approve & Next** / Skip / Back  
@@ -71,7 +77,8 @@ date,amount,payee
 (legacy repo copy under `amazon/CC Chase Prime 5144/` is fallback only).  
 Filename order is **year then month** (same as Schwab):  
 `Chase Prime 5144 2026 07 July15 [REC …].pdf`  
-Filenames **without** `REC` are treated as unreconciled. Text extraction via `pypdf` works on current Chase PDFs (no OCR in v1). If a PDF yields nothing useful, drop a CSV instead.
+Chase online downloads named `YYYYMMDD-statements-5144-.pdf` are auto-renamed into that archive form on app start (duplicate months are hidden).  
+Empty `[]` / missing tag = unreconciled; `[APPROVED …]` = QIF exported; `[REC …]` = done. Text extraction via `pypdf` works on current Chase PDFs (no OCR in v1). If a PDF yields nothing useful, drop a CSV instead.
 
 **QIF handoff:** exports go to  
 `C:\Users\james\OneDrive\JRSS Reconciliation\QIF files\`  
@@ -97,11 +104,12 @@ named `amazon_5144_<Year>_<Month><Day>.QIF` (e.g. `amazon_5144_2026_July15.QIF`)
 | `amazon_lookup.py` | CLI amount/date lookup into Order History |
 | `amazon_train.py` | Match QIF ↔ orders; write `amazon_rules.json` |
 | `amazon_review_app.py` | Streamlit left/right review + QIF export |
-| `amazon_cc/` | QIF I/O, matching, rules, statement ingest |
+| `amazon_cc/` | QIF I/O, matching, rules, statement ingest, dashboard tasks |
 | `amazon_rules.json` | Trained guess rules (safe to commit); hand pins merged on load/save |
 | `amazon_rule_reviews.json` | Per-statement rule-review log (append months; deferred watches) |
 | `amazon_charges_example.csv` | Sample charge CSV for the reviewer |
-| `amazon/` | Privacy Central export + statements + training QIF (**gitignored**, PII) |
+| `amazon/` | Local leftovers: training QIF, review_progress (**gitignored**, PII). Live Order History lives under JRSS `Amazon Data/` |
+| `amazon_cc/amazon_data.py` | Resolve / archive / swap shared Amazon Data exports |
 
 ### Lookup CLI
 
@@ -112,11 +120,18 @@ python amazon_lookup.py 48.51 --date 2026-09-29 --card 5144
 
 Exact amount within ±7 days of **order or ship date** (ship catches Subscribe & Save lag); integer-dollar rewards within ±3 days; optional card last-4. Partial shipment approvals leave an order **remainder** (order total − claimed) for later charges; fully claimed orders are excluded.
 
+**Gift card + Visa:** Privacy Central `Payment Method Type` shows `Gift Certificate/Card and Visa - 5144`, but Order History totals stay at the full merchandise amount — the statement only shows the card residual. When **no** exact/shipment/line amount match exists, orders with a gift-card tender **and** a card last-4 match if `order total > charge` inside the date window (`gift_card_partial`). Approving that row claims the **full** order so no phantom remainder is expected. The gift-card dollar amount is inferred (`order total − charge`); it is not in the CSV.
+
+Statement **credits** (Chase negative amounts that are not card payments) match **Digital Returns.csv** / **Refund Details.csv** by refund amount ± return date. Export as a **positive** CCard amount (same as training: e.g. `Prime Video` / `PSNL:Entertainment:Movies` / product name).
+
 Statement **AUTOMATIC PAYMENT / THANK YOU** lines are kept for approve/export (no Order History). Prefill from training QIF (typically `Amazon Chase` / `Credit Card Payment` / `[Chkng Main BofA-0149]`); export as a positive CCard payment.
 
 ## Order History notes
 
-- Path: `amazon/Your Orders/Your Amazon Orders/Order History.csv`  
+- **Live path (OneDrive shared):**  
+  `C:\Users\james\OneDrive\JRSS Reconciliation\Amazon Data\Your Orders\Your Amazon Orders\Order History.csv`  
+  (same folder for `Digital Content Orders.csv`)
+- Drop a new Privacy Central unpack into `Amazon Data` as `Your Orders` or `Your Orders (1)`. **Sync** archives the previous live set to `Your Orders_archive_YYYYMMDD`, activates the newest inbound, and deletes unused delivery-photo `Media` folders.
 - `Total Amount` is usually **per line** — matcher sums by Order ID.  
 - Ship-to: `Shipping Address` (Florida → often `CC:*` via rules/heuristic).  
 - Digital: `Digital Content Orders.csv` included in train/review matching.

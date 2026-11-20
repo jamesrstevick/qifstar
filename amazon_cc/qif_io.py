@@ -202,6 +202,25 @@ def is_statement_card_payment(payee):
     return False
 
 
+def is_statement_refund_credit(charge):
+    """
+    True for Amazon/merchant refund credits on the statement (not card payments).
+
+    Chase PDF extract marks these with a negative raw amount; amount is abs().
+    """
+    if not charge:
+        return False
+    if is_statement_card_payment(charge.get("payee") or ""):
+        return False
+    if charge.get("is_credit") is True:
+        return True
+    raw = charge.get("raw_amount")
+    try:
+        return raw is not None and float(raw) < 0
+    except (TypeError, ValueError):
+        return False
+
+
 def is_card_payment_qif_fields(qif_fields):
     """True when approved fields look like a card payment / checking transfer."""
     if not qif_fields:
@@ -218,6 +237,23 @@ def is_card_payment_qif_fields(qif_fields):
     if "card payment" in payee:
         return True
     return False
+
+
+def is_refund_qif_fields(qif_fields):
+    """True when approved fields are an Amazon refund/return credit."""
+    if not qif_fields:
+        return False
+    level = (qif_fields.get("match_level") or "").lower()
+    if level == "refund":
+        return True
+    if (qif_fields.get("match_kind") or "").lower() == "refund":
+        return True
+    return False
+
+
+def is_positive_ccard_qif_fields(qif_fields):
+    """CCard QIF amount should be positive (payments and refunds)."""
+    return is_card_payment_qif_fields(qif_fields) or is_refund_qif_fields(qif_fields)
 
 
 def card_payment_template_from_qif(qif_path):
@@ -297,14 +333,68 @@ def charge_amount(txn):
     return abs(amt)
 
 
+def _is_categories_export(path):
+    """True if path looks like a Quicken Categories.QIF (!Type:Cat) export."""
+    try:
+        with open(path, "r", encoding="utf-8", errors="replace") as fh:
+            head = fh.read(4096)
+    except OSError:
+        return False
+    return "!Type:Cat" in head
+
+
+def parse_categories_qif(path):
+    """
+    Parse a Quicken category list export (!Type:Cat).
+    Returns unique category path strings from N… records (skips tags / junk).
+    """
+    cats = []
+    seen = set()
+    mode = None
+    try:
+        with open(path, "r", encoding="utf-8", errors="replace") as fh:
+            lines = fh.read().splitlines()
+    except OSError:
+        return []
+
+    skip = {"--split--", "", "...,,, ?"}
+    for line in lines:
+        if not line:
+            continue
+        if line.startswith("!Type:"):
+            mode = line[6:].strip()
+            continue
+        if mode != "Cat":
+            continue
+        if not line.startswith("N"):
+            continue
+        name = line[1:].strip()
+        if not name or name.lower() in skip:
+            continue
+        if name not in seen:
+            seen.add(name)
+            cats.append(name)
+    return cats
+
+
 def load_known_categories(qif_path, extra=None, include_transfers=False):
     """
-    Unique Quicken category paths from a training CCard QIF (exact strings).
-    Skips transfers ([Account]) and --Split-- headers by default; includes
-    split lines. Set include_transfers=True for card-payment rows.
+    Unique Quicken category paths (exact strings).
+
+    Accepts either:
+      - Categories.QIF (!Type:Cat export), or
+      - a training CCard QIF (categories collected from L / split S lines).
+
+    Skips transfers ([Account]) and --Split-- by default.
+    Set include_transfers=True for card-payment rows.
     """
     cats = set(extra or [])
     try:
+        if _is_categories_export(qif_path):
+            for cat in parse_categories_qif(qif_path):
+                if include_transfers or not cat.startswith("["):
+                    cats.add(cat)
+            return sorted(cats, key=lambda s: s.lower())
         txns = parse_ccard_qif(qif_path)
     except (OSError, ValueError):
         return sorted(cats, key=lambda s: s.lower())

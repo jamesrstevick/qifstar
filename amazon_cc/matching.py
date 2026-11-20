@@ -13,6 +13,7 @@ from amazon_lookup import (
     DEFAULT_REWARDS_WINDOW_DAYS,
     DEFAULT_TOLERANCE,
     _best_date_delta,
+    amount_match_info,
     build_order_summaries,
     load_orders,
     match_orders,
@@ -26,17 +27,18 @@ from amazon_cc.qif_io import (
     parse_ccard_qif,
 )
 
-ORDER_HISTORY_DEFAULT = (
-    "amazon/Your Orders/Your Amazon Orders/Order History.csv"
-)
-DIGITAL_ORDERS_DEFAULT = (
-    "amazon/Your Orders/Your Amazon Orders/Digital Content Orders.csv"
+from amazon_cc.amazon_data import (
+    digital_orders_path as resolve_digital_orders_path,
+    digital_returns_path as resolve_digital_returns_path,
+    order_history_path as resolve_order_history_path,
+    refund_details_path as resolve_refund_details_path,
 )
 
 
-def load_digital_order_summaries(path=DIGITAL_ORDERS_DEFAULT):
+def load_digital_order_summaries(path=None):
     """Group digital rows by Order ID using sum of Transaction Amount."""
-    if not os.path.isfile(path):
+    path = path or resolve_digital_orders_path()
+    if not path or not os.path.isfile(path):
         return []
     df = pd.read_csv(path, dtype=str, keep_default_na=False)
     if "Order ID" not in df.columns or "Transaction Amount" not in df.columns:
@@ -102,19 +104,251 @@ def load_digital_order_summaries(path=DIGITAL_ORDERS_DEFAULT):
     return orders
 
 
+def load_digital_refund_summaries(path=None):
+    """
+    Digital Returns.csv → one summary per Order ID + return date.
+
+    Amount Refunded is repeated on Price/Tax component rows; use that value
+    when present, else sum Transaction Amount. order_date is the return date
+    so charge-date windows align with Chase refund posts.
+    """
+    path = path or resolve_digital_returns_path()
+    if not path or not os.path.isfile(path):
+        return []
+    df = pd.read_csv(path, dtype=str, keep_default_na=False)
+    if "Order ID" not in df.columns:
+        return []
+    refunds = []
+    group_cols = ["Order ID"]
+    if "Return Date" in df.columns:
+        group_cols.append("Return Date")
+    for key, group in df.groupby(group_cols, sort=False):
+        if isinstance(key, tuple):
+            order_id, return_raw = key[0], key[1] if len(key) > 1 else ""
+        else:
+            order_id, return_raw = key, ""
+        refund_amts = []
+        for raw in group.get("Amount Refunded", pd.Series(dtype=str)):
+            val = money(raw)
+            if val > 0:
+                refund_amts.append(val)
+        if refund_amts:
+            total = float(refund_amts[0])
+        else:
+            total = float(sum(money(x) for x in group.get("Transaction Amount", [])))
+        if total <= 0:
+            continue
+        return_date = parse_order_date(return_raw) if return_raw else None
+        # Prefer a real product name (skip empty / numeric junk)
+        names = []
+        for raw in group.get("Product Name", pd.Series(dtype=str)):
+            name = (raw or "").strip()
+            if not name or name.lower() in ("not available", "not applicable"):
+                continue
+            if name.isdigit():
+                continue
+            names.append(name)
+        product = names[0] if names else "Digital refund"
+        items = [
+            {
+                "name": product,
+                "qty": 1,
+                "line_total": total,
+                "unit": total,
+                "tax": 0.0,
+                "asin": (group["ASIN"].iloc[0] if "ASIN" in group.columns else "")
+                or "",
+            }
+        ]
+        statuses = []
+        for col in ("Return Status", "Status"):
+            if col in group.columns:
+                statuses.extend(
+                    sorted(
+                        {
+                            s
+                            for s in group[col].tolist()
+                            if s and s not in ("Not Available", "Not Applicable")
+                        }
+                    )
+                )
+        refunds.append(
+            {
+                "order_id": order_id,
+                "order_date": return_date,
+                "total": total,
+                "payments": [],
+                "last4s": [],
+                "addresses": [],
+                "status": statuses,
+                "items": items,
+                "shipments": [
+                    {
+                        "key": "digital_refund",
+                        "tracking": "",
+                        "ship_date": return_raw or "",
+                        "total": total,
+                        "items": items,
+                        "addresses": [],
+                    }
+                ],
+                "source": "digital_refund",
+                "match_kind": "refund",
+                "match_level": "refund",
+                "matched_total": total,
+                "return_date": return_date,
+            }
+        )
+    return refunds
+
+
+def load_physical_refund_summaries(path=None, orders_by_id=None):
+    """
+    Refund Details.csv → refund summaries (physical / retail).
+    Attaches Order History items when orders_by_id is provided.
+    """
+    path = path or resolve_refund_details_path()
+    if not path or not os.path.isfile(path):
+        return []
+    df = pd.read_csv(path, dtype=str, keep_default_na=False)
+    if "Order ID" not in df.columns or "Refund Amount" not in df.columns:
+        return []
+    orders_by_id = orders_by_id or {}
+    refunds = []
+    for _, row in df.iterrows():
+        total = money(row.get("Refund Amount"))
+        if total <= 0:
+            continue
+        order_id = (row.get("Order ID") or "").strip()
+        return_date = parse_order_date(
+            row.get("Refund Date") or row.get("Creation Date") or ""
+        )
+        order = orders_by_id.get(order_id) or {}
+        items = list(order.get("items") or [])
+        if not items:
+            reason = (row.get("Reversal Reason") or "").strip() or "Refund"
+            items = [
+                {
+                    "name": reason,
+                    "qty": 1,
+                    "line_total": total,
+                    "unit": total,
+                    "tax": 0.0,
+                    "asin": "",
+                }
+            ]
+        refunds.append(
+            {
+                "order_id": order_id,
+                "order_date": return_date,
+                "total": total,
+                "payments": [],
+                "last4s": list(order.get("last4s") or []),
+                "addresses": list(order.get("addresses") or []),
+                "status": [
+                    s
+                    for s in (
+                        row.get("Payment Status"),
+                        row.get("Reversal Status"),
+                        row.get("Reversal Reason"),
+                    )
+                    if s
+                ],
+                "items": items,
+                "shipments": [
+                    {
+                        "key": "physical_refund",
+                        "tracking": "",
+                        "ship_date": "",
+                        "total": total,
+                        "items": items,
+                        "addresses": list(order.get("addresses") or []),
+                    }
+                ],
+                "source": "physical_refund",
+                "match_kind": "refund",
+                "match_level": "refund",
+                "matched_total": total,
+                "return_date": return_date,
+            }
+        )
+    return refunds
+
+
 def load_order_index(
-    order_history_path=ORDER_HISTORY_DEFAULT,
+    order_history_path=None,
     include_cancelled=False,
     include_digital=True,
-    digital_path=DIGITAL_ORDERS_DEFAULT,
+    digital_path=None,
+    include_refunds=True,
 ):
-    df = load_orders(order_history_path)
+    """
+    Purchase orders (+ digital). Refunds are loaded separately via
+    load_refund_index() so purchase matching does not hit refund amounts.
+    """
+    oh_path = order_history_path or resolve_order_history_path()
+    dig_path = digital_path or resolve_digital_orders_path()
+    df = load_orders(oh_path)
     orders = build_order_summaries(df, include_cancelled=include_cancelled)
     for o in orders:
         o.setdefault("source", "retail")
     if include_digital:
-        orders.extend(load_digital_order_summaries(digital_path))
+        orders.extend(load_digital_order_summaries(dig_path))
     return orders
+
+
+def load_refund_index(orders=None):
+    """Digital + physical refund summaries for matching statement credits."""
+    by_id = _orders_by_id(orders or [])
+    refunds = list(load_digital_refund_summaries())
+    refunds.extend(load_physical_refund_summaries(orders_by_id=by_id))
+    return refunds
+
+
+def find_refunds_for_credit(
+    refunds,
+    amount,
+    date=None,
+    window_days=DEFAULT_DATE_WINDOW_DAYS,
+    tolerance=DEFAULT_TOLERANCE,
+):
+    """Match a statement credit (refund) to Digital/physical refund rows."""
+    amount = float(amount)
+    hits = []
+    for refund in refunds or []:
+        total = float(refund.get("total") or refund.get("matched_total") or 0)
+        info = amount_match_info(
+            total, amount, tolerance=tolerance, allow_integer_rewards=False
+        )
+        if info is None:
+            continue
+        delta, basis = _best_date_delta(refund, date) if date is not None else (None, None)
+        if date is not None:
+            if delta is None or delta > window_days:
+                continue
+        annotated = dict(refund)
+        annotated.update(
+            {
+                "match_kind": "refund",
+                "match_level": "refund",
+                "matched_total": total,
+                "rewards_dollars": 0,
+                "match_items": list(refund.get("items") or []),
+                "matched_tracking": "",
+                "date_delta_days": delta,
+                "date_basis": basis or "return",
+                "amount_match": info.get("kind") or "exact",
+            }
+        )
+        hits.append(annotated)
+    hits.sort(
+        key=lambda h: (
+            h.get("date_delta_days") if h.get("date_delta_days") is not None else 999,
+            -float(h.get("matched_total") or 0),
+            h.get("order_id") or "",
+        )
+    )
+    return hits
 
 
 def order_claims_from_progress(progress, except_index=None):
@@ -124,6 +358,10 @@ def order_claims_from_progress(progress, except_index=None):
     Returns {order_id: {"amount": float, "trackings": set([str]), "count": int}}.
     Partial shipment approvals leave a remainder (order total − claimed amount)
     available for later charges.
+
+    Gift-card partial matches (card residual only; gift covered the rest) claim
+    the full order_total so we do not look for a second card charge that never
+    posts.
     """
     claims = {}
     for i, row in enumerate((progress or {}).get("charges") or []):
@@ -136,7 +374,19 @@ def order_claims_from_progress(progress, except_index=None):
         if not oid:
             continue
         entry = claims.setdefault(oid, {"amount": 0.0, "trackings": set(), "count": 0})
-        entry["amount"] = round(entry["amount"] + float(qif.get("amount") or 0), 2)
+        kind = (qif.get("match_kind") or "").strip()
+        level = (qif.get("match_level") or "").strip()
+        if kind == "gift_card_partial" or level == "gift_card":
+            order_total = float(qif.get("order_total") or 0)
+            charge_amt = float(qif.get("amount") or 0)
+            # Prefer stored order total; fall back to charge if missing.
+            claim_amt = order_total if order_total > 0 else charge_amt
+            if claim_amt > entry["amount"]:
+                entry["amount"] = round(claim_amt, 2)
+        else:
+            entry["amount"] = round(
+                entry["amount"] + float(qif.get("amount") or 0), 2
+            )
         entry["count"] += 1
         tracking = (qif.get("matched_tracking") or "").strip()
         if tracking:
@@ -388,7 +638,7 @@ def find_near_miss_orders(
 
 def match_qif_to_orders(
     qif_path,
-    order_history_path=ORDER_HISTORY_DEFAULT,
+    order_history_path=None,
     last4="5144",
     window_days=DEFAULT_DATE_WINDOW_DAYS,
     amazon_only=True,
@@ -399,7 +649,7 @@ def match_qif_to_orders(
     Returns dict with rows, counts, and match_rate among attempted rows.
     """
     txns = parse_ccard_qif(qif_path)
-    orders = load_order_index(order_history_path)
+    orders = load_order_index(order_history_path=order_history_path)
 
     rows = []
     attempted = 0

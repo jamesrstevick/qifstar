@@ -16,9 +16,18 @@ from datetime import datetime, timedelta
 
 import pandas as pd
 
-ORDER_HISTORY = os.path.join(
-    "amazon", "Your Orders", "Your Amazon Orders", "Order History.csv"
-)
+def _default_order_history():
+    try:
+        from amazon_cc.amazon_data import order_history_path
+
+        return order_history_path()
+    except Exception:
+        return os.path.join(
+            "amazon", "Your Orders", "Your Amazon Orders", "Order History.csv"
+        )
+
+
+ORDER_HISTORY = _default_order_history()
 
 DEFAULT_TOLERANCE = 0.0  # Quicken amounts are exact; date may drift vs Amazon
 DEFAULT_DATE_WINDOW_DAYS = 7
@@ -101,6 +110,20 @@ def card_last4(payment_method):
     return matches[-1] if matches else ""
 
 
+def payment_uses_gift_card(payment_method):
+    """True when Payment Method Type mentions a gift certificate/card tender."""
+    text = str(payment_method or "").lower()
+    return "gift certificate" in text or "gift card" in text
+
+
+def order_uses_gift_card(order):
+    """True when any payment tender on the order is a gift certificate/card."""
+    for pay in order.get("payments") or []:
+        if payment_uses_gift_card(pay):
+            return True
+    return bool(order.get("uses_gift_card"))
+
+
 def _shipment_key(row):
     """Group multi-package orders by carrier tracking when present."""
     track = str(row.get("Carrier Name & Tracking Number", "") or "").strip()
@@ -167,13 +190,16 @@ def build_order_summaries(df, include_cancelled=False):
             shipments.append(ship)
         shipments.sort(key=lambda s: (-s["total"], s.get("key") or ""))
 
+        last4s = sorted({card_last4(p) for p in payments if card_last4(p)})
+        uses_gift = any(payment_uses_gift_card(p) for p in payments)
         orders.append(
             {
                 "order_id": order_id,
                 "order_date": order_date,
                 "total": float(group["_line_total"].sum()),
                 "payments": payments,
-                "last4s": sorted({card_last4(p) for p in payments if card_last4(p)}),
+                "last4s": last4s,
+                "uses_gift_card": uses_gift,
                 "addresses": addresses,
                 "status": sorted(set(group["Order Status"])),
                 "items": items,
@@ -412,6 +438,7 @@ def match_orders(
             continue
 
         # Single-line fallback (same shipment may still miss if grouping failed)
+        line_hit = False
         for item in order.get("items") or []:
             info = amount_match_info(
                 item.get("line_total") or 0,
@@ -422,6 +449,7 @@ def match_orders(
             )
             if not _accept_amount_match(info, order, date, rewards_window_days):
                 continue
+            line_hit = True
             matches.append(
                 _annotate_match(
                     order,
@@ -433,12 +461,49 @@ def match_orders(
                     date=date,
                 )
             )
+        if line_hit:
+            continue
+
+        # Gift Certificate/Card + Visa: Order History totals stay at the full
+        # merchandise amount; the statement only shows the card residual.
+        # Privacy Central does not export the gift-card dollar amount, so match
+        # when payment mentions a gift card, a card last-4 is present (not
+        # gift-only), and order total is strictly greater than the charge.
+        if order_uses_gift_card(order) and (order.get("last4s") or []):
+            order_total = float(order.get("total") or 0)
+            if order_total > float(amount) + float(tolerance):
+                gift_inferred = round(order_total - float(amount), 2)
+                gift_hit = _annotate_match(
+                    order,
+                    {"kind": "gift_card_partial", "rewards_dollars": 0},
+                    "gift_card",
+                    float(amount),
+                    order.get("items") or [],
+                    date=date,
+                )
+                gift_hit["gift_card_inferred"] = gift_inferred
+                matches.append(gift_hit)
+
+    # Gift-card residual is a fallback only. A large gift+card order would
+    # otherwise appear on every smaller charge in the same ±7 day window.
+    if any(m.get("match_kind") != "gift_card_partial" for m in matches):
+        matches = [m for m in matches if m.get("match_kind") != "gift_card_partial"]
 
     def sort_key(o):
-        kind_rank = 0 if o.get("match_kind") in ("exact", "tolerance") else 1
-        level_rank = {"order": 0, "remainder": 1, "shipment": 2, "line": 3}.get(
-            o.get("match_level") or "order", 4
-        )
+        kind = o.get("match_kind") or ""
+        if kind in ("exact", "tolerance"):
+            kind_rank = 0
+        elif kind == "gift_card_partial":
+            kind_rank = 1
+        else:
+            kind_rank = 2
+        level_rank = {
+            "order": 0,
+            "gift_card": 1,
+            "remainder": 2,
+            "shipment": 3,
+            "line": 4,
+        }.get(o.get("match_level") or "order", 5)
         rewards = int(o.get("rewards_dollars") or 0)
         # Prefer ship-aligned and closer day gaps
         basis_rank = 0 if o.get("date_basis") == "ship" else 1

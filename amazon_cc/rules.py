@@ -63,6 +63,12 @@ PAYEE_DEFAULTS = [
         "payee": "Prime Video",
         "category": "PSNL:Entertainment:Movies",
     },
+    # Digital subscriptions billed via Amazon Digital / Appstore (training QIF)
+    {
+        "payee_contains": "paramount",
+        "payee": "Prime Video",
+        "category": "PSNL:Entertainment:Movies",
+    },
     {
         "payee_contains": "amazon music",
         "payee": "Amazon Music",
@@ -183,6 +189,8 @@ MEMO_PRODUCT_PHRASES = (
     ("towel set", "Towel set"),
     ("bath towels", "Bath towels"),
     ("trash bags", "Trash bags"),
+    ("doormat", "Doormat"),
+    ("door mat", "Doormat"),
     ("california king", "California king"),
     ("twin xl", "Twin XL"),
     ("comforter", "Comforter"),
@@ -665,30 +673,111 @@ def keyword_category_vote(items, rules, region=""):
     return votes.most_common(1)[0][0]
 
 
+# Size and glue words that trained onto the wrong category ("plus" → movies,
+# "medium" → groceries) and then overrode a confident property ship-to.
+_REFINE_STOPWORDS = frozenset(
+    "medium large small extra plus essential each".split()
+)
+
+# Personal overlay on a property ship-to. Movies / clothing stay on the
+# property root for human review (July Osmocote "plus", Sept shirts).
+_PSNL_OVERLAY_PREFIXES = ("PSNL:Food", "PSNL:Pets")
+
+# Title phrases that mean gardening at whatever property the ship-to root is.
+# July Walnut + Sept Maine both approved :Gardening for Osmocote / fertilizer.
+_GARDENING_TITLE_PHRASES = ("plant food", "fertilizer")
+
+# Clear hand-tool titles → {root}:Supplies:Tools (Aug CC + Oct MH; July
+# Walnut tools that lack these words stay Supplies for review).
+_TOOLS_TITLE_PHRASES = (
+    "pliers",
+    "screwdriver",
+    "wrench",
+    "drill bit",
+    "drill bits",
+    "socket set",
+    "impact socket",
+    "hand sewing",
+)
+
+
+def refine_keyword_votes(items, rules, region=""):
+    """Keyword votes for refine, with size/glue stopwords removed."""
+    votes = Counter()
+    for item in items or []:
+        name = (item.get("name") or "").lower()
+        for word in re.findall(r"[a-z]{4,}", name):
+            if word in _REFINE_STOPWORDS:
+                continue
+            hit = (rules.get("keyword_category") or {}).get(word)
+            if not hit:
+                continue
+            cat = hit["value"]
+            if not category_allowed_for_region(cat, region):
+                continue
+            votes[cat] += hit.get("count", 1)
+    return votes
+
+
+def gardening_category_from_items(base, items):
+    """
+    Plant food / fertilizer shipped to a property → {root}:Gardening.
+    Does not apply to PSNL (a gift or personal plant stays personal).
+    """
+    root = category_root(base)
+    if not root or root == "PSNL":
+        return None
+    blob = " ".join((i.get("name") or "") for i in items or []).lower()
+    if not blob:
+        return None
+    for phrase in _GARDENING_TITLE_PHRASES:
+        if phrase in blob:
+            return "{}:Gardening".format(root)
+    return None
+
+
+def tools_category_from_items(base, items):
+    """
+    Clear tool titles shipped to a property → {root}:Supplies:Tools.
+    Does not apply to PSNL.
+    """
+    root = category_root(base)
+    if not root or root == "PSNL":
+        return None
+    blob = " ".join((i.get("name") or "") for i in items or []).lower()
+    if not blob:
+        return None
+    for phrase in _TOOLS_TITLE_PHRASES:
+        if phrase in blob:
+            return "{}:Supplies:Tools".format(root)
+    return None
+
+
 def refine_category_with_keywords(base, items, rules, region=""):
     """
     After a ship-to root/base guess, use keyword frequency to pick a more
     specific category under the same root (CC:Supplies:Tools) or a personal
-    PSNL overlay (groceries / pets) when those keywords dominate.
+    food/pet overlay when those keywords dominate.
     """
     if not base:
         return None
-    votes = keyword_category_votes(items, rules, region=region)
+    votes = refine_keyword_votes(items, rules, region=region)
     if not votes:
         return None
     base_root = category_root(base)
     filtered = Counter()
     for cat, n in votes.items():
         root = category_root(cat)
-        if root == base_root or root == "PSNL":
+        if root == base_root or (
+            root == "PSNL" and any(cat.startswith(p) for p in _PSNL_OVERLAY_PREFIXES)
+        ):
             filtered[cat] += n
     if not filtered:
         return None
     best, best_n = filtered.most_common(1)[0]
     if best == base:
         return None
-    # Require some evidence; PSNL overlays need a clearer signal than a tweak
-    # under the same property root.
+    # Food/pet overlays need a clearer signal than a same-root subcategory tweak.
     if category_root(best) == "PSNL" and base_root != "PSNL":
         if best_n < 4:
             return None
@@ -738,34 +827,47 @@ def guess_from_order(order, statement_payee="", rules=None):
     payee_in = (statement_payee or "").strip()
     payee_l = payee_in.lower()
 
-    # Fixed digital payees
-    for rule in rules.get("payee_defaults") or PAYEE_DEFAULTS:
+    items_blob = " ".join(
+        (i.get("name") or "").lower() for i in order.get("items") or []
+    )
+    # Fixed digital payees (statement payee or product title). Always include
+    # built-in PAYEE_DEFAULTS even when amazon_rules.json omits newer pins.
+    payee_defaults = list(rules.get("payee_defaults") or [])
+    seen_needles = {
+        (r.get("payee_contains") or "").lower() for r in payee_defaults
+    }
+    for pin in PAYEE_DEFAULTS:
+        needle = (pin.get("payee_contains") or "").lower()
+        if needle and needle not in seen_needles:
+            payee_defaults.append(pin)
+            seen_needles.add(needle)
+    for rule in payee_defaults:
         needle = rule["payee_contains"]
-        if needle in payee_l or needle in " ".join(
-            (i.get("name") or "").lower() for i in order.get("items") or []
-        ):
-            # Only force Prime Video / Music / Kindle when payee hints or title hints
-            if needle in payee_l or (
-                needle == "prime video"
-                and any(
-                    "prime video" in (i.get("name") or "").lower()
-                    for i in order.get("items") or []
-                )
-            ):
-                max_len = rules.get("memo_max_len", DEFAULT_MEMO_MAX_LEN)
-                raw_memo = (
-                    memo_from_single_item_rules(order.get("items") or [])
-                    or shorten_memo_from_items(
-                        order.get("items") or [], max_len
+        if needle in payee_l or needle in items_blob:
+            max_len = rules.get("memo_max_len", DEFAULT_MEMO_MAX_LEN)
+            raw_memo = (
+                memo_from_single_item_rules(order.get("items") or [])
+                or shorten_memo_from_items(order.get("items") or [], max_len)
+                or rule.get("payee")
+            )
+            # Physical refunds in training often note return/refund in the memo.
+            if (order.get("source") or "") == "physical_refund":
+                low = (raw_memo or "").lower()
+                if "return" not in low and "refund" not in low:
+                    raw_memo = clamp_memo(
+                        format_memo_casing("{} (refund)".format(raw_memo or "Amazon")),
+                        max_len,
                     )
-                    or rule.get("payee")
-                )
-                return {
-                    "payee": rule["payee"],
-                    "memo": clamp_memo(format_memo_casing(raw_memo), max_len),
-                    "reason": "payee_default:{}".format(needle),
-                    "category": rule["category"],
-                }
+                else:
+                    raw_memo = clamp_memo(format_memo_casing(raw_memo), max_len)
+            else:
+                raw_memo = clamp_memo(format_memo_casing(raw_memo), max_len)
+            return {
+                "payee": rule["payee"],
+                "memo": raw_memo,
+                "reason": "payee_default:{}".format(needle),
+                "category": rule["category"],
+            }
 
     items = order.get("items") or []
     max_len = rules.get("memo_max_len", DEFAULT_MEMO_MAX_LEN)
@@ -835,18 +937,27 @@ def guess_from_order(order, statement_payee="", rules=None):
         category = rules.get("default_category", "PSNL:Shopping")
         reason.append("default")
 
-    # Frequency refine: same-root subcategory or strong PSNL overlay (groceries)
+    # Frequency refine: same-root subcategory or food/pet overlay.
     # Skip when a hand item/ship pin already chose the category.
     if category and not any(
         r.startswith("hand_item:") or r.startswith("hand_ship_to:")
         for r in reason
     ):
-        refined = refine_category_with_keywords(
-            category, items, rules, region=region
-        )
-        if refined:
-            category = refined
-            reason.append("keyword_refine")
+        garden = gardening_category_from_items(category, items)
+        tools = tools_category_from_items(category, items) if not garden else None
+        if garden:
+            category = garden
+            reason.append("item_phrase:gardening")
+        elif tools:
+            category = tools
+            reason.append("item_phrase:tools")
+        else:
+            refined = refine_category_with_keywords(
+                category, items, rules, region=region
+            )
+            if refined:
+                category = refined
+                reason.append("keyword_refine")
 
     return {
         "payee": payee,
@@ -868,6 +979,14 @@ def guess_without_order(statement_payee="", rules=None):
                 "category": rule["category"],
                 "reason": "payee_default_no_order",
             }
+    # Amazon Digital Service statement lines are usually Prime Video / Appstore
+    if "digital service" in payee_l or "amazon digit" in payee_l:
+        return {
+            "payee": "Prime Video",
+            "memo": "",
+            "category": "PSNL:Entertainment:Movies",
+            "reason": "digital_service_heuristic",
+        }
     return {
         "payee": payee_in or rules.get("default_payee", "Amazon"),
         "memo": "",
